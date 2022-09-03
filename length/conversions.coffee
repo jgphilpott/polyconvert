@@ -156,7 +156,7 @@ convertLength.kilometer.meter = km$m = (km) -> km * 1e+3 # Kilometer to Meter
 convertLength.kilometer.decameter = km$dam = (km) -> km * 1e+2 # Kilometer to Decameter
 convertLength.kilometer.hectometer = km$hm = (km) -> km * 1e+1 # Kilometer to Hectometer
 
-convertLength.kilometer.inch = km$inch = (km) ->  km * 3937e+1# Kilometer to Inch
+convertLength.kilometer.inch = km$inch = (km) ->  km * 3937e+1 # Kilometer to Inch
 convertLength.kilometer.foot = km$foot = (km) -> km * 3281 # Kilometer to Foot
 convertLength.kilometer.yard = km$yard = (km) -> km * 1094 # Kilometer to Yard
 convertLength.kilometer.mile = km$mile = (km) -> km / 1.609 # Kilometer to Mile

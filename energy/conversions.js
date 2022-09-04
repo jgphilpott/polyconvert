@@ -58,6 +58,6 @@ convertEnergy.kilowatt.kilojoule = kwh$kj = function(kwh) {
   return kwh * 36e+2; // Kilowatt to Kilojoule
 };
 
-convertEnergy.kilowattwatt.watt = kwh$wh = function(kwh) {
+convertEnergy.kilowatt.watt = kwh$wh = function(kwh) {
   return kwh * 1e+3; // Kilowatt to Watt
 };

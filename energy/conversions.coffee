@@ -29,4 +29,4 @@ convertEnergy.watt.kilowatt = wh$kwh = (wh) -> wh / 1e+3 # Watt to Kilowatt
 
 convertEnergy.kilowatt.joule = kwh$j = (kwh) -> kwh * 36e+5 # Kilowatt to Joule
 convertEnergy.kilowatt.kilojoule = kwh$kj = (kwh) -> kwh * 36e+2 # Kilowatt to Kilojoule
-convertEnergy.kilowattwatt.watt = kwh$wh = (kwh) -> kwh * 1e+3 # Kilowatt to Watt
+convertEnergy.kilowatt.watt = kwh$wh = (kwh) -> kwh * 1e+3 # Kilowatt to Watt

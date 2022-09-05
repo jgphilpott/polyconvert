@@ -67,6 +67,27 @@ bit = {
 
 So to use these functions just refrance them through the object and pass in the value you want to convert like this, `convert.data.bit.byte(100)` and to reverse the conversion simply switch the order of the unit keys like this, `convert.data.byte.bit(12.5)`.
 
+# Contribute
+
+There are two main ways you can contribute to the Convert library:
+
+1) Adding a new language, category or unit for conversion.
+2) Report an inaccurate formula or typo.
+
+See below for more information on each of the options, also feel free to simply [ask any question you like](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=question&template=QUESTION.md&title=).
+
+### Adding Features
+
+Currently this library only supports JavaScript but it would be nice to add more languages in the future. It would also be nice to add new categories and units for conversion since the current list is not universal, yet.
+
+If you would like to contribute in this way please [start by opening a feature request](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=enhancement&template=FEATURE_REQUEST.md&title=). Once your work is done and ready for review you can [proceed to opening a pull request](https://github.com/jgphilpott/convert/pulls).
+
+### Reporting Errors
+
+I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to [open a bug report](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
+
+If you have any other issues with the Convert library then please [open a general issue](https://github.com/jgphilpott/convert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
+
 # Categories
 
 Each category below is available as a top level key in the `convert` object, it can also be linked to separately using the `conversions.js` file in the corresponding subdirectory if you don't want/need the full library. An object map of each category is also available.

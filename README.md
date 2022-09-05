@@ -4,6 +4,29 @@
 
 Convert is a library of functions for converting between different units of measurement. It currently supports 13 top level categories each with several different scales and units of measurement within. Also, the project currently only supports JavaScript but it would be desirable to add more languages in the future.
 
+# Contents
+
+ - [Intro](https://github.com/jgphilpott/convert#intro)
+ - [Contents](https://github.com/jgphilpott/convert#contents)
+ - [Usage](https://github.com/jgphilpott/convert#usage)
+ - [Contribute](https://github.com/jgphilpott/convert#contribute)
+     - [Adding Features](https://github.com/jgphilpott/convert#adding-features)
+     - [Reporting Errors](https://github.com/jgphilpott/convert#reporting-errors)
+ - [Categories](https://github.com/jgphilpott/convert#categories)
+     - [Angle](https://github.com/jgphilpott/convert#angle)
+     - [Area](https://github.com/jgphilpott/convert#area)
+     - [Data](https://github.com/jgphilpott/convert#data)
+     - [Dimension](https://github.com/jgphilpott/convert#dimension)
+     - [Energy](https://github.com/jgphilpott/convert#energy)
+     - [Frequency](https://github.com/jgphilpott/convert#frequency)
+     - [Length](https://github.com/jgphilpott/convert#length)
+     - [Mass](https://github.com/jgphilpott/convert#mass)
+     - [Pressure](https://github.com/jgphilpott/convert#pressure)
+     - [Speed](https://github.com/jgphilpott/convert#speed)
+     - [Temperature](https://github.com/jgphilpott/convert#temperature)
+     - [Time](https://github.com/jgphilpott/convert#time)
+     - [Volume](https://github.com/jgphilpott/convert#volume)
+
 # Usage
 
 To use the convert library in your project you can either link to the [convert.js](https://github.com/jgphilpott/convert/blob/main/convert.js) file in this repo or download it and use your own copy. The library features the `convert` object that contains all of the formulas with the top level keys representing all the different categories available, see the object map below:

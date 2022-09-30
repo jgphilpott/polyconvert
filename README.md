@@ -88,7 +88,7 @@ bit = {
 }
 ```
 
-So to use these functions just refrance them through the object and pass in the value you want to convert like this, `convert.data.bit.byte(100)` and to reverse the conversion simply switch the order of the unit keys like this, `convert.data.byte.bit(12.5)`.
+So to use these functions just reference them through the object and pass in the value you want to convert like this, `convert.data.bit.byte(100)` and to reverse the conversion simply switch the order of the unit keys like this, `convert.data.byte.bit(12.5)`.
 
 # Contribute
 

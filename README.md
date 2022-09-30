@@ -113,9 +113,9 @@ If you have any other issues with the Convert library then please [open a genera
 
 # Categories
 
-Each category below is available as a top level key in the `convert` object, it can also be linked to separately using the `conversions.js` file in the corresponding subdirectory if you don't want/need the full library. An object map of each category is also available.
+Each category below is available as a top level key in the `convert` object. If you don't want/need the full library categories can also be linked to separately using the gist file referenced in the corresponding subdirectory README. An object map of each category is also available below.
 
-### [Angle](https://github.com/jgphilpott/convert/tree/main/angle)
+### [Angle](https://github.com/jgphilpott/convert/tree/main/angle/README.md)
 
 The Angle category provides 6 different units for conversion, see the object map below:
 
@@ -132,7 +132,7 @@ convertAngle = {
 }
 ```
 
-### [Area](https://github.com/jgphilpott/convert/tree/main/area)
+### [Area](https://github.com/jgphilpott/convert/tree/main/area/README.md)
 
 The Area category provides 15 different units for conversion, see the object map below:
 
@@ -160,7 +160,7 @@ convertArea = {
 }
 ```
 
-### [Data](https://github.com/jgphilpott/convert/tree/main/data)
+### [Data](https://github.com/jgphilpott/convert/tree/main/data/README.md)
 
 The Data category provides 10 different units for conversion, see the object map below:
 
@@ -181,7 +181,7 @@ convertData = {
 }
 ```
 
-### [Dimension](https://github.com/jgphilpott/convert/tree/main/dimension)
+### [Dimension](https://github.com/jgphilpott/convert/tree/main/dimension/README.md)
 
 The Dimension category provides 2 different units for conversion, see the object map below:
 
@@ -194,7 +194,7 @@ convertDimension = {
 }
 ```
 
-### [Energy](https://github.com/jgphilpott/convert/tree/main/energy)
+### [Energy](https://github.com/jgphilpott/convert/tree/main/energy/README.md)
 
 The Energy category provides 4 different units for conversion, see the object map below:
 
@@ -209,7 +209,7 @@ convertEnergy = {
 }
 ```
 
-### [Frequency](https://github.com/jgphilpott/convert/tree/main/frequency)
+### [Frequency](https://github.com/jgphilpott/convert/tree/main/frequency/README.md)
 
 The Frequency category provides 4 different units for conversion, see the object map below:
 
@@ -224,7 +224,7 @@ convertFrequency = {
 }
 ```
 
-### [Length](https://github.com/jgphilpott/convert/tree/main/length)
+### [Length](https://github.com/jgphilpott/convert/tree/main/length/README.md)
 
 The Length category provides 13 different units for conversion, see the object map below:
 
@@ -249,7 +249,7 @@ convertLength = {
 }
 ```
 
-### [Mass](https://github.com/jgphilpott/convert/tree/main/mass)
+### [Mass](https://github.com/jgphilpott/convert/tree/main/mass/README.md)
 
 The Mass category provides 13 different units for conversion, see the object map below:
 
@@ -274,7 +274,7 @@ convertMass = {
 }
 ```
 
-### [Pressure](https://github.com/jgphilpott/convert/tree/main/pressure)
+### [Pressure](https://github.com/jgphilpott/convert/tree/main/pressure/README.md)
 
 The Pressure category provides 5 different units for conversion, see the object map below:
 
@@ -290,7 +290,7 @@ convertPressure = {
 }
 ```
 
-### [Speed](https://github.com/jgphilpott/convert/tree/main/speed)
+### [Speed](https://github.com/jgphilpott/convert/tree/main/speed/README.md)
 
 The Speed category provides 5 different units for conversion, see the object map below:
 
@@ -306,7 +306,7 @@ convertSpeed = {
 }
 ```
 
-### [Temperature](https://github.com/jgphilpott/convert/tree/main/temperature)
+### [Temperature](https://github.com/jgphilpott/convert/tree/main/temperature/README.md)
 
 The Temperature category provides 3 different units for conversion, see the object map below:
 
@@ -320,7 +320,7 @@ convertTemperature = {
 }
 ```
 
-### [Time](https://github.com/jgphilpott/convert/tree/main/time)
+### [Time](https://github.com/jgphilpott/convert/tree/main/time/README.md)
 
 The Time category provides 13 different units for conversion, see the object map below:
 
@@ -344,7 +344,7 @@ convertTime = {
 }
 ```
 
-### [Volume](https://github.com/jgphilpott/convert/tree/main/volume)
+### [Volume](https://github.com/jgphilpott/convert/tree/main/volume/README.md)
 
 The Volume category provides 21 different units for conversion, see the object map below:
 

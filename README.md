@@ -75,6 +75,7 @@ The third level keys represent all the different units of measurement that you c
 ```js
 bit = {
 
+    bit: f(x) = x,
     byte: f(x) = x/8,
     kilobyte: f(x) = x/8e+3,
     megabyte: f(x) = x/8e+6,
@@ -113,7 +114,7 @@ If you have any other issues with the Convert library then please [open a genera
 
 # Categories
 
-Each category below is available as a top level key in the `convert` object. If you don't want/need the full library categories can also be linked to separately using the gist file referenced in the corresponding subdirectory README. An object map of each category is also available below.
+Each category below is available as a top level key in the `convert` object. If you don't want/need the full library you can also link to a category separately using the gist file referenced in the corresponding subdirectory README. An object map of each category is also available below.
 
 ### [Angle](https://github.com/jgphilpott/convert/tree/main/angle/README.md)
 

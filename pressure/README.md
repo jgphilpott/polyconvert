@@ -7,8 +7,8 @@ convertPressure = {
 
     bar: {...},
     pascal: {...},
-    standardAtmospheric: {...},
-    poundSquareInch: {...},
+    atmospheric: {...},
+    psi: {...},
     torr: {...}
 
 }

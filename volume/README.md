@@ -5,16 +5,6 @@ The Volume category provides 21 different units for conversion, see the object m
 ```js
 convertVolume = {
 
-    milliliter: {...},
-    liter: {...},
-
-    teaspoon: {...},
-    tablespoon: {...},
-    cup: {...},
-    pint: {...},
-    quart: {...},
-    gallon: {...},
-
     nanometerCu: {...},
     micrometerCu: {...},
     millimeterCu: {...},
@@ -28,7 +18,17 @@ convertVolume = {
     inchCu: {...},
     footCu: {...},
     yardCu: {...},
-    mileCu: {...}
+    mileCu: {...},
+
+    milliliter: {...},
+    liter: {...},
+
+    teaspoon: {...},
+    tablespoon: {...},
+    cup: {...},
+    pint: {...},
+    quart: {...},
+    gallon: {...}
 
 }
 ```

@@ -2,7 +2,7 @@
 
 # Intro
 
-Convert is a library of functions for converting between different units of measurement. It currently supports 13 top level categories each with several different scales and units of measurement within. Also, the project currently supports JavaScript only but it would be desirable to add more languages in the future! If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formating gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
+Convert is a library of functions for converting between different units of measurement. It currently supports 17 top level categories each with several different scales and units of measurement within. The project currently supports JavaScript only but it would be desirable to add more languages in the future! If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formating gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
 
 # Contents
 
@@ -16,12 +16,16 @@ Convert is a library of functions for converting between different units of meas
      - [Angle](https://github.com/jgphilpott/convert#angle)
      - [Area](https://github.com/jgphilpott/convert#area)
      - [Data](https://github.com/jgphilpott/convert#data)
+     - [Density](https://github.com/jgphilpott/convert#density)
      - [Dimension](https://github.com/jgphilpott/convert#dimension)
      - [Energy](https://github.com/jgphilpott/convert#energy)
      - [Frequency](https://github.com/jgphilpott/convert#frequency)
+     - [Illumination](https://github.com/jgphilpott/convert#illumination)
      - [Length](https://github.com/jgphilpott/convert#length)
+     - [Magnetomotive](https://github.com/jgphilpott/convert#magnetomotive)
      - [Mass](https://github.com/jgphilpott/convert#mass)
      - [Pressure](https://github.com/jgphilpott/convert#pressure)
+     - [Radiation](https://github.com/jgphilpott/convert#radiation)
      - [Speed](https://github.com/jgphilpott/convert#speed)
      - [Temperature](https://github.com/jgphilpott/convert#temperature)
      - [Time](https://github.com/jgphilpott/convert#time)
@@ -29,7 +33,7 @@ Convert is a library of functions for converting between different units of meas
 
 # Usage
 
-To use the convert library in your project you can either link to the [convert.js](https://github.com/jgphilpott/convert/blob/main/convert.js) file in this repo or download it and use your own copy. The library features the `convert` object that contains all of the formulas with the top level keys representing all the different categories available, see the object map below:
+To use the Convert library in your project you can either link to the [convert.js](https://github.com/jgphilpott/convert/blob/main/convert.js) file in this repo or download it and use your own copy. The library features the `convert` object that contains all of the formulas with the top level keys representing all the different categories available, see the object map below:
 
 ```js
 convert = {
@@ -37,12 +41,16 @@ convert = {
     angle: {...},
     area: {...},
     data: {...},
+    density: {...},
     dimension: {...},
     energy: {...},
     frequency: {...},
+    illumination: {...},
     length: {...},
+    magnetomotive: {...},
     mass: {...},
     pressure: {...},
+    radiation: {...},
     speed: {...},
     temperature: {...},
     time: {...},
@@ -89,7 +97,7 @@ bit = {
 }
 ```
 
-So to use these functions just reference them through the object and pass in the value you want to convert like this, `convert.data.bit.byte(100)` and to reverse the conversion simply switch the order of the unit keys like this, `convert.data.byte.bit(12.5)`.
+So to use these functions just reference them through the `convert` object and pass in the value you want to convert like this, `convert.data.bit.byte(100)` and to reverse the conversion simply switch the order of the unit keys like this, `convert.data.byte.bit(12.5)`.
 
 # Contribute
 
@@ -104,13 +112,13 @@ See below for more information on each of the options, also feel free to simply 
 
 Currently this library only supports JavaScript but it would be nice to add more languages in the future. It would also be nice to add new categories and units for conversion since the current list is not universal, yet.
 
-If you would like to contribute in this way please [start by opening a feature request](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=enhancement&template=FEATURE_REQUEST.md&title=). Once your work is done and ready for review you can [proceed to opening a pull request](https://github.com/jgphilpott/convert/pulls).
+If you would like to contribute in this way please start by opening a [feature request](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=enhancement&template=FEATURE_REQUEST.md&title=). Once your work is done and ready for review you can proceed to opening a [pull request](https://github.com/jgphilpott/convert/pulls).
 
 ### Reporting Errors
 
-I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to [open a bug report](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
+I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to open a [bug report](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
 
-If you have any other issues with the Convert library then please [open a general issue](https://github.com/jgphilpott/convert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
+If you have any other issues with the Convert library then please open a [general issue](https://github.com/jgphilpott/convert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
 
 # Categories
 
@@ -182,6 +190,26 @@ convertData = {
 }
 ```
 
+### [Density](https://github.com/jgphilpott/convert/tree/main/density/README.md)
+
+The Density category provides 8 different units for conversion, see the object map below:
+
+```js
+convertDensity = {
+
+    gramCentimeterCu: {...},
+    gramMeterCu: {...},
+    kilogramCentimeterCu: {...},
+    kilogramMeterCu: {...},
+
+    ounceInchCu: {...},
+    ounceFootCu: {...},
+    poundInchCu: {...},
+    poundFootCu: {...}
+
+}
+```
+
 ### [Dimension](https://github.com/jgphilpott/convert/tree/main/dimension/README.md)
 
 The Dimension category provides 2 different units for conversion, see the object map below:
@@ -225,6 +253,21 @@ convertFrequency = {
 }
 ```
 
+### [Illumination](https://github.com/jgphilpott/convert/tree/main/illumination/README.md)
+
+The Illumination category provides 4 different units for conversion, see the object map below:
+
+```js
+convertIllumination = {
+
+    phot: {...},
+    lux: {...},
+    nox: {...},
+    flame: {...}
+
+}
+```
+
 ### [Length](https://github.com/jgphilpott/convert/tree/main/length/README.md)
 
 The Length category provides 13 different units for conversion, see the object map below:
@@ -246,6 +289,23 @@ convertLength = {
     foot: {...},
     yard: {...},
     mile: {...}
+
+}
+```
+
+### [Magnetomotive](https://github.com/jgphilpott/convert/tree/main/magnetomotive/README.md)
+
+The Magnetomotive category provides 5 different units for conversion, see the object map below:
+
+```js
+convertMagnetomotive = {
+
+    milliampere: {...},
+    ampere: {...},
+    abampere: {...},
+    kiloampere: {...},
+
+    gilbert: {...}
 
 }
 ```
@@ -284,24 +344,71 @@ convertPressure = {
 
     bar: {...},
     pascal: {...},
-    standardAtmospheric: {...},
-    poundSquareInch: {...},
+    atmospheric: {...},
+    psi: {...},
     torr: {...}
+
+}
+```
+
+### [Radiation](https://github.com/jgphilpott/convert/tree/main/radiation/README.md)
+
+The Radiation category provides 14 different units for conversion, see the object map below:
+
+```js
+convertRadiation = {
+
+    nanogray: {...},
+    microgray: {...},
+    milligray: {...},
+    centigray: {...},
+    decigray: {...},
+    gray: {...},
+    dekagray: {...},
+    hectogray: {...},
+    kilogray: {...},
+    megagray: {...},
+    gigagray: {...},
+    teragray: {...},
+    petagray: {...},
+    exagray: {...}
 
 }
 ```
 
 ### [Speed](https://github.com/jgphilpott/convert/tree/main/speed/README.md)
 
-The Speed category provides 5 different units for conversion, see the object map below:
+The Speed category provides 25 different units for conversion, see the object map below:
 
 ```js
 convertSpeed = {
 
-    metersPerSecond: {...},
-    kilometersPerHour: {...},
-    feetPerSecond: {...},
-    milesPerHour: {...},
+    millimeterSecond: {...},
+    millimeterMinute: {...},
+    millimeterHour: {...},
+    centimeterSecond: {...},
+    centimeterMinute: {...},
+    centimeterHour: {...},
+    meterSecond: {...},
+    meterMinute: {...},
+    meterHour: {...},
+    kilometerSecond: {...},
+    kilometerMinute: {...},
+    kilometerHour: {...},
+
+    inchSecond: {...},
+    inchMinute: {...},
+    inchHour: {...},
+    footSecond: {...},
+    footMinute: {...},
+    footHour: {...},
+    yardSecond: {...},
+    yardMinute: {...},
+    yardHour: {...},
+    mileSecond: {...},
+    mileMinute: {...},
+    mileHour: {...},
+
     knots: {...}
 
 }
@@ -352,16 +459,6 @@ The Volume category provides 21 different units for conversion, see the object m
 ```js
 convertVolume = {
 
-    milliliter: {...},
-    liter: {...},
-
-    teaspoon: {...},
-    tablespoon: {...},
-    cup: {...},
-    pint: {...},
-    quart: {...},
-    gallon: {...},
-
     nanometerCu: {...},
     micrometerCu: {...},
     millimeterCu: {...},
@@ -375,7 +472,17 @@ convertVolume = {
     inchCu: {...},
     footCu: {...},
     yardCu: {...},
-    mileCu: {...}
+    mileCu: {...},
+
+    milliliter: {...},
+    liter: {...},
+
+    teaspoon: {...},
+    tablespoon: {...},
+    cup: {...},
+    pint: {...},
+    quart: {...},
+    gallon: {...}
 
 }
 ```

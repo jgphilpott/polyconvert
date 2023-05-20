@@ -110,13 +110,13 @@ See below for more information on each of the options, also feel free to simply 
 
 ### Adding Features
 
-Currently this library only supports JavaScript but it would be nice to add more languages in the future. It would also be nice to add new categories and units for conversion since the current list is not universal, yet.
+Currently this library only supports JavaScript but it would be nice to add more languages in the future. It would also be nice to add new categories and units for conversion since the current list is not universal, yet. If you need an idea for a new category to work on I suggest browsing the [UnitConverters.net](https://www.unitconverters.net) website, this site can also be useful for testing the accuracy of existing formulas.
 
 If you would like to contribute in this way please start by opening a [feature request](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=enhancement&template=FEATURE_REQUEST.md&title=). Once your work is done and ready for review you can proceed to opening a [pull request](https://github.com/jgphilpott/convert/pulls).
 
 ### Reporting Errors
 
-I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to open a [bug report](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
+I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to open a [bug report](https://github.com/jgphilpott/convert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=). I have also written some [simple tests](https://gist.github.com/jgphilpott/016c3548db3ab15822c67f85a19ed3c7) that can be run against the `convert` object, if you want you could also contribute by helping to write a more detailed and comprehensive test suite.
 
 If you have any other issues with the Convert library then please open a [general issue](https://github.com/jgphilpott/convert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
 

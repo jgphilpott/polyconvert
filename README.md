@@ -4,11 +4,15 @@
 
 # Intro
 
-Polyconvert is a library of functions for converting between different units of measurement. It currently supports **17 top level categories**, each with several different units of measurement. The project currently supports JavaScript only but it would be nice to add more languages in the future!
+Polyconvert is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project currently supports JavaScript only but it would be nice to add more languages in the future!
 
 If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formating gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
 
 # Contents
+
+<details>
+
+<summary>Table of Contents:</summary><br>
 
  - [Intro](https://github.com/jgphilpott/polyconvert#intro)
  - [Contents](https://github.com/jgphilpott/polyconvert#contents)
@@ -38,9 +42,13 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
      - [Time](https://github.com/jgphilpott/polyconvert#time)
      - [Volume](https://github.com/jgphilpott/polyconvert#volume)
 
+</details>
+
 # Install
 
-To use the Polyconvert library you have two options:
+<details open>
+
+<summary>To include the Polyconvert library you have two options:</summary><br>
 
 ### Node
 
@@ -66,7 +74,13 @@ The other option you have is to link to the `polyconvert.min.js` file from an HT
 
 You can either link to the [polyconvert.min.js](https://raw.githubusercontent.com/jgphilpott/polyconvert/main/polyconvert.min.js) file in this repo or download it and use your own copy.
 
+</details>
+
 # Usage
+
+<details open>
+
+<summary>Instructions on how to use the formulas:</summary><br>
 
 The library features the `polyconvert` object that contains all of the formulas. The top level keys represent all the different categories available, see the object map below:
 
@@ -144,9 +158,15 @@ To reverse the conversion simply switch the order of the unit keys, like this:
 polyconvert.data.byte.bit(12.5) // Returns 100 meaning that 12.5 bytes equals 100 bits
 ```
 
+</details>
+
 # Contribute
 
-There are two main ways you can contribute to the Polyconvert library:
+<details>
+
+<summary>Information on how you can contribute to this project:</summary><br>
+
+There are two main ways you can contribute to the Polyconvert library.
 
 1) Adding a new language, category or unit for conversion.
 2) Report an inaccurate formula or typo.
@@ -167,7 +187,13 @@ I have also written some simple tests that can be run against the `polyconvert` 
 
 If you have any other issues with the Polyconvert library then please open a [general issue](https://github.com/jgphilpott/polyconvert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
 
+</details>
+
 # Categories
+
+<details>
+
+<summary>A map of all the catagories and units available for conversion:</summary><br>
 
 Each category below is available as a top level key in the `polyconvert` object. An object map of each category is available below.
 
@@ -533,3 +559,5 @@ polyconvert.volume = {
 
 }
 ```
+
+</details>

@@ -1,44 +1,39 @@
-const polyconvert = require('../polyconvert')
+const polyconvert = require("../polyconvert")
 
-test('polyconvert', () => {
+const categories = Object.keys(polyconvert)
 
-    MOE = 1e-12
-    originalValue = 1
+const originalValue = 1
+const MOE = 1e-13
 
-    categories = Object.keys(polyconvert)
+categories.forEach((category) => {
 
-    for (categoriesIndex = 0; categoriesIndex < categories.length; categoriesIndex++) {
+    if (category !== "dimension") {
 
-        category = categories[categoriesIndex]
+        const conversionUnits = Object.keys(polyconvert[category])
 
-        if (category !== "dimension") {
+        conversionUnits.forEach((conversionUnit) => {
 
-            conversionUnits = Object.keys(polyconvert[category])
+            const inversionUnits = Object.keys(polyconvert[category][conversionUnit])
 
-            for (conversionUnitsIndex = 0; conversionUnitsIndex < conversionUnits.length; conversionUnitsIndex++) {
+            inversionUnits.forEach((inversionUnit) => {
 
-                conversionUnit = conversionUnits[conversionUnitsIndex]
-                inversionUnits = Object.keys(polyconvert[category][conversionUnit])
+                const conversionFormula = polyconvert[category][conversionUnit][inversionUnit]
+                const inversionFormula = polyconvert[category][inversionUnit][conversionUnit]
 
-                for (inversionUnitsIndex = 0; inversionUnitsIndex < inversionUnits.length; inversionUnitsIndex++) {
+                const convertedValue = conversionFormula(originalValue)
+                const invertedValue = inversionFormula(convertedValue)
 
-                    inversionUnit = inversionUnits[inversionUnitsIndex]
+                const diff = Math.abs(invertedValue - originalValue)
 
-                    conversionFormula = polyconvert[category][conversionUnit][inversionUnit]
-                    inversionFormula = polyconvert[category][inversionUnit][conversionUnit]
+                test(conversionUnit + " -> " + inversionUnit, () => {
 
-                    convertedValue = conversionFormula(originalValue)
-                    invertedValue = inversionFormula(convertedValue)
+                    expect(diff).toBeLessThan(MOE)
 
-                    diff = Math.abs(invertedValue - originalValue)
+                })
 
-                    expect(diff).toBeLessThanOrEqual(MOE)
+            })
 
-                }
-
-            }
-
-        }
+        })
 
     }
 

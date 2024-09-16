@@ -3,7 +3,7 @@
 The Length category provides 13 different units for conversion, see the object map below:
 
 ```js
-convertLength = {
+polyconvert.length = {
 
     nanometer: {...},
     micrometer: {...},

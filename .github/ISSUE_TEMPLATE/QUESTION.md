@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Any question about Convert
+about: Any question about Polyconvert
 title: ''
 labels: 'question'
 assignees: jgphilpott

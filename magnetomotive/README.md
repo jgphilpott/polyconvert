@@ -3,7 +3,7 @@
 The Magnetomotive category provides 5 different units for conversion, see the object map below:
 
 ```js
-convertMagnetomotive = {
+polyconvert.magnetomotive = {
 
     milliampere: {...},
     ampere: {...},

@@ -3,7 +3,7 @@
 The Energy category provides 4 different units for conversion, see the object map below:
 
 ```js
-convertEnergy = {
+polyconvert.energy = {
 
     joule: {...},
     kilojoule: {...},

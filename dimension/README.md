@@ -3,7 +3,7 @@
 The Dimension category provides 2 different units for conversion, see the object map below:
 
 ```js
-convertDimension = {
+polyconvert.dimension = {
 
     d2: {...},
     d3: {...}

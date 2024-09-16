@@ -3024,7 +3024,7 @@ convertVolume.gallon.gallon = gal$gal = (gal) -> gal # Gallon to Gallon
 
 ### Measurement Conversions ###
 
-convert =
+polyconvert =
 
     angle: convertAngle
     area: convertArea

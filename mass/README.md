@@ -3,7 +3,7 @@
 The Mass category provides 13 different units for conversion, see the object map below:
 
 ```js
-convertMass = {
+polyconvert.mass = {
 
     nanogram: {...},
     microgram: {...},

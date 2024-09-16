@@ -3,7 +3,7 @@
 The Speed category provides 25 different units for conversion, see the object map below:
 
 ```js
-convertSpeed = {
+polyconvert.speed = {
 
     millimeterSecond: {...},
     millimeterMinute: {...},

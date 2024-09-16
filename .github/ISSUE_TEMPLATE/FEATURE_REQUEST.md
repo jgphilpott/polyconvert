@@ -12,7 +12,7 @@ Add a clear and concise description of the new category or unit you'd like to se
 
 ### Explanation
 
-Add a clear and concise explanation of why you think this should be included in the Convert library.
+Add a clear and concise explanation of why you think this should be included in the Polyconvert library.
 
 ### Extra
 

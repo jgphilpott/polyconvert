@@ -3,7 +3,7 @@
 The Illumination category provides 4 different units for conversion, see the object map below:
 
 ```js
-convertIllumination = {
+polyconvert.illumination = {
 
     phot: {...},
     lux: {...},

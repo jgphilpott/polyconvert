@@ -3,7 +3,7 @@
 The Data category provides 10 different units for conversion, see the object map below:
 
 ```js
-convertData = {
+polyconvert.data = {
 
     bit: {...},
     byte: {...},

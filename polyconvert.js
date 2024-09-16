@@ -8786,42 +8786,24 @@ convertVolume.gallon.gallon = gal$gal = function(gal) {
   return gal; // Gallon to Gallon
 };
 
-polyconvertAngle = convertAngle;
-polyconvertArea = convertArea;
-polyconvertData = convertData;
-polyconvertDensity = convertDensity;
-polyconvertDimension = convertDimension;
-polyconvertEnergy = convertEnergy;
-polyconvertFrequency = convertFrequency;
-polyconvertIllumination = convertIllumination;
-polyconvertLength = convertLength;
-polyconvertMagnetomotive = convertMagnetomotive;
-polyconvertMass = convertMass;
-polyconvertPressure = convertPressure;
-polyconvertRadiation = convertRadiation;
-polyconvertSpeed = convertSpeed;
-polyconvertTemperature = convertTemperature;
-polyconvertTime = convertTime;
-polyconvertVolume = convertVolume;
-
 polyconvert = {
-    angle: polyconvertAngle,
-    area: polyconvertArea,
-    data: polyconvertData,
-    density: polyconvertDensity,
-    dimension: polyconvertDimension,
-    energy: polyconvertEnergy,
-    frequency: polyconvertFrequency,
-    illumination: polyconvertIllumination,
-    length: polyconvertLength,
-    magnetomotive: polyconvertMagnetomotive,
-    mass: polyconvertMass,
-    pressure: polyconvertPressure,
-    radiation: polyconvertRadiation,
-    speed: polyconvertSpeed,
-    temperature: polyconvertTemperature,
-    time: polyconvertTime,
-    volume: polyconvertVolume
+    angle: convertAngle,
+    area: convertArea,
+    data: convertData,
+    density: convertDensity,
+    dimension: convertDimension,
+    energy: convertEnergy,
+    frequency: convertFrequency,
+    illumination: convertIllumination,
+    length: convertLength,
+    magnetomotive: convertMagnetomotive,
+    mass: convertMass,
+    pressure: convertPressure,
+    radiation: convertRadiation,
+    speed: convertSpeed,
+    temperature: convertTemperature,
+    time: convertTime,
+    volume: convertVolume
 };
 
 module.exports = { polyconvert };

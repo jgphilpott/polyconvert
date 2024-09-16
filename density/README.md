@@ -3,7 +3,7 @@
 The Density category provides 8 different units for conversion, see the object map below:
 
 ```js
-convertDensity = {
+polyconvert.density = {
 
     gramCentimeterCu: {...},
     gramMeterCu: {...},

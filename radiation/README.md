@@ -3,7 +3,7 @@
 The Radiation category provides 14 different units for conversion, see the object map below:
 
 ```js
-convertRadiation = {
+polyconvert.radiation = {
 
     nanogray: {...},
     microgray: {...},

@@ -3,7 +3,7 @@
 The Angle category provides 6 different units for conversion, see the object map below:
 
 ```js
-convertAngle = {
+polyconvert.angle = {
 
     degree: {...},
     gradian: {...},

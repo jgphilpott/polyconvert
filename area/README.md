@@ -3,7 +3,7 @@
 The Area category provides 15 different units for conversion, see the object map below:
 
 ```js
-convertArea = {
+polyconvert.area = {
 
     nanometerSq: {...},
     micrometerSq: {...},

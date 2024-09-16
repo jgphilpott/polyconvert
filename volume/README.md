@@ -3,7 +3,7 @@
 The Volume category provides 21 different units for conversion, see the object map below:
 
 ```js
-convertVolume = {
+polyconvert.volume = {
 
     nanometerCu: {...},
     micrometerCu: {...},

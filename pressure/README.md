@@ -3,7 +3,7 @@
 The Pressure category provides 5 different units for conversion, see the object map below:
 
 ```js
-convertPressure = {
+polyconvert.pressure = {
 
     bar: {...},
     pascal: {...},

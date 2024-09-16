@@ -3,7 +3,7 @@
 The Frequency category provides 4 different units for conversion, see the object map below:
 
 ```js
-convertFrequency = {
+polyconvert.frequency = {
 
     hertz: {...},
     kilohertz: {...},

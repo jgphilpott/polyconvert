@@ -3,7 +3,7 @@
 The Temperature category provides 3 different units for conversion, see the object map below:
 
 ```js
-convertTemperature = {
+polyconvert.temperature = {
 
     celsius: {...},
     fahrenheit: {...},

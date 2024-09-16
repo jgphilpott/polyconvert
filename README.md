@@ -12,7 +12,7 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
 
 <details>
 
-<summary>Table of Contents:</summary><br>
+<summary>Table of Contents:</summary>
 
  - [Intro](https://github.com/jgphilpott/polyconvert#intro)
  - [Contents](https://github.com/jgphilpott/polyconvert#contents)
@@ -48,7 +48,7 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
 
 <details open>
 
-<summary>To include the Polyconvert library you have two options:</summary><br>
+<summary>To include the Polyconvert library you have two options:</summary>
 
 ### Node
 

@@ -53,7 +53,7 @@ npm i polyconvert
 It can then be included with this line:
 
 ```js
-const { polyconvert } = require('polyconvert')
+const polyconvert = require('polyconvert')
 ```
 
 ### Link
@@ -163,7 +163,7 @@ If you would like to contribute in this way please start by opening a [feature r
 
 I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to open a [bug report](https://github.com/jgphilpott/polyconvert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
 
-I have also written some [simple tests](https://gist.github.com/jgphilpott/016c3548db3ab15822c67f85a19ed3c7) that can be run against the `polyconvert` object. If you want you could also contribute by helping to write a more detailed and comprehensive test suite.
+I have also written some simple tests that can be run against the `polyconvert` object with the command `npm test`. If you want you could also contribute by helping to write a more detailed and comprehensive test suite.
 
 If you have any other issues with the Polyconvert library then please open a [general issue](https://github.com/jgphilpott/polyconvert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
 

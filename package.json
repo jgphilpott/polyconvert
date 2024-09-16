@@ -1,19 +1,44 @@
 {
   "name": "polyconvert",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A library of functions for converting between different units of measurement.",
   "main": "polyconvert.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jgphilpott/polyconvert"
   },
+  "keywords": [
+    "measurement",
+    "convert",
+    "invert",
+    "angle",
+    "area",
+    "data",
+    "density",
+    "dimension",
+    "energy",
+    "frequency",
+    "illumination",
+    "length",
+    "magnetomotive",
+    "mass",
+    "pressure",
+    "radiation",
+    "speed",
+    "temperature",
+    "time",
+    "volume"
+  ],
   "author": "Jacob Philpott",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jgphilpott/polyconvert/issues"
   },
-  "homepage": "https://github.com/jgphilpott/polyconvert#readme"
+  "homepage": "https://github.com/jgphilpott/polyconvert#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

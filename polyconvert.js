@@ -8806,4 +8806,4 @@ polyconvert = {
     volume: convertVolume
 };
 
-module.exports = { polyconvert };
+module.exports = polyconvert;

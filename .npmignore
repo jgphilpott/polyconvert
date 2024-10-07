@@ -1,0 +1,8 @@
+inon.png
+node_modules
+.gitignore
+.github
+.vscode
+*.coffee
+*.bak
+*.md

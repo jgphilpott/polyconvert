@@ -3043,3 +3043,5 @@ polyconvert =
     temperature: convertTemperature
     time: convertTime
     volume: convertVolume
+
+module.exports = polyconvert

@@ -3280,7 +3280,7 @@ convertMass.nanogram.pound = ng$lb = function(ng) {
 };
 
 convertMass.nanogram.stone = ng$st = function(ng) {
-  return ng / 5669904625e+3; // Nanogram to Stone
+  return ng / 6350293180e+3; // Nanogram to Stone
 };
 
 convertMass.nanogram.ton = ng$t = function(ng) {
@@ -3333,7 +3333,7 @@ convertMass.microgram.pound = ug$lb = function(ug) {
 };
 
 convertMass.microgram.stone = ug$st = function(ug) {
-  return ug / 5669904625; // Microgram to Stone
+  return ug / 6350293180; // Microgram to Stone
 };
 
 convertMass.microgram.ton = ug$t = function(ug) {
@@ -3386,7 +3386,7 @@ convertMass.milligram.pound = mg$lb = function(mg) {
 };
 
 convertMass.milligram.stone = mg$st = function(mg) {
-  return mg / 5669904.625; // Milligram to Stone
+  return mg / 6350293.18; // Milligram to Stone
 };
 
 convertMass.milligram.ton = mg$t = function(mg) {
@@ -3439,7 +3439,7 @@ convertMass.centigram.pound = cg$lb = function(cg) {
 };
 
 convertMass.centigram.stone = cg$st = function(cg) {
-  return cg / 566990.4625; // Centigram to Stone
+  return cg / 635029.318; // Centigram to Stone
 };
 
 convertMass.centigram.ton = cg$t = function(cg) {
@@ -3492,7 +3492,7 @@ convertMass.decigram.pound = dg$lb = function(dg) {
 };
 
 convertMass.decigram.stone = dg$st = function(dg) {
-  return dg / 56699.04625; // Decigram to Stone
+  return dg / 63502.9318; // Decigram to Stone
 };
 
 convertMass.decigram.ton = dg$t = function(dg) {
@@ -3545,7 +3545,7 @@ convertMass.gram.pound = g$lb = function(g) {
 };
 
 convertMass.gram.stone = g$st = function(g) {
-  return g / 5669.904625; // Gram to Stone
+  return g / 6350.29318; // Gram to Stone
 };
 
 convertMass.gram.ton = g$t = function(g) {
@@ -3598,7 +3598,7 @@ convertMass.decagram.pound = dag$lb = function(dag) {
 };
 
 convertMass.decagram.stone = dag$st = function(dag) {
-  return dag / 566.9904625; // Decagram to Stone
+  return dag / 635.029318; // Decagram to Stone
 };
 
 convertMass.decagram.ton = dag$t = function(dag) {
@@ -3651,7 +3651,7 @@ convertMass.hectogram.pound = hg$lb = function(hg) {
 };
 
 convertMass.hectogram.stone = hg$st = function(hg) {
-  return hg / 56.69904625; // Hectogram to Stone
+  return hg / 63.5029318; // Hectogram to Stone
 };
 
 convertMass.hectogram.ton = hg$t = function(hg) {
@@ -3704,7 +3704,7 @@ convertMass.kilogram.pound = kg$lb = function(kg) {
 };
 
 convertMass.kilogram.stone = kg$st = function(kg) {
-  return kg / 5.669904625; // Kilogram to Stone
+  return kg / 6.35029318; // Kilogram to Stone
 };
 
 convertMass.kilogram.ton = kg$t = function(kg) {
@@ -3757,7 +3757,7 @@ convertMass.ounce.pound = oz$lb = function(oz) {
 };
 
 convertMass.ounce.stone = oz$st = function(oz) {
-  return oz / 200; // Ounce to Stone
+  return oz / 224; // Ounce to Stone
 };
 
 convertMass.ounce.ton = oz$t = function(oz) {
@@ -3810,7 +3810,7 @@ convertMass.pound.pound = lb$lb = function(lb) {
 };
 
 convertMass.pound.stone = lb$st = function(lb) {
-  return lb / 12.5; // Pound to Stone
+  return lb / 14; // Pound to Stone
 };
 
 convertMass.pound.ton = lb$t = function(lb) {
@@ -3819,47 +3819,47 @@ convertMass.pound.ton = lb$t = function(lb) {
 
 /* Stone Conversions */
 convertMass.stone.nanogram = st$ng = function(st) {
-  return st * 5669904625e+3; // Stone to Nanogram
+  return st * 6350293180e+3; // Stone to Nanogram
 };
 
 convertMass.stone.microgram = st$ug = function(st) {
-  return st * 5669904625; // Stone to Microgram
+  return st * 6350293180; // Stone to Microgram
 };
 
 convertMass.stone.milligram = st$mg = function(st) {
-  return st * 5669904.625; // Stone to Milligram
+  return st * 6350293.18; // Stone to Milligram
 };
 
 convertMass.stone.centigram = st$cg = function(st) {
-  return st * 566990.4625; // Stone to Centigram
+  return st * 635029.318; // Stone to Centigram
 };
 
 convertMass.stone.decigram = st$dg = function(st) {
-  return st * 56699.04625; // Stone to Decigram
+  return st * 63502.9318; // Stone to Decigram
 };
 
 convertMass.stone.gram = st$g = function(st) {
-  return st * 5669.904625; // Stone to Gram
+  return st * 6350.29318; // Stone to Gram
 };
 
 convertMass.stone.decagram = st$dag = function(st) {
-  return st * 566.9904625; // Stone to Decagram
+  return st * 635.029318; // Stone to Decagram
 };
 
 convertMass.stone.hectogram = st$hg = function(st) {
-  return st * 56.69904625; // Stone to Hectogram
+  return st * 63.5029318; // Stone to Hectogram
 };
 
 convertMass.stone.kilogram = st$kg = function(st) {
-  return st * 5.669904625; // Stone to Kilogram
+  return st * 6.35029318; // Stone to Kilogram
 };
 
 convertMass.stone.ounce = st$oz = function(st) {
-  return st * 200; // Stone to Ounce
+  return st * 224; // Stone to Ounce
 };
 
 convertMass.stone.pound = st$lb = function(st) {
-  return st * 12.5; // Stone to Pound
+  return st * 14; // Stone to Pound
 };
 
 convertMass.stone.stone = st$st = function(st) {
@@ -3867,7 +3867,7 @@ convertMass.stone.stone = st$st = function(st) {
 };
 
 convertMass.stone.ton = st$t = function(st) {
-  return st / 160; // Stone to Ton
+  return st * 7 / 1000; // Stone to Ton
 };
 
 /* Ton Conversions */
@@ -3916,7 +3916,7 @@ convertMass.ton.pound = t$lb = function(t) {
 };
 
 convertMass.ton.stone = t$st = function(t) {
-  return t * 160; // Ton to Stone
+  return t * 1000 / 7; // Ton to Stone
 };
 
 convertMass.ton.ton = t$t = function(t) {

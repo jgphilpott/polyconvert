@@ -1237,7 +1237,7 @@ convertMass.nanogram.kilogram = ng$kg = (ng) -> ng / 1e+12 # Nanogram to Kilogra
 
 convertMass.nanogram.ounce = ng$oz = (ng) -> ng / 28349523125 # Nanogram to Ounce
 convertMass.nanogram.pound = ng$lb = (ng) -> ng / 45359237e+4 # Nanogram to Pound
-convertMass.nanogram.stone = ng$st = (ng) -> ng / 5669904625e+3 # Nanogram to Stone
+convertMass.nanogram.stone = ng$st = (ng) -> ng / 6350293180e+3 # Nanogram to Stone
 convertMass.nanogram.ton = ng$t = (ng) -> ng / 90718474e+7 # Nanogram to Ton
 
 ### Microgram Conversions ###
@@ -1254,7 +1254,7 @@ convertMass.microgram.kilogram = ug$kg = (ug) -> ug / 1e+9 # Microgram to Kilogr
 
 convertMass.microgram.ounce = ug$oz = (ug) -> ug / 28349523.125 # Microgram to Ounce
 convertMass.microgram.pound = ug$lb = (ug) -> ug / 45359237e+1 # Microgram to Pound
-convertMass.microgram.stone = ug$st = (ug) -> ug / 5669904625 # Microgram to Stone
+convertMass.microgram.stone = ug$st = (ug) -> ug / 6350293180 # Microgram to Stone
 convertMass.microgram.ton = ug$t = (ug) -> ug / 90718474e+4 # Microgram to Ton
 
 ### Milligram Conversions ###
@@ -1271,7 +1271,7 @@ convertMass.milligram.kilogram = mg$kg = (mg) -> mg / 1e+6 # Milligram to Kilogr
 
 convertMass.milligram.ounce = mg$oz = (mg) -> mg / 28349.523125 # Milligram to Ounce
 convertMass.milligram.pound = mg$lb = (mg) -> mg / 453592.37 # Milligram to Pound
-convertMass.milligram.stone = mg$st = (mg) -> mg / 5669904.625 # Milligram to Stone
+convertMass.milligram.stone = mg$st = (mg) -> mg / 6350293.18 # Milligram to Stone
 convertMass.milligram.ton = mg$t = (mg) -> mg / 90718474e+1 # Milligram to Ton
 
 ### Centigram Conversions ###
@@ -1288,7 +1288,7 @@ convertMass.centigram.kilogram = cg$kg = (cg) -> cg / 1e+5 # Centigram to Kilogr
 
 convertMass.centigram.ounce = cg$oz = (cg) -> cg / 2834.9523125 # Centigram to Ounce
 convertMass.centigram.pound = cg$lb = (cg) -> cg / 45359.237 # Centigram to Pound
-convertMass.centigram.stone = cg$st = (cg) -> cg / 566990.4625 # Centigram to Stone
+convertMass.centigram.stone = cg$st = (cg) -> cg / 635029.318 # Centigram to Stone
 convertMass.centigram.ton = cg$t = (cg) -> cg / 90718474 # Centigram to Ton
 
 ### Decigram Conversions ###
@@ -1305,7 +1305,7 @@ convertMass.decigram.kilogram = dg$kg = (dg) -> dg / 1e+4 # Decigram to Kilogram
 
 convertMass.decigram.ounce = dg$oz = (dg) -> dg / 283.49523125 # Decigram to Ounce
 convertMass.decigram.pound = dg$lb = (dg) -> dg / 4535.9237 # Decigram to Pound
-convertMass.decigram.stone = dg$st = (dg) -> dg / 56699.04625 # Decigram to Stone
+convertMass.decigram.stone = dg$st = (dg) -> dg / 63502.9318 # Decigram to Stone
 convertMass.decigram.ton = dg$t = (dg) -> dg / 9071847.4 # Decigram to Ton
 
 ### Gram Conversions ###
@@ -1322,7 +1322,7 @@ convertMass.gram.kilogram = g$kg = (g) -> g / 1e+3 # Gram to Kilogram
 
 convertMass.gram.ounce = g$oz = (g) -> g / 28.349523125 # Gram to Ounce
 convertMass.gram.pound = g$lb = (g) -> g / 453.59237 # Gram to Pound
-convertMass.gram.stone = g$st = (g) -> g / 5669.904625 # Gram to Stone
+convertMass.gram.stone = g$st = (g) -> g / 6350.29318 # Gram to Stone
 convertMass.gram.ton = g$t = (g) -> g / 907184.74 # Gram to Ton
 
 ### Decagram Conversions ###
@@ -1339,7 +1339,7 @@ convertMass.decagram.kilogram = dag$kg = (dag) -> dag / 1e+2 # Decagram to Kilog
 
 convertMass.decagram.ounce = dag$oz = (dag) -> dag / 2.8349523125 # Decagram to Ounce
 convertMass.decagram.pound = dag$lb = (dag) -> dag / 45.359237 # Decagram to Pound
-convertMass.decagram.stone = dag$st = (dag) -> dag / 566.9904625 # Decagram to Stone
+convertMass.decagram.stone = dag$st = (dag) -> dag / 635.029318 # Decagram to Stone
 convertMass.decagram.ton = dag$t = (dag) -> dag / 90718.474 # Decagram to Ton
 
 ### Hectogram Conversions ###
@@ -1356,7 +1356,7 @@ convertMass.hectogram.kilogram = hg$kg = (hg) -> hg / 1e+1 # Hectogram to Kilogr
 
 convertMass.hectogram.ounce = hg$oz = (hg) -> hg * 3.527396195 # Hectogram to Ounce
 convertMass.hectogram.pound = hg$lb = (hg) -> hg / 4.5359237 # Hectogram to Pound
-convertMass.hectogram.stone = hg$st = (hg) -> hg / 56.69904625 # Hectogram to Stone
+convertMass.hectogram.stone = hg$st = (hg) -> hg / 63.5029318 # Hectogram to Stone
 convertMass.hectogram.ton = hg$t = (hg) -> hg / 9071.8474 # Hectogram to Ton
 
 ### Kilogram Conversions ###
@@ -1373,7 +1373,7 @@ convertMass.kilogram.kilogram = kg$kg = (kg) -> kg # Kilogram to Kilogram
 
 convertMass.kilogram.ounce = kg$oz = (kg) -> kg * 35.27396195 # Kilogram to Ounce
 convertMass.kilogram.pound = kg$lb = (kg) -> kg * 2.2046226218 # Kilogram to Pound
-convertMass.kilogram.stone = kg$st = (kg) -> kg / 5.669904625 # Kilogram to Stone
+convertMass.kilogram.stone = kg$st = (kg) -> kg / 6.35029318 # Kilogram to Stone
 convertMass.kilogram.ton = kg$t = (kg) -> kg / 907.18474 # Kilogram to Ton
 
 ### Ounce Conversions ###
@@ -1390,7 +1390,7 @@ convertMass.ounce.kilogram = oz$kg = (oz) -> oz / 35.27396195 # Ounce to Kilogra
 
 convertMass.ounce.ounce = oz$oz = (oz) -> oz # Ounce to Ounce
 convertMass.ounce.pound = oz$lb = (oz) -> oz / 16 # Ounce to Pound
-convertMass.ounce.stone = oz$st = (oz) -> oz / 200 # Ounce to Stone
+convertMass.ounce.stone = oz$st = (oz) -> oz / 224 # Ounce to Stone
 convertMass.ounce.ton = oz$t = (oz) -> oz / 32000 # Ounce to Ton
 
 ### Pound Conversions ###
@@ -1407,25 +1407,25 @@ convertMass.pound.kilogram = lb$kg = (lb) -> lb / 2.2046226218 # Pound to Kilogr
 
 convertMass.pound.ounce = lb$oz = (lb) -> lb * 16 # Pound to Ounce
 convertMass.pound.pound = lb$lb = (lb) -> lb # Pound to Pound
-convertMass.pound.stone = lb$st = (lb) -> lb / 12.5 # Pound to Stone
+convertMass.pound.stone = lb$st = (lb) -> lb / 14 # Pound to Stone
 convertMass.pound.ton = lb$t = (lb) -> lb / 2000 # Pound to Ton
 
 ### Stone Conversions ###
 
-convertMass.stone.nanogram = st$ng = (st) -> st * 5669904625e+3 # Stone to Nanogram
-convertMass.stone.microgram = st$ug = (st) -> st * 5669904625 # Stone to Microgram
-convertMass.stone.milligram = st$mg = (st) -> st * 5669904.625 # Stone to Milligram
-convertMass.stone.centigram = st$cg = (st) -> st * 566990.4625 # Stone to Centigram
-convertMass.stone.decigram = st$dg = (st) -> st * 56699.04625 # Stone to Decigram
-convertMass.stone.gram = st$g = (st) -> st * 5669.904625 # Stone to Gram
-convertMass.stone.decagram = st$dag = (st) -> st * 566.9904625 # Stone to Decagram
-convertMass.stone.hectogram = st$hg = (st) -> st * 56.69904625 # Stone to Hectogram
-convertMass.stone.kilogram = st$kg = (st) -> st * 5.669904625 # Stone to Kilogram
+convertMass.stone.nanogram = st$ng = (st) -> st * 6350293180e+3 # Stone to Nanogram
+convertMass.stone.microgram = st$ug = (st) -> st * 6350293180 # Stone to Microgram
+convertMass.stone.milligram = st$mg = (st) -> st * 6350293.18 # Stone to Milligram
+convertMass.stone.centigram = st$cg = (st) -> st * 635029.318 # Stone to Centigram
+convertMass.stone.decigram = st$dg = (st) -> st * 63502.9318 # Stone to Decigram
+convertMass.stone.gram = st$g = (st) -> st * 6350.29318 # Stone to Gram
+convertMass.stone.decagram = st$dag = (st) -> st * 635.029318 # Stone to Decagram
+convertMass.stone.hectogram = st$hg = (st) -> st * 63.5029318 # Stone to Hectogram
+convertMass.stone.kilogram = st$kg = (st) -> st * 6.35029318 # Stone to Kilogram
 
-convertMass.stone.ounce = st$oz = (st) -> st * 200 # Stone to Ounce
-convertMass.stone.pound = st$lb = (st) -> st * 12.5 # Stone to Pound
+convertMass.stone.ounce = st$oz = (st) -> st * 224 # Stone to Ounce
+convertMass.stone.pound = st$lb = (st) -> st * 14 # Stone to Pound
 convertMass.stone.stone = st$st = (st) -> st # Stone to Stone
-convertMass.stone.ton = st$t = (st) -> st / 160 # Stone to Ton
+convertMass.stone.ton = st$t = (st) -> st * 7 / 1000 # Stone to Ton
 
 ### Ton Conversions ###
 
@@ -1441,7 +1441,7 @@ convertMass.ton.kilogram = t$kg = (t) -> t * 907.18474 # Ton to Kilogram
 
 convertMass.ton.ounce = t$oz = (t) -> t * 32000 # Ton to Ounce
 convertMass.ton.pound = t$lb = (t) -> t * 2000 # Ton to Pound
-convertMass.ton.stone = t$st = (t) -> t * 160 # Ton to Stone
+convertMass.ton.stone = t$st = (t) -> t * 1000 / 7 # Ton to Stone
 convertMass.ton.ton = t$t = (t) -> t # Ton to Ton
 
 ### Pressure Conversions ###

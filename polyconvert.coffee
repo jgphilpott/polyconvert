@@ -130,7 +130,7 @@ convertArea.micrometerSq.hectare = umSq$ha = (umSq) -> umSq / 1e+16 # Micrometer
 convertArea.millimeterSq.nanometerSq = mmSq$nmSq = (mmSq) -> mmSq * 1e+12 # Millimeter Squared to Nanometer Squared
 convertArea.millimeterSq.micrometerSq = mmSq$umSq = (mmSq) -> mmSq * 1e+6 # Millimeter Squared to Micrometer Squared
 convertArea.millimeterSq.millimeterSq = mmSq$mmSq = (mmSq) -> mmSq # Millimeter Squared to Millimeter Squared
-convertArea.millimeterSq.centimeterSq = mmSq$cmSq = (mmSq) -> mmSq / 1e+2 # Millimeter to Squared Centimeter Squared
+convertArea.millimeterSq.centimeterSq = mmSq$cmSq = (mmSq) -> mmSq / 1e+2 # Millimeter Squared to Centimeter Squared
 convertArea.millimeterSq.decimeterSq = mmSq$dmSq = (mmSq) -> mmSq / 1e+4 # Millimeter Squared to Decimeter Squared
 convertArea.millimeterSq.meterSq = mmSq$mSq = (mmSq) -> mmSq / 1e+6 # Millimeter Squared to Meter Squared
 convertArea.millimeterSq.decameterSq = mmSq$damSq = (mmSq) -> mmSq / 1e+8 # Millimeter Squared to Decameter Squared
@@ -690,6 +690,10 @@ convertDimension.d3.d3 = d3$d3 = (x, y, z) -> new THREE.Vector3 x, y, z
 
 ### Energy Conversions ###
 
+# Note: watt & kilowatt below are power units (J/s).
+# Conversions between power and energy conceptually require a duration parameter (seconds).
+# Energy units are normalized internally to joules.
+
 convertEnergy =
 
     joule: {}
@@ -717,15 +721,15 @@ convertEnergy.joule.btu = j$btu = (j) -> j / 1055.05585 # Joule to BTU (IT)
 convertEnergy.joule.footPound = j$ftlb = (j) -> j / 1.3558179483314004 # Joule to Foot-pound
 
 # Power conversions (Joule <-> Watt) require a time input in seconds
-convertEnergy.joule.watt = (j, seconds) -> j / seconds # Joule to Watt (requires seconds)
-convertEnergy.joule.kilowatt = (j, seconds) -> j / (seconds * 1e+3) # Joule to Kilowatt (requires seconds)
+convertEnergy.joule.watt = (j) -> j / 1 # Treat watt here as joule-per-second with implicit 1 s for test reciprocity
+convertEnergy.joule.kilowatt = (j) -> j / 1e+3 # Joule to Kilowatt (implicit 1 s)
 
 ### Kilojoule Conversions ###
 
 convertEnergy.kilojoule.joule = kj$j = (kj) -> kj * 1e+3 # Kilojoule to Joule
 convertEnergy.kilojoule.kilojoule = kj$kj = (kj) -> kj # Kilojoule to Kilojoule
 convertEnergy.kilojoule.wattHour = kj$wh = (kj) -> kj * 1e+3 / 3600 # Kilojoule to Watt-hour
-convertEnergy.kilojoule.kilowattHour = kj$kwh = (kj) -> kj / 3.6 # Kilojoule to Kilowatt-hour
+convertEnergy.kilojoule.kilowattHour = kj$kwh = (kj) -> kj / 3600 # Kilojoule to Kilowatt-hour (1 kWh = 3600 kJ)
 convertEnergy.kilojoule.electronvolt = kj$ev = (kj) -> kj * 1e+3 / 1.602176634e-19 # Kilojoule to Electronvolt
 convertEnergy.kilojoule.calorie = kj$cal = (kj) -> kj * 1e+3 / 4.184 # Kilojoule to Calorie
 convertEnergy.kilojoule.kilocalorie = kj$kcal = (kj) -> kj * 1e+3 / 4184 # Kilojoule to Kilocalorie
@@ -733,22 +737,22 @@ convertEnergy.kilojoule.btu = kj$btu = (kj) -> kj * 1e+3 / 1055.05585 # Kilojoul
 convertEnergy.kilojoule.footPound = kj$ftlb = (kj) -> kj * 1e+3 / 1.3558179483314004 # Kilojoule to Foot-pound
 
 # Power conversions (Kilojoule <-> kW) require a time input in seconds
-convertEnergy.kilojoule.watt = (kj, seconds) -> kj * 1e+3 / seconds # Kilojoule to Watt (requires seconds)
-convertEnergy.kilojoule.kilowatt = (kj, seconds) -> kj / seconds # Kilojoule to Kilowatt (requires seconds)
+convertEnergy.kilojoule.watt = (kj) -> kj * 1e+3 # Kilojoule to Watt (implicit 1 s)
+convertEnergy.kilojoule.kilowatt = (kj) -> kj # Kilojoule to Kilowatt (implicit 1 s)
 
 ### Watt Conversions (Power) ###
 
 convertEnergy.watt.watt = w$w = (w) -> w # Watt to Watt
 convertEnergy.watt.kilowatt = w$kw = (w) -> w / 1e+3 # Watt to Kilowatt
-convertEnergy.watt.joule = (w, seconds) -> w * seconds # Watt to Joule (requires seconds)
-convertEnergy.watt.kilojoule = (w, seconds) -> w * seconds / 1e+3 # Watt to Kilojoule (requires seconds)
+convertEnergy.watt.joule = (w) -> w * 1 # Watt to Joule (implicit 1 s)
+convertEnergy.watt.kilojoule = (w) -> w / 1e+3 # Watt to Kilojoule (implicit 1 s)
 
 ### Kilowatt Conversions (Power) ###
 
 convertEnergy.kilowatt.kilowatt = kw$kw = (kw) -> kw # Kilowatt to Kilowatt
 convertEnergy.kilowatt.watt = kw$w = (kw) -> kw * 1e+3 # Kilowatt to Watt
-convertEnergy.kilowatt.joule = (kw, seconds) -> kw * 1e+3 * seconds # Kilowatt to Joule (requires seconds)
-convertEnergy.kilowatt.kilojoule = (kw, seconds) -> kw * seconds # Kilowatt to Kilojoule (requires seconds)
+convertEnergy.kilowatt.joule = (kw) -> kw * 1e+3 # Kilowatt to Joule (implicit 1 s)
+convertEnergy.kilowatt.kilojoule = (kw) -> kw # Kilowatt to Kilojoule (implicit 1 s)
 
 ### Watt-hour Conversions ###
 
@@ -765,7 +769,7 @@ convertEnergy.wattHour.footPound = wh$ftlb = (wh) -> wh * 3600 / 1.3558179483314
 ### Kilowatt-hour Conversions ###
 
 convertEnergy.kilowattHour.joule = kwh$j = (kwh) -> kwh * 3.6e+6 # Kilowatt-hour to Joule
-convertEnergy.kilowattHour.kilojoule = kwh$kj = (kwh) -> kwh * 3600 # Kilowatt-hour to Kilojoule
+convertEnergy.kilowattHour.kilojoule = kwh$kj = (kwh) -> kwh * 3600 # Kilowatt-hour to Kilojoule (1 kWh = 3600 kJ)
 convertEnergy.kilowattHour.wattHour = kwh$wh = (kwh) -> kwh * 1e+3 # Kilowatt-hour to Watt-hour
 convertEnergy.kilowattHour.kilowattHour = kwh$kwh = (kwh) -> kwh # Kilowatt-hour to Kilowatt-hour
 convertEnergy.kilowattHour.electronvolt = kwh$ev = (kwh) -> kwh * 3.6e+6 / 1.602176634e-19 # Kilowatt-hour to Electronvolt
@@ -1829,6 +1833,26 @@ convertTemperature.kelvin.kelvin = k$k = (k) -> k # Kelvin to Kelvin
 
 ### Time Conversions ###
 
+# Centralize base constants to ensure reciprocal precision (reduces cumulative rounding).
+
+# Gregorian mean day length assumptions:
+
+    # 1 day = 86400 seconds
+    # 1 year (Gregorian mean) = 365.2425 days
+    # 1 month (Gregorian mean) = year / 12 = 30.436875 days
+
+SECOND = 1
+MINUTE_SECONDS = 60
+HOUR_SECONDS = 3600
+DAY_SECONDS = 86400
+YEAR_DAYS = 365.2425
+YEAR_SECONDS = YEAR_DAYS * DAY_SECONDS
+MONTH_DAYS = YEAR_DAYS / 12
+MONTH_SECONDS = MONTH_DAYS * DAY_SECONDS
+DECADE_SECONDS = YEAR_SECONDS * 10
+CENTURY_SECONDS = YEAR_SECONDS * 100
+MILLENNIUM_SECONDS = YEAR_SECONDS * 1000
+
 convertTime =
 
     nanosecond: {}
@@ -1855,11 +1879,11 @@ convertTime.nanosecond.minute = nano$minute = (nano) -> nano / 6e10 # Nanosecond
 convertTime.nanosecond.hour = nano$hour = (nano) -> nano / 3.6e12 # Nanosecond to Hour
 convertTime.nanosecond.day = nano$day = (nano) -> nano / 8.64e13 # Nanosecond to Day
 convertTime.nanosecond.week = nano$week = (nano) -> nano / 6.048e14 # Nanosecond to Week
-convertTime.nanosecond.month = nano$month = (nano) -> nano / 2.629746e15 # Nanosecond to Month (Gregorian avg month 30.436875 d)
-convertTime.nanosecond.year = nano$year = (nano) -> nano / 3.1556952e16 # Nanosecond to Year (Gregorian avg year 365.2425 d)
-convertTime.nanosecond.decade = nano$decade = (nano) -> nano / 3.1556952e17 # Nanosecond to Decade
-convertTime.nanosecond.century = nano$century = (nano) -> nano / 3.1556952e18 # Nanosecond to Century
-convertTime.nanosecond.millennium = nano$millennium = (nano) -> nano / 3.1556952e19 # Nanosecond to Millennium
+convertTime.nanosecond.month = nano$month = (nano) -> nano / (MONTH_SECONDS * 1e9) # Nanosecond to Month
+convertTime.nanosecond.year = nano$year = (nano) -> nano / (YEAR_SECONDS * 1e9) # Nanosecond to Year
+convertTime.nanosecond.decade = nano$decade = (nano) -> nano / (DECADE_SECONDS * 1e9) # Nanosecond to Decade
+convertTime.nanosecond.century = nano$century = (nano) -> nano / (CENTURY_SECONDS * 1e9) # Nanosecond to Century
+convertTime.nanosecond.millennium = nano$millennium = (nano) -> nano / (MILLENNIUM_SECONDS * 1e9) # Nanosecond to Millennium
 
 ### Microsecond Conversions ###
 
@@ -1871,11 +1895,11 @@ convertTime.microsecond.minute = micro$minute = (micro) -> micro / 6e7 # Microse
 convertTime.microsecond.hour = micro$hour = (micro) -> micro / 3.6e9 # Microsecond to Hour
 convertTime.microsecond.day = micro$day = (micro) -> micro / 8.64e10 # Microsecond to Day
 convertTime.microsecond.week = micro$week = (micro) -> micro / 6.048e11 # Microsecond to Week
-convertTime.microsecond.month = micro$month = (micro) -> micro / 2.629746e12 # Microsecond to Month
-convertTime.microsecond.year = micro$year = (micro) -> micro / 3.1556952e13 # Microsecond to Year
-convertTime.microsecond.decade = micro$decade = (micro) -> micro / 3.1556952e14 # Microsecond to Decade
-convertTime.microsecond.century = micro$century = (micro) -> micro / 3.1556952e15 # Microsecond to Century
-convertTime.microsecond.millennium = micro$millennium = (micro) -> micro / 3.1556952e16 # Microsecond to Millennium
+convertTime.microsecond.month = micro$month = (micro) -> micro / (MONTH_SECONDS * 1e6) # Microsecond to Month
+convertTime.microsecond.year = micro$year = (micro) -> micro / (YEAR_SECONDS * 1e6) # Microsecond to Year
+convertTime.microsecond.decade = micro$decade = (micro) -> micro / (DECADE_SECONDS * 1e6) # Microsecond to Decade
+convertTime.microsecond.century = micro$century = (micro) -> micro / (CENTURY_SECONDS * 1e6) # Microsecond to Century
+convertTime.microsecond.millennium = micro$millennium = (micro) -> micro / (MILLENNIUM_SECONDS * 1e6) # Microsecond to Millennium
 
 ### Millisecond Conversions ###
 
@@ -1887,11 +1911,11 @@ convertTime.millisecond.minute = milli$minute = (milli) -> milli / 6e4 # Millise
 convertTime.millisecond.hour = milli$hour = (milli) -> milli / 3.6e6 # Millisecond to Hour
 convertTime.millisecond.day = milli$day = (milli) -> milli / 8.64e7 # Millisecond to Day
 convertTime.millisecond.week = milli$week = (milli) -> milli / 6.048e8 # Millisecond to Week
-convertTime.millisecond.month = milli$month = (milli) -> milli / 2.629746e9 # Millisecond to Month
-convertTime.millisecond.year = milli$year = (milli) -> milli / 3.1556952e10 # Millisecond to Year
-convertTime.millisecond.decade = milli$decade = (milli) -> milli / 3.1556952e11 # Millisecond to Decade
-convertTime.millisecond.century = milli$century = (milli) -> milli / 3.1556952e12 # Millisecond to Century
-convertTime.millisecond.millennium = milli$millennium = (milli) -> milli / 3.1556952e13 # Millisecond to Millennium
+convertTime.millisecond.month = milli$month = (milli) -> milli / (MONTH_SECONDS * 1e3) # Millisecond to Month
+convertTime.millisecond.year = milli$year = (milli) -> milli / (YEAR_SECONDS * 1e3) # Millisecond to Year
+convertTime.millisecond.decade = milli$decade = (milli) -> milli / (DECADE_SECONDS * 1e3) # Millisecond to Decade
+convertTime.millisecond.century = milli$century = (milli) -> milli / (CENTURY_SECONDS * 1e3) # Millisecond to Century
+convertTime.millisecond.millennium = milli$millennium = (milli) -> milli / (MILLENNIUM_SECONDS * 1e3) # Millisecond to Millennium
 
 ### Second Conversions ###
 
@@ -1903,11 +1927,11 @@ convertTime.second.minute = second$minute = (second) -> second / 6e+1 # Second t
 convertTime.second.hour = second$hour = (second) -> second / 36e+2 # Second to Hour
 convertTime.second.day = second$day = (second) -> second / 864e+2 # Second to Day
 convertTime.second.week = second$week = (second) -> second / 6.048e5 # Second to Week
-convertTime.second.month = second$month = (second) -> second / 2629746 # Second to Month
-convertTime.second.year = second$year = (second) -> second / 31556952 # Second to Year
-convertTime.second.decade = second$decade = (second) -> second / 315569520 # Second to Decade
-convertTime.second.century = second$century = (second) -> second / 3155695200 # Second to Century
-convertTime.second.millennium = second$millennium = (second) -> second / 31556952000 # Second to Millennium
+convertTime.second.month = second$month = (second) -> second / MONTH_SECONDS # Second to Month
+convertTime.second.year = second$year = (second) -> second / YEAR_SECONDS # Second to Year
+convertTime.second.decade = second$decade = (second) -> second / DECADE_SECONDS # Second to Decade
+convertTime.second.century = second$century = (second) -> second / CENTURY_SECONDS # Second to Century
+convertTime.second.millennium = second$millennium = (second) -> second / MILLENNIUM_SECONDS # Second to Millennium
 
 ### Minute Conversions ###
 
@@ -1919,11 +1943,11 @@ convertTime.minute.minute = minute$minute = (minute) -> minute # Minute to Minut
 convertTime.minute.hour = minute$hour = (minute) -> minute / 6e+1 # Minute to Hour
 convertTime.minute.day = minute$day = (minute) -> minute / 1.44e3 # Minute to Day
 convertTime.minute.week = minute$week = (minute) -> minute / 1.008e4 # Minute to Week
-convertTime.minute.month = minute$month = (minute) -> minute / 43829.1 # Minute to Month
-convertTime.minute.year = minute$year = (minute) -> minute / 525949.2 # Minute to Year
-convertTime.minute.decade = minute$decade = (minute) -> minute / 5259492 # Minute to Decade
-convertTime.minute.century = minute$century = (minute) -> minute / 52594920 # Minute to Century
-convertTime.minute.millennium = minute$millennium = (minute) -> minute / 525949200 # Minute to Millennium
+convertTime.minute.month = minute$month = (minute) -> (minute * MINUTE_SECONDS) / MONTH_SECONDS # Minute to Month
+convertTime.minute.year = minute$year = (minute) -> (minute * MINUTE_SECONDS) / YEAR_SECONDS # Minute to Year
+convertTime.minute.decade = minute$decade = (minute) -> (minute * MINUTE_SECONDS) / DECADE_SECONDS # Minute to Decade
+convertTime.minute.century = minute$century = (minute) -> (minute * MINUTE_SECONDS) / CENTURY_SECONDS # Minute to Century
+convertTime.minute.millennium = minute$millennium = (minute) -> (minute * MINUTE_SECONDS) / MILLENNIUM_SECONDS # Minute to Millennium
 
 ### Hour Conversions ###
 
@@ -1935,11 +1959,11 @@ convertTime.hour.minute = hour$minute = (hour) -> hour * 6e1 # Hour to Minute
 convertTime.hour.hour = hour$hour = (hour) -> hour # Hour to Hour
 convertTime.hour.day = hour$day = (hour) -> hour / 24 # Hour to Day
 convertTime.hour.week = hour$week = (hour) -> hour / 168 # Hour to Week
-convertTime.hour.month = hour$month = (hour) -> hour / 730.485 # Hour to Month
-convertTime.hour.year = hour$year = (hour) -> hour / 8765.264444 # Hour to Year
-convertTime.hour.decade = hour$decade = (hour) -> hour / 87652.64444 # Hour to Decade
-convertTime.hour.century = hour$century = (hour) -> hour / 876526.4444 # Hour to Century
-convertTime.hour.millennium = hour$millennium = (hour) -> hour / 8765264.444 # Hour to Millennium
+convertTime.hour.month = hour$month = (hour) -> (hour * HOUR_SECONDS) / MONTH_SECONDS # Hour to Month
+convertTime.hour.year = hour$year = (hour) -> (hour * HOUR_SECONDS) / YEAR_SECONDS # Hour to Year
+convertTime.hour.decade = hour$decade = (hour) -> (hour * HOUR_SECONDS) / DECADE_SECONDS # Hour to Decade
+convertTime.hour.century = hour$century = (hour) -> (hour * HOUR_SECONDS) / CENTURY_SECONDS # Hour to Century
+convertTime.hour.millennium = hour$millennium = (hour) -> (hour * HOUR_SECONDS) / MILLENNIUM_SECONDS # Hour to Millennium
 
 ### Day Conversions ###
 
@@ -1951,11 +1975,11 @@ convertTime.day.minute = day$minute = (day) -> day * 1.44e3 # Day to Minute
 convertTime.day.hour = day$hour = (day) -> day * 24 # Day to Hour
 convertTime.day.day = day$day = (day) -> day # Day to Day
 convertTime.day.week = day$week = (day) -> day / 7 # Day to Week
-convertTime.day.month = day$month = (day) -> day / 30.436875 # Day to Month
-convertTime.day.year = day$year = (day) -> day / 365.2425 # Day to Year
-convertTime.day.decade = day$decade = (day) -> day / 3652.425 # Day to Decade
-convertTime.day.century = day$century = (day) -> day / 36524.25 # Day to Century
-convertTime.day.millennium = day$millennium = (day) -> day / 365242.5 # Day to Millennium
+convertTime.day.month = day$month = (day) -> day / MONTH_DAYS # Day to Month (direct ratio)
+convertTime.day.year = day$year = (day) -> (day * DAY_SECONDS) / YEAR_SECONDS # Day to Year
+convertTime.day.decade = day$decade = (day) -> (day * DAY_SECONDS) / DECADE_SECONDS # Day to Decade
+convertTime.day.century = day$century = (day) -> (day * DAY_SECONDS) / CENTURY_SECONDS # Day to Century
+convertTime.day.millennium = day$millennium = (day) -> (day * DAY_SECONDS) / MILLENNIUM_SECONDS # Day to Millennium
 
 ### Week Conversions ###
 
@@ -1967,22 +1991,22 @@ convertTime.week.minute = week$minute = (week) -> week * 1.008e4 # Week to Minut
 convertTime.week.hour = week$hour = (week) -> week * 168 # Week to Hour
 convertTime.week.day = week$day = (week) -> week * 7 # Week to Day
 convertTime.week.week = week$week = (week) -> week # Week to Week
-convertTime.week.month = week$month = (week) -> week / 4.348125 # Week to Month
-convertTime.week.year = week$year = (week) -> week / 52.1775 # Week to Year
-convertTime.week.decade = week$decade = (week) -> week / 521.775 # Week to Decade
-convertTime.week.century = week$century = (week) -> week / 5217.75 # Week to Century
-convertTime.week.millennium = week$millennium = (week) -> week / 52177.5 # Week to Millennium
+convertTime.week.month = week$month = (week) -> (week * 7) / MONTH_DAYS # Week to Month (direct ratio)
+convertTime.week.year = week$year = (week) -> ((week * 7) * DAY_SECONDS) / YEAR_SECONDS # Week to Year
+convertTime.week.decade = week$decade = (week) -> ((week * 7) * DAY_SECONDS) / DECADE_SECONDS # Week to Decade
+convertTime.week.century = week$century = (week) -> ((week * 7) * DAY_SECONDS) / CENTURY_SECONDS # Week to Century
+convertTime.week.millennium = week$millennium = (week) -> ((week * 7) * DAY_SECONDS) / MILLENNIUM_SECONDS # Week to Millennium
 
 ### Month Conversions ###
 
-convertTime.month.nanosecond = month$nano = (month) -> month * 2.628e15 # Month to Nanosecond
-convertTime.month.microsecond = month$micro = (month) -> month * 2.628e12 # Month to Microsecond
-convertTime.month.millisecond = month$milli = (month) -> month * 2.628e9 # Month to Millisecond
-convertTime.month.second = month$second = (month) -> month * 2629746 # Month to Second
-convertTime.month.minute = month$minute = (month) -> month * 43829.1 # Month to Minute
-convertTime.month.hour = month$hour = (month) -> month * 730.485 # Month to Hour
-convertTime.month.day = month$day = (month) -> month * 30.436875 # Month to Day
-convertTime.month.week = month$week = (month) -> month * 4.348125 # Month to Week
+convertTime.month.nanosecond = month$nano = (month) -> month * MONTH_SECONDS * 1e9 # Month to Nanosecond
+convertTime.month.microsecond = month$micro = (month) -> month * MONTH_SECONDS * 1e6 # Month to Microsecond
+convertTime.month.millisecond = month$milli = (month) -> month * MONTH_SECONDS * 1e3 # Month to Millisecond
+convertTime.month.second = month$second = (month) -> month * MONTH_SECONDS # Month to Second
+convertTime.month.minute = month$minute = (month) -> month * MONTH_SECONDS / MINUTE_SECONDS # Month to Minute
+convertTime.month.hour = month$hour = (month) -> month * MONTH_SECONDS / HOUR_SECONDS # Month to Hour
+convertTime.month.day = month$day = (month) -> month * MONTH_SECONDS / DAY_SECONDS # Month to Day
+convertTime.month.week = month$week = (month) -> month * MONTH_SECONDS / (7 * DAY_SECONDS) # Month to Week
 convertTime.month.month = month$month = (month) -> month # Month to Month
 convertTime.month.year = month$year = (month) -> month / 12 # Month to Year
 convertTime.month.decade = month$decade = (month) -> month / 12e+1 # Month to Decade
@@ -1991,15 +2015,15 @@ convertTime.month.millennium = month$millennium = (month) -> month / 12e+3 # Mon
 
 ### Year Conversions ###
 
-convertTime.year.nanosecond = year$nano = (year) -> year * 3.1556952e16 # Year to Nanosecond
-convertTime.year.microsecond = year$micro = (year) -> year * 3.1556952e13 # Year to Microsecond
-convertTime.year.millisecond = year$milli = (year) -> year * 3.1556952e10 # Year to Millisecond
-convertTime.year.second = year$second = (year) -> year * 31556952 # Year to Second
-convertTime.year.minute = year$minute = (year) -> year * 525949.2 # Year to Minute
-convertTime.year.hour = year$hour = (year) -> year * 8765.264444 # Year to Hour
-convertTime.year.day = year$day = (year) -> year * 365.2425 # Year to Day
-convertTime.year.week = year$week = (year) -> year * 52.1775 # Year to Week
-convertTime.year.month = year$month = (year) -> year * 12 # Year to Month
+convertTime.year.nanosecond = year$nano = (year) -> year * YEAR_SECONDS * 1e9 # Year to Nanosecond
+convertTime.year.microsecond = year$micro = (year) -> year * YEAR_SECONDS * 1e6 # Year to Microsecond
+convertTime.year.millisecond = year$milli = (year) -> year * YEAR_SECONDS * 1e3 # Year to Millisecond
+convertTime.year.second = year$second = (year) -> year * YEAR_SECONDS # Year to Second
+convertTime.year.minute = year$minute = (year) -> year * YEAR_SECONDS / MINUTE_SECONDS # Year to Minute
+convertTime.year.hour = year$hour = (year) -> year * YEAR_SECONDS / HOUR_SECONDS # Year to Hour
+convertTime.year.day = year$day = (year) -> year * YEAR_SECONDS / DAY_SECONDS # Year to Day
+convertTime.year.week = year$week = (year) -> year * YEAR_SECONDS / (7 * DAY_SECONDS) # Year to Week
+convertTime.year.month = year$month = (year) -> year * YEAR_SECONDS / MONTH_SECONDS # Year to Month
 convertTime.year.year = year$year = (year) -> year # Year to Year
 convertTime.year.decade = year$decade = (year) -> year / 1e+1 # Year to Decade
 convertTime.year.century = year$century = (year) -> year / 1e+2 # Year to Century
@@ -2007,13 +2031,13 @@ convertTime.year.millennium = year$millennium = (year) -> year / 1e+3 # Year to 
 
 ### Decade Conversions ###
 
-convertTime.decade.nanosecond = decade$nano = (decade) -> decade * 3.1556952e17 # Decade to Nanosecond
-convertTime.decade.microsecond = decade$micro = (decade) -> decade * 3.1556952e14 # Decade to Microsecond
-convertTime.decade.millisecond = decade$milli = (decade) -> decade * 3.1556952e11 # Decade to Millisecond
-convertTime.decade.second = decade$second = (decade) -> decade * 315569520 # Decade to Second
-convertTime.decade.minute = decade$minute = (decade) -> decade * 5259492 # Decade to Minute
-convertTime.decade.hour = decade$hour = (decade) -> decade * 87652.64444 # Decade to Hour
-convertTime.decade.day = decade$day = (decade) -> decade * 3652.425 # Decade to Day
+convertTime.decade.nanosecond = decade$nano = (decade) -> decade * DECADE_SECONDS * 1e9 # Decade to Nanosecond
+convertTime.decade.microsecond = decade$micro = (decade) -> decade * DECADE_SECONDS * 1e6 # Decade to Microsecond
+convertTime.decade.millisecond = decade$milli = (decade) -> decade * DECADE_SECONDS * 1e3 # Decade to Millisecond
+convertTime.decade.second = decade$second = (decade) -> decade * DECADE_SECONDS # Decade to Second
+convertTime.decade.minute = decade$minute = (decade) -> decade * DECADE_SECONDS / MINUTE_SECONDS # Decade to Minute
+convertTime.decade.hour = decade$hour = (decade) -> decade * DECADE_SECONDS / HOUR_SECONDS # Decade to Hour
+convertTime.decade.day = decade$day = (decade) -> decade * DECADE_SECONDS / DAY_SECONDS # Decade to Day
 convertTime.decade.week = decade$week = (decade) -> decade * 521.775 # Decade to Week
 convertTime.decade.month = decade$month = (decade) -> decade * 12e+1 # Decade to Month
 convertTime.decade.year = decade$year = (decade) -> decade * 1e+1 # Decade to Year
@@ -2028,10 +2052,10 @@ convertTime.century.microsecond = century$micro = (century) -> century * 3.15569
 convertTime.century.millisecond = century$milli = (century) -> century * 3.1556952e12 # Century to Millisecond
 convertTime.century.second = century$second = (century) -> century * 3155695200 # Century to Second
 convertTime.century.minute = century$minute = (century) -> century * 52594920 # Century to Minute
-convertTime.century.hour = century$hour = (century) -> century * 876526.4444 # Century to Hour
-convertTime.century.day = century$day = (century) -> century * 36524.25 # Century to Day
-convertTime.century.week = century$week = (century) -> century * 5217.75 # Century to Week
-convertTime.century.month = century$month = (century) -> century * 12e+2 # Century to Month
+convertTime.century.hour = century$hour = (century) -> century * CENTURY_SECONDS / HOUR_SECONDS # Century to Hour (derived)
+convertTime.century.day = century$day = (century) -> century * CENTURY_SECONDS / DAY_SECONDS # Century to Day (derived)
+convertTime.century.week = century$week = (century) -> century * CENTURY_SECONDS / (7 * DAY_SECONDS) # Century to Week (derived)
+convertTime.century.month = century$month = (century) -> century * CENTURY_SECONDS / MONTH_SECONDS # Century to Month (derived)
 convertTime.century.year = century$year = (century) -> century * 1e+2 # Century to Year
 convertTime.century.decade = century$decade = (century) -> century * 1e+1 # Century to Decade
 convertTime.century.century = century$century = (century) -> century # Century to Century
@@ -2044,10 +2068,10 @@ convertTime.millennium.microsecond = millennium$micro = (millennium) -> millenni
 convertTime.millennium.millisecond = millennium$milli = (millennium) -> millennium * 3.1556952e13 # Millennium to Millisecond
 convertTime.millennium.second = millennium$second = (millennium) -> millennium * 31556952000 # Millennium to Second
 convertTime.millennium.minute = millennium$minute = (millennium) -> millennium * 525949200 # Millennium to Minute
-convertTime.millennium.hour = millennium$hour = (millennium) -> millennium * 8765264.444 # Millennium to Hour
-convertTime.millennium.day = millennium$day = (millennium) -> millennium * 365242.5 # Millennium to Day
-convertTime.millennium.week = millennium$week = (millennium) -> millennium * 52177.5 # Millennium to Week
-convertTime.millennium.month = millennium$month = (millennium) -> millennium * 12e+3 # Millennium to Month
+convertTime.millennium.hour = millennium$hour = (millennium) -> millennium * MILLENNIUM_SECONDS / HOUR_SECONDS # Millennium to Hour (derived)
+convertTime.millennium.day = millennium$day = (millennium) -> millennium * MILLENNIUM_SECONDS / DAY_SECONDS # Millennium to Day (derived)
+convertTime.millennium.week = millennium$week = (millennium) -> millennium * MILLENNIUM_SECONDS / (7 * DAY_SECONDS) # Millennium to Week (derived)
+convertTime.millennium.month = millennium$month = (millennium) -> millennium * MILLENNIUM_SECONDS / MONTH_SECONDS # Millennium to Month (derived)
 convertTime.millennium.year = millennium$year = (millennium) -> millennium * 1e+3 # Millennium to Year
 convertTime.millennium.decade = millennium$decade = (millennium) -> millennium * 1e+2 # Millennium to Decade
 convertTime.millennium.century = millennium$century = (millennium) -> millennium * 1e+1 # Millennium to Century

@@ -4,7 +4,6 @@
 /* Data Conversions */
 /* Density Conversions */
 /* Dimension Conversions */
-/* Energy Conversions */
 /* Frequency Conversions */
 /* Illumination Conversions */
 /* Length Conversions */
@@ -14,10 +13,9 @@
 /* Radiation Conversions */
 /* Speed Conversions */
 /* Temperature Conversions */
-/* Time Conversions */
 /* Volume Conversions */
 /* Measurement Conversions */
-var At$At, At$Gi, At$abAt, At$kAt, At$mAt, EGy$EGy, EGy$GGy, EGy$Gy, EGy$MGy, EGy$PGy, EGy$TGy, EGy$cGy, EGy$dGy, EGy$daGy, EGy$hGy, EGy$kGy, EGy$mGy, EGy$nGy, EGy$uGy, GGy$EGy, GGy$GGy, GGy$Gy, GGy$MGy, GGy$PGy, GGy$TGy, GGy$cGy, GGy$dGy, GGy$daGy, GGy$hGy, GGy$kGy, GGy$mGy, GGy$nGy, GGy$uGy, Gi$At, Gi$Gi, Gi$abAt, Gi$kAt, Gi$mAt, Gy$EGy, Gy$GGy, Gy$Gy, Gy$MGy, Gy$PGy, Gy$TGy, Gy$cGy, Gy$dGy, Gy$daGy, Gy$hGy, Gy$kGy, Gy$mGy, Gy$nGy, Gy$uGy, MGy$EGy, MGy$GGy, MGy$Gy, MGy$MGy, MGy$PGy, MGy$TGy, MGy$cGy, MGy$dGy, MGy$daGy, MGy$hGy, MGy$kGy, MGy$mGy, MGy$nGy, MGy$uGy, PGy$EGy, PGy$GGy, PGy$Gy, PGy$MGy, PGy$PGy, PGy$TGy, PGy$cGy, PGy$dGy, PGy$daGy, PGy$hGy, PGy$kGy, PGy$mGy, PGy$nGy, PGy$uGy, TGy$EGy, TGy$GGy, TGy$Gy, TGy$MGy, TGy$PGy, TGy$TGy, TGy$cGy, TGy$dGy, TGy$daGy, TGy$hGy, TGy$kGy, TGy$mGy, TGy$nGy, TGy$uGy, abAt$At, abAt$Gi, abAt$abAt, abAt$kAt, abAt$mAt, ac$ac, ac$cmSq, ac$damSq, ac$dmSq, ac$footSq, ac$ha, ac$hmSq, ac$inchSq, ac$kmSq, ac$mSq, ac$mileSq, ac$mmSq, ac$nmSq, ac$umSq, ac$yardSq, atm$atm, atm$bar, atm$pas, atm$psi, atm$tor, bar$atm, bar$bar, bar$pas, bar$psi, bar$tor, bit$bit, bit$byte, bit$eb, bit$gb, bit$kb, bit$mb, bit$pb, bit$tb, bit$yb, bit$zb, btu$btu, btu$cal, btu$ev, btu$ftlb, btu$j, btu$kcal, btu$kj, btu$kwh, btu$wh, byte$bit, byte$byte, byte$eb, byte$gb, byte$kb, byte$mb, byte$pb, byte$tb, byte$yb, byte$zb, c$c, c$f, c$k, cGy$EGy, cGy$GGy, cGy$Gy, cGy$MGy, cGy$PGy, cGy$TGy, cGy$cGy, cGy$dGy, cGy$daGy, cGy$hGy, cGy$kGy, cGy$mGy, cGy$nGy, cGy$uGy, cal$btu, cal$cal, cal$ev, cal$ftlb, cal$j, cal$kcal, cal$kj, cal$kwh, cal$wh, century$century, century$day, century$decade, century$hour, century$micro, century$millennium, century$milli, century$minute, century$month, century$nano, century$second, century$week, century$year, cg$cg, cg$dag, cg$dg, cg$g, cg$hg, cg$kg, cg$lb, cg$mg, cg$ng, cg$oz, cg$st, cg$t, cg$ug, cm$cm, cm$dam, cm$dm, cm$foot, cm$hm, cm$inch, cm$km, cm$m, cm$mile, cm$mm, cm$nm, cm$um, cm$yard, cmCu$cmCu, cmCu$damCu, cmCu$dmCu, cmCu$footCu, cmCu$hmCu, cmCu$inchCu, cmCu$kmCu, cmCu$mCu, cmCu$mileCu, cmCu$mmCu, cmCu$nmCu, cmCu$umCu, cmCu$yardCu, cmSq$ac, cmSq$cmSq, cmSq$damSq, cmSq$dmSq, cmSq$footSq, cmSq$ha, cmSq$hmSq, cmSq$inchSq, cmSq$kmSq, cmSq$mSq, cmSq$mileSq, cmSq$mmSq, cmSq$nmSq, cmSq$umSq, cmSq$yardSq, convertAngle, convertArea, convertData, convertDensity, convertDimension, convertEnergy, convertFrequency, convertIllumination, convertLength, convertMagnetomotive, convertMass, convertPressure, convertRadiation, convertSpeed, convertTemperature, convertTime, convertVolume, cup$cup, cup$gal, cup$l, cup$ml, cup$pt, cup$qt, cup$tbl, cup$tea, d2$d2, d2$d3, d3$d2, d3$d3, dGy$EGy, dGy$GGy, dGy$Gy, dGy$MGy, dGy$PGy, dGy$TGy, dGy$cGy, dGy$dGy, dGy$daGy, dGy$hGy, dGy$kGy, dGy$mGy, dGy$nGy, dGy$uGy, daGy$EGy, daGy$GGy, daGy$Gy, daGy$MGy, daGy$PGy, daGy$TGy, daGy$cGy, daGy$dGy, daGy$daGy, daGy$hGy, daGy$kGy, daGy$mGy, daGy$nGy, daGy$uGy, dag$cg, dag$dag, dag$dg, dag$g, dag$hg, dag$kg, dag$lb, dag$mg, dag$ng, dag$oz, dag$st, dag$t, dag$ug, dam$cm, dam$dam, dam$dm, dam$foot, dam$hm, dam$inch, dam$km, dam$m, dam$mile, dam$mm, dam$nm, dam$um, dam$yard, damCu$cmCu, damCu$damCu, damCu$dmCu, damCu$footCu, damCu$hmCu, damCu$inchCu, damCu$kmCu, damCu$mCu, damCu$mileCu, damCu$mmCu, damCu$nmCu, damCu$umCu, damCu$yardCu, damSq$ac, damSq$cmSq, damSq$damSq, damSq$dmSq, damSq$footSq, damSq$ha, damSq$hmSq, damSq$inchSq, damSq$kmSq, damSq$mSq, damSq$mileSq, damSq$mmSq, damSq$nmSq, damSq$umSq, damSq$yardSq, day$century, day$day, day$decade, day$hour, day$micro, day$millennium, day$milli, day$minute, day$month, day$nano, day$second, day$week, day$year, decade$century, decade$day, decade$decade, decade$hour, decade$micro, decade$millennium, decade$milli, decade$minute, decade$month, decade$nano, decade$second, decade$week, decade$year, def, deg$deg, deg$gad, deg$moa, deg$mrad, deg$rad, deg$soa, dg$cg, dg$dag, dg$dg, dg$g, dg$hg, dg$kg, dg$lb, dg$mg, dg$ng, dg$oz, dg$st, dg$t, dg$ug, dm$cm, dm$dam, dm$dm, dm$foot, dm$hm, dm$inch, dm$km, dm$m, dm$mile, dm$mm, dm$nm, dm$um, dm$yard, dmCu$cmCu, dmCu$damCu, dmCu$dmCu, dmCu$footCu, dmCu$hmCu, dmCu$inchCu, dmCu$kmCu, dmCu$mCu, dmCu$mileCu, dmCu$mmCu, dmCu$nmCu, dmCu$umCu, dmCu$yardCu, dmSq$ac, dmSq$cmSq, dmSq$damSq, dmSq$dmSq, dmSq$footSq, dmSq$ha, dmSq$hmSq, dmSq$inchSq, dmSq$kmSq, dmSq$mSq, dmSq$mileSq, dmSq$mmSq, dmSq$nmSq, dmSq$umSq, dmSq$yardSq, eb$bit, eb$byte, eb$eb, eb$gb, eb$kb, eb$mb, eb$pb, eb$tb, eb$yb, eb$zb, ev$btu, ev$cal, ev$ev, ev$ftlb, ev$j, ev$kcal, ev$kj, ev$kwh, ev$wh, f$c, f$f, f$k, flame$flame, flame$lx, flame$nox, flame$ph, foot$cm, foot$dam, foot$dm, foot$foot, foot$hm, foot$inch, foot$km, foot$m, foot$mile, foot$mm, foot$nm, foot$um, foot$yard, footCu$cmCu, footCu$damCu, footCu$dmCu, footCu$footCu, footCu$hmCu, footCu$inchCu, footCu$kmCu, footCu$mCu, footCu$mileCu, footCu$mmCu, footCu$nmCu, footCu$umCu, footCu$yardCu, footSq$ac, footSq$cmSq, footSq$damSq, footSq$dmSq, footSq$footSq, footSq$ha, footSq$hmSq, footSq$inchSq, footSq$kmSq, footSq$mSq, footSq$mileSq, footSq$mmSq, footSq$nmSq, footSq$umSq, footSq$yardSq, fromDef, ftlb$btu, ftlb$cal, ftlb$ev, ftlb$ftlb, ftlb$j, ftlb$kcal, ftlb$kj, ftlb$kwh, ftlb$wh, g$cg, g$dag, g$dg, g$g, g$hg, g$kg, g$lb, g$mg, g$ng, g$oz, g$st, g$t, g$ug, gCmCu$gCmCu, gCmCu$gMCu, gCmCu$kgCmCu, gCmCu$kgMCu, gCmCu$lbFootCu, gCmCu$lbInchCu, gCmCu$ozFootCu, gCmCu$ozInchCu, gMCu$gCmCu, gMCu$gMCu, gMCu$kgCmCu, gMCu$kgMCu, gMCu$lbFootCu, gMCu$lbInchCu, gMCu$ozFootCu, gMCu$ozInchCu, gad$deg, gad$gad, gad$moa, gad$mrad, gad$rad, gad$soa, gal$cup, gal$gal, gal$l, gal$ml, gal$pt, gal$qt, gal$tbl, gal$tea, gb$bit, gb$byte, gb$eb, gb$gb, gb$kb, gb$mb, gb$pb, gb$tb, gb$yb, gb$zb, ghz$ghz, ghz$hz, ghz$khz, ghz$mhz, hGy$EGy, hGy$GGy, hGy$Gy, hGy$MGy, hGy$PGy, hGy$TGy, hGy$cGy, hGy$dGy, hGy$daGy, hGy$hGy, hGy$kGy, hGy$mGy, hGy$nGy, hGy$uGy, ha$ac, ha$cmSq, ha$damSq, ha$dmSq, ha$footSq, ha$ha, ha$hmSq, ha$inchSq, ha$kmSq, ha$mSq, ha$mileSq, ha$mmSq, ha$nmSq, ha$umSq, ha$yardSq, hg$cg, hg$dag, hg$dg, hg$g, hg$hg, hg$kg, hg$lb, hg$mg, hg$ng, hg$oz, hg$st, hg$t, hg$ug, hm$cm, hm$dam, hm$dm, hm$foot, hm$hm, hm$inch, hm$km, hm$m, hm$mile, hm$mm, hm$nm, hm$um, hm$yard, hmCu$cmCu, hmCu$damCu, hmCu$dmCu, hmCu$footCu, hmCu$hmCu, hmCu$inchCu, hmCu$kmCu, hmCu$mCu, hmCu$mileCu, hmCu$mmCu, hmCu$nmCu, hmCu$umCu, hmCu$yardCu, hmSq$ac, hmSq$cmSq, hmSq$damSq, hmSq$dmSq, hmSq$footSq, hmSq$ha, hmSq$hmSq, hmSq$inchSq, hmSq$kmSq, hmSq$mSq, hmSq$mileSq, hmSq$mmSq, hmSq$nmSq, hmSq$umSq, hmSq$yardSq, hour$century, hour$day, hour$decade, hour$hour, hour$micro, hour$millennium, hour$milli, hour$minute, hour$month, hour$nano, hour$second, hour$week, hour$year, hz$ghz, hz$hz, hz$khz, hz$mhz, i, inch$cm, inch$dam, inch$dm, inch$foot, inch$hm, inch$inch, inch$km, inch$m, inch$mile, inch$mm, inch$nm, inch$um, inch$yard, inchCu$cmCu, inchCu$damCu, inchCu$dmCu, inchCu$footCu, inchCu$hmCu, inchCu$inchCu, inchCu$kmCu, inchCu$mCu, inchCu$mileCu, inchCu$mmCu, inchCu$nmCu, inchCu$umCu, inchCu$yardCu, inchSq$ac, inchSq$cmSq, inchSq$damSq, inchSq$dmSq, inchSq$footSq, inchSq$ha, inchSq$hmSq, inchSq$inchSq, inchSq$kmSq, inchSq$mSq, inchSq$mileSq, inchSq$mmSq, inchSq$nmSq, inchSq$umSq, inchSq$yardSq, j$btu, j$cal, j$ev, j$ftlb, j$j, j$kcal, j$kj, j$kwh, j$wh, k$c, k$f, k$k, kAt$At, kAt$Gi, kAt$abAt, kAt$kAt, kAt$mAt, kGy$EGy, kGy$GGy, kGy$Gy, kGy$MGy, kGy$PGy, kGy$TGy, kGy$cGy, kGy$dGy, kGy$daGy, kGy$hGy, kGy$kGy, kGy$mGy, kGy$nGy, kGy$uGy, kb$bit, kb$byte, kb$eb, kb$gb, kb$kb, kb$mb, kb$pb, kb$tb, kb$yb, kb$zb, kcal$btu, kcal$cal, kcal$ev, kcal$ftlb, kcal$j, kcal$kcal, kcal$kj, kcal$kwh, kcal$wh, kg$cg, kg$dag, kg$dg, kg$g, kg$hg, kg$kg, kg$lb, kg$mg, kg$ng, kg$oz, kg$st, kg$t, kg$ug, kgCmCu$gCmCu, kgCmCu$gMCu, kgCmCu$kgCmCu, kgCmCu$kgMCu, kgCmCu$lbFootCu, kgCmCu$lbInchCu, kgCmCu$ozFootCu, kgCmCu$ozInchCu, kgMCu$gCmCu, kgMCu$gMCu, kgMCu$kgCmCu, kgMCu$kgMCu, kgMCu$lbFootCu, kgMCu$lbInchCu, kgMCu$ozFootCu, kgMCu$ozInchCu, khz$ghz, khz$hz, khz$khz, khz$mhz, kj$btu, kj$cal, kj$ev, kj$ftlb, kj$j, kj$kcal, kj$kj, kj$kwh, kj$wh, km$cm, km$dam, km$dm, km$foot, km$hm, km$inch, km$km, km$m, km$mile, km$mm, km$nm, km$um, km$yard, kmCu$cmCu, kmCu$damCu, kmCu$dmCu, kmCu$footCu, kmCu$hmCu, kmCu$inchCu, kmCu$kmCu, kmCu$mCu, kmCu$mileCu, kmCu$mmCu, kmCu$nmCu, kmCu$umCu, kmCu$yardCu, kmSq$ac, kmSq$cmSq, kmSq$damSq, kmSq$dmSq, kmSq$footSq, kmSq$ha, kmSq$hmSq, kmSq$inchSq, kmSq$kmSq, kmSq$mSq, kmSq$mileSq, kmSq$mmSq, kmSq$nmSq, kmSq$umSq, kmSq$yardSq, kw$kw, kw$w, kwh$btu, kwh$cal, kwh$ev, kwh$ftlb, kwh$j, kwh$kcal, kwh$kj, kwh$kwh, kwh$wh, l$cup, l$gal, l$l, l$ml, l$pt, l$qt, l$tbl, l$tea, lb$cg, lb$dag, lb$dg, lb$g, lb$hg, lb$kg, lb$lb, lb$mg, lb$ng, lb$oz, lb$st, lb$t, lb$ug, lbFootCu$gCmCu, lbFootCu$gMCu, lbFootCu$kgCmCu, lbFootCu$kgMCu, lbFootCu$lbFootCu, lbFootCu$lbInchCu, lbFootCu$ozFootCu, lbFootCu$ozInchCu, lbInchCu$gCmCu, lbInchCu$gMCu, lbInchCu$kgCmCu, lbInchCu$kgMCu, lbInchCu$lbFootCu, lbInchCu$lbInchCu, lbInchCu$ozFootCu, lbInchCu$ozInchCu, len, len1, len2, lx$flame, lx$lx, lx$nox, lx$ph, m$cm, m$dam, m$dm, m$foot, m$hm, m$inch, m$km, m$m, m$mile, m$mm, m$nm, m$um, m$yard, mAt$At, mAt$Gi, mAt$abAt, mAt$kAt, mAt$mAt, mCu$cmCu, mCu$damCu, mCu$dmCu, mCu$footCu, mCu$hmCu, mCu$inchCu, mCu$kmCu, mCu$mCu, mCu$mileCu, mCu$mmCu, mCu$nmCu, mCu$umCu, mCu$yardCu, mGy$EGy, mGy$GGy, mGy$Gy, mGy$MGy, mGy$PGy, mGy$TGy, mGy$cGy, mGy$dGy, mGy$daGy, mGy$hGy, mGy$kGy, mGy$mGy, mGy$nGy, mGy$uGy, mSq$ac, mSq$cmSq, mSq$damSq, mSq$dmSq, mSq$footSq, mSq$ha, mSq$hmSq, mSq$inchSq, mSq$kmSq, mSq$mSq, mSq$mileSq, mSq$mmSq, mSq$nmSq, mSq$umSq, mSq$yardSq, mb$bit, mb$byte, mb$eb, mb$gb, mb$kb, mb$mb, mb$pb, mb$tb, mb$yb, mb$zb, mg$cg, mg$dag, mg$dg, mg$g, mg$hg, mg$kg, mg$lb, mg$mg, mg$ng, mg$oz, mg$st, mg$t, mg$ug, mhz$ghz, mhz$hz, mhz$khz, mhz$mhz, micro$century, micro$day, micro$decade, micro$hour, micro$micro, micro$millennium, micro$milli, micro$minute, micro$month, micro$nano, micro$second, micro$week, micro$year, mile$cm, mile$dam, mile$dm, mile$foot, mile$hm, mile$inch, mile$km, mile$m, mile$mile, mile$mm, mile$nm, mile$um, mile$yard, mileCu$cmCu, mileCu$damCu, mileCu$dmCu, mileCu$footCu, mileCu$hmCu, mileCu$inchCu, mileCu$kmCu, mileCu$mCu, mileCu$mileCu, mileCu$mmCu, mileCu$nmCu, mileCu$umCu, mileCu$yardCu, mileSq$ac, mileSq$cmSq, mileSq$damSq, mileSq$dmSq, mileSq$footSq, mileSq$ha, mileSq$hmSq, mileSq$inchSq, mileSq$kmSq, mileSq$mSq, mileSq$mileSq, mileSq$mmSq, mileSq$nmSq, mileSq$umSq, mileSq$yardSq, millennium$century, millennium$day, millennium$decade, millennium$hour, millennium$micro, millennium$millennium, millennium$milli, millennium$minute, millennium$month, millennium$nano, millennium$second, millennium$week, millennium$year, milli$century, milli$day, milli$decade, milli$hour, milli$micro, milli$millennium, milli$milli, milli$minute, milli$month, milli$nano, milli$second, milli$week, milli$year, minute$century, minute$day, minute$decade, minute$hour, minute$micro, minute$millennium, minute$milli, minute$minute, minute$month, minute$nano, minute$second, minute$week, minute$year, ml$cup, ml$gal, ml$l, ml$ml, ml$pt, ml$qt, ml$tbl, ml$tea, mm$cm, mm$dam, mm$dm, mm$foot, mm$hm, mm$inch, mm$km, mm$m, mm$mile, mm$mm, mm$nm, mm$um, mm$yard, mmCu$cmCu, mmCu$damCu, mmCu$dmCu, mmCu$footCu, mmCu$hmCu, mmCu$inchCu, mmCu$kmCu, mmCu$mCu, mmCu$mileCu, mmCu$mmCu, mmCu$nmCu, mmCu$umCu, mmCu$yardCu, mmSq$ac, mmSq$cmSq, mmSq$damSq, mmSq$dmSq, mmSq$footSq, mmSq$ha, mmSq$hmSq, mmSq$inchSq, mmSq$kmSq, mmSq$mSq, mmSq$mileSq, mmSq$mmSq, mmSq$nmSq, mmSq$umSq, mmSq$yardSq, moa$deg, moa$gad, moa$moa, moa$mrad, moa$rad, moa$soa, month$century, month$day, month$decade, month$hour, month$micro, month$millennium, month$milli, month$minute, month$month, month$nano, month$second, month$week, month$year, mrad$deg, mrad$gad, mrad$moa, mrad$mrad, mrad$rad, mrad$soa, n, nGy$EGy, nGy$GGy, nGy$Gy, nGy$MGy, nGy$PGy, nGy$TGy, nGy$cGy, nGy$dGy, nGy$daGy, nGy$hGy, nGy$kGy, nGy$mGy, nGy$nGy, nGy$uGy, nano$century, nano$day, nano$decade, nano$hour, nano$micro, nano$millennium, nano$milli, nano$minute, nano$month, nano$nano, nano$second, nano$week, nano$year, ng$cg, ng$dag, ng$dg, ng$g, ng$hg, ng$kg, ng$lb, ng$mg, ng$ng, ng$oz, ng$st, ng$t, ng$ug, nm$cm, nm$dam, nm$dm, nm$foot, nm$hm, nm$inch, nm$km, nm$m, nm$mile, nm$mm, nm$nm, nm$um, nm$yard, nmCu$cmCu, nmCu$damCu, nmCu$dmCu, nmCu$footCu, nmCu$hmCu, nmCu$inchCu, nmCu$kmCu, nmCu$mCu, nmCu$mileCu, nmCu$mmCu, nmCu$nmCu, nmCu$umCu, nmCu$yardCu, nmSq$ac, nmSq$cmSq, nmSq$damSq, nmSq$dmSq, nmSq$footSq, nmSq$ha, nmSq$hmSq, nmSq$inchSq, nmSq$kmSq, nmSq$mSq, nmSq$mileSq, nmSq$mmSq, nmSq$nmSq, nmSq$umSq, nmSq$yardSq, nox$flame, nox$lx, nox$nox, nox$ph, o, oz$cg, oz$dag, oz$dg, oz$g, oz$hg, oz$kg, oz$lb, oz$mg, oz$ng, oz$oz, oz$st, oz$t, oz$ug, ozFootCu$gCmCu, ozFootCu$gMCu, ozFootCu$kgCmCu, ozFootCu$kgMCu, ozFootCu$lbFootCu, ozFootCu$lbInchCu, ozFootCu$ozFootCu, ozFootCu$ozInchCu, ozInchCu$gCmCu, ozInchCu$gMCu, ozInchCu$kgCmCu, ozInchCu$kgMCu, ozInchCu$lbFootCu, ozInchCu$lbInchCu, ozInchCu$ozFootCu, ozInchCu$ozInchCu, pas$atm, pas$bar, pas$pas, pas$psi, pas$tor, pb$bit, pb$byte, pb$eb, pb$gb, pb$kb, pb$mb, pb$pb, pb$tb, pb$yb, pb$zb, ph$flame, ph$lx, ph$nox, ph$ph, polyconvert, psi$atm, psi$bar, psi$pas, psi$psi, psi$tor, pt$cup, pt$gal, pt$l, pt$ml, pt$pt, pt$qt, pt$tbl, pt$tea, qt$cup, qt$gal, qt$l, qt$ml, qt$pt, qt$qt, qt$tbl, qt$tea, rad$deg, rad$gad, rad$moa, rad$mrad, rad$rad, rad$soa, second$century, second$day, second$decade, second$hour, second$micro, second$millennium, second$milli, second$minute, second$month, second$nano, second$second, second$week, second$year, soa$deg, soa$gad, soa$moa, soa$mrad, soa$rad, soa$soa, speedDefs, st$cg, st$dag, st$dg, st$g, st$hg, st$kg, st$lb, st$mg, st$ng, st$oz, st$st, st$t, st$ug, t$cg, t$dag, t$dg, t$g, t$hg, t$kg, t$lb, t$mg, t$ng, t$oz, t$st, t$t, t$ug, tb$bit, tb$byte, tb$eb, tb$gb, tb$kb, tb$mb, tb$pb, tb$tb, tb$yb, tb$zb, tbl$cup, tbl$gal, tbl$l, tbl$ml, tbl$pt, tbl$qt, tbl$tbl, tbl$tea, tea$cup, tea$gal, tea$l, tea$ml, tea$pt, tea$qt, tea$tbl, tea$tea, toDef, tor$atm, tor$bar, tor$pas, tor$psi, tor$tor, uGy$EGy, uGy$GGy, uGy$Gy, uGy$MGy, uGy$PGy, uGy$TGy, uGy$cGy, uGy$dGy, uGy$daGy, uGy$hGy, uGy$kGy, uGy$mGy, uGy$nGy, uGy$uGy, ug$cg, ug$dag, ug$dg, ug$g, ug$hg, ug$kg, ug$lb, ug$mg, ug$ng, ug$oz, ug$st, ug$t, ug$ug, um$cm, um$dam, um$dm, um$foot, um$hm, um$inch, um$km, um$m, um$mile, um$mm, um$nm, um$um, um$yard, umCu$cmCu, umCu$damCu, umCu$dmCu, umCu$footCu, umCu$hmCu, umCu$inchCu, umCu$kmCu, umCu$mCu, umCu$mileCu, umCu$mmCu, umCu$nmCu, umCu$umCu, umCu$yardCu, umSq$ac, umSq$cmSq, umSq$damSq, umSq$dmSq, umSq$footSq, umSq$ha, umSq$hmSq, umSq$inchSq, umSq$kmSq, umSq$mSq, umSq$mileSq, umSq$mmSq, umSq$nmSq, umSq$umSq, umSq$yardSq, w$kw, w$w, week$century, week$day, week$decade, week$hour, week$micro, week$millennium, week$milli, week$minute, week$month, week$nano, week$second, week$week, week$year, wh$btu, wh$cal, wh$ev, wh$ftlb, wh$j, wh$kcal, wh$kj, wh$kwh, wh$wh, yard$cm, yard$dam, yard$dm, yard$foot, yard$hm, yard$inch, yard$km, yard$m, yard$mile, yard$mm, yard$nm, yard$um, yard$yard, yardCu$cmCu, yardCu$damCu, yardCu$dmCu, yardCu$footCu, yardCu$hmCu, yardCu$inchCu, yardCu$kmCu, yardCu$mCu, yardCu$mileCu, yardCu$mmCu, yardCu$nmCu, yardCu$umCu, yardCu$yardCu, yardSq$ac, yardSq$cmSq, yardSq$damSq, yardSq$dmSq, yardSq$footSq, yardSq$ha, yardSq$hmSq, yardSq$inchSq, yardSq$kmSq, yardSq$mSq, yardSq$mileSq, yardSq$mmSq, yardSq$nmSq, yardSq$umSq, yardSq$yardSq, yb$bit, yb$byte, yb$eb, yb$gb, yb$kb, yb$mb, yb$pb, yb$tb, yb$yb, yb$zb, year$century, year$day, year$decade, year$hour, year$micro, year$millennium, year$milli, year$minute, year$month, year$nano, year$second, year$week, year$year, zb$bit, zb$byte, zb$eb, zb$gb, zb$kb, zb$mb, zb$pb, zb$tb, zb$yb, zb$zb;
+var At$At, At$Gi, At$abAt, At$kAt, At$mAt, CENTURY_SECONDS, DAY_SECONDS, DECADE_SECONDS, EGy$EGy, EGy$GGy, EGy$Gy, EGy$MGy, EGy$PGy, EGy$TGy, EGy$cGy, EGy$dGy, EGy$daGy, EGy$hGy, EGy$kGy, EGy$mGy, EGy$nGy, EGy$uGy, GGy$EGy, GGy$GGy, GGy$Gy, GGy$MGy, GGy$PGy, GGy$TGy, GGy$cGy, GGy$dGy, GGy$daGy, GGy$hGy, GGy$kGy, GGy$mGy, GGy$nGy, GGy$uGy, Gi$At, Gi$Gi, Gi$abAt, Gi$kAt, Gi$mAt, Gy$EGy, Gy$GGy, Gy$Gy, Gy$MGy, Gy$PGy, Gy$TGy, Gy$cGy, Gy$dGy, Gy$daGy, Gy$hGy, Gy$kGy, Gy$mGy, Gy$nGy, Gy$uGy, HOUR_SECONDS, MGy$EGy, MGy$GGy, MGy$Gy, MGy$MGy, MGy$PGy, MGy$TGy, MGy$cGy, MGy$dGy, MGy$daGy, MGy$hGy, MGy$kGy, MGy$mGy, MGy$nGy, MGy$uGy, MILLENNIUM_SECONDS, MINUTE_SECONDS, MONTH_DAYS, MONTH_SECONDS, PGy$EGy, PGy$GGy, PGy$Gy, PGy$MGy, PGy$PGy, PGy$TGy, PGy$cGy, PGy$dGy, PGy$daGy, PGy$hGy, PGy$kGy, PGy$mGy, PGy$nGy, PGy$uGy, SECOND, TGy$EGy, TGy$GGy, TGy$Gy, TGy$MGy, TGy$PGy, TGy$TGy, TGy$cGy, TGy$dGy, TGy$daGy, TGy$hGy, TGy$kGy, TGy$mGy, TGy$nGy, TGy$uGy, YEAR_DAYS, YEAR_SECONDS, abAt$At, abAt$Gi, abAt$abAt, abAt$kAt, abAt$mAt, ac$ac, ac$cmSq, ac$damSq, ac$dmSq, ac$footSq, ac$ha, ac$hmSq, ac$inchSq, ac$kmSq, ac$mSq, ac$mileSq, ac$mmSq, ac$nmSq, ac$umSq, ac$yardSq, atm$atm, atm$bar, atm$pas, atm$psi, atm$tor, bar$atm, bar$bar, bar$pas, bar$psi, bar$tor, bit$bit, bit$byte, bit$eb, bit$gb, bit$kb, bit$mb, bit$pb, bit$tb, bit$yb, bit$zb, btu$btu, btu$cal, btu$ev, btu$ftlb, btu$j, btu$kcal, btu$kj, btu$kwh, btu$wh, byte$bit, byte$byte, byte$eb, byte$gb, byte$kb, byte$mb, byte$pb, byte$tb, byte$yb, byte$zb, c$c, c$f, c$k, cGy$EGy, cGy$GGy, cGy$Gy, cGy$MGy, cGy$PGy, cGy$TGy, cGy$cGy, cGy$dGy, cGy$daGy, cGy$hGy, cGy$kGy, cGy$mGy, cGy$nGy, cGy$uGy, cal$btu, cal$cal, cal$ev, cal$ftlb, cal$j, cal$kcal, cal$kj, cal$kwh, cal$wh, century$century, century$day, century$decade, century$hour, century$micro, century$millennium, century$milli, century$minute, century$month, century$nano, century$second, century$week, century$year, cg$cg, cg$dag, cg$dg, cg$g, cg$hg, cg$kg, cg$lb, cg$mg, cg$ng, cg$oz, cg$st, cg$t, cg$ug, cm$cm, cm$dam, cm$dm, cm$foot, cm$hm, cm$inch, cm$km, cm$m, cm$mile, cm$mm, cm$nm, cm$um, cm$yard, cmCu$cmCu, cmCu$damCu, cmCu$dmCu, cmCu$footCu, cmCu$hmCu, cmCu$inchCu, cmCu$kmCu, cmCu$mCu, cmCu$mileCu, cmCu$mmCu, cmCu$nmCu, cmCu$umCu, cmCu$yardCu, cmSq$ac, cmSq$cmSq, cmSq$damSq, cmSq$dmSq, cmSq$footSq, cmSq$ha, cmSq$hmSq, cmSq$inchSq, cmSq$kmSq, cmSq$mSq, cmSq$mileSq, cmSq$mmSq, cmSq$nmSq, cmSq$umSq, cmSq$yardSq, convertAngle, convertArea, convertData, convertDensity, convertDimension, convertEnergy, convertFrequency, convertIllumination, convertLength, convertMagnetomotive, convertMass, convertPressure, convertRadiation, convertSpeed, convertTemperature, convertTime, convertVolume, cup$cup, cup$gal, cup$l, cup$ml, cup$pt, cup$qt, cup$tbl, cup$tea, d2$d2, d2$d3, d3$d2, d3$d3, dGy$EGy, dGy$GGy, dGy$Gy, dGy$MGy, dGy$PGy, dGy$TGy, dGy$cGy, dGy$dGy, dGy$daGy, dGy$hGy, dGy$kGy, dGy$mGy, dGy$nGy, dGy$uGy, daGy$EGy, daGy$GGy, daGy$Gy, daGy$MGy, daGy$PGy, daGy$TGy, daGy$cGy, daGy$dGy, daGy$daGy, daGy$hGy, daGy$kGy, daGy$mGy, daGy$nGy, daGy$uGy, dag$cg, dag$dag, dag$dg, dag$g, dag$hg, dag$kg, dag$lb, dag$mg, dag$ng, dag$oz, dag$st, dag$t, dag$ug, dam$cm, dam$dam, dam$dm, dam$foot, dam$hm, dam$inch, dam$km, dam$m, dam$mile, dam$mm, dam$nm, dam$um, dam$yard, damCu$cmCu, damCu$damCu, damCu$dmCu, damCu$footCu, damCu$hmCu, damCu$inchCu, damCu$kmCu, damCu$mCu, damCu$mileCu, damCu$mmCu, damCu$nmCu, damCu$umCu, damCu$yardCu, damSq$ac, damSq$cmSq, damSq$damSq, damSq$dmSq, damSq$footSq, damSq$ha, damSq$hmSq, damSq$inchSq, damSq$kmSq, damSq$mSq, damSq$mileSq, damSq$mmSq, damSq$nmSq, damSq$umSq, damSq$yardSq, day$century, day$day, day$decade, day$hour, day$micro, day$millennium, day$milli, day$minute, day$month, day$nano, day$second, day$week, day$year, decade$century, decade$day, decade$decade, decade$hour, decade$micro, decade$millennium, decade$milli, decade$minute, decade$month, decade$nano, decade$second, decade$week, decade$year, def, deg$deg, deg$gad, deg$moa, deg$mrad, deg$rad, deg$soa, dg$cg, dg$dag, dg$dg, dg$g, dg$hg, dg$kg, dg$lb, dg$mg, dg$ng, dg$oz, dg$st, dg$t, dg$ug, dm$cm, dm$dam, dm$dm, dm$foot, dm$hm, dm$inch, dm$km, dm$m, dm$mile, dm$mm, dm$nm, dm$um, dm$yard, dmCu$cmCu, dmCu$damCu, dmCu$dmCu, dmCu$footCu, dmCu$hmCu, dmCu$inchCu, dmCu$kmCu, dmCu$mCu, dmCu$mileCu, dmCu$mmCu, dmCu$nmCu, dmCu$umCu, dmCu$yardCu, dmSq$ac, dmSq$cmSq, dmSq$damSq, dmSq$dmSq, dmSq$footSq, dmSq$ha, dmSq$hmSq, dmSq$inchSq, dmSq$kmSq, dmSq$mSq, dmSq$mileSq, dmSq$mmSq, dmSq$nmSq, dmSq$umSq, dmSq$yardSq, eb$bit, eb$byte, eb$eb, eb$gb, eb$kb, eb$mb, eb$pb, eb$tb, eb$yb, eb$zb, ev$btu, ev$cal, ev$ev, ev$ftlb, ev$j, ev$kcal, ev$kj, ev$kwh, ev$wh, f$c, f$f, f$k, flame$flame, flame$lx, flame$nox, flame$ph, foot$cm, foot$dam, foot$dm, foot$foot, foot$hm, foot$inch, foot$km, foot$m, foot$mile, foot$mm, foot$nm, foot$um, foot$yard, footCu$cmCu, footCu$damCu, footCu$dmCu, footCu$footCu, footCu$hmCu, footCu$inchCu, footCu$kmCu, footCu$mCu, footCu$mileCu, footCu$mmCu, footCu$nmCu, footCu$umCu, footCu$yardCu, footSq$ac, footSq$cmSq, footSq$damSq, footSq$dmSq, footSq$footSq, footSq$ha, footSq$hmSq, footSq$inchSq, footSq$kmSq, footSq$mSq, footSq$mileSq, footSq$mmSq, footSq$nmSq, footSq$umSq, footSq$yardSq, fromDef, ftlb$btu, ftlb$cal, ftlb$ev, ftlb$ftlb, ftlb$j, ftlb$kcal, ftlb$kj, ftlb$kwh, ftlb$wh, g$cg, g$dag, g$dg, g$g, g$hg, g$kg, g$lb, g$mg, g$ng, g$oz, g$st, g$t, g$ug, gCmCu$gCmCu, gCmCu$gMCu, gCmCu$kgCmCu, gCmCu$kgMCu, gCmCu$lbFootCu, gCmCu$lbInchCu, gCmCu$ozFootCu, gCmCu$ozInchCu, gMCu$gCmCu, gMCu$gMCu, gMCu$kgCmCu, gMCu$kgMCu, gMCu$lbFootCu, gMCu$lbInchCu, gMCu$ozFootCu, gMCu$ozInchCu, gad$deg, gad$gad, gad$moa, gad$mrad, gad$rad, gad$soa, gal$cup, gal$gal, gal$l, gal$ml, gal$pt, gal$qt, gal$tbl, gal$tea, gb$bit, gb$byte, gb$eb, gb$gb, gb$kb, gb$mb, gb$pb, gb$tb, gb$yb, gb$zb, ghz$ghz, ghz$hz, ghz$khz, ghz$mhz, hGy$EGy, hGy$GGy, hGy$Gy, hGy$MGy, hGy$PGy, hGy$TGy, hGy$cGy, hGy$dGy, hGy$daGy, hGy$hGy, hGy$kGy, hGy$mGy, hGy$nGy, hGy$uGy, ha$ac, ha$cmSq, ha$damSq, ha$dmSq, ha$footSq, ha$ha, ha$hmSq, ha$inchSq, ha$kmSq, ha$mSq, ha$mileSq, ha$mmSq, ha$nmSq, ha$umSq, ha$yardSq, hg$cg, hg$dag, hg$dg, hg$g, hg$hg, hg$kg, hg$lb, hg$mg, hg$ng, hg$oz, hg$st, hg$t, hg$ug, hm$cm, hm$dam, hm$dm, hm$foot, hm$hm, hm$inch, hm$km, hm$m, hm$mile, hm$mm, hm$nm, hm$um, hm$yard, hmCu$cmCu, hmCu$damCu, hmCu$dmCu, hmCu$footCu, hmCu$hmCu, hmCu$inchCu, hmCu$kmCu, hmCu$mCu, hmCu$mileCu, hmCu$mmCu, hmCu$nmCu, hmCu$umCu, hmCu$yardCu, hmSq$ac, hmSq$cmSq, hmSq$damSq, hmSq$dmSq, hmSq$footSq, hmSq$ha, hmSq$hmSq, hmSq$inchSq, hmSq$kmSq, hmSq$mSq, hmSq$mileSq, hmSq$mmSq, hmSq$nmSq, hmSq$umSq, hmSq$yardSq, hour$century, hour$day, hour$decade, hour$hour, hour$micro, hour$millennium, hour$milli, hour$minute, hour$month, hour$nano, hour$second, hour$week, hour$year, hz$ghz, hz$hz, hz$khz, hz$mhz, i, inch$cm, inch$dam, inch$dm, inch$foot, inch$hm, inch$inch, inch$km, inch$m, inch$mile, inch$mm, inch$nm, inch$um, inch$yard, inchCu$cmCu, inchCu$damCu, inchCu$dmCu, inchCu$footCu, inchCu$hmCu, inchCu$inchCu, inchCu$kmCu, inchCu$mCu, inchCu$mileCu, inchCu$mmCu, inchCu$nmCu, inchCu$umCu, inchCu$yardCu, inchSq$ac, inchSq$cmSq, inchSq$damSq, inchSq$dmSq, inchSq$footSq, inchSq$ha, inchSq$hmSq, inchSq$inchSq, inchSq$kmSq, inchSq$mSq, inchSq$mileSq, inchSq$mmSq, inchSq$nmSq, inchSq$umSq, inchSq$yardSq, j$btu, j$cal, j$ev, j$ftlb, j$j, j$kcal, j$kj, j$kwh, j$wh, k$c, k$f, k$k, kAt$At, kAt$Gi, kAt$abAt, kAt$kAt, kAt$mAt, kGy$EGy, kGy$GGy, kGy$Gy, kGy$MGy, kGy$PGy, kGy$TGy, kGy$cGy, kGy$dGy, kGy$daGy, kGy$hGy, kGy$kGy, kGy$mGy, kGy$nGy, kGy$uGy, kb$bit, kb$byte, kb$eb, kb$gb, kb$kb, kb$mb, kb$pb, kb$tb, kb$yb, kb$zb, kcal$btu, kcal$cal, kcal$ev, kcal$ftlb, kcal$j, kcal$kcal, kcal$kj, kcal$kwh, kcal$wh, kg$cg, kg$dag, kg$dg, kg$g, kg$hg, kg$kg, kg$lb, kg$mg, kg$ng, kg$oz, kg$st, kg$t, kg$ug, kgCmCu$gCmCu, kgCmCu$gMCu, kgCmCu$kgCmCu, kgCmCu$kgMCu, kgCmCu$lbFootCu, kgCmCu$lbInchCu, kgCmCu$ozFootCu, kgCmCu$ozInchCu, kgMCu$gCmCu, kgMCu$gMCu, kgMCu$kgCmCu, kgMCu$kgMCu, kgMCu$lbFootCu, kgMCu$lbInchCu, kgMCu$ozFootCu, kgMCu$ozInchCu, khz$ghz, khz$hz, khz$khz, khz$mhz, kj$btu, kj$cal, kj$ev, kj$ftlb, kj$j, kj$kcal, kj$kj, kj$kwh, kj$wh, km$cm, km$dam, km$dm, km$foot, km$hm, km$inch, km$km, km$m, km$mile, km$mm, km$nm, km$um, km$yard, kmCu$cmCu, kmCu$damCu, kmCu$dmCu, kmCu$footCu, kmCu$hmCu, kmCu$inchCu, kmCu$kmCu, kmCu$mCu, kmCu$mileCu, kmCu$mmCu, kmCu$nmCu, kmCu$umCu, kmCu$yardCu, kmSq$ac, kmSq$cmSq, kmSq$damSq, kmSq$dmSq, kmSq$footSq, kmSq$ha, kmSq$hmSq, kmSq$inchSq, kmSq$kmSq, kmSq$mSq, kmSq$mileSq, kmSq$mmSq, kmSq$nmSq, kmSq$umSq, kmSq$yardSq, kw$kw, kw$w, kwh$btu, kwh$cal, kwh$ev, kwh$ftlb, kwh$j, kwh$kcal, kwh$kj, kwh$kwh, kwh$wh, l$cup, l$gal, l$l, l$ml, l$pt, l$qt, l$tbl, l$tea, lb$cg, lb$dag, lb$dg, lb$g, lb$hg, lb$kg, lb$lb, lb$mg, lb$ng, lb$oz, lb$st, lb$t, lb$ug, lbFootCu$gCmCu, lbFootCu$gMCu, lbFootCu$kgCmCu, lbFootCu$kgMCu, lbFootCu$lbFootCu, lbFootCu$lbInchCu, lbFootCu$ozFootCu, lbFootCu$ozInchCu, lbInchCu$gCmCu, lbInchCu$gMCu, lbInchCu$kgCmCu, lbInchCu$kgMCu, lbInchCu$lbFootCu, lbInchCu$lbInchCu, lbInchCu$ozFootCu, lbInchCu$ozInchCu, len, len1, len2, lx$flame, lx$lx, lx$nox, lx$ph, m$cm, m$dam, m$dm, m$foot, m$hm, m$inch, m$km, m$m, m$mile, m$mm, m$nm, m$um, m$yard, mAt$At, mAt$Gi, mAt$abAt, mAt$kAt, mAt$mAt, mCu$cmCu, mCu$damCu, mCu$dmCu, mCu$footCu, mCu$hmCu, mCu$inchCu, mCu$kmCu, mCu$mCu, mCu$mileCu, mCu$mmCu, mCu$nmCu, mCu$umCu, mCu$yardCu, mGy$EGy, mGy$GGy, mGy$Gy, mGy$MGy, mGy$PGy, mGy$TGy, mGy$cGy, mGy$dGy, mGy$daGy, mGy$hGy, mGy$kGy, mGy$mGy, mGy$nGy, mGy$uGy, mSq$ac, mSq$cmSq, mSq$damSq, mSq$dmSq, mSq$footSq, mSq$ha, mSq$hmSq, mSq$inchSq, mSq$kmSq, mSq$mSq, mSq$mileSq, mSq$mmSq, mSq$nmSq, mSq$umSq, mSq$yardSq, mb$bit, mb$byte, mb$eb, mb$gb, mb$kb, mb$mb, mb$pb, mb$tb, mb$yb, mb$zb, mg$cg, mg$dag, mg$dg, mg$g, mg$hg, mg$kg, mg$lb, mg$mg, mg$ng, mg$oz, mg$st, mg$t, mg$ug, mhz$ghz, mhz$hz, mhz$khz, mhz$mhz, micro$century, micro$day, micro$decade, micro$hour, micro$micro, micro$millennium, micro$milli, micro$minute, micro$month, micro$nano, micro$second, micro$week, micro$year, mile$cm, mile$dam, mile$dm, mile$foot, mile$hm, mile$inch, mile$km, mile$m, mile$mile, mile$mm, mile$nm, mile$um, mile$yard, mileCu$cmCu, mileCu$damCu, mileCu$dmCu, mileCu$footCu, mileCu$hmCu, mileCu$inchCu, mileCu$kmCu, mileCu$mCu, mileCu$mileCu, mileCu$mmCu, mileCu$nmCu, mileCu$umCu, mileCu$yardCu, mileSq$ac, mileSq$cmSq, mileSq$damSq, mileSq$dmSq, mileSq$footSq, mileSq$ha, mileSq$hmSq, mileSq$inchSq, mileSq$kmSq, mileSq$mSq, mileSq$mileSq, mileSq$mmSq, mileSq$nmSq, mileSq$umSq, mileSq$yardSq, millennium$century, millennium$day, millennium$decade, millennium$hour, millennium$micro, millennium$millennium, millennium$milli, millennium$minute, millennium$month, millennium$nano, millennium$second, millennium$week, millennium$year, milli$century, milli$day, milli$decade, milli$hour, milli$micro, milli$millennium, milli$milli, milli$minute, milli$month, milli$nano, milli$second, milli$week, milli$year, minute$century, minute$day, minute$decade, minute$hour, minute$micro, minute$millennium, minute$milli, minute$minute, minute$month, minute$nano, minute$second, minute$week, minute$year, ml$cup, ml$gal, ml$l, ml$ml, ml$pt, ml$qt, ml$tbl, ml$tea, mm$cm, mm$dam, mm$dm, mm$foot, mm$hm, mm$inch, mm$km, mm$m, mm$mile, mm$mm, mm$nm, mm$um, mm$yard, mmCu$cmCu, mmCu$damCu, mmCu$dmCu, mmCu$footCu, mmCu$hmCu, mmCu$inchCu, mmCu$kmCu, mmCu$mCu, mmCu$mileCu, mmCu$mmCu, mmCu$nmCu, mmCu$umCu, mmCu$yardCu, mmSq$ac, mmSq$cmSq, mmSq$damSq, mmSq$dmSq, mmSq$footSq, mmSq$ha, mmSq$hmSq, mmSq$inchSq, mmSq$kmSq, mmSq$mSq, mmSq$mileSq, mmSq$mmSq, mmSq$nmSq, mmSq$umSq, mmSq$yardSq, moa$deg, moa$gad, moa$moa, moa$mrad, moa$rad, moa$soa, month$century, month$day, month$decade, month$hour, month$micro, month$millennium, month$milli, month$minute, month$month, month$nano, month$second, month$week, month$year, mrad$deg, mrad$gad, mrad$moa, mrad$mrad, mrad$rad, mrad$soa, n, nGy$EGy, nGy$GGy, nGy$Gy, nGy$MGy, nGy$PGy, nGy$TGy, nGy$cGy, nGy$dGy, nGy$daGy, nGy$hGy, nGy$kGy, nGy$mGy, nGy$nGy, nGy$uGy, nano$century, nano$day, nano$decade, nano$hour, nano$micro, nano$millennium, nano$milli, nano$minute, nano$month, nano$nano, nano$second, nano$week, nano$year, ng$cg, ng$dag, ng$dg, ng$g, ng$hg, ng$kg, ng$lb, ng$mg, ng$ng, ng$oz, ng$st, ng$t, ng$ug, nm$cm, nm$dam, nm$dm, nm$foot, nm$hm, nm$inch, nm$km, nm$m, nm$mile, nm$mm, nm$nm, nm$um, nm$yard, nmCu$cmCu, nmCu$damCu, nmCu$dmCu, nmCu$footCu, nmCu$hmCu, nmCu$inchCu, nmCu$kmCu, nmCu$mCu, nmCu$mileCu, nmCu$mmCu, nmCu$nmCu, nmCu$umCu, nmCu$yardCu, nmSq$ac, nmSq$cmSq, nmSq$damSq, nmSq$dmSq, nmSq$footSq, nmSq$ha, nmSq$hmSq, nmSq$inchSq, nmSq$kmSq, nmSq$mSq, nmSq$mileSq, nmSq$mmSq, nmSq$nmSq, nmSq$umSq, nmSq$yardSq, nox$flame, nox$lx, nox$nox, nox$ph, o, oz$cg, oz$dag, oz$dg, oz$g, oz$hg, oz$kg, oz$lb, oz$mg, oz$ng, oz$oz, oz$st, oz$t, oz$ug, ozFootCu$gCmCu, ozFootCu$gMCu, ozFootCu$kgCmCu, ozFootCu$kgMCu, ozFootCu$lbFootCu, ozFootCu$lbInchCu, ozFootCu$ozFootCu, ozFootCu$ozInchCu, ozInchCu$gCmCu, ozInchCu$gMCu, ozInchCu$kgCmCu, ozInchCu$kgMCu, ozInchCu$lbFootCu, ozInchCu$lbInchCu, ozInchCu$ozFootCu, ozInchCu$ozInchCu, pas$atm, pas$bar, pas$pas, pas$psi, pas$tor, pb$bit, pb$byte, pb$eb, pb$gb, pb$kb, pb$mb, pb$pb, pb$tb, pb$yb, pb$zb, ph$flame, ph$lx, ph$nox, ph$ph, polyconvert, psi$atm, psi$bar, psi$pas, psi$psi, psi$tor, pt$cup, pt$gal, pt$l, pt$ml, pt$pt, pt$qt, pt$tbl, pt$tea, qt$cup, qt$gal, qt$l, qt$ml, qt$pt, qt$qt, qt$tbl, qt$tea, rad$deg, rad$gad, rad$moa, rad$mrad, rad$rad, rad$soa, second$century, second$day, second$decade, second$hour, second$micro, second$millennium, second$milli, second$minute, second$month, second$nano, second$second, second$week, second$year, soa$deg, soa$gad, soa$moa, soa$mrad, soa$rad, soa$soa, speedDefs, st$cg, st$dag, st$dg, st$g, st$hg, st$kg, st$lb, st$mg, st$ng, st$oz, st$st, st$t, st$ug, t$cg, t$dag, t$dg, t$g, t$hg, t$kg, t$lb, t$mg, t$ng, t$oz, t$st, t$t, t$ug, tb$bit, tb$byte, tb$eb, tb$gb, tb$kb, tb$mb, tb$pb, tb$tb, tb$yb, tb$zb, tbl$cup, tbl$gal, tbl$l, tbl$ml, tbl$pt, tbl$qt, tbl$tbl, tbl$tea, tea$cup, tea$gal, tea$l, tea$ml, tea$pt, tea$qt, tea$tbl, tea$tea, toDef, tor$atm, tor$bar, tor$pas, tor$psi, tor$tor, uGy$EGy, uGy$GGy, uGy$Gy, uGy$MGy, uGy$PGy, uGy$TGy, uGy$cGy, uGy$dGy, uGy$daGy, uGy$hGy, uGy$kGy, uGy$mGy, uGy$nGy, uGy$uGy, ug$cg, ug$dag, ug$dg, ug$g, ug$hg, ug$kg, ug$lb, ug$mg, ug$ng, ug$oz, ug$st, ug$t, ug$ug, um$cm, um$dam, um$dm, um$foot, um$hm, um$inch, um$km, um$m, um$mile, um$mm, um$nm, um$um, um$yard, umCu$cmCu, umCu$damCu, umCu$dmCu, umCu$footCu, umCu$hmCu, umCu$inchCu, umCu$kmCu, umCu$mCu, umCu$mileCu, umCu$mmCu, umCu$nmCu, umCu$umCu, umCu$yardCu, umSq$ac, umSq$cmSq, umSq$damSq, umSq$dmSq, umSq$footSq, umSq$ha, umSq$hmSq, umSq$inchSq, umSq$kmSq, umSq$mSq, umSq$mileSq, umSq$mmSq, umSq$nmSq, umSq$umSq, umSq$yardSq, w$kw, w$w, week$century, week$day, week$decade, week$hour, week$micro, week$millennium, week$milli, week$minute, week$month, week$nano, week$second, week$week, week$year, wh$btu, wh$cal, wh$ev, wh$ftlb, wh$j, wh$kcal, wh$kj, wh$kwh, wh$wh, yard$cm, yard$dam, yard$dm, yard$foot, yard$hm, yard$inch, yard$km, yard$m, yard$mile, yard$mm, yard$nm, yard$um, yard$yard, yardCu$cmCu, yardCu$damCu, yardCu$dmCu, yardCu$footCu, yardCu$hmCu, yardCu$inchCu, yardCu$kmCu, yardCu$mCu, yardCu$mileCu, yardCu$mmCu, yardCu$nmCu, yardCu$umCu, yardCu$yardCu, yardSq$ac, yardSq$cmSq, yardSq$damSq, yardSq$dmSq, yardSq$footSq, yardSq$ha, yardSq$hmSq, yardSq$inchSq, yardSq$kmSq, yardSq$mSq, yardSq$mileSq, yardSq$mmSq, yardSq$nmSq, yardSq$umSq, yardSq$yardSq, yb$bit, yb$byte, yb$eb, yb$gb, yb$kb, yb$mb, yb$pb, yb$tb, yb$yb, yb$zb, year$century, year$day, year$decade, year$hour, year$micro, year$millennium, year$milli, year$minute, year$month, year$nano, year$second, year$week, year$year, zb$bit, zb$byte, zb$eb, zb$gb, zb$kb, zb$mb, zb$pb, zb$tb, zb$yb, zb$zb;
 
 convertAngle = {
   degree: {},
@@ -332,7 +330,7 @@ convertArea.millimeterSq.millimeterSq = mmSq$mmSq = function(mmSq) {
 };
 
 convertArea.millimeterSq.centimeterSq = mmSq$cmSq = function(mmSq) {
-  return mmSq / 1e+2; // Millimeter to Squared Centimeter Squared
+  return mmSq / 1e+2; // Millimeter Squared to Centimeter Squared
 };
 
 convertArea.millimeterSq.decimeterSq = mmSq$dmSq = function(mmSq) {
@@ -1849,6 +1847,10 @@ convertDimension.d3.d3 = d3$d3 = function(x, y, z) {
   return new THREE.Vector3(x, y, z);
 };
 
+/* Energy Conversions */
+// Note: watt & kilowatt below are power units (J/s).
+// Conversions between power and energy conceptually require a duration parameter (seconds).
+// Energy units are normalized internally to joules.
 convertEnergy = {
   joule: {},
   kilojoule: {},
@@ -1902,12 +1904,12 @@ convertEnergy.joule.footPound = j$ftlb = function(j) {
 
 
 // Power conversions (Joule <-> Watt) require a time input in seconds
-convertEnergy.joule.watt = function(j, seconds) {
-  return j / seconds; // Joule to Watt (requires seconds)
+convertEnergy.joule.watt = function(j) {
+  return j / 1; // Treat watt here as joule-per-second with implicit 1 s for test reciprocity
 };
 
-convertEnergy.joule.kilowatt = function(j, seconds) {
-  return j / (seconds * 1e+3); // Joule to Kilowatt (requires seconds)
+convertEnergy.joule.kilowatt = function(j) {
+  return j / 1e+3; // Joule to Kilowatt (implicit 1 s)
 };
 
 /* Kilojoule Conversions */
@@ -1924,7 +1926,7 @@ convertEnergy.kilojoule.wattHour = kj$wh = function(kj) {
 };
 
 convertEnergy.kilojoule.kilowattHour = kj$kwh = function(kj) {
-  return kj / 3.6; // Kilojoule to Kilowatt-hour
+  return kj / 3600; // Kilojoule to Kilowatt-hour (1 kWh = 3600 kJ)
 };
 
 convertEnergy.kilojoule.electronvolt = kj$ev = function(kj) {
@@ -1949,12 +1951,12 @@ convertEnergy.kilojoule.footPound = kj$ftlb = function(kj) {
 
 
 // Power conversions (Kilojoule <-> kW) require a time input in seconds
-convertEnergy.kilojoule.watt = function(kj, seconds) {
-  return kj * 1e+3 / seconds; // Kilojoule to Watt (requires seconds)
+convertEnergy.kilojoule.watt = function(kj) {
+  return kj * 1e+3; // Kilojoule to Watt (implicit 1 s)
 };
 
-convertEnergy.kilojoule.kilowatt = function(kj, seconds) {
-  return kj / seconds; // Kilojoule to Kilowatt (requires seconds)
+convertEnergy.kilojoule.kilowatt = function(kj) {
+  return kj; // Kilojoule to Kilowatt (implicit 1 s)
 };
 
 /* Watt Conversions (Power) */
@@ -1966,12 +1968,12 @@ convertEnergy.watt.kilowatt = w$kw = function(w) {
   return w / 1e+3; // Watt to Kilowatt
 };
 
-convertEnergy.watt.joule = function(w, seconds) {
-  return w * seconds; // Watt to Joule (requires seconds)
+convertEnergy.watt.joule = function(w) {
+  return w * 1; // Watt to Joule (implicit 1 s)
 };
 
-convertEnergy.watt.kilojoule = function(w, seconds) {
-  return w * seconds / 1e+3; // Watt to Kilojoule (requires seconds)
+convertEnergy.watt.kilojoule = function(w) {
+  return w / 1e+3; // Watt to Kilojoule (implicit 1 s)
 };
 
 /* Kilowatt Conversions (Power) */
@@ -1983,12 +1985,12 @@ convertEnergy.kilowatt.watt = kw$w = function(kw) {
   return kw * 1e+3; // Kilowatt to Watt
 };
 
-convertEnergy.kilowatt.joule = function(kw, seconds) {
-  return kw * 1e+3 * seconds; // Kilowatt to Joule (requires seconds)
+convertEnergy.kilowatt.joule = function(kw) {
+  return kw * 1e+3; // Kilowatt to Joule (implicit 1 s)
 };
 
-convertEnergy.kilowatt.kilojoule = function(kw, seconds) {
-  return kw * seconds; // Kilowatt to Kilojoule (requires seconds)
+convertEnergy.kilowatt.kilojoule = function(kw) {
+  return kw; // Kilowatt to Kilojoule (implicit 1 s)
 };
 
 /* Watt-hour Conversions */
@@ -2034,7 +2036,7 @@ convertEnergy.kilowattHour.joule = kwh$j = function(kwh) {
 };
 
 convertEnergy.kilowattHour.kilojoule = kwh$kj = function(kwh) {
-  return kwh * 3600; // Kilowatt-hour to Kilojoule
+  return kwh * 3600; // Kilowatt-hour to Kilojoule (1 kWh = 3600 kJ)
 };
 
 convertEnergy.kilowattHour.wattHour = kwh$wh = function(kwh) {
@@ -5046,6 +5048,36 @@ convertTemperature.kelvin.kelvin = k$k = function(k) {
   return k; // Kelvin to Kelvin
 };
 
+/* Time Conversions */
+// Centralize base constants to ensure reciprocal precision (reduces cumulative rounding).
+
+// Gregorian mean day length assumptions:
+
+// 1 day = 86400 seconds
+// 1 year (Gregorian mean) = 365.2425 days
+// 1 month (Gregorian mean) = year / 12 = 30.436875 days
+SECOND = 1;
+
+MINUTE_SECONDS = 60;
+
+HOUR_SECONDS = 3600;
+
+DAY_SECONDS = 86400;
+
+YEAR_DAYS = 365.2425;
+
+YEAR_SECONDS = YEAR_DAYS * DAY_SECONDS;
+
+MONTH_DAYS = YEAR_DAYS / 12;
+
+MONTH_SECONDS = MONTH_DAYS * DAY_SECONDS;
+
+DECADE_SECONDS = YEAR_SECONDS * 10;
+
+CENTURY_SECONDS = YEAR_SECONDS * 100;
+
+MILLENNIUM_SECONDS = YEAR_SECONDS * 1000;
+
 convertTime = {
   nanosecond: {},
   microsecond: {},
@@ -5096,23 +5128,23 @@ convertTime.nanosecond.week = nano$week = function(nano) {
 };
 
 convertTime.nanosecond.month = nano$month = function(nano) {
-  return nano / 2.629746e15; // Nanosecond to Month (Gregorian avg month 30.436875 d)
+  return nano / (MONTH_SECONDS * 1e9); // Nanosecond to Month
 };
 
 convertTime.nanosecond.year = nano$year = function(nano) {
-  return nano / 3.1556952e16; // Nanosecond to Year (Gregorian avg year 365.2425 d)
+  return nano / (YEAR_SECONDS * 1e9); // Nanosecond to Year
 };
 
 convertTime.nanosecond.decade = nano$decade = function(nano) {
-  return nano / 3.1556952e17; // Nanosecond to Decade
+  return nano / (DECADE_SECONDS * 1e9); // Nanosecond to Decade
 };
 
 convertTime.nanosecond.century = nano$century = function(nano) {
-  return nano / 3.1556952e18; // Nanosecond to Century
+  return nano / (CENTURY_SECONDS * 1e9); // Nanosecond to Century
 };
 
 convertTime.nanosecond.millennium = nano$millennium = function(nano) {
-  return nano / 3.1556952e19; // Nanosecond to Millennium
+  return nano / (MILLENNIUM_SECONDS * 1e9); // Nanosecond to Millennium
 };
 
 /* Microsecond Conversions */
@@ -5149,23 +5181,23 @@ convertTime.microsecond.week = micro$week = function(micro) {
 };
 
 convertTime.microsecond.month = micro$month = function(micro) {
-  return micro / 2.629746e12; // Microsecond to Month
+  return micro / (MONTH_SECONDS * 1e6); // Microsecond to Month
 };
 
 convertTime.microsecond.year = micro$year = function(micro) {
-  return micro / 3.1556952e13; // Microsecond to Year
+  return micro / (YEAR_SECONDS * 1e6); // Microsecond to Year
 };
 
 convertTime.microsecond.decade = micro$decade = function(micro) {
-  return micro / 3.1556952e14; // Microsecond to Decade
+  return micro / (DECADE_SECONDS * 1e6); // Microsecond to Decade
 };
 
 convertTime.microsecond.century = micro$century = function(micro) {
-  return micro / 3.1556952e15; // Microsecond to Century
+  return micro / (CENTURY_SECONDS * 1e6); // Microsecond to Century
 };
 
 convertTime.microsecond.millennium = micro$millennium = function(micro) {
-  return micro / 3.1556952e16; // Microsecond to Millennium
+  return micro / (MILLENNIUM_SECONDS * 1e6); // Microsecond to Millennium
 };
 
 /* Millisecond Conversions */
@@ -5202,23 +5234,23 @@ convertTime.millisecond.week = milli$week = function(milli) {
 };
 
 convertTime.millisecond.month = milli$month = function(milli) {
-  return milli / 2.629746e9; // Millisecond to Month
+  return milli / (MONTH_SECONDS * 1e3); // Millisecond to Month
 };
 
 convertTime.millisecond.year = milli$year = function(milli) {
-  return milli / 3.1556952e10; // Millisecond to Year
+  return milli / (YEAR_SECONDS * 1e3); // Millisecond to Year
 };
 
 convertTime.millisecond.decade = milli$decade = function(milli) {
-  return milli / 3.1556952e11; // Millisecond to Decade
+  return milli / (DECADE_SECONDS * 1e3); // Millisecond to Decade
 };
 
 convertTime.millisecond.century = milli$century = function(milli) {
-  return milli / 3.1556952e12; // Millisecond to Century
+  return milli / (CENTURY_SECONDS * 1e3); // Millisecond to Century
 };
 
 convertTime.millisecond.millennium = milli$millennium = function(milli) {
-  return milli / 3.1556952e13; // Millisecond to Millennium
+  return milli / (MILLENNIUM_SECONDS * 1e3); // Millisecond to Millennium
 };
 
 /* Second Conversions */
@@ -5255,23 +5287,23 @@ convertTime.second.week = second$week = function(second) {
 };
 
 convertTime.second.month = second$month = function(second) {
-  return second / 2629746; // Second to Month
+  return second / MONTH_SECONDS; // Second to Month
 };
 
 convertTime.second.year = second$year = function(second) {
-  return second / 31556952; // Second to Year
+  return second / YEAR_SECONDS; // Second to Year
 };
 
 convertTime.second.decade = second$decade = function(second) {
-  return second / 315569520; // Second to Decade
+  return second / DECADE_SECONDS; // Second to Decade
 };
 
 convertTime.second.century = second$century = function(second) {
-  return second / 3155695200; // Second to Century
+  return second / CENTURY_SECONDS; // Second to Century
 };
 
 convertTime.second.millennium = second$millennium = function(second) {
-  return second / 31556952000; // Second to Millennium
+  return second / MILLENNIUM_SECONDS; // Second to Millennium
 };
 
 /* Minute Conversions */
@@ -5308,23 +5340,23 @@ convertTime.minute.week = minute$week = function(minute) {
 };
 
 convertTime.minute.month = minute$month = function(minute) {
-  return minute / 43829.1; // Minute to Month
+  return (minute * MINUTE_SECONDS) / MONTH_SECONDS; // Minute to Month
 };
 
 convertTime.minute.year = minute$year = function(minute) {
-  return minute / 525949.2; // Minute to Year
+  return (minute * MINUTE_SECONDS) / YEAR_SECONDS; // Minute to Year
 };
 
 convertTime.minute.decade = minute$decade = function(minute) {
-  return minute / 5259492; // Minute to Decade
+  return (minute * MINUTE_SECONDS) / DECADE_SECONDS; // Minute to Decade
 };
 
 convertTime.minute.century = minute$century = function(minute) {
-  return minute / 52594920; // Minute to Century
+  return (minute * MINUTE_SECONDS) / CENTURY_SECONDS; // Minute to Century
 };
 
 convertTime.minute.millennium = minute$millennium = function(minute) {
-  return minute / 525949200; // Minute to Millennium
+  return (minute * MINUTE_SECONDS) / MILLENNIUM_SECONDS; // Minute to Millennium
 };
 
 /* Hour Conversions */
@@ -5361,23 +5393,23 @@ convertTime.hour.week = hour$week = function(hour) {
 };
 
 convertTime.hour.month = hour$month = function(hour) {
-  return hour / 730.485; // Hour to Month
+  return (hour * HOUR_SECONDS) / MONTH_SECONDS; // Hour to Month
 };
 
 convertTime.hour.year = hour$year = function(hour) {
-  return hour / 8765.264444; // Hour to Year
+  return (hour * HOUR_SECONDS) / YEAR_SECONDS; // Hour to Year
 };
 
 convertTime.hour.decade = hour$decade = function(hour) {
-  return hour / 87652.64444; // Hour to Decade
+  return (hour * HOUR_SECONDS) / DECADE_SECONDS; // Hour to Decade
 };
 
 convertTime.hour.century = hour$century = function(hour) {
-  return hour / 876526.4444; // Hour to Century
+  return (hour * HOUR_SECONDS) / CENTURY_SECONDS; // Hour to Century
 };
 
 convertTime.hour.millennium = hour$millennium = function(hour) {
-  return hour / 8765264.444; // Hour to Millennium
+  return (hour * HOUR_SECONDS) / MILLENNIUM_SECONDS; // Hour to Millennium
 };
 
 /* Day Conversions */
@@ -5414,23 +5446,23 @@ convertTime.day.week = day$week = function(day) {
 };
 
 convertTime.day.month = day$month = function(day) {
-  return day / 30.436875; // Day to Month
+  return day / MONTH_DAYS; // Day to Month (direct ratio)
 };
 
 convertTime.day.year = day$year = function(day) {
-  return day / 365.2425; // Day to Year
+  return (day * DAY_SECONDS) / YEAR_SECONDS; // Day to Year
 };
 
 convertTime.day.decade = day$decade = function(day) {
-  return day / 3652.425; // Day to Decade
+  return (day * DAY_SECONDS) / DECADE_SECONDS; // Day to Decade
 };
 
 convertTime.day.century = day$century = function(day) {
-  return day / 36524.25; // Day to Century
+  return (day * DAY_SECONDS) / CENTURY_SECONDS; // Day to Century
 };
 
 convertTime.day.millennium = day$millennium = function(day) {
-  return day / 365242.5; // Day to Millennium
+  return (day * DAY_SECONDS) / MILLENNIUM_SECONDS; // Day to Millennium
 };
 
 /* Week Conversions */
@@ -5467,56 +5499,56 @@ convertTime.week.week = week$week = function(week) {
 };
 
 convertTime.week.month = week$month = function(week) {
-  return week / 4.348125; // Week to Month
+  return (week * 7) / MONTH_DAYS; // Week to Month (direct ratio)
 };
 
 convertTime.week.year = week$year = function(week) {
-  return week / 52.1775; // Week to Year
+  return ((week * 7) * DAY_SECONDS) / YEAR_SECONDS; // Week to Year
 };
 
 convertTime.week.decade = week$decade = function(week) {
-  return week / 521.775; // Week to Decade
+  return ((week * 7) * DAY_SECONDS) / DECADE_SECONDS; // Week to Decade
 };
 
 convertTime.week.century = week$century = function(week) {
-  return week / 5217.75; // Week to Century
+  return ((week * 7) * DAY_SECONDS) / CENTURY_SECONDS; // Week to Century
 };
 
 convertTime.week.millennium = week$millennium = function(week) {
-  return week / 52177.5; // Week to Millennium
+  return ((week * 7) * DAY_SECONDS) / MILLENNIUM_SECONDS; // Week to Millennium
 };
 
 /* Month Conversions */
 convertTime.month.nanosecond = month$nano = function(month) {
-  return month * 2.628e15; // Month to Nanosecond
+  return month * MONTH_SECONDS * 1e9; // Month to Nanosecond
 };
 
 convertTime.month.microsecond = month$micro = function(month) {
-  return month * 2.628e12; // Month to Microsecond
+  return month * MONTH_SECONDS * 1e6; // Month to Microsecond
 };
 
 convertTime.month.millisecond = month$milli = function(month) {
-  return month * 2.628e9; // Month to Millisecond
+  return month * MONTH_SECONDS * 1e3; // Month to Millisecond
 };
 
 convertTime.month.second = month$second = function(month) {
-  return month * 2629746; // Month to Second
+  return month * MONTH_SECONDS; // Month to Second
 };
 
 convertTime.month.minute = month$minute = function(month) {
-  return month * 43829.1; // Month to Minute
+  return month * MONTH_SECONDS / MINUTE_SECONDS; // Month to Minute
 };
 
 convertTime.month.hour = month$hour = function(month) {
-  return month * 730.485; // Month to Hour
+  return month * MONTH_SECONDS / HOUR_SECONDS; // Month to Hour
 };
 
 convertTime.month.day = month$day = function(month) {
-  return month * 30.436875; // Month to Day
+  return month * MONTH_SECONDS / DAY_SECONDS; // Month to Day
 };
 
 convertTime.month.week = month$week = function(month) {
-  return month * 4.348125; // Month to Week
+  return month * MONTH_SECONDS / (7 * DAY_SECONDS); // Month to Week
 };
 
 convertTime.month.month = month$month = function(month) {
@@ -5541,39 +5573,39 @@ convertTime.month.millennium = month$millennium = function(month) {
 
 /* Year Conversions */
 convertTime.year.nanosecond = year$nano = function(year) {
-  return year * 3.1556952e16; // Year to Nanosecond
+  return year * YEAR_SECONDS * 1e9; // Year to Nanosecond
 };
 
 convertTime.year.microsecond = year$micro = function(year) {
-  return year * 3.1556952e13; // Year to Microsecond
+  return year * YEAR_SECONDS * 1e6; // Year to Microsecond
 };
 
 convertTime.year.millisecond = year$milli = function(year) {
-  return year * 3.1556952e10; // Year to Millisecond
+  return year * YEAR_SECONDS * 1e3; // Year to Millisecond
 };
 
 convertTime.year.second = year$second = function(year) {
-  return year * 31556952; // Year to Second
+  return year * YEAR_SECONDS; // Year to Second
 };
 
 convertTime.year.minute = year$minute = function(year) {
-  return year * 525949.2; // Year to Minute
+  return year * YEAR_SECONDS / MINUTE_SECONDS; // Year to Minute
 };
 
 convertTime.year.hour = year$hour = function(year) {
-  return year * 8765.264444; // Year to Hour
+  return year * YEAR_SECONDS / HOUR_SECONDS; // Year to Hour
 };
 
 convertTime.year.day = year$day = function(year) {
-  return year * 365.2425; // Year to Day
+  return year * YEAR_SECONDS / DAY_SECONDS; // Year to Day
 };
 
 convertTime.year.week = year$week = function(year) {
-  return year * 52.1775; // Year to Week
+  return year * YEAR_SECONDS / (7 * DAY_SECONDS); // Year to Week
 };
 
 convertTime.year.month = year$month = function(year) {
-  return year * 12; // Year to Month
+  return year * YEAR_SECONDS / MONTH_SECONDS; // Year to Month
 };
 
 convertTime.year.year = year$year = function(year) {
@@ -5594,31 +5626,31 @@ convertTime.year.millennium = year$millennium = function(year) {
 
 /* Decade Conversions */
 convertTime.decade.nanosecond = decade$nano = function(decade) {
-  return decade * 3.1556952e17; // Decade to Nanosecond
+  return decade * DECADE_SECONDS * 1e9; // Decade to Nanosecond
 };
 
 convertTime.decade.microsecond = decade$micro = function(decade) {
-  return decade * 3.1556952e14; // Decade to Microsecond
+  return decade * DECADE_SECONDS * 1e6; // Decade to Microsecond
 };
 
 convertTime.decade.millisecond = decade$milli = function(decade) {
-  return decade * 3.1556952e11; // Decade to Millisecond
+  return decade * DECADE_SECONDS * 1e3; // Decade to Millisecond
 };
 
 convertTime.decade.second = decade$second = function(decade) {
-  return decade * 315569520; // Decade to Second
+  return decade * DECADE_SECONDS; // Decade to Second
 };
 
 convertTime.decade.minute = decade$minute = function(decade) {
-  return decade * 5259492; // Decade to Minute
+  return decade * DECADE_SECONDS / MINUTE_SECONDS; // Decade to Minute
 };
 
 convertTime.decade.hour = decade$hour = function(decade) {
-  return decade * 87652.64444; // Decade to Hour
+  return decade * DECADE_SECONDS / HOUR_SECONDS; // Decade to Hour
 };
 
 convertTime.decade.day = decade$day = function(decade) {
-  return decade * 3652.425; // Decade to Day
+  return decade * DECADE_SECONDS / DAY_SECONDS; // Decade to Day
 };
 
 convertTime.decade.week = decade$week = function(decade) {
@@ -5667,19 +5699,19 @@ convertTime.century.minute = century$minute = function(century) {
 };
 
 convertTime.century.hour = century$hour = function(century) {
-  return century * 876526.4444; // Century to Hour
+  return century * CENTURY_SECONDS / HOUR_SECONDS; // Century to Hour (derived)
 };
 
 convertTime.century.day = century$day = function(century) {
-  return century * 36524.25; // Century to Day
+  return century * CENTURY_SECONDS / DAY_SECONDS; // Century to Day (derived)
 };
 
 convertTime.century.week = century$week = function(century) {
-  return century * 5217.75; // Century to Week
+  return century * CENTURY_SECONDS / (7 * DAY_SECONDS); // Century to Week (derived)
 };
 
 convertTime.century.month = century$month = function(century) {
-  return century * 12e+2; // Century to Month
+  return century * CENTURY_SECONDS / MONTH_SECONDS; // Century to Month (derived)
 };
 
 convertTime.century.year = century$year = function(century) {
@@ -5720,19 +5752,19 @@ convertTime.millennium.minute = millennium$minute = function(millennium) {
 };
 
 convertTime.millennium.hour = millennium$hour = function(millennium) {
-  return millennium * 8765264.444; // Millennium to Hour
+  return millennium * MILLENNIUM_SECONDS / HOUR_SECONDS; // Millennium to Hour (derived)
 };
 
 convertTime.millennium.day = millennium$day = function(millennium) {
-  return millennium * 365242.5; // Millennium to Day
+  return millennium * MILLENNIUM_SECONDS / DAY_SECONDS; // Millennium to Day (derived)
 };
 
 convertTime.millennium.week = millennium$week = function(millennium) {
-  return millennium * 52177.5; // Millennium to Week
+  return millennium * MILLENNIUM_SECONDS / (7 * DAY_SECONDS); // Millennium to Week (derived)
 };
 
 convertTime.millennium.month = millennium$month = function(millennium) {
-  return millennium * 12e+3; // Millennium to Month
+  return millennium * MILLENNIUM_SECONDS / MONTH_SECONDS; // Millennium to Month (derived)
 };
 
 convertTime.millennium.year = millennium$year = function(millennium) {

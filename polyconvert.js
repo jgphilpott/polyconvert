@@ -1117,7 +1117,7 @@ convertData = {
   kilobyte: {},
   megabyte: {},
   gigabyte: {},
-  terrabyte: {},
+  terabyte: {},
   petabyte: {},
   exabyte: {},
   zettabyte: {},
@@ -1145,8 +1145,8 @@ convertData.bit.gigabyte = bit$gb = function(bit) {
   return bit / 8e+9; // Bit to Gigabyte
 };
 
-convertData.bit.terrabyte = bit$tb = function(bit) {
-  return bit / 8e+12; // Bit to Terrabyte
+convertData.bit.terabyte = bit$tb = function(bit) {
+  return bit / 8e+12; // Bit to Terabyte
 };
 
 convertData.bit.petabyte = bit$pb = function(bit) {
@@ -1186,8 +1186,8 @@ convertData.byte.gigabyte = byte$gb = function(byte) {
   return byte / 1e+9; // Byte to Gigabyte
 };
 
-convertData.byte.terrabyte = byte$tb = function(byte) {
-  return byte / 1e+12; // Byte to Terrabyte
+convertData.byte.terabyte = byte$tb = function(byte) {
+  return byte / 1e+12; // Byte to Terabyte
 };
 
 convertData.byte.petabyte = byte$pb = function(byte) {
@@ -1227,8 +1227,8 @@ convertData.kilobyte.gigabyte = kb$gb = function(kb) {
   return kb / 1e+6; // Kilobyte to Gigabyte
 };
 
-convertData.kilobyte.terrabyte = kb$tb = function(kb) {
-  return kb / 1e+9; // Kilobyte to Terrabyte
+convertData.kilobyte.terabyte = kb$tb = function(kb) {
+  return kb / 1e+9; // Kilobyte to Terabyte
 };
 
 convertData.kilobyte.petabyte = kb$pb = function(kb) {
@@ -1268,8 +1268,8 @@ convertData.megabyte.gigabyte = mb$gb = function(mb) {
   return mb / 1e+3; // Megabyte to Gigabyte
 };
 
-convertData.megabyte.terrabyte = mb$tb = function(mb) {
-  return mb / 1e+6; // Megabyte to Terrabyte
+convertData.megabyte.terabyte = mb$tb = function(mb) {
+  return mb / 1e+6; // Megabyte to Terabyte
 };
 
 convertData.megabyte.petabyte = mb$pb = function(mb) {
@@ -1309,8 +1309,8 @@ convertData.gigabyte.gigabyte = gb$gb = function(gb) {
   return gb; // Gigabyte to Gigabyte
 };
 
-convertData.gigabyte.terrabyte = gb$tb = function(gb) {
-  return gb / 1e+3; // Gigabyte to Terrabyte
+convertData.gigabyte.terabyte = gb$tb = function(gb) {
+  return gb / 1e+3; // Gigabyte to Terabyte
 };
 
 convertData.gigabyte.petabyte = gb$pb = function(gb) {
@@ -1329,45 +1329,45 @@ convertData.gigabyte.yottabyte = gb$yb = function(gb) {
   return gb / 1e+15; // Gigabyte to Yottabyte
 };
 
-/* Terrabyte Conversions */
-convertData.terrabyte.bit = tb$bit = function(tb) {
-  return tb * 8e+12; // Terrabyte to Bit
+/* Terabyte Conversions */
+convertData.terabyte.bit = tb$bit = function(tb) {
+  return tb * 8e+12; // Terabyte to Bit
 };
 
-convertData.terrabyte.byte = tb$byte = function(tb) {
-  return tb * 1e+12; // Terrabyte to Byte
+convertData.terabyte.byte = tb$byte = function(tb) {
+  return tb * 1e+12; // Terabyte to Byte
 };
 
-convertData.terrabyte.kilobyte = tb$kb = function(tb) {
-  return tb * 1e+9; // Terrabyte to Kilobyte
+convertData.terabyte.kilobyte = tb$kb = function(tb) {
+  return tb * 1e+9; // Terabyte to Kilobyte
 };
 
-convertData.terrabyte.megabyte = tb$mb = function(tb) {
-  return tb * 1e+6; // Terrabyte to Megabyte
+convertData.terabyte.megabyte = tb$mb = function(tb) {
+  return tb * 1e+6; // Terabyte to Megabyte
 };
 
-convertData.terrabyte.gigabyte = tb$gb = function(tb) {
-  return tb * 1e+3; // Terrabyte to Gigabyte
+convertData.terabyte.gigabyte = tb$gb = function(tb) {
+  return tb * 1e+3; // Terabyte to Gigabyte
 };
 
-convertData.terrabyte.terrabyte = tb$tb = function(tb) {
-  return tb; // Terrabyte to Terrabyte
+convertData.terabyte.terabyte = tb$tb = function(tb) {
+  return tb; // Terabyte to Terabyte
 };
 
-convertData.terrabyte.petabyte = tb$pb = function(tb) {
-  return tb / 1e+3; // Terrabyte to Petabyte
+convertData.terabyte.petabyte = tb$pb = function(tb) {
+  return tb / 1e+3; // Terabyte to Petabyte
 };
 
-convertData.terrabyte.exabyte = tb$eb = function(tb) {
-  return tb / 1e+6; // Terrabyte to Exabyte
+convertData.terabyte.exabyte = tb$eb = function(tb) {
+  return tb / 1e+6; // Terabyte to Exabyte
 };
 
-convertData.terrabyte.zettabyte = tb$zb = function(tb) {
-  return tb / 1e+9; // Terrabyte to Zettabyte
+convertData.terabyte.zettabyte = tb$zb = function(tb) {
+  return tb / 1e+9; // Terabyte to Zettabyte
 };
 
-convertData.terrabyte.yottabyte = tb$yb = function(tb) {
-  return tb / 1e+12; // Terrabyte to Yottabyte
+convertData.terabyte.yottabyte = tb$yb = function(tb) {
+  return tb / 1e+12; // Terabyte to Yottabyte
 };
 
 /* Petabyte Conversions */
@@ -1391,8 +1391,8 @@ convertData.petabyte.gigabyte = pb$gb = function(pb) {
   return pb * 1e+6; // Petabyte to Gigabyte
 };
 
-convertData.petabyte.terrabyte = pb$tb = function(pb) {
-  return pb * 1e+3; // Petabyte to Terrabyte
+convertData.petabyte.terabyte = pb$tb = function(pb) {
+  return pb * 1e+3; // Petabyte to Terabyte
 };
 
 convertData.petabyte.petabyte = pb$pb = function(pb) {
@@ -1432,8 +1432,8 @@ convertData.exabyte.gigabyte = eb$gb = function(eb) {
   return eb * 1e+9; // Exabyte to Gigabyte
 };
 
-convertData.exabyte.terrabyte = eb$tb = function(eb) {
-  return eb * 1e+6; // Exabyte to Terrabyte
+convertData.exabyte.terabyte = eb$tb = function(eb) {
+  return eb * 1e+6; // Exabyte to Terabyte
 };
 
 convertData.exabyte.petabyte = eb$pb = function(eb) {
@@ -1473,8 +1473,8 @@ convertData.zettabyte.gigabyte = zb$gb = function(zb) {
   return zb * 1e+12; // Zettabyte to Gigabyte
 };
 
-convertData.zettabyte.terrabyte = zb$tb = function(zb) {
-  return zb * 1e+9; // Zettabyte to Terrabyte
+convertData.zettabyte.terabyte = zb$tb = function(zb) {
+  return zb * 1e+9; // Zettabyte to Terabyte
 };
 
 convertData.zettabyte.petabyte = zb$pb = function(zb) {
@@ -1514,8 +1514,8 @@ convertData.yottabyte.gigabyte = yb$gb = function(yb) {
   return yb * 1e+15; // Yottabyte to Gigabyte
 };
 
-convertData.yottabyte.terrabyte = yb$tb = function(yb) {
-  return yb * 1e+12; // Yottabyte to Terrabyte
+convertData.yottabyte.terabyte = yb$tb = function(yb) {
+  return yb * 1e+12; // Yottabyte to Terabyte
 };
 
 convertData.yottabyte.petabyte = yb$pb = function(yb) {
@@ -4043,7 +4043,7 @@ convertRadiation = {
   centigray: {},
   decigray: {},
   gray: {},
-  dekagray: {},
+  decagray: {},
   hectogray: {},
   kilogray: {},
   megagray: {},
@@ -4078,8 +4078,8 @@ convertRadiation.nanogray.gray = nGy$Gy = function(nGy) {
   return nGy / 1e+9; // Nanogray to Gray
 };
 
-convertRadiation.nanogray.dekagray = nGy$daGy = function(nGy) {
-  return nGy / 1e+10; // Nanogray to Dekagray
+convertRadiation.nanogray.decagray = nGy$daGy = function(nGy) {
+  return nGy / 1e+10; // Nanogray to Decagray
 };
 
 convertRadiation.nanogray.hectogray = nGy$hGy = function(nGy) {
@@ -4135,8 +4135,8 @@ convertRadiation.microgray.gray = uGy$Gy = function(uGy) {
   return uGy / 1e+6; // Microgray to Gray
 };
 
-convertRadiation.microgray.dekagray = uGy$daGy = function(uGy) {
-  return uGy / 1e+7; // Microgray to Dekagray
+convertRadiation.microgray.decagray = uGy$daGy = function(uGy) {
+  return uGy / 1e+7; // Microgray to Decagray
 };
 
 convertRadiation.microgray.hectogray = uGy$hGy = function(uGy) {
@@ -4192,8 +4192,8 @@ convertRadiation.milligray.gray = mGy$Gy = function(mGy) {
   return mGy / 1e+3; // Milligray to Gray
 };
 
-convertRadiation.milligray.dekagray = mGy$daGy = function(mGy) {
-  return mGy / 1e+4; // Milligray to Dekagray
+convertRadiation.milligray.decagray = mGy$daGy = function(mGy) {
+  return mGy / 1e+4; // Milligray to Decagray
 };
 
 convertRadiation.milligray.hectogray = mGy$hGy = function(mGy) {
@@ -4249,8 +4249,8 @@ convertRadiation.centigray.gray = cGy$Gy = function(cGy) {
   return cGy / 1e+2; // Centigray to Gray
 };
 
-convertRadiation.centigray.dekagray = cGy$daGy = function(cGy) {
-  return cGy / 1e+3; // Centigray to Dekagray
+convertRadiation.centigray.decagray = cGy$daGy = function(cGy) {
+  return cGy / 1e+3; // Centigray to Decagray
 };
 
 convertRadiation.centigray.hectogray = cGy$hGy = function(cGy) {
@@ -4306,8 +4306,8 @@ convertRadiation.decigray.gray = dGy$Gy = function(dGy) {
   return dGy / 1e+1; // Decigray to Gray
 };
 
-convertRadiation.decigray.dekagray = dGy$daGy = function(dGy) {
-  return dGy / 1e+2; // Decigray to Dekagray
+convertRadiation.decigray.decagray = dGy$daGy = function(dGy) {
+  return dGy / 1e+2; // Decigray to Decagray
 };
 
 convertRadiation.decigray.hectogray = dGy$hGy = function(dGy) {
@@ -4363,8 +4363,8 @@ convertRadiation.gray.gray = Gy$Gy = function(Gy) {
   return Gy; // Gray to Gray
 };
 
-convertRadiation.gray.dekagray = Gy$daGy = function(Gy) {
-  return Gy / 1e+1; // Gray to Dekagray
+convertRadiation.gray.decagray = Gy$daGy = function(Gy) {
+  return Gy / 1e+1; // Gray to Decagray
 };
 
 convertRadiation.gray.hectogray = Gy$hGy = function(Gy) {
@@ -4395,61 +4395,61 @@ convertRadiation.gray.exagray = Gy$EGy = function(Gy) {
   return Gy / 1e+18; // Gray to Exagray
 };
 
-/* Dekagray Conversions */
-convertRadiation.dekagray.nanogray = daGy$nGy = function(daGy) {
-  return daGy * 1e+10; // Dekagray to Nanogray
+/* Decagray Conversions */
+convertRadiation.decagray.nanogray = daGy$nGy = function(daGy) {
+  return daGy * 1e+10; // Decagray to Nanogray
 };
 
-convertRadiation.dekagray.microgray = daGy$uGy = function(daGy) {
-  return daGy * 1e+7; // Dekagray to Microgray
+convertRadiation.decagray.microgray = daGy$uGy = function(daGy) {
+  return daGy * 1e+7; // Decagray to Microgray
 };
 
-convertRadiation.dekagray.milligray = daGy$mGy = function(daGy) {
-  return daGy * 1e+4; // Dekagray to Milligray
+convertRadiation.decagray.milligray = daGy$mGy = function(daGy) {
+  return daGy * 1e+4; // Decagray to Milligray
 };
 
-convertRadiation.dekagray.centigray = daGy$cGy = function(daGy) {
-  return daGy * 1e+3; // Dekagray to Centigray
+convertRadiation.decagray.centigray = daGy$cGy = function(daGy) {
+  return daGy * 1e+3; // Decagray to Centigray
 };
 
-convertRadiation.dekagray.decigray = daGy$dGy = function(daGy) {
-  return daGy * 1e+2; // Dekagray to Decigray
+convertRadiation.decagray.decigray = daGy$dGy = function(daGy) {
+  return daGy * 1e+2; // Decagray to Decigray
 };
 
-convertRadiation.dekagray.gray = daGy$Gy = function(daGy) {
-  return daGy * 1e+1; // Dekagray to Gray
+convertRadiation.decagray.gray = daGy$Gy = function(daGy) {
+  return daGy * 1e+1; // Decagray to Gray
 };
 
-convertRadiation.dekagray.dekagray = daGy$daGy = function(daGy) {
-  return daGy; // Dekagray to Dekagray
+convertRadiation.decagray.decagray = daGy$daGy = function(daGy) {
+  return daGy; // Decagray to Decagray
 };
 
-convertRadiation.dekagray.hectogray = daGy$hGy = function(daGy) {
-  return daGy / 1e+1; // Dekagray to Hectogray
+convertRadiation.decagray.hectogray = daGy$hGy = function(daGy) {
+  return daGy / 1e+1; // Decagray to Hectogray
 };
 
-convertRadiation.dekagray.kilogray = daGy$kGy = function(daGy) {
-  return daGy / 1e+2; // Dekagray to Kilogray
+convertRadiation.decagray.kilogray = daGy$kGy = function(daGy) {
+  return daGy / 1e+2; // Decagray to Kilogray
 };
 
-convertRadiation.dekagray.megagray = daGy$MGy = function(daGy) {
-  return daGy / 1e+5; // Dekagray to Megagray
+convertRadiation.decagray.megagray = daGy$MGy = function(daGy) {
+  return daGy / 1e+5; // Decagray to Megagray
 };
 
-convertRadiation.dekagray.gigagray = daGy$GGy = function(daGy) {
-  return daGy / 1e+8; // Dekagray to Gigagray
+convertRadiation.decagray.gigagray = daGy$GGy = function(daGy) {
+  return daGy / 1e+8; // Decagray to Gigagray
 };
 
-convertRadiation.dekagray.teragray = daGy$TGy = function(daGy) {
-  return daGy / 1e+11; // Dekagray to Teragray
+convertRadiation.decagray.teragray = daGy$TGy = function(daGy) {
+  return daGy / 1e+11; // Decagray to Teragray
 };
 
-convertRadiation.dekagray.petagray = daGy$PGy = function(daGy) {
-  return daGy / 1e+14; // Dekagray to Petagray
+convertRadiation.decagray.petagray = daGy$PGy = function(daGy) {
+  return daGy / 1e+14; // Decagray to Petagray
 };
 
-convertRadiation.dekagray.exagray = daGy$EGy = function(daGy) {
-  return daGy / 1e+17; // Dekagray to Exagray
+convertRadiation.decagray.exagray = daGy$EGy = function(daGy) {
+  return daGy / 1e+17; // Decagray to Exagray
 };
 
 /* Hectogray Conversions */
@@ -4477,8 +4477,8 @@ convertRadiation.hectogray.gray = hGy$Gy = function(hGy) {
   return hGy * 1e+2; // Hectogray to Gray
 };
 
-convertRadiation.hectogray.dekagray = hGy$daGy = function(hGy) {
-  return hGy * 1e+1; // Hectogray to Dekagray
+convertRadiation.hectogray.decagray = hGy$daGy = function(hGy) {
+  return hGy * 1e+1; // Hectogray to Decagray
 };
 
 convertRadiation.hectogray.hectogray = hGy$hGy = function(hGy) {
@@ -4534,8 +4534,8 @@ convertRadiation.kilogray.gray = kGy$Gy = function(kGy) {
   return kGy * 1e+3; // Kilogray to Gray
 };
 
-convertRadiation.kilogray.dekagray = kGy$daGy = function(kGy) {
-  return kGy * 1e+2; // Kilogray to Dekagray
+convertRadiation.kilogray.decagray = kGy$daGy = function(kGy) {
+  return kGy * 1e+2; // Kilogray to Decagray
 };
 
 convertRadiation.kilogray.hectogray = kGy$hGy = function(kGy) {
@@ -4591,8 +4591,8 @@ convertRadiation.megagray.gray = MGy$Gy = function(MGy) {
   return MGy * 1e+6; // Megagray to Gray
 };
 
-convertRadiation.megagray.dekagray = MGy$daGy = function(MGy) {
-  return MGy * 1e+5; // Megagray to Dekagray
+convertRadiation.megagray.decagray = MGy$daGy = function(MGy) {
+  return MGy * 1e+5; // Megagray to Decagray
 };
 
 convertRadiation.megagray.hectogray = MGy$hGy = function(MGy) {
@@ -4648,8 +4648,8 @@ convertRadiation.gigagray.gray = GGy$Gy = function(GGy) {
   return GGy * 1e+9; // Gigagray to Gray
 };
 
-convertRadiation.gigagray.dekagray = GGy$daGy = function(GGy) {
-  return GGy * 1e+8; // Gigagray to Dekagray
+convertRadiation.gigagray.decagray = GGy$daGy = function(GGy) {
+  return GGy * 1e+8; // Gigagray to Decagray
 };
 
 convertRadiation.gigagray.hectogray = GGy$hGy = function(GGy) {
@@ -4705,8 +4705,8 @@ convertRadiation.teragray.gray = TGy$Gy = function(TGy) {
   return TGy * 1e+12; // Teragray to Gray
 };
 
-convertRadiation.teragray.dekagray = TGy$daGy = function(TGy) {
-  return TGy * 1e+11; // Teragray to Dekagray
+convertRadiation.teragray.decagray = TGy$daGy = function(TGy) {
+  return TGy * 1e+11; // Teragray to Decagray
 };
 
 convertRadiation.teragray.hectogray = TGy$hGy = function(TGy) {
@@ -4762,8 +4762,8 @@ convertRadiation.petagray.gray = PGy$Gy = function(PGy) {
   return PGy * 1e+15; // Petagray to Gray
 };
 
-convertRadiation.petagray.dekagray = PGy$daGy = function(PGy) {
-  return PGy * 1e+14; // Petagray to Dekagray
+convertRadiation.petagray.decagray = PGy$daGy = function(PGy) {
+  return PGy * 1e+14; // Petagray to Decagray
 };
 
 convertRadiation.petagray.hectogray = PGy$hGy = function(PGy) {
@@ -4819,8 +4819,8 @@ convertRadiation.exagray.gray = EGy$Gy = function(EGy) {
   return EGy * 1e+18; // Exagray to Gray
 };
 
-convertRadiation.exagray.dekagray = EGy$daGy = function(EGy) {
-  return EGy * 1e+17; // Exagray to Dekagray
+convertRadiation.exagray.decagray = EGy$daGy = function(EGy) {
+  return EGy * 1e+17; // Exagray to Decagray
 };
 
 convertRadiation.exagray.hectogray = EGy$hGy = function(EGy) {
@@ -5080,39 +5080,39 @@ convertTime.nanosecond.second = nano$second = function(nano) {
 };
 
 convertTime.nanosecond.minute = nano$minute = function(nano) {
-  return nano / 6e+10; // Nanosecond to Minute
+  return nano / 6e10; // Nanosecond to Minute
 };
 
 convertTime.nanosecond.hour = nano$hour = function(nano) {
-  return nano / 36e+11; // Nanosecond to Hour
+  return nano / 3.6e12; // Nanosecond to Hour
 };
 
 convertTime.nanosecond.day = nano$day = function(nano) {
-  return nano / 864e+11; // Nanosecond to Day
+  return nano / 8.64e13; // Nanosecond to Day
 };
 
 convertTime.nanosecond.week = nano$week = function(nano) {
-  return nano / 6048e+11; // Nanosecond to Week
+  return nano / 6.048e14; // Nanosecond to Week
 };
 
 convertTime.nanosecond.month = nano$month = function(nano) {
-  return nano / 2628e+12; // Nanosecond to Month
+  return nano / 2.629746e15; // Nanosecond to Month (Gregorian avg month 30.436875 d)
 };
 
 convertTime.nanosecond.year = nano$year = function(nano) {
-  return nano / 315576e+11; // Nanosecond to Year
+  return nano / 3.1556952e16; // Nanosecond to Year (Gregorian avg year 365.2425 d)
 };
 
 convertTime.nanosecond.decade = nano$decade = function(nano) {
-  return nano / 315576e+12; // Nanosecond to Decade
+  return nano / 3.1556952e17; // Nanosecond to Decade
 };
 
 convertTime.nanosecond.century = nano$century = function(nano) {
-  return nano / 315576e+13; // Nanosecond to Century
+  return nano / 3.1556952e18; // Nanosecond to Century
 };
 
 convertTime.nanosecond.millennium = nano$millennium = function(nano) {
-  return nano / 315576e+14; // Nanosecond to Millennium
+  return nano / 3.1556952e19; // Nanosecond to Millennium
 };
 
 /* Microsecond Conversions */
@@ -5133,39 +5133,39 @@ convertTime.microsecond.second = micro$second = function(micro) {
 };
 
 convertTime.microsecond.minute = micro$minute = function(micro) {
-  return micro / 6e+7; // Microsecond to Minute
+  return micro / 6e7; // Microsecond to Minute
 };
 
 convertTime.microsecond.hour = micro$hour = function(micro) {
-  return micro / 36e+8; // Microsecond to Hour
+  return micro / 3.6e9; // Microsecond to Hour
 };
 
 convertTime.microsecond.day = micro$day = function(micro) {
-  return micro / 864e+8; // Microsecond to Day
+  return micro / 8.64e10; // Microsecond to Day
 };
 
 convertTime.microsecond.week = micro$week = function(micro) {
-  return micro / 6048e+8; // Microsecond to Week
+  return micro / 6.048e11; // Microsecond to Week
 };
 
 convertTime.microsecond.month = micro$month = function(micro) {
-  return micro / 2628e+9; // Microsecond to Month
+  return micro / 2.629746e12; // Microsecond to Month
 };
 
 convertTime.microsecond.year = micro$year = function(micro) {
-  return micro / 315576e+8; // Microsecond to Year
+  return micro / 3.1556952e13; // Microsecond to Year
 };
 
 convertTime.microsecond.decade = micro$decade = function(micro) {
-  return micro / 315576e+9; // Microsecond to Decade
+  return micro / 3.1556952e14; // Microsecond to Decade
 };
 
 convertTime.microsecond.century = micro$century = function(micro) {
-  return micro / 315576e+10; // Microsecond to Century
+  return micro / 3.1556952e15; // Microsecond to Century
 };
 
 convertTime.microsecond.millennium = micro$millennium = function(micro) {
-  return micro / 315576e+11; // Microsecond to Millennium
+  return micro / 3.1556952e16; // Microsecond to Millennium
 };
 
 /* Millisecond Conversions */
@@ -5186,39 +5186,39 @@ convertTime.millisecond.second = milli$second = function(milli) {
 };
 
 convertTime.millisecond.minute = milli$minute = function(milli) {
-  return milli / 6e+4; // Millisecond to Minute
+  return milli / 6e4; // Millisecond to Minute
 };
 
 convertTime.millisecond.hour = milli$hour = function(milli) {
-  return milli / 36e+5; // Millisecond to Hour
+  return milli / 3.6e6; // Millisecond to Hour
 };
 
 convertTime.millisecond.day = milli$day = function(milli) {
-  return milli / 864e+5; // Millisecond to Day
+  return milli / 8.64e7; // Millisecond to Day
 };
 
 convertTime.millisecond.week = milli$week = function(milli) {
-  return milli / 6048e+5; // Millisecond to Week
+  return milli / 6.048e8; // Millisecond to Week
 };
 
 convertTime.millisecond.month = milli$month = function(milli) {
-  return milli / 2628e+6; // Millisecond to Month
+  return milli / 2.629746e9; // Millisecond to Month
 };
 
 convertTime.millisecond.year = milli$year = function(milli) {
-  return milli / 315576e+5; // Millisecond to Year
+  return milli / 3.1556952e10; // Millisecond to Year
 };
 
 convertTime.millisecond.decade = milli$decade = function(milli) {
-  return milli / 315576e+6; // Millisecond to Decade
+  return milli / 3.1556952e11; // Millisecond to Decade
 };
 
 convertTime.millisecond.century = milli$century = function(milli) {
-  return milli / 315576e+7; // Millisecond to Century
+  return milli / 3.1556952e12; // Millisecond to Century
 };
 
 convertTime.millisecond.millennium = milli$millennium = function(milli) {
-  return milli / 315576e+8; // Millisecond to Millennium
+  return milli / 3.1556952e13; // Millisecond to Millennium
 };
 
 /* Second Conversions */
@@ -5251,27 +5251,27 @@ convertTime.second.day = second$day = function(second) {
 };
 
 convertTime.second.week = second$week = function(second) {
-  return second / 6048e+2; // Second to Week
+  return second / 6.048e5; // Second to Week
 };
 
 convertTime.second.month = second$month = function(second) {
-  return second / 2628e+3; // Second to Month
+  return second / 2629746; // Second to Month
 };
 
 convertTime.second.year = second$year = function(second) {
-  return second / 315576e+2; // Second to Year
+  return second / 31556952; // Second to Year
 };
 
 convertTime.second.decade = second$decade = function(second) {
-  return second / 315576e+3; // Second to Decade
+  return second / 315569520; // Second to Decade
 };
 
 convertTime.second.century = second$century = function(second) {
-  return second / 315576e+4; // Second to Century
+  return second / 3155695200; // Second to Century
 };
 
 convertTime.second.millennium = second$millennium = function(second) {
-  return second / 315576e+5; // Second to Millennium
+  return second / 31556952000; // Second to Millennium
 };
 
 /* Minute Conversions */
@@ -5300,31 +5300,31 @@ convertTime.minute.hour = minute$hour = function(minute) {
 };
 
 convertTime.minute.day = minute$day = function(minute) {
-  return minute / 144e+1; // Minute to Day
+  return minute / 1.44e3; // Minute to Day
 };
 
 convertTime.minute.week = minute$week = function(minute) {
-  return minute / 1008e+1; // Minute to Week
+  return minute / 1.008e4; // Minute to Week
 };
 
 convertTime.minute.month = minute$month = function(minute) {
-  return minute / 438e+2; // Minute to Month
+  return minute / 43829.1; // Minute to Month
 };
 
 convertTime.minute.year = minute$year = function(minute) {
-  return minute / 52596e+1; // Minute to Year
+  return minute / 525949.2; // Minute to Year
 };
 
 convertTime.minute.decade = minute$decade = function(minute) {
-  return minute / 52596e+2; // Minute to Decade
+  return minute / 5259492; // Minute to Decade
 };
 
 convertTime.minute.century = minute$century = function(minute) {
-  return minute / 52596e+3; // Minute to Century
+  return minute / 52594920; // Minute to Century
 };
 
 convertTime.minute.millennium = minute$millennium = function(minute) {
-  return minute / 52596e+4; // Minute to Millennium
+  return minute / 525949200; // Minute to Millennium
 };
 
 /* Hour Conversions */
@@ -5341,11 +5341,11 @@ convertTime.hour.millisecond = hour$milli = function(hour) {
 };
 
 convertTime.hour.second = hour$second = function(hour) {
-  return hour * 36e+2; // Hour to Second
+  return hour * 3.6e3; // Hour to Second
 };
 
 convertTime.hour.minute = hour$minute = function(hour) {
-  return hour * 6e+1; // Hour to Minute
+  return hour * 6e1; // Hour to Minute
 };
 
 convertTime.hour.hour = hour$hour = function(hour) {
@@ -5361,23 +5361,23 @@ convertTime.hour.week = hour$week = function(hour) {
 };
 
 convertTime.hour.month = hour$month = function(hour) {
-  return hour / 73e+1; // Hour to Month
+  return hour / 730.485; // Hour to Month
 };
 
 convertTime.hour.year = hour$year = function(hour) {
-  return hour / 8766; // Hour to Year
+  return hour / 8765.264444; // Hour to Year
 };
 
 convertTime.hour.decade = hour$decade = function(hour) {
-  return hour / 8766e+1; // Hour to Decade
+  return hour / 87652.64444; // Hour to Decade
 };
 
 convertTime.hour.century = hour$century = function(hour) {
-  return hour / 8766e+2; // Hour to Century
+  return hour / 876526.4444; // Hour to Century
 };
 
 convertTime.hour.millennium = hour$millennium = function(hour) {
-  return hour / 8766e+3; // Hour to Millennium
+  return hour / 8765264.444; // Hour to Millennium
 };
 
 /* Day Conversions */
@@ -5394,11 +5394,11 @@ convertTime.day.millisecond = day$milli = function(day) {
 };
 
 convertTime.day.second = day$second = function(day) {
-  return day * 864e+2; // Day to Second
+  return day * 8.64e4; // Day to Second
 };
 
 convertTime.day.minute = day$minute = function(day) {
-  return day * 144e+1; // Day to Minute
+  return day * 1.44e3; // Day to Minute
 };
 
 convertTime.day.hour = day$hour = function(day) {
@@ -5414,23 +5414,23 @@ convertTime.day.week = day$week = function(day) {
 };
 
 convertTime.day.month = day$month = function(day) {
-  return day / 30.417; // Day to Month
+  return day / 30.436875; // Day to Month
 };
 
 convertTime.day.year = day$year = function(day) {
-  return day / 365.25; // Day to Year
+  return day / 365.2425; // Day to Year
 };
 
 convertTime.day.decade = day$decade = function(day) {
-  return day / 3652.5; // Day to Decade
+  return day / 3652.425; // Day to Decade
 };
 
 convertTime.day.century = day$century = function(day) {
-  return day / 36525; // Day to Century
+  return day / 36524.25; // Day to Century
 };
 
 convertTime.day.millennium = day$millennium = function(day) {
-  return day / 36525e+1; // Day to Millennium
+  return day / 365242.5; // Day to Millennium
 };
 
 /* Week Conversions */
@@ -5447,11 +5447,11 @@ convertTime.week.millisecond = week$milli = function(week) {
 };
 
 convertTime.week.second = week$second = function(week) {
-  return week * 6048e+2; // Week to Second
+  return week * 6.048e5; // Week to Second
 };
 
 convertTime.week.minute = week$minute = function(week) {
-  return week * 1008e+1; // Week to Minute
+  return week * 1.008e4; // Week to Minute
 };
 
 convertTime.week.hour = week$hour = function(week) {
@@ -5467,56 +5467,56 @@ convertTime.week.week = week$week = function(week) {
 };
 
 convertTime.week.month = week$month = function(week) {
-  return week / 4.345; // Week to Month
+  return week / 4.348125; // Week to Month
 };
 
 convertTime.week.year = week$year = function(week) {
-  return week / 52.17857; // Week to Year
+  return week / 52.1775; // Week to Year
 };
 
 convertTime.week.decade = week$decade = function(week) {
-  return week / 521.7857; // Week to Decade
+  return week / 521.775; // Week to Decade
 };
 
 convertTime.week.century = week$century = function(week) {
-  return week / 5217.857; // Week to Century
+  return week / 5217.75; // Week to Century
 };
 
 convertTime.week.millennium = week$millennium = function(week) {
-  return week / 52178.57; // Week to Millennium
+  return week / 52177.5; // Week to Millennium
 };
 
 /* Month Conversions */
 convertTime.month.nanosecond = month$nano = function(month) {
-  return month * 2628e+12; // Month to Nanosecond
+  return month * 2.628e15; // Month to Nanosecond
 };
 
 convertTime.month.microsecond = month$micro = function(month) {
-  return month * 2628e+9; // Month to Microsecond
+  return month * 2.628e12; // Month to Microsecond
 };
 
 convertTime.month.millisecond = month$milli = function(month) {
-  return month * 2628e+6; // Month to Millisecond
+  return month * 2.628e9; // Month to Millisecond
 };
 
 convertTime.month.second = month$second = function(month) {
-  return month * 2628e+3; // Month to Second
+  return month * 2629746; // Month to Second
 };
 
 convertTime.month.minute = month$minute = function(month) {
-  return month * 438e+2; // Month to Minute
+  return month * 43829.1; // Month to Minute
 };
 
 convertTime.month.hour = month$hour = function(month) {
-  return month * 73e+1; // Month to Hour
+  return month * 730.485; // Month to Hour
 };
 
 convertTime.month.day = month$day = function(month) {
-  return month * 30.417; // Month to Day
+  return month * 30.436875; // Month to Day
 };
 
 convertTime.month.week = month$week = function(month) {
-  return month * 4.345; // Month to Week
+  return month * 4.348125; // Month to Week
 };
 
 convertTime.month.month = month$month = function(month) {
@@ -5541,35 +5541,35 @@ convertTime.month.millennium = month$millennium = function(month) {
 
 /* Year Conversions */
 convertTime.year.nanosecond = year$nano = function(year) {
-  return year * 315576e+11; // Year to Nanosecond
+  return year * 3.1556952e16; // Year to Nanosecond
 };
 
 convertTime.year.microsecond = year$micro = function(year) {
-  return year * 315576e+8; // Year to Microsecond
+  return year * 3.1556952e13; // Year to Microsecond
 };
 
 convertTime.year.millisecond = year$milli = function(year) {
-  return year * 315576e+5; // Year to Millisecond
+  return year * 3.1556952e10; // Year to Millisecond
 };
 
 convertTime.year.second = year$second = function(year) {
-  return year * 315576e+2; // Year to Second
+  return year * 31556952; // Year to Second
 };
 
 convertTime.year.minute = year$minute = function(year) {
-  return year * 52596e+1; // Year to Minute
+  return year * 525949.2; // Year to Minute
 };
 
 convertTime.year.hour = year$hour = function(year) {
-  return year * 8766; // Year to Hour
+  return year * 8765.264444; // Year to Hour
 };
 
 convertTime.year.day = year$day = function(year) {
-  return year * 365.25; // Year to Day
+  return year * 365.2425; // Year to Day
 };
 
 convertTime.year.week = year$week = function(year) {
-  return year * 52.17857; // Year to Week
+  return year * 52.1775; // Year to Week
 };
 
 convertTime.year.month = year$month = function(year) {
@@ -5594,35 +5594,35 @@ convertTime.year.millennium = year$millennium = function(year) {
 
 /* Decade Conversions */
 convertTime.decade.nanosecond = decade$nano = function(decade) {
-  return decade * 315576e+12; // Decade to Nanosecond
+  return decade * 3.1556952e17; // Decade to Nanosecond
 };
 
 convertTime.decade.microsecond = decade$micro = function(decade) {
-  return decade * 315576e+9; // Decade to Microsecond
+  return decade * 3.1556952e14; // Decade to Microsecond
 };
 
 convertTime.decade.millisecond = decade$milli = function(decade) {
-  return decade * 315576e+6; // Decade to Millisecond
+  return decade * 3.1556952e11; // Decade to Millisecond
 };
 
 convertTime.decade.second = decade$second = function(decade) {
-  return decade * 315576e+3; // Decade to Second
+  return decade * 315569520; // Decade to Second
 };
 
 convertTime.decade.minute = decade$minute = function(decade) {
-  return decade * 52596e+2; // Decade to Minute
+  return decade * 5259492; // Decade to Minute
 };
 
 convertTime.decade.hour = decade$hour = function(decade) {
-  return decade * 8766e+1; // Decade to Hour
+  return decade * 87652.64444; // Decade to Hour
 };
 
 convertTime.decade.day = decade$day = function(decade) {
-  return decade * 3652.5; // Decade to Day
+  return decade * 3652.425; // Decade to Day
 };
 
 convertTime.decade.week = decade$week = function(decade) {
-  return decade * 521.7857; // Decade to Week
+  return decade * 521.775; // Decade to Week
 };
 
 convertTime.decade.month = decade$month = function(decade) {
@@ -5647,35 +5647,35 @@ convertTime.decade.millennium = decade$millennium = function(decade) {
 
 /* Century Conversions */
 convertTime.century.nanosecond = century$nano = function(century) {
-  return century * 315576e+13; // Century to Nanosecond
+  return century * 3.1556952e18; // Century to Nanosecond
 };
 
 convertTime.century.microsecond = century$micro = function(century) {
-  return century * 315576e+10; // Century to Microsecond
+  return century * 3.1556952e15; // Century to Microsecond
 };
 
 convertTime.century.millisecond = century$milli = function(century) {
-  return century * 315576e+7; // Century to Millisecond
+  return century * 3.1556952e12; // Century to Millisecond
 };
 
 convertTime.century.second = century$second = function(century) {
-  return century * 315576e+4; // Century to Second
+  return century * 3155695200; // Century to Second
 };
 
 convertTime.century.minute = century$minute = function(century) {
-  return century * 52596e+3; // Century to Minute
+  return century * 52594920; // Century to Minute
 };
 
 convertTime.century.hour = century$hour = function(century) {
-  return century * 8766e+2; // Century to Hour
+  return century * 876526.4444; // Century to Hour
 };
 
 convertTime.century.day = century$day = function(century) {
-  return century * 36525; // Century to Day
+  return century * 36524.25; // Century to Day
 };
 
 convertTime.century.week = century$week = function(century) {
-  return century * 5217.857; // Century to Week
+  return century * 5217.75; // Century to Week
 };
 
 convertTime.century.month = century$month = function(century) {
@@ -5700,35 +5700,35 @@ convertTime.century.millennium = century$millennium = function(century) {
 
 /* Millennium Conversions */
 convertTime.millennium.nanosecond = millennium$nano = function(millennium) {
-  return millennium * 315576e+14; // Millennium to Nanosecond
+  return millennium * 3.1556952e19; // Millennium to Nanosecond
 };
 
 convertTime.millennium.microsecond = millennium$micro = function(millennium) {
-  return millennium * 315576e+11; // Millennium to Microsecond
+  return millennium * 3.1556952e16; // Millennium to Microsecond
 };
 
 convertTime.millennium.millisecond = millennium$milli = function(millennium) {
-  return millennium * 315576e+8; // Millennium to Millisecond
+  return millennium * 3.1556952e13; // Millennium to Millisecond
 };
 
 convertTime.millennium.second = millennium$second = function(millennium) {
-  return millennium * 315576e+5; // Millennium to Second
+  return millennium * 31556952000; // Millennium to Second
 };
 
 convertTime.millennium.minute = millennium$minute = function(millennium) {
-  return millennium * 52596e+4; // Millennium to Minute
+  return millennium * 525949200; // Millennium to Minute
 };
 
 convertTime.millennium.hour = millennium$hour = function(millennium) {
-  return millennium * 8766e+3; // Millennium to Hour
+  return millennium * 8765264.444; // Millennium to Hour
 };
 
 convertTime.millennium.day = millennium$day = function(millennium) {
-  return millennium * 36525e+1; // Millennium to Day
+  return millennium * 365242.5; // Millennium to Day
 };
 
 convertTime.millennium.week = millennium$week = function(millennium) {
-  return millennium * 52178.57; // Millennium to Week
+  return millennium * 52177.5; // Millennium to Week
 };
 
 convertTime.millennium.month = millennium$month = function(millennium) {

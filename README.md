@@ -263,6 +263,12 @@ polyconvert.data = {
 }
 ```
 
+<sub>
+    <em>
+        Note: These data units use decimal (SI) prefixes (k=10^3, M=10^6, etc.). Binary IEC units (kibibyte KiB = 1024 bytes, mebibyte MiB, etc.) are not included. If you need binary units open a feature request.
+    </em>
+</sub>
+
 ### [Density](https://github.com/jgphilpott/polyconvert/tree/main/density/README.md)
 
 The Density category provides 8 different units for conversion, see the object map below:
@@ -319,6 +325,12 @@ polyconvert.energy = {
 
 }
 ```
+
+<sub>
+    <em>
+        Note: Listed quantities are energy units except watt and kilowatt which are power (rate). Converting between power and energy requires a duration (seconds) when calling those functions.
+    </em>
+</sub>
 
 ### [Frequency](https://github.com/jgphilpott/polyconvert/tree/main/frequency/README.md)
 
@@ -496,6 +508,12 @@ polyconvert.speed = {
 }
 ```
 
+<sub>
+    <em>
+        Note: Knots here means nautical miles per hour (1 knot = 1852 meters per hour).
+    </em>
+</sub>
+
 ### [Temperature](https://github.com/jgphilpott/polyconvert/tree/main/temperature/README.md)
 
 The Temperature category provides 3 different units for conversion, see the object map below:
@@ -533,6 +551,12 @@ polyconvert.time = {
 
 }
 ```
+
+<sub>
+    <em>
+        Note: Month and year conversions use the Gregorian mean values (1 month = 30.436875 days, 1 year = 365.2425 days = 31,556,952 s). Longer spans (decade, century, millennium) are derived from these, improving precision over earlier rounded (365.25 / 30.417) approximations.
+    </em>
+</sub>
 
 ### [Volume](https://github.com/jgphilpott/polyconvert/tree/main/volume/README.md)
 

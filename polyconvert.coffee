@@ -472,14 +472,11 @@ convertData.terabyte.byte = tb$byte = (tb) -> tb * 1e+12 # Terabyte to Byte
 convertData.terabyte.kilobyte = tb$kb = (tb) -> tb * 1e+9 # Terabyte to Kilobyte
 convertData.terabyte.megabyte = tb$mb = (tb) -> tb * 1e+6 # Terabyte to Megabyte
 convertData.terabyte.gigabyte = tb$gb = (tb) -> tb * 1e+3 # Terabyte to Gigabyte
-
-# Backwards compatibility alias (deprecated): terrabyte
-convertData.terrabyte = convertData.terabyte
-convertData.terrabyte.terrabyte = tb$tb = (tb) -> tb # Terrabyte to Terrabyte
-convertData.terrabyte.petabyte = tb$pb = (tb) -> tb / 1e+3 # Terrabyte to Petabyte
-convertData.terrabyte.exabyte = tb$eb = (tb) -> tb / 1e+6 # Terrabyte to Exabyte
-convertData.terrabyte.zettabyte = tb$zb = (tb) -> tb / 1e+9 # Terrabyte to Zettabyte
-convertData.terrabyte.yottabyte = tb$yb = (tb) -> tb / 1e+12 # Terrabyte to Yottabyte
+convertData.terabyte.terabyte = tb$tb = (tb) -> tb # Terabyte to Terabyte
+convertData.terabyte.petabyte = tb$pb = (tb) -> tb / 1e+3 # Terabyte to Petabyte
+convertData.terabyte.exabyte = tb$eb = (tb) -> tb / 1e+6 # Terabyte to Exabyte
+convertData.terabyte.zettabyte = tb$zb = (tb) -> tb / 1e+9 # Terabyte to Zettabyte
+convertData.terabyte.yottabyte = tb$yb = (tb) -> tb / 1e+12 # Terabyte to Yottabyte
 
 ### Petabyte Conversions ###
 
@@ -488,7 +485,7 @@ convertData.petabyte.byte = pb$byte = (pb) -> pb * 1e+15 # Petabyte to Byte
 convertData.petabyte.kilobyte = pb$kb = (pb) -> pb * 1e+12 # Petabyte to Kilobyte
 convertData.petabyte.megabyte = pb$mb = (pb) -> pb * 1e+9 # Petabyte to Megabyte
 convertData.petabyte.gigabyte = pb$gb = (pb) -> pb * 1e+6 # Petabyte to Gigabyte
-convertData.petabyte.terrabyte = pb$tb = (pb) -> pb * 1e+3 # Petabyte to Terrabyte
+convertData.petabyte.terabyte = pb$tb = (pb) -> pb * 1e+3 # Petabyte to Terabyte
 convertData.petabyte.petabyte = pb$pb = (pb) -> pb # Petabyte to Petabyte
 convertData.petabyte.exabyte = pb$eb = (pb) -> pb / 1e+3 # Petabyte to Exabyte
 convertData.petabyte.zettabyte = pb$zb = (pb) -> pb / 1e+6 # Petabyte to Zettabyte
@@ -501,7 +498,7 @@ convertData.exabyte.byte = eb$byte = (eb) -> eb * 1e+18 # Exabyte to Byte
 convertData.exabyte.kilobyte = eb$kb = (eb) -> eb * 1e+15 # Exabyte to Kilobyte
 convertData.exabyte.megabyte = eb$mb = (eb) -> eb * 1e+12 # Exabyte to Megabyte
 convertData.exabyte.gigabyte = eb$gb = (eb) -> eb * 1e+9 # Exabyte to Gigabyte
-convertData.exabyte.terrabyte = eb$tb = (eb) -> eb * 1e+6 # Exabyte to Terrabyte
+convertData.exabyte.terabyte = eb$tb = (eb) -> eb * 1e+6 # Exabyte to Terabyte
 convertData.exabyte.petabyte = eb$pb = (eb) -> eb * 1e+3 # Exabyte to Petabyte
 convertData.exabyte.exabyte = eb$eb = (eb) -> eb # Exabyte to Exabyte
 convertData.exabyte.zettabyte = eb$zb = (eb) -> eb / 1e+3 # Exabyte to Zettabyte
@@ -514,7 +511,7 @@ convertData.zettabyte.byte = zb$byte = (zb) -> zb * 1e+21 # Zettabyte to Byte
 convertData.zettabyte.kilobyte = zb$kb = (zb) -> zb * 1e+18 # Zettabyte to Kilobyte
 convertData.zettabyte.megabyte = zb$mb = (zb) -> zb * 1e+15 # Zettabyte to Megabyte
 convertData.zettabyte.gigabyte = zb$gb = (zb) -> zb * 1e+12 # Zettabyte to Gigabyte
-convertData.zettabyte.terrabyte = zb$tb = (zb) -> zb * 1e+9 # Zettabyte to Terrabyte
+convertData.zettabyte.terabyte = zb$tb = (zb) -> zb * 1e+9 # Zettabyte to Terabyte
 convertData.zettabyte.petabyte = zb$pb = (zb) -> zb * 1e+6 # Zettabyte to Petabyte
 convertData.zettabyte.exabyte = zb$eb = (zb) -> zb * 1e+3 # Zettabyte to Exabyte
 convertData.zettabyte.zettabyte = zb$zb = (zb) -> zb # Zettabyte to Zettabyte
@@ -527,7 +524,7 @@ convertData.yottabyte.byte = yb$byte = (yb) -> yb * 1e+24 # Yottabyte to Byte
 convertData.yottabyte.kilobyte = yb$kb = (yb) -> yb * 1e+21 # Yottabyte to Kilobyte
 convertData.yottabyte.megabyte = yb$mb = (yb) -> yb * 1e+18 # Yottabyte to Megabyte
 convertData.yottabyte.gigabyte = yb$gb = (yb) -> yb * 1e+15 # Yottabyte to Gigabyte
-convertData.yottabyte.terrabyte = yb$tb = (yb) -> yb * 1e+12 # Yottabyte to Terrabyte
+convertData.yottabyte.terabyte = yb$tb = (yb) -> yb * 1e+12 # Yottabyte to Terabyte
 convertData.yottabyte.petabyte = yb$pb = (yb) -> yb * 1e+9 # Yottabyte to Petabyte
 convertData.yottabyte.exabyte = yb$eb = (yb) -> yb * 1e+6 # Yottabyte to Exabyte
 convertData.yottabyte.zettabyte = yb$zb = (yb) -> yb * 1e+3 # Yottabyte to Zettabyte
@@ -1507,7 +1504,7 @@ convertRadiation =
     centigray: {}
     decigray: {}
     gray: {}
-    dekagray: {}
+    decagray: {}
     hectogray: {}
     kilogray: {}
     megagray: {}
@@ -1524,7 +1521,7 @@ convertRadiation.nanogray.milligray = nGy$mGy = (nGy) -> nGy / 1e+6 # Nanogray t
 convertRadiation.nanogray.centigray = nGy$cGy = (nGy) -> nGy / 1e+7 # Nanogray to Centigray
 convertRadiation.nanogray.decigray = nGy$dGy = (nGy) -> nGy / 1e+8 # Nanogray to Decigray
 convertRadiation.nanogray.gray = nGy$Gy = (nGy) -> nGy / 1e+9 # Nanogray to Gray
-convertRadiation.nanogray.dekagray = nGy$daGy = (nGy) -> nGy / 1e+10 # Nanogray to Dekagray
+convertRadiation.nanogray.decagray = nGy$daGy = (nGy) -> nGy / 1e+10 # Nanogray to Decagray
 convertRadiation.nanogray.hectogray = nGy$hGy = (nGy) -> nGy / 1e+11 # Nanogray to Hectogray
 convertRadiation.nanogray.kilogray = nGy$kGy = (nGy) -> nGy / 1e+12 # Nanogray to Kilogray
 convertRadiation.nanogray.megagray = nGy$MGy = (nGy) -> nGy / 1e+15 # Nanogray to Megagray
@@ -1541,7 +1538,7 @@ convertRadiation.microgray.milligray = uGy$mGy = (uGy) -> uGy / 1e+3 # Microgray
 convertRadiation.microgray.centigray = uGy$cGy = (uGy) -> uGy / 1e+4 # Microgray to Centigray
 convertRadiation.microgray.decigray = uGy$dGy = (uGy) -> uGy / 1e+5 # Microgray to Decigray
 convertRadiation.microgray.gray = uGy$Gy = (uGy) -> uGy / 1e+6 # Microgray to Gray
-convertRadiation.microgray.dekagray = uGy$daGy = (uGy) -> uGy / 1e+7 # Microgray to Dekagray
+convertRadiation.microgray.decagray = uGy$daGy = (uGy) -> uGy / 1e+7 # Microgray to Decagray
 convertRadiation.microgray.hectogray = uGy$hGy = (uGy) -> uGy / 1e+8 # Microgray to Hectogray
 convertRadiation.microgray.kilogray = uGy$kGy = (uGy) -> uGy / 1e+9 # Microgray to Kilogray
 convertRadiation.microgray.megagray = uGy$MGy = (uGy) -> uGy / 1e+12 # Microgray to Megagray
@@ -1558,7 +1555,7 @@ convertRadiation.milligray.milligray = mGy$mGy = (mGy) -> mGy # Milligray to Mil
 convertRadiation.milligray.centigray = mGy$cGy = (mGy) -> mGy / 1e+1 # Milligray to Centigray
 convertRadiation.milligray.decigray = mGy$dGy = (mGy) -> mGy / 1e+2 # Milligray to Decigray
 convertRadiation.milligray.gray = mGy$Gy = (mGy) -> mGy / 1e+3 # Milligray to Gray
-convertRadiation.milligray.dekagray = mGy$daGy = (mGy) -> mGy / 1e+4 # Milligray to Dekagray
+convertRadiation.milligray.decagray = mGy$daGy = (mGy) -> mGy / 1e+4 # Milligray to Decagray
 convertRadiation.milligray.hectogray = mGy$hGy = (mGy) -> mGy / 1e+5 # Milligray to Hectogray
 convertRadiation.milligray.kilogray = mGy$kGy = (mGy) -> mGy / 1e+6 # Milligray to Kilogray
 convertRadiation.milligray.megagray = mGy$MGy = (mGy) -> mGy / 1e+9 # Milligray to Megagray
@@ -1575,7 +1572,7 @@ convertRadiation.centigray.milligray = cGy$mGy = (cGy) -> cGy * 1e+1 # Centigray
 convertRadiation.centigray.centigray = cGy$cGy = (cGy) -> cGy # Centigray to Centigray
 convertRadiation.centigray.decigray = cGy$dGy = (cGy) -> cGy / 1e+1 # Centigray to Decigray
 convertRadiation.centigray.gray = cGy$Gy = (cGy) -> cGy / 1e+2 # Centigray to Gray
-convertRadiation.centigray.dekagray = cGy$daGy = (cGy) -> cGy / 1e+3 # Centigray to Dekagray
+convertRadiation.centigray.decagray = cGy$daGy = (cGy) -> cGy / 1e+3 # Centigray to Decagray
 convertRadiation.centigray.hectogray = cGy$hGy = (cGy) -> cGy / 1e+4 # Centigray to Hectogray
 convertRadiation.centigray.kilogray = cGy$kGy = (cGy) -> cGy / 1e+5 # Centigray to Kilogray
 convertRadiation.centigray.megagray = cGy$MGy = (cGy) -> cGy / 1e+8 # Centigray to Megagray
@@ -1592,7 +1589,7 @@ convertRadiation.decigray.milligray = dGy$mGy = (dGy) -> dGy * 1e+2 # Decigray t
 convertRadiation.decigray.centigray = dGy$cGy = (dGy) -> dGy * 1e+1 # Decigray to Centigray
 convertRadiation.decigray.decigray = dGy$dGy = (dGy) -> dGy # Decigray to Decigray
 convertRadiation.decigray.gray = dGy$Gy = (dGy) -> dGy / 1e+1 # Decigray to Gray
-convertRadiation.decigray.dekagray = dGy$daGy = (dGy) -> dGy / 1e+2 # Decigray to Dekagray
+convertRadiation.decigray.decagray = dGy$daGy = (dGy) -> dGy / 1e+2 # Decigray to Decagray
 convertRadiation.decigray.hectogray = dGy$hGy = (dGy) -> dGy / 1e+3 # Decigray to Hectogray
 convertRadiation.decigray.kilogray = dGy$kGy = (dGy) -> dGy / 1e+4 # Decigray to Kilogray
 convertRadiation.decigray.megagray = dGy$MGy = (dGy) -> dGy / 1e+7 # Decigray to Megagray
@@ -1609,7 +1606,7 @@ convertRadiation.gray.milligray = Gy$mGy = (Gy) -> Gy * 1e+3 # Gray to Milligray
 convertRadiation.gray.centigray = Gy$cGy = (Gy) -> Gy * 1e+2 # Gray to Centigray
 convertRadiation.gray.decigray = Gy$dGy = (Gy) -> Gy * 1e+1 # Gray to Decigray
 convertRadiation.gray.gray = Gy$Gy = (Gy) -> Gy # Gray to Gray
-convertRadiation.gray.dekagray = Gy$daGy = (Gy) -> Gy / 1e+1 # Gray to Dekagray
+convertRadiation.gray.decagray = Gy$daGy = (Gy) -> Gy / 1e+1 # Gray to Decagray
 convertRadiation.gray.hectogray = Gy$hGy = (Gy) -> Gy / 1e+2 # Gray to Hectogray
 convertRadiation.gray.kilogray = Gy$kGy = (Gy) -> Gy / 1e+3 # Gray to Kilogray
 convertRadiation.gray.megagray = Gy$MGy = (Gy) -> Gy / 1e+6 # Gray to Megagray
@@ -1618,22 +1615,22 @@ convertRadiation.gray.teragray = Gy$TGy = (Gy) -> Gy / 1e+12 # Gray to Teragray
 convertRadiation.gray.petagray = Gy$PGy = (Gy) -> Gy / 1e+15 # Gray to Petagray
 convertRadiation.gray.exagray = Gy$EGy = (Gy) -> Gy / 1e+18 # Gray to Exagray
 
-### Dekagray Conversions ###
+### Decagray Conversions ###
 
-convertRadiation.dekagray.nanogray = daGy$nGy = (daGy) -> daGy * 1e+10 # Dekagray to Nanogray
-convertRadiation.dekagray.microgray = daGy$uGy = (daGy) -> daGy * 1e+7 # Dekagray to Microgray
-convertRadiation.dekagray.milligray = daGy$mGy = (daGy) -> daGy * 1e+4 # Dekagray to Milligray
-convertRadiation.dekagray.centigray = daGy$cGy = (daGy) -> daGy * 1e+3 # Dekagray to Centigray
-convertRadiation.dekagray.decigray = daGy$dGy = (daGy) -> daGy * 1e+2 # Dekagray to Decigray
-convertRadiation.dekagray.gray = daGy$Gy = (daGy) -> daGy * 1e+1 # Dekagray to Gray
-convertRadiation.dekagray.dekagray = daGy$daGy = (daGy) -> daGy # Dekagray to Dekagray
-convertRadiation.dekagray.hectogray = daGy$hGy = (daGy) -> daGy / 1e+1 # Dekagray to Hectogray
-convertRadiation.dekagray.kilogray = daGy$kGy = (daGy) -> daGy / 1e+2 # Dekagray to Kilogray
-convertRadiation.dekagray.megagray = daGy$MGy = (daGy) -> daGy / 1e+5 # Dekagray to Megagray
-convertRadiation.dekagray.gigagray = daGy$GGy = (daGy) -> daGy / 1e+8 # Dekagray to Gigagray
-convertRadiation.dekagray.teragray = daGy$TGy = (daGy) -> daGy / 1e+11 # Dekagray to Teragray
-convertRadiation.dekagray.petagray = daGy$PGy = (daGy) -> daGy / 1e+14 # Dekagray to Petagray
-convertRadiation.dekagray.exagray = daGy$EGy = (daGy) -> daGy / 1e+17 # Dekagray to Exagray
+convertRadiation.decagray.nanogray = daGy$nGy = (daGy) -> daGy * 1e+10 # Decagray to Nanogray
+convertRadiation.decagray.microgray = daGy$uGy = (daGy) -> daGy * 1e+7 # Decagray to Microgray
+convertRadiation.decagray.milligray = daGy$mGy = (daGy) -> daGy * 1e+4 # Decagray to Milligray
+convertRadiation.decagray.centigray = daGy$cGy = (daGy) -> daGy * 1e+3 # Decagray to Centigray
+convertRadiation.decagray.decigray = daGy$dGy = (daGy) -> daGy * 1e+2 # Decagray to Decigray
+convertRadiation.decagray.gray = daGy$Gy = (daGy) -> daGy * 1e+1 # Decagray to Gray
+convertRadiation.decagray.decagray = daGy$daGy = (daGy) -> daGy # Decagray to Decagray
+convertRadiation.decagray.hectogray = daGy$hGy = (daGy) -> daGy / 1e+1 # Decagray to Hectogray
+convertRadiation.decagray.kilogray = daGy$kGy = (daGy) -> daGy / 1e+2 # Decagray to Kilogray
+convertRadiation.decagray.megagray = daGy$MGy = (daGy) -> daGy / 1e+5 # Decagray to Megagray
+convertRadiation.decagray.gigagray = daGy$GGy = (daGy) -> daGy / 1e+8 # Decagray to Gigagray
+convertRadiation.decagray.teragray = daGy$TGy = (daGy) -> daGy / 1e+11 # Decagray to Teragray
+convertRadiation.decagray.petagray = daGy$PGy = (daGy) -> daGy / 1e+14 # Decagray to Petagray
+convertRadiation.decagray.exagray = daGy$EGy = (daGy) -> daGy / 1e+17 # Decagray to Exagray
 
 ### Hectogray Conversions ###
 
@@ -1643,7 +1640,7 @@ convertRadiation.hectogray.milligray = hGy$mGy = (hGy) -> hGy * 1e+5 # Hectogray
 convertRadiation.hectogray.centigray = hGy$cGy = (hGy) -> hGy * 1e+4 # Hectogray to Centigray
 convertRadiation.hectogray.decigray = hGy$dGy = (hGy) -> hGy * 1e+3 # Hectogray to Decigray
 convertRadiation.hectogray.gray = hGy$Gy = (hGy) -> hGy * 1e+2 # Hectogray to Gray
-convertRadiation.hectogray.dekagray = hGy$daGy = (hGy) -> hGy * 1e+1 # Hectogray to Dekagray
+convertRadiation.hectogray.decagray = hGy$daGy = (hGy) -> hGy * 1e+1 # Hectogray to Decagray
 convertRadiation.hectogray.hectogray = hGy$hGy = (hGy) -> hGy # Hectogray to Hectogray
 convertRadiation.hectogray.kilogray = hGy$kGy = (hGy) -> hGy / 1e+1 # Hectogray to Kilogray
 convertRadiation.hectogray.megagray = hGy$MGy = (hGy) -> hGy / 1e+4 # Hectogray to Megagray
@@ -1660,7 +1657,7 @@ convertRadiation.kilogray.milligray = kGy$mGy = (kGy) -> kGy * 1e+6 # Kilogray t
 convertRadiation.kilogray.centigray = kGy$cGy = (kGy) -> kGy * 1e+5 # Kilogray to Centigray
 convertRadiation.kilogray.decigray = kGy$dGy = (kGy) -> kGy * 1e+4 # Kilogray to Decigray
 convertRadiation.kilogray.gray = kGy$Gy = (kGy) -> kGy * 1e+3 # Kilogray to Gray
-convertRadiation.kilogray.dekagray = kGy$daGy = (kGy) -> kGy * 1e+2 # Kilogray to Dekagray
+convertRadiation.kilogray.decagray = kGy$daGy = (kGy) -> kGy * 1e+2 # Kilogray to Decagray
 convertRadiation.kilogray.hectogray = kGy$hGy = (kGy) -> kGy * 1e+1 # Kilogray to Hectogray
 convertRadiation.kilogray.kilogray = kGy$kGy = (kGy) -> kGy # Kilogray to Kilogray
 convertRadiation.kilogray.megagray = kGy$MGy = (kGy) -> kGy / 1e+3 # Kilogray to Megagray
@@ -1677,7 +1674,7 @@ convertRadiation.megagray.milligray = MGy$mGy = (MGy) -> MGy * 1e+9 # Megagray t
 convertRadiation.megagray.centigray = MGy$cGy = (MGy) -> MGy * 1e+8 # Megagray to Centigray
 convertRadiation.megagray.decigray = MGy$dGy = (MGy) -> MGy * 1e+7 # Megagray to Decigray
 convertRadiation.megagray.gray = MGy$Gy = (MGy) -> MGy * 1e+6 # Megagray to Gray
-convertRadiation.megagray.dekagray = MGy$daGy = (MGy) -> MGy * 1e+5 # Megagray to Dekagray
+convertRadiation.megagray.decagray = MGy$daGy = (MGy) -> MGy * 1e+5 # Megagray to Decagray
 convertRadiation.megagray.hectogray = MGy$hGy = (MGy) -> MGy * 1e+4 # Megagray to Hectogray
 convertRadiation.megagray.kilogray = MGy$kGy = (MGy) -> MGy * 1e+3 # Megagray to Kilogray
 convertRadiation.megagray.megagray = MGy$MGy = (MGy) -> MGy # Megagray to Megagray
@@ -1694,7 +1691,7 @@ convertRadiation.gigagray.milligray = GGy$mGy = (GGy) -> GGy * 1e+12 # Gigagray 
 convertRadiation.gigagray.centigray = GGy$cGy = (GGy) -> GGy * 1e+11 # Gigagray to Centigray
 convertRadiation.gigagray.decigray = GGy$dGy = (GGy) -> GGy * 1e+10 # Gigagray to Decigray
 convertRadiation.gigagray.gray = GGy$Gy = (GGy) -> GGy * 1e+9 # Gigagray to Gray
-convertRadiation.gigagray.dekagray = GGy$daGy = (GGy) -> GGy * 1e+8 # Gigagray to Dekagray
+convertRadiation.gigagray.decagray = GGy$daGy = (GGy) -> GGy * 1e+8 # Gigagray to Decagray
 convertRadiation.gigagray.hectogray = GGy$hGy = (GGy) -> GGy * 1e+7 # Gigagray to Hectogray
 convertRadiation.gigagray.kilogray = GGy$kGy = (GGy) -> GGy * 1e+6 # Gigagray to Kilogray
 convertRadiation.gigagray.megagray = GGy$MGy = (GGy) -> GGy * 1e+3 # Gigagray to Megagray
@@ -1711,7 +1708,7 @@ convertRadiation.teragray.milligray = TGy$mGy = (TGy) -> TGy * 1e+15 # Teragray 
 convertRadiation.teragray.centigray = TGy$cGy = (TGy) -> TGy * 1e+14 # Teragray to Centigray
 convertRadiation.teragray.decigray = TGy$dGy = (TGy) -> TGy * 1e+13 # Teragray to Decigray
 convertRadiation.teragray.gray = TGy$Gy = (TGy) -> TGy * 1e+12 # Teragray to Gray
-convertRadiation.teragray.dekagray = TGy$daGy = (TGy) -> TGy * 1e+11 # Teragray to Dekagray
+convertRadiation.teragray.decagray = TGy$daGy = (TGy) -> TGy * 1e+11 # Teragray to Decagray
 convertRadiation.teragray.hectogray = TGy$hGy = (TGy) -> TGy * 1e+10 # Teragray to Hectogray
 convertRadiation.teragray.kilogray = TGy$kGy = (TGy) -> TGy * 1e+9 # Teragray to Kilogray
 convertRadiation.teragray.megagray = TGy$MGy = (TGy) -> TGy * 1e+6 # Teragray to Megagray
@@ -1728,7 +1725,7 @@ convertRadiation.petagray.milligray = PGy$mGy = (PGy) -> PGy * 1e+18 # Petagray 
 convertRadiation.petagray.centigray = PGy$cGy = (PGy) -> PGy * 1e+17 # Petagray to Centigray
 convertRadiation.petagray.decigray = PGy$dGy = (PGy) -> PGy * 1e+16 # Petagray to Decigray
 convertRadiation.petagray.gray = PGy$Gy = (PGy) -> PGy * 1e+15 # Petagray to Gray
-convertRadiation.petagray.dekagray = PGy$daGy = (PGy) -> PGy * 1e+14 # Petagray to Dekagray
+convertRadiation.petagray.decagray = PGy$daGy = (PGy) -> PGy * 1e+14 # Petagray to Decagray
 convertRadiation.petagray.hectogray = PGy$hGy = (PGy) -> PGy * 1e+13 # Petagray to Hectogray
 convertRadiation.petagray.kilogray = PGy$kGy = (PGy) -> PGy * 1e+12 # Petagray to Kilogray
 convertRadiation.petagray.megagray = PGy$MGy = (PGy) -> PGy * 1e+9 # Petagray to Megagray
@@ -1745,7 +1742,7 @@ convertRadiation.exagray.milligray = EGy$mGy = (EGy) -> EGy * 1e+21 # Exagray to
 convertRadiation.exagray.centigray = EGy$cGy = (EGy) -> EGy * 1e+20 # Exagray to Centigray
 convertRadiation.exagray.decigray = EGy$dGy = (EGy) -> EGy * 1e+19 # Exagray to Decigray
 convertRadiation.exagray.gray = EGy$Gy = (EGy) -> EGy * 1e+18 # Exagray to Gray
-convertRadiation.exagray.dekagray = EGy$daGy = (EGy) -> EGy * 1e+17 # Exagray to Dekagray
+convertRadiation.exagray.decagray = EGy$daGy = (EGy) -> EGy * 1e+17 # Exagray to Decagray
 convertRadiation.exagray.hectogray = EGy$hGy = (EGy) -> EGy * 1e+16 # Exagray to Hectogray
 convertRadiation.exagray.kilogray = EGy$kGy = (EGy) -> EGy * 1e+15 # Exagray to Kilogray
 convertRadiation.exagray.megagray = EGy$MGy = (EGy) -> EGy * 1e+12 # Exagray to Megagray

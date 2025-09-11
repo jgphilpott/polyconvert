@@ -118,7 +118,7 @@ polyconvert.data = {
     kilobyte: {...},
     megabyte: {...},
     gigabyte: {...},
-    terrabyte: {...},
+    terabyte: {...},
     petabyte: {...},
     exabyte: {...},
     zettabyte: {...},
@@ -137,7 +137,7 @@ polyconvert.data.bit = {
     kilobyte: f(x) = x/8e+3,
     megabyte: f(x) = x/8e+6,
     gigabyte: f(x) = x/8e+9,
-    terrabyte: f(x) = x/8e+12,
+    terabyte: f(x) = x/8e+12,
     petabyte: f(x) = x/8e+15,
     exabyte: f(x) = x/8e+18,
     zettabyte: f(x) = x/8e+21,
@@ -193,7 +193,7 @@ If you have any other issues with the Polyconvert library then please open a [ge
 
 <details>
 
-<summary>A map of all the catagories and units available for conversion:</summary><br>
+<summary>A map of all the categories and units available for conversion:</summary><br>
 
 Each category below is available as a top level key in the `polyconvert` object. An object map of each category is available below.
 
@@ -254,7 +254,7 @@ polyconvert.data = {
     kilobyte: {...},
     megabyte: {...},
     gigabyte: {...},
-    terrabyte: {...},
+    terabyte: {...},
     petabyte: {...},
     exabyte: {...},
     zettabyte: {...},
@@ -446,7 +446,7 @@ polyconvert.radiation = {
     centigray: {...},
     decigray: {...},
     gray: {...},
-    dekagray: {...},
+    decagray: {...},
     hectogray: {...},
     kilogray: {...},
     megagray: {...},

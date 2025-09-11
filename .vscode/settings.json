@@ -1,9 +1,35 @@
 {
-  "cSpell.words": [
-    "electronvolt",
-    "polyconversion",
-    "polyconvert",
-    "polyconverter",
-    "unexport"
-  ]
+    "cSpell.words": [
+        "celsius",
+        "centigray",
+        "decagray",
+        "decigray",
+        "electronvolt",
+        "exagray",
+        "fahrenheit",
+        "ftlb",
+        "gigagray",
+        "gradian",
+        "hectogray",
+        "kiloampere",
+        "kilogray",
+        "megagray",
+        "microgray",
+        "milli",
+        "milligray",
+        "milliradian",
+        "mrad",
+        "nanogram",
+        "Nanogram",
+        "nanogray",
+        "petagray",
+        "polyconversion",
+        "polyconvert",
+        "polyconverter",
+        "teragray",
+        "unexport",
+        "unproject",
+        "yottabyte",
+        "zettabyte"
+    ]
 }

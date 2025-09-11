@@ -394,7 +394,7 @@ convertData =
     kilobyte: {}
     megabyte: {}
     gigabyte: {}
-    terrabyte: {}
+    terabyte: {}
     petabyte: {}
     exabyte: {}
     zettabyte: {}
@@ -407,7 +407,7 @@ convertData.bit.byte = bit$byte = (bit) -> bit / 8 # Bit to Byte
 convertData.bit.kilobyte = bit$kb = (bit) -> bit / 8e+3 # Bit to Kilobyte
 convertData.bit.megabyte = bit$mb = (bit) -> bit / 8e+6 # Bit to Megabyte
 convertData.bit.gigabyte = bit$gb = (bit) -> bit / 8e+9 # Bit to Gigabyte
-convertData.bit.terrabyte = bit$tb = (bit) -> bit / 8e+12 # Bit to Terrabyte
+convertData.bit.terabyte = bit$tb = (bit) -> bit / 8e+12 # Bit to Terabyte
 convertData.bit.petabyte = bit$pb = (bit) -> bit / 8e+15 # Bit to Petabyte
 convertData.bit.exabyte = bit$eb = (bit) -> bit / 8e+18 # Bit to Exabyte
 convertData.bit.zettabyte = bit$zb = (bit) -> bit / 8e+21 # Bit to Zettabyte
@@ -420,7 +420,7 @@ convertData.byte.byte = byte$byte = (byte) -> byte # Byte to Byte
 convertData.byte.kilobyte = byte$kb = (byte) -> byte / 1e+3 # Byte to Kilobyte
 convertData.byte.megabyte = byte$mb = (byte) -> byte / 1e+6 # Byte to Megabyte
 convertData.byte.gigabyte = byte$gb = (byte) -> byte / 1e+9 # Byte to Gigabyte
-convertData.byte.terrabyte = byte$tb = (byte) -> byte / 1e+12 # Byte to Terrabyte
+convertData.byte.terabyte = byte$tb = (byte) -> byte / 1e+12 # Byte to Terabyte
 convertData.byte.petabyte = byte$pb = (byte) -> byte / 1e+15 # Byte to Petabyte
 convertData.byte.exabyte = byte$eb = (byte) -> byte / 1e+18 # Byte to Exabyte
 convertData.byte.zettabyte = byte$zb = (byte) -> byte / 1e+21 # Byte to Zettabyte
@@ -433,7 +433,7 @@ convertData.kilobyte.byte = kb$byte = (kb) -> kb * 1e+3 # Kilobyte to Byte
 convertData.kilobyte.kilobyte = kb$kb = (kb) -> kb # Kilobyte to Kilobyte
 convertData.kilobyte.megabyte = kb$mb = (kb) -> kb / 1e+3 # Kilobyte to Megabyte
 convertData.kilobyte.gigabyte = kb$gb = (kb) -> kb / 1e+6 # Kilobyte to Gigabyte
-convertData.kilobyte.terrabyte = kb$tb = (kb) -> kb / 1e+9 # Kilobyte to Terrabyte
+convertData.kilobyte.terabyte = kb$tb = (kb) -> kb / 1e+9 # Kilobyte to Terabyte
 convertData.kilobyte.petabyte = kb$pb = (kb) -> kb / 1e+12 # Kilobyte to Petabyte
 convertData.kilobyte.exabyte = kb$eb = (kb) -> kb / 1e+15 # Kilobyte to Exabyte
 convertData.kilobyte.zettabyte = kb$zb = (kb) -> kb / 1e+18 # Kilobyte to Zettabyte
@@ -446,7 +446,7 @@ convertData.megabyte.byte = mb$byte = (mb) -> mb * 1e+6 # Megabyte to Byte
 convertData.megabyte.kilobyte = mb$kb = (mb) -> mb * 1e+3 # Megabyte to Kilobyte
 convertData.megabyte.megabyte = mb$mb = (mb) -> mb # Megabyte to Megabyte
 convertData.megabyte.gigabyte = mb$gb = (mb) -> mb / 1e+3 # Megabyte to Gigabyte
-convertData.megabyte.terrabyte = mb$tb = (mb) -> mb / 1e+6 # Megabyte to Terrabyte
+convertData.megabyte.terabyte = mb$tb = (mb) -> mb / 1e+6 # Megabyte to Terabyte
 convertData.megabyte.petabyte = mb$pb = (mb) -> mb / 1e+9 # Megabyte to Petabyte
 convertData.megabyte.exabyte = mb$eb = (mb) -> mb / 1e+12 # Megabyte to Exabyte
 convertData.megabyte.zettabyte = mb$zb = (mb) -> mb / 1e+15 # Megabyte to Zettabyte
@@ -459,19 +459,22 @@ convertData.gigabyte.byte = gb$byte = (gb) -> gb * 1e+9 # Gigabyte to Byte
 convertData.gigabyte.kilobyte = gb$kb = (gb) -> gb * 1e+6 # Gigabyte to Kilobyte
 convertData.gigabyte.megabyte = gb$mb = (gb) -> gb * 1e+3 # Gigabyte to Megabyte
 convertData.gigabyte.gigabyte = gb$gb = (gb) -> gb # Gigabyte to Gigabyte
-convertData.gigabyte.terrabyte = gb$tb = (gb) -> gb / 1e+3 # Gigabyte to Terrabyte
+convertData.gigabyte.terabyte = gb$tb = (gb) -> gb / 1e+3 # Gigabyte to Terabyte
 convertData.gigabyte.petabyte = gb$pb = (gb) -> gb / 1e+6 # Gigabyte to Petabyte
 convertData.gigabyte.exabyte = gb$eb = (gb) -> gb / 1e+9 # Gigabyte to Exabyte
 convertData.gigabyte.zettabyte = gb$zb = (gb) -> gb / 1e+12 # Gigabyte to Zettabyte
 convertData.gigabyte.yottabyte = gb$yb = (gb) -> gb / 1e+15 # Gigabyte to Yottabyte
 
-### Terrabyte Conversions ###
+### Terabyte Conversions ###
 
-convertData.terrabyte.bit = tb$bit = (tb) -> tb * 8e+12 # Terrabyte to Bit
-convertData.terrabyte.byte = tb$byte = (tb) -> tb * 1e+12 # Terrabyte to Byte
-convertData.terrabyte.kilobyte = tb$kb = (tb) -> tb * 1e+9 # Terrabyte to Kilobyte
-convertData.terrabyte.megabyte = tb$mb = (tb) -> tb * 1e+6 # Terrabyte to Megabyte
-convertData.terrabyte.gigabyte = tb$gb = (tb) -> tb * 1e+3 # Terrabyte to Gigabyte
+convertData.terabyte.bit = tb$bit = (tb) -> tb * 8e+12 # Terabyte to Bit
+convertData.terabyte.byte = tb$byte = (tb) -> tb * 1e+12 # Terabyte to Byte
+convertData.terabyte.kilobyte = tb$kb = (tb) -> tb * 1e+9 # Terabyte to Kilobyte
+convertData.terabyte.megabyte = tb$mb = (tb) -> tb * 1e+6 # Terabyte to Megabyte
+convertData.terabyte.gigabyte = tb$gb = (tb) -> tb * 1e+3 # Terabyte to Gigabyte
+
+# Backwards compatibility alias (deprecated): terrabyte
+convertData.terrabyte = convertData.terabyte
 convertData.terrabyte.terrabyte = tb$tb = (tb) -> tb # Terrabyte to Terrabyte
 convertData.terrabyte.petabyte = tb$pb = (tb) -> tb / 1e+3 # Terrabyte to Petabyte
 convertData.terrabyte.exabyte = tb$eb = (tb) -> tb / 1e+6 # Terrabyte to Exabyte
@@ -1753,785 +1756,53 @@ convertRadiation.exagray.exagray = EGy$EGy = (EGy) -> EGy # Exagray to Exagray
 
 ### Speed Conversions ###
 
-convertSpeed =
-
-    millimeterSecond: {}
-    millimeterMinute: {}
-    millimeterHour: {}
-    centimeterSecond: {}
-    centimeterMinute: {}
-    centimeterHour: {}
-    meterSecond: {}
-    meterMinute: {}
-    meterHour: {}
-    kilometerSecond: {}
-    kilometerMinute: {}
-    kilometerHour: {}
-
-    inchSecond: {}
-    inchMinute: {}
-    inchHour: {}
-    footSecond: {}
-    footMinute: {}
-    footHour: {}
-    yardSecond: {}
-    yardMinute: {}
-    yardHour: {}
-    mileSecond: {}
-    mileMinute: {}
-    mileHour: {}
-
-    knots: {}
-
-### Millimeters per Second Conversions ###
-
-convertSpeed.millimeterSecond.millimeterSecond = mmS$mmS = (mmS) -> second$second mm$mm mmS # Millimeters per Second to Millimeters per Second
-convertSpeed.millimeterSecond.millimeterMinute = mmS$mmM = (mmS) -> minute$second mm$mm mmS # Millimeters per Second to Millimeters per Minute
-convertSpeed.millimeterSecond.millimeterHour = mmS$mmH = (mmS) -> hour$second mm$mm mmS # Millimeters per Second to Millimeters per Hour
-convertSpeed.millimeterSecond.centimeterSecond = mmS$cmS = (mmS) -> second$second mm$cm mmS # Millimeters per Second to Centimeters per Second
-convertSpeed.millimeterSecond.centimeterMinute = mmS$cmM = (mmS) -> minute$second mm$cm mmS # Millimeters per Second to Centimeters per Minute
-convertSpeed.millimeterSecond.centimeterHour = mmS$cmH = (mmS) -> hour$second mm$cm mmS # Millimeters per Second to Centimeters per Hour
-convertSpeed.millimeterSecond.meterSecond = mmS$mS = (mmS) -> second$second mm$m mmS # Millimeters per Second to Meters per Second
-convertSpeed.millimeterSecond.meterMinute = mmS$mM = (mmS) -> minute$second mm$m mmS # Millimeters per Second to Meters per Minute
-convertSpeed.millimeterSecond.meterHour = mmS$mH = (mmS) -> hour$second mm$m mmS # Millimeters per Second to Meters per Hour
-convertSpeed.millimeterSecond.kilometerSecond = mmS$kmS = (mmS) -> second$second mm$km mmS # Millimeters per Second to Kilometers per Second
-convertSpeed.millimeterSecond.kilometerMinute = mmS$kmM = (mmS) -> minute$second mm$km mmS # Millimeters per Second to Kilometers per Minute
-convertSpeed.millimeterSecond.kilometerHour = mmS$kmH = (mmS) -> hour$second mm$km mmS # Millimeters per Second to Kilometers per Hour
-
-convertSpeed.millimeterSecond.inchSecond = mmS$inchS = (mmS) -> second$second mm$inch mmS # Millimeters per Second to Inchs per Second
-convertSpeed.millimeterSecond.inchMinute = mmS$inchM = (mmS) -> minute$second mm$inch mmS # Millimeters per Second to Inchs per Minute
-convertSpeed.millimeterSecond.inchHour = mmS$inchH = (mmS) -> hour$second mm$inch mmS # Millimeters per Second to Inchs per Hour
-convertSpeed.millimeterSecond.footSecond = mmS$footS = (mmS) -> second$second mm$foot mmS # Millimeters per Second to Feet per Second
-convertSpeed.millimeterSecond.footMinute = mmS$footM = (mmS) -> minute$second mm$foot mmS # Millimeters per Second to Feet per Minute
-convertSpeed.millimeterSecond.footHour = mmS$footH = (mmS) -> hour$second mm$foot mmS # Millimeters per Second to Feet per Hour
-convertSpeed.millimeterSecond.yardSecond = mmS$yardS = (mmS) -> second$second mm$yard mmS # Millimeters per Second to Yards per Second
-convertSpeed.millimeterSecond.yardMinute = mmS$yardM = (mmS) -> minute$second mm$yard mmS # Millimeters per Second to Yards per Minute
-convertSpeed.millimeterSecond.yardHour = mmS$yardH = (mmS) -> hour$second mm$yard mmS # Millimeters per Second to Yards per Hour
-convertSpeed.millimeterSecond.mileSecond = mmS$mileS = (mmS) -> second$second mm$mile mmS # Millimeters per Second to Miles per Second
-convertSpeed.millimeterSecond.mileMinute = mmS$mileM = (mmS) -> minute$second mm$mile mmS # Millimeters per Second to Miles per Minute
-convertSpeed.millimeterSecond.mileHour = mmS$mileH = (mmS) -> hour$second mm$mile mmS # Millimeters per Second to Miles per Hour
-
-convertSpeed.millimeterSecond.knots = mmS$knots = (mmS) -> mmS / 514.44 # Millimeters per Second to Knots
-
-### Millimeters per Minute Conversions ###
-
-convertSpeed.millimeterMinute.millimeterSecond = mmM$mmS = (mmM) -> second$minute mm$mm mmM # Millimeters per Minute to Millimeters per Second
-convertSpeed.millimeterMinute.millimeterMinute = mmM$mmM = (mmM) -> minute$minute mm$mm mmM # Millimeters per Minute to Millimeters per Minute
-convertSpeed.millimeterMinute.millimeterHour = mmM$mmH = (mmM) -> hour$minute mm$mm mmM # Millimeters per Minute to Millimeters per Hour
-convertSpeed.millimeterMinute.centimeterSecond = mmM$cmS = (mmM) -> second$minute mm$cm mmM # Millimeters per Minute to Centimeters per Second
-convertSpeed.millimeterMinute.centimeterMinute = mmM$cmM = (mmM) -> minute$minute mm$cm mmM # Millimeters per Minute to Centimeters per Minute
-convertSpeed.millimeterMinute.centimeterHour = mmM$cmH = (mmM) -> hour$minute mm$cm mmM # Millimeters per Minute to Centimeters per Hour
-convertSpeed.millimeterMinute.meterSecond = mmM$mS = (mmM) -> second$minute mm$m mmM # Millimeters per Minute to Meters per Second
-convertSpeed.millimeterMinute.meterMinute = mmM$mM = (mmM) -> minute$minute mm$m mmM # Millimeters per Minute to Meters per Minute
-convertSpeed.millimeterMinute.meterHour = mmM$mH = (mmM) -> hour$minute mm$m mmM # Millimeters per Minute to Meters per Hour
-convertSpeed.millimeterMinute.kilometerSecond = mmM$kmS = (mmM) -> second$minute mm$km mmM # Millimeters per Minute to Kilometers per Second
-convertSpeed.millimeterMinute.kilometerMinute = mmM$kmM = (mmM) -> minute$minute mm$km mmM # Millimeters per Minute to Kilometers per Minute
-convertSpeed.millimeterMinute.kilometerHour = mmM$kmH = (mmM) -> hour$minute mm$km mmM # Millimeters per Minute to Kilometers per Hour
-
-convertSpeed.millimeterMinute.inchSecond = mmM$inchS = (mmM) -> second$minute mm$inch mmM # Millimeters per Minute to Inchs per Second
-convertSpeed.millimeterMinute.inchMinute = mmM$inchM = (mmM) -> minute$minute mm$inch mmM # Millimeters per Minute to Inchs per Minute
-convertSpeed.millimeterMinute.inchHour = mmM$inchH = (mmM) -> hour$minute mm$inch mmM # Millimeters per Minute to Inchs per Hour
-convertSpeed.millimeterMinute.footSecond = mmM$footS = (mmM) -> second$minute mm$foot mmM # Millimeters per Minute to Feet per Second
-convertSpeed.millimeterMinute.footMinute = mmM$footM = (mmM) -> minute$minute mm$foot mmM # Millimeters per Minute to Feet per Minute
-convertSpeed.millimeterMinute.footHour = mmM$footH = (mmM) -> hour$minute mm$foot mmM # Millimeters per Minute to Feet per Hour
-convertSpeed.millimeterMinute.yardSecond = mmM$yardS = (mmM) -> second$minute mm$yard mmM # Millimeters per Minute to Yards per Second
-convertSpeed.millimeterMinute.yardMinute = mmM$yardM = (mmM) -> minute$minute mm$yard mmM # Millimeters per Minute to Yards per Minute
-convertSpeed.millimeterMinute.yardHour = mmM$yardH = (mmM) -> hour$minute mm$yard mmM # Millimeters per Minute to Yards per Hour
-convertSpeed.millimeterMinute.mileSecond = mmM$mileS = (mmM) -> second$minute mm$mile mmM # Millimeters per Minute to Miles per Second
-convertSpeed.millimeterMinute.mileMinute = mmM$mileM = (mmM) -> minute$minute mm$mile mmM # Millimeters per Minute to Miles per Minute
-convertSpeed.millimeterMinute.mileHour = mmM$mileH = (mmM) -> hour$minute mm$mile mmM # Millimeters per Minute to Miles per Hour
-
-convertSpeed.millimeterMinute.knots = mmM$knots = (mmM) -> mmM / 30867 # Millimeters per Minute to Knots
-
-### Millimeters per Hour Conversions ###
-
-convertSpeed.millimeterHour.millimeterSecond = mmH$mmS = (mmH) -> second$hour mm$mm mmH # Millimeters per Hour to Millimeters per Second
-convertSpeed.millimeterHour.millimeterMinute = mmH$mmM = (mmH) -> minute$hour mm$mm mmH # Millimeters per Hour to Millimeters per Minute
-convertSpeed.millimeterHour.millimeterHour = mmH$mmH = (mmH) -> hour$hour mm$mm mmH # Millimeters per Hour to Millimeters per Hour
-convertSpeed.millimeterHour.centimeterSecond = mmH$cmS = (mmH) -> second$hour mm$cm mmH # Millimeters per Hour to Centimeters per Second
-convertSpeed.millimeterHour.centimeterMinute = mmH$cmM = (mmH) -> minute$hour mm$cm mmH # Millimeters per Hour to Centimeters per Minute
-convertSpeed.millimeterHour.centimeterHour = mmH$cmH = (mmH) -> hour$hour mm$cm mmH # Millimeters per Hour to Centimeters per Hour
-convertSpeed.millimeterHour.meterSecond = mmH$mS = (mmH) -> second$hour mm$m mmH # Millimeters per Hour to Meters per Second
-convertSpeed.millimeterHour.meterMinute = mmH$mM = (mmH) -> minute$hour mm$m mmH # Millimeters per Hour to Meters per Minute
-convertSpeed.millimeterHour.meterHour = mmH$mH = (mmH) -> hour$hour mm$m mmH # Millimeters per Hour to Meters per Hour
-convertSpeed.millimeterHour.kilometerSecond = mmH$kmS = (mmH) -> second$hour mm$km mmH # Millimeters per Hour to Kilometers per Second
-convertSpeed.millimeterHour.kilometerMinute = mmH$kmM = (mmH) -> minute$hour mm$km mmH # Millimeters per Hour to Kilometers per Minute
-convertSpeed.millimeterHour.kilometerHour = mmH$kmH = (mmH) -> hour$hour mm$km mmH # Millimeters per Hour to Kilometers per Hour
-
-convertSpeed.millimeterHour.inchSecond = mmH$inchS = (mmH) -> second$hour mm$inch mmH # Millimeters per Hour to Inchs per Second
-convertSpeed.millimeterHour.inchMinute = mmH$inchM = (mmH) -> minute$hour mm$inch mmH # Millimeters per Hour to Inchs per Minute
-convertSpeed.millimeterHour.inchHour = mmH$inchH = (mmH) -> hour$hour mm$inch mmH # Millimeters per Hour to Inchs per Hour
-convertSpeed.millimeterHour.footSecond = mmH$footS = (mmH) -> second$hour mm$foot mmH # Millimeters per Hour to Feet per Second
-convertSpeed.millimeterHour.footMinute = mmH$footM = (mmH) -> minute$hour mm$foot mmH # Millimeters per Hour to Feet per Minute
-convertSpeed.millimeterHour.footHour = mmH$footH = (mmH) -> hour$hour mm$foot mmH # Millimeters per Hour to Feet per Hour
-convertSpeed.millimeterHour.yardSecond = mmH$yardS = (mmH) -> second$hour mm$yard mmH # Millimeters per Hour to Yards per Second
-convertSpeed.millimeterHour.yardMinute = mmH$yardM = (mmH) -> minute$hour mm$yard mmH # Millimeters per Hour to Yards per Minute
-convertSpeed.millimeterHour.yardHour = mmH$yardH = (mmH) -> hour$hour mm$yard mmH # Millimeters per Hour to Yards per Hour
-convertSpeed.millimeterHour.mileSecond = mmH$mileS = (mmH) -> second$hour mm$mile mmH # Millimeters per Hour to Miles per Second
-convertSpeed.millimeterHour.mileMinute = mmH$mileM = (mmH) -> minute$hour mm$mile mmH # Millimeters per Hour to Miles per Minute
-convertSpeed.millimeterHour.mileHour = mmH$mileH = (mmH) -> hour$hour mm$mile mmH # Millimeters per Hour to Miles per Hour
-
-convertSpeed.millimeterHour.knots = mmH$knots = (mmH) -> mmH / 1852000 # Millimeters per Hour to Knots
-
-### Centimeters per Second Conversions ###
-
-convertSpeed.centimeterSecond.millimeterSecond = cmS$mmS = (cmS) -> second$second cm$mm cmS # Centimeters per Second to Millimeters per Second
-convertSpeed.centimeterSecond.millimeterMinute = cmS$mmM = (cmS) -> minute$second cm$mm cmS # Centimeters per Second to Millimeters per Minute
-convertSpeed.centimeterSecond.millimeterHour = cmS$mmH = (cmS) -> hour$second cm$mm cmS # Centimeters per Second to Millimeters per Hour
-convertSpeed.centimeterSecond.centimeterSecond = cmS$cmS = (cmS) -> second$second cm$cm cmS # Centimeters per Second to Centimeters per Second
-convertSpeed.centimeterSecond.centimeterMinute = cmS$cmM = (cmS) -> minute$second cm$cm cmS # Centimeters per Second to Centimeters per Minute
-convertSpeed.centimeterSecond.centimeterHour = cmS$cmH = (cmS) -> hour$second cm$cm cmS # Centimeters per Second to Centimeters per Hour
-convertSpeed.centimeterSecond.meterSecond = cmS$mS = (cmS) -> second$second cm$m cmS # Centimeters per Second to Meters per Second
-convertSpeed.centimeterSecond.meterMinute = cmS$mM = (cmS) -> minute$second cm$m cmS # Centimeters per Second to Meters per Minute
-convertSpeed.centimeterSecond.meterHour = cmS$mH = (cmS) -> hour$second cm$m cmS # Centimeters per Second to Meters per Hour
-convertSpeed.centimeterSecond.kilometerSecond = cmS$kmS = (cmS) -> second$second cm$km cmS # Centimeters per Second to Kilometers per Second
-convertSpeed.centimeterSecond.kilometerMinute = cmS$kmM = (cmS) -> minute$second cm$km cmS # Centimeters per Second to Kilometers per Minute
-convertSpeed.centimeterSecond.kilometerHour = cmS$kmH = (cmS) -> hour$second cm$km cmS # Centimeters per Second to Kilometers per Hour
-
-convertSpeed.centimeterSecond.inchSecond = cmS$inchS = (cmS) -> second$second cm$inch cmS # Centimeters per Second to Inchs per Second
-convertSpeed.centimeterSecond.inchMinute = cmS$inchM = (cmS) -> minute$second cm$inch cmS # Centimeters per Second to Inchs per Minute
-convertSpeed.centimeterSecond.inchHour = cmS$inchH = (cmS) -> hour$second cm$inch cmS # Centimeters per Second to Inchs per Hour
-convertSpeed.centimeterSecond.footSecond = cmS$footS = (cmS) -> second$second cm$foot cmS # Centimeters per Second to Feet per Second
-convertSpeed.centimeterSecond.footMinute = cmS$footM = (cmS) -> minute$second cm$foot cmS # Centimeters per Second to Feet per Minute
-convertSpeed.centimeterSecond.footHour = cmS$footH = (cmS) -> hour$second cm$foot cmS # Centimeters per Second to Feet per Hour
-convertSpeed.centimeterSecond.yardSecond = cmS$yardS = (cmS) -> second$second cm$yard cmS # Centimeters per Second to Yards per Second
-convertSpeed.centimeterSecond.yardMinute = cmS$yardM = (cmS) -> minute$second cm$yard cmS # Centimeters per Second to Yards per Minute
-convertSpeed.centimeterSecond.yardHour = cmS$yardH = (cmS) -> hour$second cm$yard cmS # Centimeters per Second to Yards per Hour
-convertSpeed.centimeterSecond.mileSecond = cmS$mileS = (cmS) -> second$second cm$mile cmS # Centimeters per Second to Miles per Second
-convertSpeed.centimeterSecond.mileMinute = cmS$mileM = (cmS) -> minute$second cm$mile cmS # Centimeters per Second to Miles per Minute
-convertSpeed.centimeterSecond.mileHour = cmS$mileH = (cmS) -> hour$second cm$mile cmS # Centimeters per Second to Miles per Hour
-
-convertSpeed.centimeterSecond.knots = cmS$knots = (cmS) -> cmS / 51.444 # Centimeters per Second to Knots
-
-### Centimeters per Minute Conversions ###
-
-convertSpeed.centimeterMinute.millimeterSecond = cmM$mmS = (cmM) -> second$minute cm$mm cmM # Centimeters per Minute to Millimeters per Second
-convertSpeed.centimeterMinute.millimeterMinute = cmM$mmM = (cmM) -> minute$minute cm$mm cmM # Centimeters per Minute to Millimeters per Minute
-convertSpeed.centimeterMinute.millimeterHour = cmM$mmH = (cmM) -> hour$minute cm$mm cmM # Centimeters per Minute to Millimeters per Hour
-convertSpeed.centimeterMinute.centimeterSecond = cmM$cmS = (cmM) -> second$minute cm$cm cmM # Centimeters per Minute to Centimeters per Second
-convertSpeed.centimeterMinute.centimeterMinute = cmM$cmM = (cmM) -> minute$minute cm$cm cmM # Centimeters per Minute to Centimeters per Minute
-convertSpeed.centimeterMinute.centimeterHour = cmM$cmH = (cmM) -> hour$minute cm$cm cmM # Centimeters per Minute to Centimeters per Hour
-convertSpeed.centimeterMinute.meterSecond = cmM$mS = (cmM) -> second$minute cm$m cmM # Centimeters per Minute to Meters per Second
-convertSpeed.centimeterMinute.meterMinute = cmM$mM = (cmM) -> minute$minute cm$m cmM # Centimeters per Minute to Meters per Minute
-convertSpeed.centimeterMinute.meterHour = cmM$mH = (cmM) -> hour$minute cm$m cmM # Centimeters per Minute to Meters per Hour
-convertSpeed.centimeterMinute.kilometerSecond = cmM$kmS = (cmM) -> second$minute cm$km cmM # Centimeters per Minute to Kilometers per Second
-convertSpeed.centimeterMinute.kilometerMinute = cmM$kmM = (cmM) -> minute$minute cm$km cmM # Centimeters per Minute to Kilometers per Minute
-convertSpeed.centimeterMinute.kilometerHour = cmM$kmH = (cmM) -> hour$minute cm$km cmM # Centimeters per Minute to Kilometers per Hour
-
-convertSpeed.centimeterMinute.inchSecond = cmM$inchS = (cmM) -> second$minute cm$inch cmM # Centimeters per Minute to Inchs per Second
-convertSpeed.centimeterMinute.inchMinute = cmM$inchM = (cmM) -> minute$minute cm$inch cmM # Centimeters per Minute to Inchs per Minute
-convertSpeed.centimeterMinute.inchHour = cmM$inchH = (cmM) -> hour$minute cm$inch cmM # Centimeters per Minute to Inchs per Hour
-convertSpeed.centimeterMinute.footSecond = cmM$footS = (cmM) -> second$minute cm$foot cmM # Centimeters per Minute to Feet per Second
-convertSpeed.centimeterMinute.footMinute = cmM$footM = (cmM) -> minute$minute cm$foot cmM # Centimeters per Minute to Feet per Minute
-convertSpeed.centimeterMinute.footHour = cmM$footH = (cmM) -> hour$minute cm$foot cmM # Centimeters per Minute to Feet per Hour
-convertSpeed.centimeterMinute.yardSecond = cmM$yardS = (cmM) -> second$minute cm$yard cmM # Centimeters per Minute to Yards per Second
-convertSpeed.centimeterMinute.yardMinute = cmM$yardM = (cmM) -> minute$minute cm$yard cmM # Centimeters per Minute to Yards per Minute
-convertSpeed.centimeterMinute.yardHour = cmM$yardH = (cmM) -> hour$minute cm$yard cmM # Centimeters per Minute to Yards per Hour
-convertSpeed.centimeterMinute.mileSecond = cmM$mileS = (cmM) -> second$minute cm$mile cmM # Centimeters per Minute to Miles per Second
-convertSpeed.centimeterMinute.mileMinute = cmM$mileM = (cmM) -> minute$minute cm$mile cmM # Centimeters per Minute to Miles per Minute
-convertSpeed.centimeterMinute.mileHour = cmM$mileH = (cmM) -> hour$minute cm$mile cmM # Centimeters per Minute to Miles per Hour
-
-convertSpeed.centimeterMinute.knots = cmM$knots = (cmM) -> cmM / 3086.7 # Centimeters per Minute to Knots
-
-### Centimeters per Hour Conversions ###
-
-convertSpeed.centimeterHour.millimeterSecond = cmH$mmS = (cmH) -> second$hour cm$mm cmH # Centimeters per Hour to Millimeters per Second
-convertSpeed.centimeterHour.millimeterMinute = cmH$mmM = (cmH) -> minute$hour cm$mm cmH # Centimeters per Hour to Millimeters per Minute
-convertSpeed.centimeterHour.millimeterHour = cmH$mmH = (cmH) -> hour$hour cm$mm cmH # Centimeters per Hour to Millimeters per Hour
-convertSpeed.centimeterHour.centimeterSecond = cmH$cmS = (cmH) -> second$hour cm$cm cmH # Centimeters per Hour to Centimeters per Second
-convertSpeed.centimeterHour.centimeterMinute = cmH$cmM = (cmH) -> minute$hour cm$cm cmH # Centimeters per Hour to Centimeters per Minute
-convertSpeed.centimeterHour.centimeterHour = cmH$cmH = (cmH) -> hour$hour cm$cm cmH # Centimeters per Hour to Centimeters per Hour
-convertSpeed.centimeterHour.meterSecond = cmH$mS = (cmH) -> second$hour cm$m cmH # Centimeters per Hour to Meters per Second
-convertSpeed.centimeterHour.meterMinute = cmH$mM = (cmH) -> minute$hour cm$m cmH # Centimeters per Hour to Meters per Minute
-convertSpeed.centimeterHour.meterHour = cmH$mH = (cmH) -> hour$hour cm$m cmH # Centimeters per Hour to Meters per Hour
-convertSpeed.centimeterHour.kilometerSecond = cmH$kmS = (cmH) -> second$hour cm$km cmH # Centimeters per Hour to Kilometers per Second
-convertSpeed.centimeterHour.kilometerMinute = cmH$kmM = (cmH) -> minute$hour cm$km cmH # Centimeters per Hour to Kilometers per Minute
-convertSpeed.centimeterHour.kilometerHour = cmH$kmH = (cmH) -> hour$hour cm$km cmH # Centimeters per Hour to Kilometers per Hour
-
-convertSpeed.centimeterHour.inchSecond = cmH$inchS = (cmH) -> second$hour cm$inch cmH # Centimeters per Hour to Inchs per Second
-convertSpeed.centimeterHour.inchMinute = cmH$inchM = (cmH) -> minute$hour cm$inch cmH # Centimeters per Hour to Inchs per Minute
-convertSpeed.centimeterHour.inchHour = cmH$inchH = (cmH) -> hour$hour cm$inch cmH # Centimeters per Hour to Inchs per Hour
-convertSpeed.centimeterHour.footSecond = cmH$footS = (cmH) -> second$hour cm$foot cmH # Centimeters per Hour to Feet per Second
-convertSpeed.centimeterHour.footMinute = cmH$footM = (cmH) -> minute$hour cm$foot cmH # Centimeters per Hour to Feet per Minute
-convertSpeed.centimeterHour.footHour = cmH$footH = (cmH) -> hour$hour cm$foot cmH # Centimeters per Hour to Feet per Hour
-convertSpeed.centimeterHour.yardSecond = cmH$yardS = (cmH) -> second$hour cm$yard cmH # Centimeters per Hour to Yards per Second
-convertSpeed.centimeterHour.yardMinute = cmH$yardM = (cmH) -> minute$hour cm$yard cmH # Centimeters per Hour to Yards per Minute
-convertSpeed.centimeterHour.yardHour = cmH$yardH = (cmH) -> hour$hour cm$yard cmH # Centimeters per Hour to Yards per Hour
-convertSpeed.centimeterHour.mileSecond = cmH$mileS = (cmH) -> second$hour cm$mile cmH # Centimeters per Hour to Miles per Second
-convertSpeed.centimeterHour.mileMinute = cmH$mileM = (cmH) -> minute$hour cm$mile cmH # Centimeters per Hour to Miles per Minute
-convertSpeed.centimeterHour.mileHour = cmH$mileH = (cmH) -> hour$hour cm$mile cmH # Centimeters per Hour to Miles per Hour
-
-convertSpeed.centimeterHour.knots = cmH$knots = (cmH) -> cmH / 185200 # Centimeters per Hour to Knots
-
-### Meters per Second Conversions ###
-
-convertSpeed.meterSecond.millimeterSecond = mS$mmS = (mS) -> second$second m$mm mS # Meters per Second to Millimeters per Second
-convertSpeed.meterSecond.millimeterMinute = mS$mmM = (mS) -> minute$second m$mm mS # Meters per Second to Millimeters per Minute
-convertSpeed.meterSecond.millimeterHour = mS$mmH = (mS) -> hour$second m$mm mS # Meters per Second to Millimeters per Hour
-convertSpeed.meterSecond.centimeterSecond = mS$cmS = (mS) -> second$second m$cm mS # Meters per Second to Centimeters per Second
-convertSpeed.meterSecond.centimeterMinute = mS$cmM = (mS) -> minute$second m$cm mS # Meters per Second to Centimeters per Minute
-convertSpeed.meterSecond.centimeterHour = mS$cmH = (mS) -> hour$second m$cm mS # Meters per Second to Centimeters per Hour
-convertSpeed.meterSecond.meterSecond = mS$mS = (mS) -> second$second m$m mS # Meters per Second to Meters per Second
-convertSpeed.meterSecond.meterMinute = mS$mM = (mS) -> minute$second m$m mS # Meters per Second to Meters per Minute
-convertSpeed.meterSecond.meterHour = mS$mH = (mS) -> hour$second m$m mS # Meters per Second to Meters per Hour
-convertSpeed.meterSecond.kilometerSecond = mS$kmS = (mS) -> second$second m$km mS # Meters per Second to Kilometers per Second
-convertSpeed.meterSecond.kilometerMinute = mS$kmM = (mS) -> minute$second m$km mS # Meters per Second to Kilometers per Minute
-convertSpeed.meterSecond.kilometerHour = mS$kmH = (mS) -> hour$second m$km mS # Meters per Second to Kilometers per Hour
-
-convertSpeed.meterSecond.inchSecond = mS$inchS = (mS) -> second$second m$inch mS # Meters per Second to Inchs per Second
-convertSpeed.meterSecond.inchMinute = mS$inchM = (mS) -> minute$second m$inch mS # Meters per Second to Inchs per Minute
-convertSpeed.meterSecond.inchHour = mS$inchH = (mS) -> hour$second m$inch mS # Meters per Second to Inchs per Hour
-convertSpeed.meterSecond.footSecond = mS$footS = (mS) -> second$second m$foot mS # Meters per Second to Feet per Second
-convertSpeed.meterSecond.footMinute = mS$footM = (mS) -> minute$second m$foot mS # Meters per Second to Feet per Minute
-convertSpeed.meterSecond.footHour = mS$footH = (mS) -> hour$second m$foot mS # Meters per Second to Feet per Hour
-convertSpeed.meterSecond.yardSecond = mS$yardS = (mS) -> second$second m$yard mS # Meters per Second to Yards per Second
-convertSpeed.meterSecond.yardMinute = mS$yardM = (mS) -> minute$second m$yard mS # Meters per Second to Yards per Minute
-convertSpeed.meterSecond.yardHour = mS$yardH = (mS) -> hour$second m$yard mS # Meters per Second to Yards per Hour
-convertSpeed.meterSecond.mileSecond = mS$mileS = (mS) -> second$second m$mile mS # Meters per Second to Miles per Second
-convertSpeed.meterSecond.mileMinute = mS$mileM = (mS) -> minute$second m$mile mS # Meters per Second to Miles per Minute
-convertSpeed.meterSecond.mileHour = mS$mileH = (mS) -> hour$second m$mile mS # Meters per Second to Miles per Hour
-
-convertSpeed.meterSecond.knots = mS$knots = (mS) -> mS * 1.944 # Meters per Second to Knots
-
-### Meters per Minute Conversions ###
-
-convertSpeed.meterMinute.millimeterSecond = mM$mmS = (mM) -> second$minute m$mm mM # Meters per Minute to Millimeters per Second
-convertSpeed.meterMinute.millimeterMinute = mM$mmM = (mM) -> minute$minute m$mm mM # Meters per Minute to Millimeters per Minute
-convertSpeed.meterMinute.millimeterHour = mM$mmH = (mM) -> hour$minute m$mm mM # Meters per Minute to Millimeters per Hour
-convertSpeed.meterMinute.centimeterSecond = mM$cmS = (mM) -> second$minute m$cm mM # Meters per Minute to Centimeters per Second
-convertSpeed.meterMinute.centimeterMinute = mM$cmM = (mM) -> minute$minute m$cm mM # Meters per Minute to Centimeters per Minute
-convertSpeed.meterMinute.centimeterHour = mM$cmH = (mM) -> hour$minute m$cm mM # Meters per Minute to Centimeters per Hour
-convertSpeed.meterMinute.meterSecond = mM$mS = (mM) -> second$minute m$m mM # Meters per Minute to Meters per Second
-convertSpeed.meterMinute.meterMinute = mM$mM = (mM) -> minute$minute m$m mM # Meters per Minute to Meters per Minute
-convertSpeed.meterMinute.meterHour = mM$mH = (mM) -> hour$minute m$m mM # Meters per Minute to Meters per Hour
-convertSpeed.meterMinute.kilometerSecond = mM$kmS = (mM) -> second$minute m$km mM # Meters per Minute to Kilometers per Second
-convertSpeed.meterMinute.kilometerMinute = mM$kmM = (mM) -> minute$minute m$km mM # Meters per Minute to Kilometers per Minute
-convertSpeed.meterMinute.kilometerHour = mM$kmH = (mM) -> hour$minute m$km mM # Meters per Minute to Kilometers per Hour
-
-convertSpeed.meterMinute.inchSecond = mM$inchS = (mM) -> second$minute m$inch mM # Meters per Minute to Inchs per Second
-convertSpeed.meterMinute.inchMinute = mM$inchM = (mM) -> minute$minute m$inch mM # Meters per Minute to Inchs per Minute
-convertSpeed.meterMinute.inchHour = mM$inchH = (mM) -> hour$minute m$inch mM # Meters per Minute to Inchs per Hour
-convertSpeed.meterMinute.footSecond = mM$footS = (mM) -> second$minute m$foot mM # Meters per Minute to Feet per Second
-convertSpeed.meterMinute.footMinute = mM$footM = (mM) -> minute$minute m$foot mM # Meters per Minute to Feet per Minute
-convertSpeed.meterMinute.footHour = mM$footH = (mM) -> hour$minute m$foot mM # Meters per Minute to Feet per Hour
-convertSpeed.meterMinute.yardSecond = mM$yardS = (mM) -> second$minute m$yard mM # Meters per Minute to Yards per Second
-convertSpeed.meterMinute.yardMinute = mM$yardM = (mM) -> minute$minute m$yard mM # Meters per Minute to Yards per Minute
-convertSpeed.meterMinute.yardHour = mM$yardH = (mM) -> hour$minute m$yard mM # Meters per Minute to Yards per Hour
-convertSpeed.meterMinute.mileSecond = mM$mileS = (mM) -> second$minute m$mile mM # Meters per Minute to Miles per Second
-convertSpeed.meterMinute.mileMinute = mM$mileM = (mM) -> minute$minute m$mile mM # Meters per Minute to Miles per Minute
-convertSpeed.meterMinute.mileHour = mM$mileH = (mM) -> hour$minute m$mile mM # Meters per Minute to Miles per Hour
-
-convertSpeed.meterMinute.knots = mM$knots = (mM) -> mM / 30.867 # Meters per Minute to Knots
-
-### Meters per Hour Conversions ###
-
-convertSpeed.meterHour.millimeterSecond = mH$mmS = (mH) -> second$hour m$mm mH # Meters per Hour to Millimeters per Second
-convertSpeed.meterHour.millimeterMinute = mH$mmM = (mH) -> minute$hour m$mm mH # Meters per Hour to Millimeters per Minute
-convertSpeed.meterHour.millimeterHour = mH$mmH = (mH) -> hour$hour m$mm mH # Meters per Hour to Millimeters per Hour
-convertSpeed.meterHour.centimeterSecond = mH$cmS = (mH) -> second$hour m$cm mH # Meters per Hour to Centimeters per Second
-convertSpeed.meterHour.centimeterMinute = mH$cmM = (mH) -> minute$hour m$cm mH # Meters per Hour to Centimeters per Minute
-convertSpeed.meterHour.centimeterHour = mH$cmH = (mH) -> hour$hour m$cm mH # Meters per Hour to Centimeters per Hour
-convertSpeed.meterHour.meterSecond = mH$mS = (mH) -> second$hour m$m mH # Meters per Hour to Meters per Second
-convertSpeed.meterHour.meterMinute = mH$mM = (mH) -> minute$hour m$m mH # Meters per Hour to Meters per Minute
-convertSpeed.meterHour.meterHour = mH$mH = (mH) -> hour$hour m$m mH # Meters per Hour to Meters per Hour
-convertSpeed.meterHour.kilometerSecond = mH$kmS = (mH) -> second$hour m$km mH # Meters per Hour to Kilometers per Second
-convertSpeed.meterHour.kilometerMinute = mH$kmM = (mH) -> minute$hour m$km mH # Meters per Hour to Kilometers per Minute
-convertSpeed.meterHour.kilometerHour = mH$kmH = (mH) -> hour$hour m$km mH # Meters per Hour to Kilometers per Hour
-
-convertSpeed.meterHour.inchSecond = mH$inchS = (mH) -> second$hour m$inch mH # Meters per Hour to Inchs per Second
-convertSpeed.meterHour.inchMinute = mH$inchM = (mH) -> minute$hour m$inch mH # Meters per Hour to Inchs per Minute
-convertSpeed.meterHour.inchHour = mH$inchH = (mH) -> hour$hour m$inch mH # Meters per Hour to Inchs per Hour
-convertSpeed.meterHour.footSecond = mH$footS = (mH) -> second$hour m$foot mH # Meters per Hour to Feet per Second
-convertSpeed.meterHour.footMinute = mH$footM = (mH) -> minute$hour m$foot mH # Meters per Hour to Feet per Minute
-convertSpeed.meterHour.footHour = mH$footH = (mH) -> hour$hour m$foot mH # Meters per Hour to Feet per Hour
-convertSpeed.meterHour.yardSecond = mH$yardS = (mH) -> second$hour m$yard mH # Meters per Hour to Yards per Second
-convertSpeed.meterHour.yardMinute = mH$yardM = (mH) -> minute$hour m$yard mH # Meters per Hour to Yards per Minute
-convertSpeed.meterHour.yardHour = mH$yardH = (mH) -> hour$hour m$yard mH # Meters per Hour to Yards per Hour
-convertSpeed.meterHour.mileSecond = mH$mileS = (mH) -> second$hour m$mile mH # Meters per Hour to Miles per Second
-convertSpeed.meterHour.mileMinute = mH$mileM = (mH) -> minute$hour m$mile mH # Meters per Hour to Miles per Minute
-convertSpeed.meterHour.mileHour = mH$mileH = (mH) -> hour$hour m$mile mH # Meters per Hour to Miles per Hour
-
-convertSpeed.meterHour.knots = mH$knots = (mH) -> mH / 1852 # Meters per Hour to Knots
-
-### Kilometers per Second Conversions ###
-
-convertSpeed.kilometerSecond.millimeterSecond = kmS$mmS = (kmS) -> second$second km$mm kmS # Kilometers per Second to Millimeters per Second
-convertSpeed.kilometerSecond.millimeterMinute = kmS$mmM = (kmS) -> minute$second km$mm kmS # Kilometers per Second to Millimeters per Minute
-convertSpeed.kilometerSecond.millimeterHour = kmS$mmH = (kmS) -> hour$second km$mm kmS # Kilometers per Second to Millimeters per Hour
-convertSpeed.kilometerSecond.centimeterSecond = kmS$cmS = (kmS) -> second$second km$cm kmS # Kilometers per Second to Centimeters per Second
-convertSpeed.kilometerSecond.centimeterMinute = kmS$cmM = (kmS) -> minute$second km$cm kmS # Kilometers per Second to Centimeters per Minute
-convertSpeed.kilometerSecond.centimeterHour = kmS$cmH = (kmS) -> hour$second km$cm kmS # Kilometers per Second to Centimeters per Hour
-convertSpeed.kilometerSecond.meterSecond = kmS$mS = (kmS) -> second$second km$m kmS # Kilometers per Second to Meters per Second
-convertSpeed.kilometerSecond.meterMinute = kmS$mM = (kmS) -> minute$second km$m kmS # Kilometers per Second to Meters per Minute
-convertSpeed.kilometerSecond.meterHour = kmS$mH = (kmS) -> hour$second km$m kmS # Kilometers per Second to Meters per Hour
-convertSpeed.kilometerSecond.kilometerSecond = kmS$kmS = (kmS) -> second$second km$km kmS # Kilometers per Second to Kilometers per Second
-convertSpeed.kilometerSecond.kilometerMinute = kmS$kmM = (kmS) -> minute$second km$km kmS # Kilometers per Second to Kilometers per Minute
-convertSpeed.kilometerSecond.kilometerHour = kmS$kmH = (kmS) -> hour$second km$km kmS # Kilometers per Second to Kilometers per Hour
-
-convertSpeed.kilometerSecond.inchSecond = kmS$inchS = (kmS) -> second$second km$inch kmS # Kilometers per Second to Inchs per Second
-convertSpeed.kilometerSecond.inchMinute = kmS$inchM = (kmS) -> minute$second km$inch kmS # Kilometers per Second to Inchs per Minute
-convertSpeed.kilometerSecond.inchHour = kmS$inchH = (kmS) -> hour$second km$inch kmS # Kilometers per Second to Inchs per Hour
-convertSpeed.kilometerSecond.footSecond = kmS$footS = (kmS) -> second$second km$foot kmS # Kilometers per Second to Feet per Second
-convertSpeed.kilometerSecond.footMinute = kmS$footM = (kmS) -> minute$second km$foot kmS # Kilometers per Second to Feet per Minute
-convertSpeed.kilometerSecond.footHour = kmS$footH = (kmS) -> hour$second km$foot kmS # Kilometers per Second to Feet per Hour
-convertSpeed.kilometerSecond.yardSecond = kmS$yardS = (kmS) -> second$second km$yard kmS # Kilometers per Second to Yards per Second
-convertSpeed.kilometerSecond.yardMinute = kmS$yardM = (kmS) -> minute$second km$yard kmS # Kilometers per Second to Yards per Minute
-convertSpeed.kilometerSecond.yardHour = kmS$yardH = (kmS) -> hour$second km$yard kmS # Kilometers per Second to Yards per Hour
-convertSpeed.kilometerSecond.mileSecond = kmS$mileS = (kmS) -> second$second km$mile kmS # Kilometers per Second to Miles per Second
-convertSpeed.kilometerSecond.mileMinute = kmS$mileM = (kmS) -> minute$second km$mile kmS # Kilometers per Second to Miles per Minute
-convertSpeed.kilometerSecond.mileHour = kmS$mileH = (kmS) -> hour$second km$mile kmS # Kilometers per Second to Miles per Hour
-
-convertSpeed.kilometerSecond.knots = kmS$knots = (kmS) -> kmS * 1944 # Kilometers per Second to Knots
-
-### Kilometers per Minute Conversions ###
-
-convertSpeed.kilometerMinute.millimeterSecond = kmM$mmS = (kmM) -> second$minute km$mm kmM # Kilometers per Minute to Millimeters per Second
-convertSpeed.kilometerMinute.millimeterMinute = kmM$mmM = (kmM) -> minute$minute km$mm kmM # Kilometers per Minute to Millimeters per Minute
-convertSpeed.kilometerMinute.millimeterHour = kmM$mmH = (kmM) -> hour$minute km$mm kmM # Kilometers per Minute to Millimeters per Hour
-convertSpeed.kilometerMinute.centimeterSecond = kmM$cmS = (kmM) -> second$minute km$cm kmM # Kilometers per Minute to Centimeters per Second
-convertSpeed.kilometerMinute.centimeterMinute = kmM$cmM = (kmM) -> minute$minute km$cm kmM # Kilometers per Minute to Centimeters per Minute
-convertSpeed.kilometerMinute.centimeterHour = kmM$cmH = (kmM) -> hour$minute km$cm kmM # Kilometers per Minute to Centimeters per Hour
-convertSpeed.kilometerMinute.meterSecond = kmM$mS = (kmM) -> second$minute km$m kmM # Kilometers per Minute to Meters per Second
-convertSpeed.kilometerMinute.meterMinute = kmM$mM = (kmM) -> minute$minute km$m kmM # Kilometers per Minute to Meters per Minute
-convertSpeed.kilometerMinute.meterHour = kmM$mH = (kmM) -> hour$minute km$m kmM # Kilometers per Minute to Meters per Hour
-convertSpeed.kilometerMinute.kilometerSecond = kmM$kmS = (kmM) -> second$minute km$km kmM # Kilometers per Minute to Kilometers per Second
-convertSpeed.kilometerMinute.kilometerMinute = kmM$kmM = (kmM) -> minute$minute km$km kmM # Kilometers per Minute to Kilometers per Minute
-convertSpeed.kilometerMinute.kilometerHour = kmM$kmH = (kmM) -> hour$minute km$km kmM # Kilometers per Minute to Kilometers per Hour
-
-convertSpeed.kilometerMinute.inchSecond = kmM$inchS = (kmM) -> second$minute km$inch kmM # Kilometers per Minute to Inchs per Second
-convertSpeed.kilometerMinute.inchMinute = kmM$inchM = (kmM) -> minute$minute km$inch kmM # Kilometers per Minute to Inchs per Minute
-convertSpeed.kilometerMinute.inchHour = kmM$inchH = (kmM) -> hour$minute km$inch kmM # Kilometers per Minute to Inchs per Hour
-convertSpeed.kilometerMinute.footSecond = kmM$footS = (kmM) -> second$minute km$foot kmM # Kilometers per Minute to Feet per Second
-convertSpeed.kilometerMinute.footMinute = kmM$footM = (kmM) -> minute$minute km$foot kmM # Kilometers per Minute to Feet per Minute
-convertSpeed.kilometerMinute.footHour = kmM$footH = (kmM) -> hour$minute km$foot kmM # Kilometers per Minute to Feet per Hour
-convertSpeed.kilometerMinute.yardSecond = kmM$yardS = (kmM) -> second$minute km$yard kmM # Kilometers per Minute to Yards per Second
-convertSpeed.kilometerMinute.yardMinute = kmM$yardM = (kmM) -> minute$minute km$yard kmM # Kilometers per Minute to Yards per Minute
-convertSpeed.kilometerMinute.yardHour = kmM$yardH = (kmM) -> hour$minute km$yard kmM # Kilometers per Minute to Yards per Hour
-convertSpeed.kilometerMinute.mileSecond = kmM$mileS = (kmM) -> second$minute km$mile kmM # Kilometers per Minute to Miles per Second
-convertSpeed.kilometerMinute.mileMinute = kmM$mileM = (kmM) -> minute$minute km$mile kmM # Kilometers per Minute to Miles per Minute
-convertSpeed.kilometerMinute.mileHour = kmM$mileH = (kmM) -> hour$minute km$mile kmM # Kilometers per Minute to Miles per Hour
-
-convertSpeed.kilometerMinute.knots = kmM$knots = (kmM) -> kmM * 32.397 # Kilometers per Minute to Knots
-
-### Kilometers per Hour Conversions ###
-
-convertSpeed.kilometerHour.millimeterSecond = kmH$mmS = (kmH) -> second$hour km$mm kmH # Kilometers per Hour to Millimeters per Second
-convertSpeed.kilometerHour.millimeterMinute = kmH$mmM = (kmH) -> minute$hour km$mm kmH # Kilometers per Hour to Millimeters per Minute
-convertSpeed.kilometerHour.millimeterHour = kmH$mmH = (kmH) -> hour$hour km$mm kmH # Kilometers per Hour to Millimeters per Hour
-convertSpeed.kilometerHour.centimeterSecond = kmH$cmS = (kmH) -> second$hour km$cm kmH # Kilometers per Hour to Centimeters per Second
-convertSpeed.kilometerHour.centimeterMinute = kmH$cmM = (kmH) -> minute$hour km$cm kmH # Kilometers per Hour to Centimeters per Minute
-convertSpeed.kilometerHour.centimeterHour = kmH$cmH = (kmH) -> hour$hour km$cm kmH # Kilometers per Hour to Centimeters per Hour
-convertSpeed.kilometerHour.meterSecond = kmH$mS = (kmH) -> second$hour km$m kmH # Kilometers per Hour to Meters per Second
-convertSpeed.kilometerHour.meterMinute = kmH$mM = (kmH) -> minute$hour km$m kmH # Kilometers per Hour to Meters per Minute
-convertSpeed.kilometerHour.meterHour = kmH$mH = (kmH) -> hour$hour km$m kmH # Kilometers per Hour to Meters per Hour
-convertSpeed.kilometerHour.kilometerSecond = kmH$kmS = (kmH) -> second$hour km$km kmH # Kilometers per Hour to Kilometers per Second
-convertSpeed.kilometerHour.kilometerMinute = kmH$kmM = (kmH) -> minute$hour km$km kmH # Kilometers per Hour to Kilometers per Minute
-convertSpeed.kilometerHour.kilometerHour = kmH$kmH = (kmH) -> hour$hour km$km kmH # Kilometers per Hour to Kilometers per Hour
-
-convertSpeed.kilometerHour.inchSecond = kmH$inchS = (kmH) -> second$hour km$inch kmH # Kilometers per Hour to Inchs per Second
-convertSpeed.kilometerHour.inchMinute = kmH$inchM = (kmH) -> minute$hour km$inch kmH # Kilometers per Hour to Inchs per Minute
-convertSpeed.kilometerHour.inchHour = kmH$inchH = (kmH) -> hour$hour km$inch kmH # Kilometers per Hour to Inchs per Hour
-convertSpeed.kilometerHour.footSecond = kmH$footS = (kmH) -> second$hour km$foot kmH # Kilometers per Hour to Feet per Second
-convertSpeed.kilometerHour.footMinute = kmH$footM = (kmH) -> minute$hour km$foot kmH # Kilometers per Hour to Feet per Minute
-convertSpeed.kilometerHour.footHour = kmH$footH = (kmH) -> hour$hour km$foot kmH # Kilometers per Hour to Feet per Hour
-convertSpeed.kilometerHour.yardSecond = kmH$yardS = (kmH) -> second$hour km$yard kmH # Kilometers per Hour to Yards per Second
-convertSpeed.kilometerHour.yardMinute = kmH$yardM = (kmH) -> minute$hour km$yard kmH # Kilometers per Hour to Yards per Minute
-convertSpeed.kilometerHour.yardHour = kmH$yardH = (kmH) -> hour$hour km$yard kmH # Kilometers per Hour to Yards per Hour
-convertSpeed.kilometerHour.mileSecond = kmH$mileS = (kmH) -> second$hour km$mile kmH # Kilometers per Hour to Miles per Second
-convertSpeed.kilometerHour.mileMinute = kmH$mileM = (kmH) -> minute$hour km$mile kmH # Kilometers per Hour to Miles per Minute
-convertSpeed.kilometerHour.mileHour = kmH$mileH = (kmH) -> hour$hour km$mile kmH # Kilometers per Hour to Miles per Hour
-
-convertSpeed.kilometerHour.knots = kmH$knots = (kmH) -> kmH / 1.852 # Kilometers per Hour to Knots
-
-### Inchs per Second Conversions ###
-
-convertSpeed.inchSecond.millimeterSecond = inchS$mmS = (inchS) -> second$second inch$mm inchS # Inchs per Second to Millimeters per Second
-convertSpeed.inchSecond.millimeterMinute = inchS$mmM = (inchS) -> minute$second inch$mm inchS # Inchs per Second to Millimeters per Minute
-convertSpeed.inchSecond.millimeterHour = inchS$mmH = (inchS) -> hour$second inch$mm inchS # Inchs per Second to Millimeters per Hour
-convertSpeed.inchSecond.centimeterSecond = inchS$cmS = (inchS) -> second$second inch$cm inchS # Inchs per Second to Centimeters per Second
-convertSpeed.inchSecond.centimeterMinute = inchS$cmM = (inchS) -> minute$second inch$cm inchS # Inchs per Second to Centimeters per Minute
-convertSpeed.inchSecond.centimeterHour = inchS$cmH = (inchS) -> hour$second inch$cm inchS # Inchs per Second to Centimeters per Hour
-convertSpeed.inchSecond.meterSecond = inchS$mS = (inchS) -> second$second inch$m inchS # Inchs per Second to Meters per Second
-convertSpeed.inchSecond.meterMinute = inchS$mM = (inchS) -> minute$second inch$m inchS # Inchs per Second to Meters per Minute
-convertSpeed.inchSecond.meterHour = inchS$mH = (inchS) -> hour$second inch$m inchS # Inchs per Second to Meters per Hour
-convertSpeed.inchSecond.kilometerSecond = inchS$kmS = (inchS) -> second$second inch$km inchS # Inchs per Second to Kilometers per Second
-convertSpeed.inchSecond.kilometerMinute = inchS$kmM = (inchS) -> minute$second inch$km inchS # Inchs per Second to Kilometers per Minute
-convertSpeed.inchSecond.kilometerHour = inchS$kmH = (inchS) -> hour$second inch$km inchS # Inchs per Second to Kilometers per Hour
-
-convertSpeed.inchSecond.inchSecond = inchS$inchS = (inchS) -> second$second inch$inch inchS # Inchs per Second to Inchs per Second
-convertSpeed.inchSecond.inchMinute = inchS$inchM = (inchS) -> minute$second inch$inch inchS # Inchs per Second to Inchs per Minute
-convertSpeed.inchSecond.inchHour = inchS$inchH = (inchS) -> hour$second inch$inch inchS # Inchs per Second to Inchs per Hour
-convertSpeed.inchSecond.footSecond = inchS$footS = (inchS) -> second$second inch$foot inchS # Inchs per Second to Feet per Second
-convertSpeed.inchSecond.footMinute = inchS$footM = (inchS) -> minute$second inch$foot inchS # Inchs per Second to Feet per Minute
-convertSpeed.inchSecond.footHour = inchS$footH = (inchS) -> hour$second inch$foot inchS # Inchs per Second to Feet per Hour
-convertSpeed.inchSecond.yardSecond = inchS$yardS = (inchS) -> second$second inch$yard inchS # Inchs per Second to Yards per Second
-convertSpeed.inchSecond.yardMinute = inchS$yardM = (inchS) -> minute$second inch$yard inchS # Inchs per Second to Yards per Minute
-convertSpeed.inchSecond.yardHour = inchS$yardH = (inchS) -> hour$second inch$yard inchS # Inchs per Second to Yards per Hour
-convertSpeed.inchSecond.mileSecond = inchS$mileS = (inchS) -> second$second inch$mile inchS # Inchs per Second to Miles per Second
-convertSpeed.inchSecond.mileMinute = inchS$mileM = (inchS) -> minute$second inch$mile inchS # Inchs per Second to Miles per Minute
-convertSpeed.inchSecond.mileHour = inchS$mileH = (inchS) -> hour$second inch$mile inchS # Inchs per Second to Miles per Hour
-
-convertSpeed.inchSecond.knots = inchS$knots = (inchS) -> inchS / 20.254 # Inchs per Second to Knots
-
-### Inchs per Minute Conversions ###
-
-convertSpeed.inchMinute.millimeterSecond = inchM$mmS = (inchM) -> second$minute inch$mm inchM # Inchs per Minute to Millimeters per Second
-convertSpeed.inchMinute.millimeterMinute = inchM$mmM = (inchM) -> minute$minute inch$mm inchM # Inchs per Minute to Millimeters per Minute
-convertSpeed.inchMinute.millimeterHour = inchM$mmH = (inchM) -> hour$minute inch$mm inchM # Inchs per Minute to Millimeters per Hour
-convertSpeed.inchMinute.centimeterSecond = inchM$cmS = (inchM) -> second$minute inch$cm inchM # Inchs per Minute to Centimeters per Second
-convertSpeed.inchMinute.centimeterMinute = inchM$cmM = (inchM) -> minute$minute inch$cm inchM # Inchs per Minute to Centimeters per Minute
-convertSpeed.inchMinute.centimeterHour = inchM$cmH = (inchM) -> hour$minute inch$cm inchM # Inchs per Minute to Centimeters per Hour
-convertSpeed.inchMinute.meterSecond = inchM$mS = (inchM) -> second$minute inch$m inchM # Inchs per Minute to Meters per Second
-convertSpeed.inchMinute.meterMinute = inchM$mM = (inchM) -> minute$minute inch$m inchM # Inchs per Minute to Meters per Minute
-convertSpeed.inchMinute.meterHour = inchM$mH = (inchM) -> hour$minute inch$m inchM # Inchs per Minute to Meters per Hour
-convertSpeed.inchMinute.kilometerSecond = inchM$kmS = (inchM) -> second$minute inch$km inchM # Inchs per Minute to Kilometers per Second
-convertSpeed.inchMinute.kilometerMinute = inchM$kmM = (inchM) -> minute$minute inch$km inchM # Inchs per Minute to Kilometers per Minute
-convertSpeed.inchMinute.kilometerHour = inchM$kmH = (inchM) -> hour$minute inch$km inchM # Inchs per Minute to Kilometers per Hour
-
-convertSpeed.inchMinute.inchSecond = inchM$inchS = (inchM) -> second$minute inch$inch inchM # Inchs per Minute to Inchs per Second
-convertSpeed.inchMinute.inchMinute = inchM$inchM = (inchM) -> minute$minute inch$inch inchM # Inchs per Minute to Inchs per Minute
-convertSpeed.inchMinute.inchHour = inchM$inchH = (inchM) -> hour$minute inch$inch inchM # Inchs per Minute to Inchs per Hour
-convertSpeed.inchMinute.footSecond = inchM$footS = (inchM) -> second$minute inch$foot inchM # Inchs per Minute to Feet per Second
-convertSpeed.inchMinute.footMinute = inchM$footM = (inchM) -> minute$minute inch$foot inchM # Inchs per Minute to Feet per Minute
-convertSpeed.inchMinute.footHour = inchM$footH = (inchM) -> hour$minute inch$foot inchM # Inchs per Minute to Feet per Hour
-convertSpeed.inchMinute.yardSecond = inchM$yardS = (inchM) -> second$minute inch$yard inchM # Inchs per Minute to Yards per Second
-convertSpeed.inchMinute.yardMinute = inchM$yardM = (inchM) -> minute$minute inch$yard inchM # Inchs per Minute to Yards per Minute
-convertSpeed.inchMinute.yardHour = inchM$yardH = (inchM) -> hour$minute inch$yard inchM # Inchs per Minute to Yards per Hour
-convertSpeed.inchMinute.mileSecond = inchM$mileS = (inchM) -> second$minute inch$mile inchM # Inchs per Minute to Miles per Second
-convertSpeed.inchMinute.mileMinute = inchM$mileM = (inchM) -> minute$minute inch$mile inchM # Inchs per Minute to Miles per Minute
-convertSpeed.inchMinute.mileHour = inchM$mileH = (inchM) -> hour$minute inch$mile inchM # Inchs per Minute to Miles per Hour
-
-convertSpeed.inchMinute.knots = inchM$knots = (inchM) -> inchM / 1215 # Inchs per Minute to Knots
-
-### Inchs per Hour Conversions ###
-
-convertSpeed.inchHour.millimeterSecond = inchH$mmS = (inchH) -> second$hour inch$mm inchH # Inchs per Hour to Millimeters per Second
-convertSpeed.inchHour.millimeterMinute = inchH$mmM = (inchH) -> minute$hour inch$mm inchH # Inchs per Hour to Millimeters per Minute
-convertSpeed.inchHour.millimeterHour = inchH$mmH = (inchH) -> hour$hour inch$mm inchH # Inchs per Hour to Millimeters per Hour
-convertSpeed.inchHour.centimeterSecond = inchH$cmS = (inchH) -> second$hour inch$cm inchH # Inchs per Hour to Centimeters per Second
-convertSpeed.inchHour.centimeterMinute = inchH$cmM = (inchH) -> minute$hour inch$cm inchH # Inchs per Hour to Centimeters per Minute
-convertSpeed.inchHour.centimeterHour = inchH$cmH = (inchH) -> hour$hour inch$cm inchH # Inchs per Hour to Centimeters per Hour
-convertSpeed.inchHour.meterSecond = inchH$mS = (inchH) -> second$hour inch$m inchH # Inchs per Hour to Meters per Second
-convertSpeed.inchHour.meterMinute = inchH$mM = (inchH) -> minute$hour inch$m inchH # Inchs per Hour to Meters per Minute
-convertSpeed.inchHour.meterHour = inchH$mH = (inchH) -> hour$hour inch$m inchH # Inchs per Hour to Meters per Hour
-convertSpeed.inchHour.kilometerSecond = inchH$kmS = (inchH) -> second$hour inch$km inchH # Inchs per Hour to Kilometers per Second
-convertSpeed.inchHour.kilometerMinute = inchH$kmM = (inchH) -> minute$hour inch$km inchH # Inchs per Hour to Kilometers per Minute
-convertSpeed.inchHour.kilometerHour = inchH$kmH = (inchH) -> hour$hour inch$km inchH # Inchs per Hour to Kilometers per Hour
-
-convertSpeed.inchHour.inchSecond = inchH$inchS = (inchH) -> second$hour inch$inch inchH # Inchs per Hour to Inchs per Second
-convertSpeed.inchHour.inchMinute = inchH$inchM = (inchH) -> minute$hour inch$inch inchH # Inchs per Hour to Inchs per Minute
-convertSpeed.inchHour.inchHour = inchH$inchH = (inchH) -> hour$hour inch$inch inchH # Inchs per Hour to Inchs per Hour
-convertSpeed.inchHour.footSecond = inchH$footS = (inchH) -> second$hour inch$foot inchH # Inchs per Hour to Feet per Second
-convertSpeed.inchHour.footMinute = inchH$footM = (inchH) -> minute$hour inch$foot inchH # Inchs per Hour to Feet per Minute
-convertSpeed.inchHour.footHour = inchH$footH = (inchH) -> hour$hour inch$foot inchH # Inchs per Hour to Feet per Hour
-convertSpeed.inchHour.yardSecond = inchH$yardS = (inchH) -> second$hour inch$yard inchH # Inchs per Hour to Yards per Second
-convertSpeed.inchHour.yardMinute = inchH$yardM = (inchH) -> minute$hour inch$yard inchH # Inchs per Hour to Yards per Minute
-convertSpeed.inchHour.yardHour = inchH$yardH = (inchH) -> hour$hour inch$yard inchH # Inchs per Hour to Yards per Hour
-convertSpeed.inchHour.mileSecond = inchH$mileS = (inchH) -> second$hour inch$mile inchH # Inchs per Hour to Miles per Second
-convertSpeed.inchHour.mileMinute = inchH$mileM = (inchH) -> minute$hour inch$mile inchH # Inchs per Hour to Miles per Minute
-convertSpeed.inchHour.mileHour = inchH$mileH = (inchH) -> hour$hour inch$mile inchH # Inchs per Hour to Miles per Hour
-
-convertSpeed.inchHour.knots = inchH$knots = (inchH) -> inchH / 72910 # Inchs per Hour to Knots
-
-### Feet per Second Conversions ###
-
-convertSpeed.footSecond.millimeterSecond = footS$mmS = (footS) -> second$second foot$mm footS # Feet per Second to Millimeters per Second
-convertSpeed.footSecond.millimeterMinute = footS$mmM = (footS) -> minute$second foot$mm footS # Feet per Second to Millimeters per Minute
-convertSpeed.footSecond.millimeterHour = footS$mmH = (footS) -> hour$second foot$mm footS # Feet per Second to Millimeters per Hour
-convertSpeed.footSecond.centimeterSecond = footS$cmS = (footS) -> second$second foot$cm footS # Feet per Second to Centimeters per Second
-convertSpeed.footSecond.centimeterMinute = footS$cmM = (footS) -> minute$second foot$cm footS # Feet per Second to Centimeters per Minute
-convertSpeed.footSecond.centimeterHour = footS$cmH = (footS) -> hour$second foot$cm footS # Feet per Second to Centimeters per Hour
-convertSpeed.footSecond.meterSecond = footS$mS = (footS) -> second$second foot$m footS # Feet per Second to Meters per Second
-convertSpeed.footSecond.meterMinute = footS$mM = (footS) -> minute$second foot$m footS # Feet per Second to Meters per Minute
-convertSpeed.footSecond.meterHour = footS$mH = (footS) -> hour$second foot$m footS # Feet per Second to Meters per Hour
-convertSpeed.footSecond.kilometerSecond = footS$kmS = (footS) -> second$second foot$km footS # Feet per Second to Kilometers per Second
-convertSpeed.footSecond.kilometerMinute = footS$kmM = (footS) -> minute$second foot$km footS # Feet per Second to Kilometers per Minute
-convertSpeed.footSecond.kilometerHour = footS$kmH = (footS) -> hour$second foot$km footS # Feet per Second to Kilometers per Hour
-
-convertSpeed.footSecond.inchSecond = footS$inchS = (footS) -> second$second foot$inch footS # Feet per Second to Inchs per Second
-convertSpeed.footSecond.inchMinute = footS$inchM = (footS) -> minute$second foot$inch footS # Feet per Second to Inchs per Minute
-convertSpeed.footSecond.inchHour = footS$inchH = (footS) -> hour$second foot$inch footS # Feet per Second to Inchs per Hour
-convertSpeed.footSecond.footSecond = footS$footS = (footS) -> second$second foot$foot footS # Feet per Second to Feet per Second
-convertSpeed.footSecond.footMinute = footS$footM = (footS) -> minute$second foot$foot footS # Feet per Second to Feet per Minute
-convertSpeed.footSecond.footHour = footS$footH = (footS) -> hour$second foot$foot footS # Feet per Second to Feet per Hour
-convertSpeed.footSecond.yardSecond = footS$yardS = (footS) -> second$second foot$yard footS # Feet per Second to Yards per Second
-convertSpeed.footSecond.yardMinute = footS$yardM = (footS) -> minute$second foot$yard footS # Feet per Second to Yards per Minute
-convertSpeed.footSecond.yardHour = footS$yardH = (footS) -> hour$second foot$yard footS # Feet per Second to Yards per Hour
-convertSpeed.footSecond.mileSecond = footS$mileS = (footS) -> second$second foot$mile footS # Feet per Second to Miles per Second
-convertSpeed.footSecond.mileMinute = footS$mileM = (footS) -> minute$second foot$mile footS # Feet per Second to Miles per Minute
-convertSpeed.footSecond.mileHour = footS$mileH = (footS) -> hour$second foot$mile footS # Feet per Second to Miles per Hour
-
-convertSpeed.footSecond.knots = footS$knots = (footS) -> footS / 1.688 # Feet per Second to Knots
-
-### Feet per Minute Conversions ###
-
-convertSpeed.footMinute.millimeterSecond = footM$mmS = (footM) -> second$minute foot$mm footM # Feet per Minute to Millimeters per Second
-convertSpeed.footMinute.millimeterMinute = footM$mmM = (footM) -> minute$minute foot$mm footM # Feet per Minute to Millimeters per Minute
-convertSpeed.footMinute.millimeterHour = footM$mmH = (footM) -> hour$minute foot$mm footM # Feet per Minute to Millimeters per Hour
-convertSpeed.footMinute.centimeterSecond = footM$cmS = (footM) -> second$minute foot$cm footM # Feet per Minute to Centimeters per Second
-convertSpeed.footMinute.centimeterMinute = footM$cmM = (footM) -> minute$minute foot$cm footM # Feet per Minute to Centimeters per Minute
-convertSpeed.footMinute.centimeterHour = footM$cmH = (footM) -> hour$minute foot$cm footM # Feet per Minute to Centimeters per Hour
-convertSpeed.footMinute.meterSecond = footM$mS = (footM) -> second$minute foot$m footM # Feet per Minute to Meters per Second
-convertSpeed.footMinute.meterMinute = footM$mM = (footM) -> minute$minute foot$m footM # Feet per Minute to Meters per Minute
-convertSpeed.footMinute.meterHour = footM$mH = (footM) -> hour$minute foot$m footM # Feet per Minute to Meters per Hour
-convertSpeed.footMinute.kilometerSecond = footM$kmS = (footM) -> second$minute foot$km footM # Feet per Minute to Kilometers per Second
-convertSpeed.footMinute.kilometerMinute = footM$kmM = (footM) -> minute$minute foot$km footM # Feet per Minute to Kilometers per Minute
-convertSpeed.footMinute.kilometerHour = footM$kmH = (footM) -> hour$minute foot$km footM # Feet per Minute to Kilometers per Hour
-
-convertSpeed.footMinute.inchSecond = footM$inchS = (footM) -> second$minute foot$inch footM # Feet per Minute to Inchs per Second
-convertSpeed.footMinute.inchMinute = footM$inchM = (footM) -> minute$minute foot$inch footM # Feet per Minute to Inchs per Minute
-convertSpeed.footMinute.inchHour = footM$inchH = (footM) -> hour$minute foot$inch footM # Feet per Minute to Inchs per Hour
-convertSpeed.footMinute.footSecond = footM$footS = (footM) -> second$minute foot$foot footM # Feet per Minute to Feet per Second
-convertSpeed.footMinute.footMinute = footM$footM = (footM) -> minute$minute foot$foot footM # Feet per Minute to Feet per Minute
-convertSpeed.footMinute.footHour = footM$footH = (footM) -> hour$minute foot$foot footM # Feet per Minute to Feet per Hour
-convertSpeed.footMinute.yardSecond = footM$yardS = (footM) -> second$minute foot$yard footM # Feet per Minute to Yards per Second
-convertSpeed.footMinute.yardMinute = footM$yardM = (footM) -> minute$minute foot$yard footM # Feet per Minute to Yards per Minute
-convertSpeed.footMinute.yardHour = footM$yardH = (footM) -> hour$minute foot$yard footM # Feet per Minute to Yards per Hour
-convertSpeed.footMinute.mileSecond = footM$mileS = (footM) -> second$minute foot$mile footM # Feet per Minute to Miles per Second
-convertSpeed.footMinute.mileMinute = footM$mileM = (footM) -> minute$minute foot$mile footM # Feet per Minute to Miles per Minute
-convertSpeed.footMinute.mileHour = footM$mileH = (footM) -> hour$minute foot$mile footM # Feet per Minute to Miles per Hour
-
-convertSpeed.footMinute.knots = footM$knots = (footM) -> footM / 101.3 # Feet per Minute to Knots
-
-### Feet per Hour Conversions ###
-
-convertSpeed.footHour.millimeterSecond = footH$mmS = (footH) -> second$hour foot$mm footH # Feet per Hour to Millimeters per Second
-convertSpeed.footHour.millimeterMinute = footH$mmM = (footH) -> minute$hour foot$mm footH # Feet per Hour to Millimeters per Minute
-convertSpeed.footHour.millimeterHour = footH$mmH = (footH) -> hour$hour foot$mm footH # Feet per Hour to Millimeters per Hour
-convertSpeed.footHour.centimeterSecond = footH$cmS = (footH) -> second$hour foot$cm footH # Feet per Hour to Centimeters per Second
-convertSpeed.footHour.centimeterMinute = footH$cmM = (footH) -> minute$hour foot$cm footH # Feet per Hour to Centimeters per Minute
-convertSpeed.footHour.centimeterHour = footH$cmH = (footH) -> hour$hour foot$cm footH # Feet per Hour to Centimeters per Hour
-convertSpeed.footHour.meterSecond = footH$mS = (footH) -> second$hour foot$m footH # Feet per Hour to Meters per Second
-convertSpeed.footHour.meterMinute = footH$mM = (footH) -> minute$hour foot$m footH # Feet per Hour to Meters per Minute
-convertSpeed.footHour.meterHour = footH$mH = (footH) -> hour$hour foot$m footH # Feet per Hour to Meters per Hour
-convertSpeed.footHour.kilometerSecond = footH$kmS = (footH) -> second$hour foot$km footH # Feet per Hour to Kilometers per Second
-convertSpeed.footHour.kilometerMinute = footH$kmM = (footH) -> minute$hour foot$km footH # Feet per Hour to Kilometers per Minute
-convertSpeed.footHour.kilometerHour = footH$kmH = (footH) -> hour$hour foot$km footH # Feet per Hour to Kilometers per Hour
-
-convertSpeed.footHour.inchSecond = footH$inchS = (footH) -> second$hour foot$inch footH # Feet per Hour to Inchs per Second
-convertSpeed.footHour.inchMinute = footH$inchM = (footH) -> minute$hour foot$inch footH # Feet per Hour to Inchs per Minute
-convertSpeed.footHour.inchHour = footH$inchH = (footH) -> hour$hour foot$inch footH # Feet per Hour to Inchs per Hour
-convertSpeed.footHour.footSecond = footH$footS = (footH) -> second$hour foot$foot footH # Feet per Hour to Feet per Second
-convertSpeed.footHour.footMinute = footH$footM = (footH) -> minute$hour foot$foot footH # Feet per Hour to Feet per Minute
-convertSpeed.footHour.footHour = footH$footH = (footH) -> hour$hour foot$foot footH # Feet per Hour to Feet per Hour
-convertSpeed.footHour.yardSecond = footH$yardS = (footH) -> second$hour foot$yard footH # Feet per Hour to Yards per Second
-convertSpeed.footHour.yardMinute = footH$yardM = (footH) -> minute$hour foot$yard footH # Feet per Hour to Yards per Minute
-convertSpeed.footHour.yardHour = footH$yardH = (footH) -> hour$hour foot$yard footH # Feet per Hour to Yards per Hour
-convertSpeed.footHour.mileSecond = footH$mileS = (footH) -> second$hour foot$mile footH # Feet per Hour to Miles per Second
-convertSpeed.footHour.mileMinute = footH$mileM = (footH) -> minute$hour foot$mile footH # Feet per Hour to Miles per Minute
-convertSpeed.footHour.mileHour = footH$mileH = (footH) -> hour$hour foot$mile footH # Feet per Hour to Miles per Hour
-
-convertSpeed.footHour.knots = footH$knots = (footH) -> footH / 6076 # Feet per Hour to Knots
-
-### Yards per Second Conversions ###
-
-convertSpeed.yardSecond.millimeterSecond = yardS$mmS = (yardS) -> second$second yard$mm yardS # Yards per Second to Millimeters per Second
-convertSpeed.yardSecond.millimeterMinute = yardS$mmM = (yardS) -> minute$second yard$mm yardS # Yards per Second to Millimeters per Minute
-convertSpeed.yardSecond.millimeterHour = yardS$mmH = (yardS) -> hour$second yard$mm yardS # Yards per Second to Millimeters per Hour
-convertSpeed.yardSecond.centimeterSecond = yardS$cmS = (yardS) -> second$second yard$cm yardS # Yards per Second to Centimeters per Second
-convertSpeed.yardSecond.centimeterMinute = yardS$cmM = (yardS) -> minute$second yard$cm yardS # Yards per Second to Centimeters per Minute
-convertSpeed.yardSecond.centimeterHour = yardS$cmH = (yardS) -> hour$second yard$cm yardS # Yards per Second to Centimeters per Hour
-convertSpeed.yardSecond.meterSecond = yardS$mS = (yardS) -> second$second yard$m yardS # Yards per Second to Meters per Second
-convertSpeed.yardSecond.meterMinute = yardS$mM = (yardS) -> minute$second yard$m yardS # Yards per Second to Meters per Minute
-convertSpeed.yardSecond.meterHour = yardS$mH = (yardS) -> hour$second yard$m yardS # Yards per Second to Meters per Hour
-convertSpeed.yardSecond.kilometerSecond = yardS$kmS = (yardS) -> second$second yard$km yardS # Yards per Second to Kilometers per Second
-convertSpeed.yardSecond.kilometerMinute = yardS$kmM = (yardS) -> minute$second yard$km yardS # Yards per Second to Kilometers per Minute
-convertSpeed.yardSecond.kilometerHour = yardS$kmH = (yardS) -> hour$second yard$km yardS # Yards per Second to Kilometers per Hour
-
-convertSpeed.yardSecond.inchSecond = yardS$inchS = (yardS) -> second$second yard$inch yardS # Yards per Second to Inchs per Second
-convertSpeed.yardSecond.inchMinute = yardS$inchM = (yardS) -> minute$second yard$inch yardS # Yards per Second to Inchs per Minute
-convertSpeed.yardSecond.inchHour = yardS$inchH = (yardS) -> hour$second yard$inch yardS # Yards per Second to Inchs per Hour
-convertSpeed.yardSecond.footSecond = yardS$footS = (yardS) -> second$second yard$foot yardS # Yards per Second to Feet per Second
-convertSpeed.yardSecond.footMinute = yardS$footM = (yardS) -> minute$second yard$foot yardS # Yards per Second to Feet per Minute
-convertSpeed.yardSecond.footHour = yardS$footH = (yardS) -> hour$second yard$foot yardS # Yards per Second to Feet per Hour
-convertSpeed.yardSecond.yardSecond = yardS$yardS = (yardS) -> second$second yard$yard yardS # Yards per Second to Yards per Second
-convertSpeed.yardSecond.yardMinute = yardS$yardM = (yardS) -> minute$second yard$yard yardS # Yards per Second to Yards per Minute
-convertSpeed.yardSecond.yardHour = yardS$yardH = (yardS) -> hour$second yard$yard yardS # Yards per Second to Yards per Hour
-convertSpeed.yardSecond.mileSecond = yardS$mileS = (yardS) -> second$second yard$mile yardS # Yards per Second to Miles per Second
-convertSpeed.yardSecond.mileMinute = yardS$mileM = (yardS) -> minute$second yard$mile yardS # Yards per Second to Miles per Minute
-convertSpeed.yardSecond.mileHour = yardS$mileH = (yardS) -> hour$second yard$mile yardS # Yards per Second to Miles per Hour
-
-convertSpeed.yardSecond.knots = yardS$knots = (yardS) -> yardS * 1.777 # Yards per Second to Knots
-
-### Yards per Minute Conversions ###
-
-convertSpeed.yardMinute.millimeterSecond = yardM$mmS = (yardM) -> second$minute yard$mm yardM # Yards per Minute to Millimeters per Second
-convertSpeed.yardMinute.millimeterMinute = yardM$mmM = (yardM) -> minute$minute yard$mm yardM # Yards per Minute to Millimeters per Minute
-convertSpeed.yardMinute.millimeterHour = yardM$mmH = (yardM) -> hour$minute yard$mm yardM # Yards per Minute to Millimeters per Hour
-convertSpeed.yardMinute.centimeterSecond = yardM$cmS = (yardM) -> second$minute yard$cm yardM # Yards per Minute to Centimeters per Second
-convertSpeed.yardMinute.centimeterMinute = yardM$cmM = (yardM) -> minute$minute yard$cm yardM # Yards per Minute to Centimeters per Minute
-convertSpeed.yardMinute.centimeterHour = yardM$cmH = (yardM) -> hour$minute yard$cm yardM # Yards per Minute to Centimeters per Hour
-convertSpeed.yardMinute.meterSecond = yardM$mS = (yardM) -> second$minute yard$m yardM # Yards per Minute to Meters per Second
-convertSpeed.yardMinute.meterMinute = yardM$mM = (yardM) -> minute$minute yard$m yardM # Yards per Minute to Meters per Minute
-convertSpeed.yardMinute.meterHour = yardM$mH = (yardM) -> hour$minute yard$m yardM # Yards per Minute to Meters per Hour
-convertSpeed.yardMinute.kilometerSecond = yardM$kmS = (yardM) -> second$minute yard$km yardM # Yards per Minute to Kilometers per Second
-convertSpeed.yardMinute.kilometerMinute = yardM$kmM = (yardM) -> minute$minute yard$km yardM # Yards per Minute to Kilometers per Minute
-convertSpeed.yardMinute.kilometerHour = yardM$kmH = (yardM) -> hour$minute yard$km yardM # Yards per Minute to Kilometers per Hour
-
-convertSpeed.yardMinute.inchSecond = yardM$inchS = (yardM) -> second$minute yard$inch yardM # Yards per Minute to Inchs per Second
-convertSpeed.yardMinute.inchMinute = yardM$inchM = (yardM) -> minute$minute yard$inch yardM # Yards per Minute to Inchs per Minute
-convertSpeed.yardMinute.inchHour = yardM$inchH = (yardM) -> hour$minute yard$inch yardM # Yards per Minute to Inchs per Hour
-convertSpeed.yardMinute.footSecond = yardM$footS = (yardM) -> second$minute yard$foot yardM # Yards per Minute to Feet per Second
-convertSpeed.yardMinute.footMinute = yardM$footM = (yardM) -> minute$minute yard$foot yardM # Yards per Minute to Feet per Minute
-convertSpeed.yardMinute.footHour = yardM$footH = (yardM) -> hour$minute yard$foot yardM # Yards per Minute to Feet per Hour
-convertSpeed.yardMinute.yardSecond = yardM$yardS = (yardM) -> second$minute yard$yard yardM # Yards per Minute to Yards per Second
-convertSpeed.yardMinute.yardMinute = yardM$yardM = (yardM) -> minute$minute yard$yard yardM # Yards per Minute to Yards per Minute
-convertSpeed.yardMinute.yardHour = yardM$yardH = (yardM) -> hour$minute yard$yard yardM # Yards per Minute to Yards per Hour
-convertSpeed.yardMinute.mileSecond = yardM$mileS = (yardM) -> second$minute yard$mile yardM # Yards per Minute to Miles per Second
-convertSpeed.yardMinute.mileMinute = yardM$mileM = (yardM) -> minute$minute yard$mile yardM # Yards per Minute to Miles per Minute
-convertSpeed.yardMinute.mileHour = yardM$mileH = (yardM) -> hour$minute yard$mile yardM # Yards per Minute to Miles per Hour
-
-convertSpeed.yardMinute.knots = yardM$knots = (yardM) -> yardM / 33.756 # Yards per Minute to Knots
-
-### Yards per Hour Conversions ###
-
-convertSpeed.yardHour.millimeterSecond = yardH$mmS = (yardH) -> second$hour yard$mm yardH # Yards per Hour to Millimeters per Second
-convertSpeed.yardHour.millimeterMinute = yardH$mmM = (yardH) -> minute$hour yard$mm yardH # Yards per Hour to Millimeters per Minute
-convertSpeed.yardHour.millimeterHour = yardH$mmH = (yardH) -> hour$hour yard$mm yardH # Yards per Hour to Millimeters per Hour
-convertSpeed.yardHour.centimeterSecond = yardH$cmS = (yardH) -> second$hour yard$cm yardH # Yards per Hour to Centimeters per Second
-convertSpeed.yardHour.centimeterMinute = yardH$cmM = (yardH) -> minute$hour yard$cm yardH # Yards per Hour to Centimeters per Minute
-convertSpeed.yardHour.centimeterHour = yardH$cmH = (yardH) -> hour$hour yard$cm yardH # Yards per Hour to Centimeters per Hour
-convertSpeed.yardHour.meterSecond = yardH$mS = (yardH) -> second$hour yard$m yardH # Yards per Hour to Meters per Second
-convertSpeed.yardHour.meterMinute = yardH$mM = (yardH) -> minute$hour yard$m yardH # Yards per Hour to Meters per Minute
-convertSpeed.yardHour.meterHour = yardH$mH = (yardH) -> hour$hour yard$m yardH # Yards per Hour to Meters per Hour
-convertSpeed.yardHour.kilometerSecond = yardH$kmS = (yardH) -> second$hour yard$km yardH # Yards per Hour to Kilometers per Second
-convertSpeed.yardHour.kilometerMinute = yardH$kmM = (yardH) -> minute$hour yard$km yardH # Yards per Hour to Kilometers per Minute
-convertSpeed.yardHour.kilometerHour = yardH$yardH = (yardH) -> hour$hour yard$km yardH # Yards per Hour to Kilometers per Hour
-
-convertSpeed.yardHour.inchSecond = yardH$inchS = (yardH) -> second$hour yard$inch yardH # Yards per Hour to Inchs per Second
-convertSpeed.yardHour.inchMinute = yardH$inchM = (yardH) -> minute$hour yard$inch yardH # Yards per Hour to Inchs per Minute
-convertSpeed.yardHour.inchHour = yardH$inchH = (yardH) -> hour$hour yard$inch yardH # Yards per Hour to Inchs per Hour
-convertSpeed.yardHour.footSecond = yardH$footS = (yardH) -> second$hour yard$foot yardH # Yards per Hour to Feet per Second
-convertSpeed.yardHour.footMinute = yardH$footM = (yardH) -> minute$hour yard$foot yardH # Yards per Hour to Feet per Minute
-convertSpeed.yardHour.footHour = yardH$footH = (yardH) -> hour$hour yard$foot yardH # Yards per Hour to Feet per Hour
-convertSpeed.yardHour.yardSecond = yardH$yardS = (yardH) -> second$hour yard$yard yardH # Yards per Hour to Yards per Second
-convertSpeed.yardHour.yardMinute = yardH$yardM = (yardH) -> minute$hour yard$yard yardH # Yards per Hour to Yards per Minute
-convertSpeed.yardHour.yardHour = yardH$yardH = (yardH) -> hour$hour yard$yard yardH # Yards per Hour to Yards per Hour
-convertSpeed.yardHour.mileSecond = yardH$mileS = (yardH) -> second$hour yard$mile yardH # Yards per Hour to Miles per Second
-convertSpeed.yardHour.mileMinute = yardH$mileM = (yardH) -> minute$hour yard$mile yardH # Yards per Hour to Miles per Minute
-convertSpeed.yardHour.mileHour = yardH$mileH = (yardH) -> hour$hour yard$mile yardH # Yards per Hour to Miles per Hour
-
-convertSpeed.yardHour.knots = yardH$knots = (yardH) -> yardH / 2025 # Yards per Hour to Knots
-
-### Miles per Second Conversions ###
-
-convertSpeed.mileSecond.millimeterSecond = mileS$mmS = (mileS) -> second$second mile$mm mileS # Miles per Second to Millimeters per Second
-convertSpeed.mileSecond.millimeterMinute = mileS$mmM = (mileS) -> minute$second mile$mm mileS # Miles per Second to Millimeters per Minute
-convertSpeed.mileSecond.millimeterHour = mileS$mmH = (mileS) -> hour$second mile$mm mileS # Miles per Second to Millimeters per Hour
-convertSpeed.mileSecond.centimeterSecond = mileS$cmS = (mileS) -> second$second mile$cm mileS # Miles per Second to Centimeters per Second
-convertSpeed.mileSecond.centimeterMinute = mileS$cmM = (mileS) -> minute$second mile$cm mileS # Miles per Second to Centimeters per Minute
-convertSpeed.mileSecond.centimeterHour = mileS$cmH = (mileS) -> hour$second mile$cm mileS # Miles per Second to Centimeters per Hour
-convertSpeed.mileSecond.meterSecond = mileS$mS = (mileS) -> second$second mile$m mileS # Miles per Second to Meters per Second
-convertSpeed.mileSecond.meterMinute = mileS$mM = (mileS) -> minute$second mile$m mileS # Miles per Second to Meters per Minute
-convertSpeed.mileSecond.meterHour = mileS$mH = (mileS) -> hour$second mile$m mileS # Miles per Second to Meters per Hour
-convertSpeed.mileSecond.kilometerSecond = mileS$kmS = (mileS) -> second$second mile$km mileS # Miles per Second to Kilometers per Second
-convertSpeed.mileSecond.kilometerMinute = mileS$kmM = (mileS) -> minute$second mile$km mileS # Miles per Second to Kilometers per Minute
-convertSpeed.mileSecond.kilometerHour = mileS$kmH = (mileS) -> hour$second mile$km mileS # Miles per Second to Kilometers per Hour
-
-convertSpeed.mileSecond.inchSecond = mileS$inchS = (mileS) -> second$second mile$inch mileS # Miles per Second to Inchs per Second
-convertSpeed.mileSecond.inchMinute = mileS$inchM = (mileS) -> minute$second mile$inch mileS # Miles per Second to Inchs per Minute
-convertSpeed.mileSecond.inchHour = mileS$inchH = (mileS) -> hour$second mile$inch mileS # Miles per Second to Inchs per Hour
-convertSpeed.mileSecond.footSecond = mileS$footS = (mileS) -> second$second mile$foot mileS # Miles per Second to Feet per Second
-convertSpeed.mileSecond.footMinute = mileS$footM = (mileS) -> minute$second mile$foot mileS # Miles per Second to Feet per Minute
-convertSpeed.mileSecond.footHour = mileS$footH = (mileS) -> hour$second mile$foot mileS # Miles per Second to Feet per Hour
-convertSpeed.mileSecond.yardSecond = mileS$yardS = (mileS) -> second$second mile$yard mileS # Miles per Second to Yards per Second
-convertSpeed.mileSecond.yardMinute = mileS$yardM = (mileS) -> minute$second mile$yard mileS # Miles per Second to Yards per Minute
-convertSpeed.mileSecond.yardHour = mileS$yardH = (mileS) -> hour$second mile$yard mileS # Miles per Second to Yards per Hour
-convertSpeed.mileSecond.mileSecond = mileS$mileS = (mileS) -> second$second mile$mile mileS # Miles per Second to Miles per Second
-convertSpeed.mileSecond.mileMinute = mileS$mileM = (mileS) -> minute$second mile$mile mileS # Miles per Second to Miles per Minute
-convertSpeed.mileSecond.mileHour = mileS$mileH = (mileS) -> hour$second mile$mile mileS # Miles per Second to Miles per Hour
-
-convertSpeed.mileSecond.knots = mileS$knots = (mileS) -> mileS * 3128 # Miles per Second to Knots
-
-### Miles per Minute Conversions ###
-
-convertSpeed.mileMinute.millimeterSecond = mileM$mmS = (mileM) -> second$minute mile$mm mileM # Miles per Minute to Millimeters per Second
-convertSpeed.mileMinute.millimeterMinute = mileM$mmM = (mileM) -> minute$minute mile$mm mileM # Miles per Minute to Millimeters per Minute
-convertSpeed.mileMinute.millimeterHour = mileM$mmH = (mileM) -> hour$minute mile$mm mileM # Miles per Minute to Millimeters per Hour
-convertSpeed.mileMinute.centimeterSecond = mileM$cmS = (mileM) -> second$minute mile$cm mileM # Miles per Minute to Centimeters per Second
-convertSpeed.mileMinute.centimeterMinute = mileM$cmM = (mileM) -> minute$minute mile$cm mileM # Miles per Minute to Centimeters per Minute
-convertSpeed.mileMinute.centimeterHour = mileM$cmH = (mileM) -> hour$minute mile$cm mileM # Miles per Minute to Centimeters per Hour
-convertSpeed.mileMinute.meterSecond = mileM$mS = (mileM) -> second$minute mile$m mileM # Miles per Minute to Meters per Second
-convertSpeed.mileMinute.meterMinute = mileM$mM = (mileM) -> minute$minute mile$m mileM # Miles per Minute to Meters per Minute
-convertSpeed.mileMinute.meterHour = mileM$mH = (mileM) -> hour$minute mile$m mileM # Miles per Minute to Meters per Hour
-convertSpeed.mileMinute.kilometerSecond = mileM$kmS = (mileM) -> second$minute mile$km mileM # Miles per Minute to Kilometers per Second
-convertSpeed.mileMinute.kilometerMinute = mileM$kmM = (mileM) -> minute$minute mile$km mileM # Miles per Minute to Kilometers per Minute
-convertSpeed.mileMinute.kilometerHour = mileM$kmH = (mileM) -> hour$minute mile$km mileM # Miles per Minute to Kilometers per Hour
-
-convertSpeed.mileMinute.inchSecond = mileM$inchS = (mileM) -> second$minute mile$inch mileM # Miles per Minute to Inchs per Second
-convertSpeed.mileMinute.inchMinute = mileM$inchM = (mileM) -> minute$minute mile$inch mileM # Miles per Minute to Inchs per Minute
-convertSpeed.mileMinute.inchHour = mileM$inchH = (mileM) -> hour$minute mile$inch mileM # Miles per Minute to Inchs per Hour
-convertSpeed.mileMinute.footSecond = mileM$footS = (mileM) -> second$minute mile$foot mileM # Miles per Minute to Feet per Second
-convertSpeed.mileMinute.footMinute = mileM$footM = (mileM) -> minute$minute mile$foot mileM # Miles per Minute to Feet per Minute
-convertSpeed.mileMinute.footHour = mileM$footH = (mileM) -> hour$minute mile$foot mileM # Miles per Minute to Feet per Hour
-convertSpeed.mileMinute.yardSecond = mileM$yardS = (mileM) -> second$minute mile$yard mileM # Miles per Minute to Yards per Second
-convertSpeed.mileMinute.yardMinute = mileM$yardM = (mileM) -> minute$minute mile$yard mileM # Miles per Minute to Yards per Minute
-convertSpeed.mileMinute.yardHour = mileM$yardH = (mileM) -> hour$minute mile$yard mileM # Miles per Minute to Yards per Hour
-convertSpeed.mileMinute.mileSecond = mileM$mileS = (mileM) -> second$minute mile$mile mileM # Miles per Minute to Miles per Second
-convertSpeed.mileMinute.mileMinute = mileM$mileM = (mileM) -> minute$minute mile$mile mileM # Miles per Minute to Miles per Minute
-convertSpeed.mileMinute.mileHour = mileM$mileH = (mileM) -> hour$minute mile$mile mileM # Miles per Minute to Miles per Hour
-
-convertSpeed.mileMinute.knots = mileM$knots = (mileM) -> mileM * 52.139 # Miles per Minute to Knots
-
-### Miles per Hour Conversions ###
-
-convertSpeed.mileHour.millimeterSecond = mileH$mmS = (mileH) -> second$hour mile$mm mileH # Miles per Hour to Millimeters per Second
-convertSpeed.mileHour.millimeterMinute = mileH$mmM = (mileH) -> minute$hour mile$mm mileH # Miles per Hour to Millimeters per Minute
-convertSpeed.mileHour.millimeterHour = mileH$mmH = (mileH) -> hour$hour mile$mm mileH # Miles per Hour to Millimeters per Hour
-convertSpeed.mileHour.centimeterSecond = mileH$cmS = (mileH) -> second$hour mile$cm mileH # Miles per Hour to Centimeters per Second
-convertSpeed.mileHour.centimeterMinute = mileH$cmM = (mileH) -> minute$hour mile$cm mileH # Miles per Hour to Centimeters per Minute
-convertSpeed.mileHour.centimeterHour = mileH$cmH = (mileH) -> hour$hour mile$cm mileH # Miles per Hour to Centimeters per Hour
-convertSpeed.mileHour.meterSecond = mileH$mS = (mileH) -> second$hour mile$m mileH # Miles per Hour to Meters per Second
-convertSpeed.mileHour.meterMinute = mileH$mM = (mileH) -> minute$hour mile$m mileH # Miles per Hour to Meters per Minute
-convertSpeed.mileHour.meterHour = mileH$mH = (mileH) -> hour$hour mile$m mileH # Miles per Hour to Meters per Hour
-convertSpeed.mileHour.kilometerSecond = mileH$kmS = (mileH) -> second$hour mile$km mileH # Miles per Hour to Kilometers per Second
-convertSpeed.mileHour.kilometerMinute = mileH$kmM = (mileH) -> minute$hour mile$km mileH # Miles per Hour to Kilometers per Minute
-convertSpeed.mileHour.kilometerHour = mileH$kmH = (mileH) -> hour$hour mile$km mileH # Miles per Hour to Kilometers per Hour
-
-convertSpeed.mileHour.inchSecond = mileH$inchS = (mileH) -> second$hour mile$inch mileH # Miles per Hour to Inchs per Second
-convertSpeed.mileHour.inchMinute = mileH$inchM = (mileH) -> minute$hour mile$inch mileH # Miles per Hour to Inchs per Minute
-convertSpeed.mileHour.inchHour = mileH$inchH = (mileH) -> hour$hour mile$inch mileH # Miles per Hour to Inchs per Hour
-convertSpeed.mileHour.footSecond = mileH$footS = (mileH) -> second$hour mile$foot mileH # Miles per Hour to Feet per Second
-convertSpeed.mileHour.footMinute = mileH$footM = (mileH) -> minute$hour mile$foot mileH # Miles per Hour to Feet per Minute
-convertSpeed.mileHour.footHour = mileH$footH = (mileH) -> hour$hour mile$foot mileH # Miles per Hour to Feet per Hour
-convertSpeed.mileHour.yardSecond = mileH$yardS = (mileH) -> second$hour mile$yard mileH # Miles per Hour to Yards per Second
-convertSpeed.mileHour.yardMinute = mileH$yardM = (mileH) -> minute$hour mile$yard mileH # Miles per Hour to Yards per Minute
-convertSpeed.mileHour.yardHour = mileH$yardH = (mileH) -> hour$hour mile$yard mileH # Miles per Hour to Yards per Hour
-convertSpeed.mileHour.mileSecond = mileH$mileS = (mileH) -> second$hour mile$mile mileH # Miles per Hour to Miles per Second
-convertSpeed.mileHour.mileMinute = mileH$mileM = (mileH) -> minute$hour mile$mile mileH # Miles per Hour to Miles per Minute
-convertSpeed.mileHour.mileHour = mileH$mileH = (mileH) -> hour$hour mile$mile mileH # Miles per Hour to Miles per Hour
-
-convertSpeed.mileHour.knots = mileH$knots = (mileH) -> mileH / 1.151 # Miles per Hour to Knots
-
-### Knots Conversions ###
-
-convertSpeed.knots.millimeterSecond = knots$mmS = (knots) -> knots * 514.44 # Knots to Millimeters per Second
-convertSpeed.knots.millimeterMinute = knots$mmM = (knots) -> knots * 30867 # Knots to Millimeters per Minute
-convertSpeed.knots.millimeterHour = knots$mmH = (knots) -> knots * 1852000 # Knots to Millimeters per Hour
-convertSpeed.knots.centimeterSecond = knots$cmS = (knots) -> knots * 51.444 # Knots to Centimeters per Second
-convertSpeed.knots.centimeterMinute = knots$cmM = (knots) -> knots * 3086.7 # Knots to Centimeters per Minute
-convertSpeed.knots.centimeterHour = knots$cmH = (knots) -> knots * 185200 # Knots to Centimeters per Hour
-convertSpeed.knots.meterSecond = knots$mS = (knots) -> knots / 1.944 # Knots to Meters per Second
-convertSpeed.knots.meterMinute = knots$mM = (knots) -> knots * 30.867 # Knots to Meters per Minute
-convertSpeed.knots.meterHour = knots$mH = (knots) -> knots * 1852 # Knots to Meters per Hour
-convertSpeed.knots.kilometerSecond = knots$kmS = (knots) -> knots / 1944 # Knots to Kilometers per Second
-convertSpeed.knots.kilometerMinute = knots$kmM = (knots) -> knots / 32.397 # Knots to Kilometers per Minute
-convertSpeed.knots.kilometerHour = knots$kmH = (knots) -> knots * 1.852 # Knots to Kilometers per Hour
-
-convertSpeed.knots.inchSecond = knots$inchS = (knots) -> knots * 20.254 # Knots to Inchs per Second
-convertSpeed.knots.inchMinute = knots$inchM = (knots) -> knots * 1215 # Knots to Inchs per Minute
-convertSpeed.knots.inchHour = knots$inchH = (knots) -> knots * 72910 # Knots to Inchs per Hour
-convertSpeed.knots.footSecond = knots$footS = (knots) -> knots * 1.688 # Knots to Feet per Second
-convertSpeed.knots.footMinute = knots$footM = (knots) -> knots * 101.3 # Knots to Feet per Minute
-convertSpeed.knots.footHour = knots$footH = (knots) -> knots * 6076 # Knots to Feet per Hour
-convertSpeed.knots.yardSecond = knots$yardS = (knots) -> knots / 1.777 # Knots to Yards per Second
-convertSpeed.knots.yardMinute = knots$yardM = (knots) -> knots * 33.756 # Knots to Yards per Minute
-convertSpeed.knots.yardHour = knots$yardH = (knots) -> knots * 2025 # Knots to Yards per Hour
-convertSpeed.knots.mileSecond = knots$mileS = (knots) -> knots / 3128 # Knots to Miles per Second
-convertSpeed.knots.mileMinute = knots$mileM = (knots) -> knots / 52.139 # Knots to Miles per Minute
-convertSpeed.knots.mileHour = knots$mileH = (knots) -> knots * 1.151 # Knots to Miles per Hour
-
-convertSpeed.knots.knots = knots$knots = (knots) -> knots # Knots to Knots
+convertSpeed = {}
+
+speedDefs = [
+
+    {key:'millimeterSecond', dist:0.001,    time:1}
+    {key:'millimeterMinute', dist:0.001,    time:60}
+    {key:'millimeterHour',   dist:0.001,    time:3600}
+    {key:'centimeterSecond', dist:0.01,     time:1}
+    {key:'centimeterMinute', dist:0.01,     time:60}
+    {key:'centimeterHour',   dist:0.01,     time:3600}
+    {key:'meterSecond',      dist:1,        time:1}
+    {key:'meterMinute',      dist:1,        time:60}
+    {key:'meterHour',        dist:1,        time:3600}
+    {key:'kilometerSecond',  dist:1000,     time:1}
+    {key:'kilometerMinute',  dist:1000,     time:60}
+    {key:'kilometerHour',    dist:1000,     time:3600}
+    {key:'inchSecond',       dist:0.0254,   time:1}
+    {key:'inchMinute',       dist:0.0254,   time:60}
+    {key:'inchHour',         dist:0.0254,   time:3600}
+    {key:'footSecond',       dist:0.3048,   time:1}
+    {key:'footMinute',       dist:0.3048,   time:60}
+    {key:'footHour',         dist:0.3048,   time:3600}
+    {key:'yardSecond',       dist:0.9144,   time:1}
+    {key:'yardMinute',       dist:0.9144,   time:60}
+    {key:'yardHour',         dist:0.9144,   time:3600}
+    {key:'mileSecond',       dist:1609.344, time:1}
+    {key:'mileMinute',       dist:1609.344, time:60}
+    {key:'mileHour',         dist:1609.344, time:3600}
+    {key:'knots',            dist:1852,     time:3600}
+
+]
+
+for def in speedDefs
+
+    convertSpeed[def.key] = {}
+
+for fromDef in speedDefs
+
+    for toDef in speedDefs
+
+        do (fromDef, toDef) ->
+
+            convertSpeed[fromDef.key][toDef.key] = (v) ->
+
+                return v if fromDef.key is toDef.key
+
+                return v * fromDef.dist / fromDef.time * toDef.time / toDef.dist
 
 ### Temperature Conversions ###
 

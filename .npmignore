@@ -3,6 +3,7 @@ node_modules
 .gitignore
 .github
 .vscode
+.tests
 *.coffee
 *.bak
 *.md

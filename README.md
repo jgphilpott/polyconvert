@@ -6,7 +6,7 @@
 
 Polyconvert is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project currently supports JavaScript only but it would be nice to add more languages in the future!
 
-If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formating gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
+If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formatting gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
 
 # Contents
 
@@ -52,16 +52,18 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
 
 ### Node
 
-If your using Node you can install the package with this command:
+Package on npm: https://www.npmjs.com/package/@jgphilpott/polyconvert
+
+Install with:
 
 ```
-npm i polyconvert
+npm i @jgphilpott/polyconvert
 ```
 
-It can then be included with this line:
+Then require it:
 
 ```js
-const polyconvert = require('polyconvert')
+const polyconvert = require('@jgphilpott/polyconvert')
 ```
 
 ### Link
@@ -197,7 +199,7 @@ If you have any other issues with the Polyconvert library then please open a [ge
 
 Each category below is available as a top level key in the `polyconvert` object. An object map of each category is available below.
 
-### [Angle](https://github.com/jgphilpott/polyconvert/tree/main/angle/README.md)
+### Angle
 
 The Angle category provides 6 different units for conversion, see the object map below:
 
@@ -214,7 +216,7 @@ polyconvert.angle = {
 }
 ```
 
-### [Area](https://github.com/jgphilpott/polyconvert/tree/main/area/README.md)
+### Area
 
 The Area category provides 15 different units for conversion, see the object map below:
 
@@ -242,7 +244,7 @@ polyconvert.area = {
 }
 ```
 
-### [Data](https://github.com/jgphilpott/polyconvert/tree/main/data/README.md)
+### Data
 
 The Data category provides 10 different units for conversion, see the object map below:
 
@@ -269,7 +271,7 @@ polyconvert.data = {
     </em>
 </sub>
 
-### [Density](https://github.com/jgphilpott/polyconvert/tree/main/density/README.md)
+### Density
 
 The Density category provides 8 different units for conversion, see the object map below:
 
@@ -289,7 +291,7 @@ polyconvert.density = {
 }
 ```
 
-### [Dimension](https://github.com/jgphilpott/polyconvert/tree/main/dimension/README.md)
+### Dimension
 
 The Dimension category provides 2 different units for conversion, see the object map below:
 
@@ -302,7 +304,7 @@ polyconvert.dimension = {
 }
 ```
 
-### [Energy](https://github.com/jgphilpott/polyconvert/tree/main/energy/README.md)
+### Energy
 
 The Energy category provides 11 different units for conversion, see the object map below:
 
@@ -332,7 +334,7 @@ polyconvert.energy = {
     </em>
 </sub>
 
-### [Frequency](https://github.com/jgphilpott/polyconvert/tree/main/frequency/README.md)
+### Frequency
 
 The Frequency category provides 4 different units for conversion, see the object map below:
 
@@ -347,7 +349,7 @@ polyconvert.frequency = {
 }
 ```
 
-### [Illumination](https://github.com/jgphilpott/polyconvert/tree/main/illumination/README.md)
+### Illumination
 
 The Illumination category provides 4 different units for conversion, see the object map below:
 
@@ -362,7 +364,7 @@ polyconvert.illumination = {
 }
 ```
 
-### [Length](https://github.com/jgphilpott/polyconvert/tree/main/length/README.md)
+### Length
 
 The Length category provides 13 different units for conversion, see the object map below:
 
@@ -387,7 +389,7 @@ polyconvert.length = {
 }
 ```
 
-### [Magnetomotive](https://github.com/jgphilpott/polyconvert/tree/main/magnetomotive/README.md)
+### Magnetomotive
 
 The Magnetomotive category provides 5 different units for conversion, see the object map below:
 
@@ -404,7 +406,7 @@ polyconvert.magnetomotive = {
 }
 ```
 
-### [Mass](https://github.com/jgphilpott/polyconvert/tree/main/mass/README.md)
+### Mass
 
 The Mass category provides 13 different units for conversion, see the object map below:
 
@@ -429,7 +431,7 @@ polyconvert.mass = {
 }
 ```
 
-### [Pressure](https://github.com/jgphilpott/polyconvert/tree/main/pressure/README.md)
+### Pressure
 
 The Pressure category provides 5 different units for conversion, see the object map below:
 
@@ -445,7 +447,7 @@ polyconvert.pressure = {
 }
 ```
 
-### [Radiation](https://github.com/jgphilpott/polyconvert/tree/main/radiation/README.md)
+### Radiation
 
 The Radiation category provides 14 different units for conversion, see the object map below:
 
@@ -470,7 +472,7 @@ polyconvert.radiation = {
 }
 ```
 
-### [Speed](https://github.com/jgphilpott/polyconvert/tree/main/speed/README.md)
+### Speed
 
 The Speed category provides 25 different units for conversion, see the object map below:
 
@@ -514,7 +516,7 @@ polyconvert.speed = {
     </em>
 </sub>
 
-### [Temperature](https://github.com/jgphilpott/polyconvert/tree/main/temperature/README.md)
+### Temperature
 
 The Temperature category provides 3 different units for conversion, see the object map below:
 
@@ -528,7 +530,7 @@ polyconvert.temperature = {
 }
 ```
 
-### [Time](https://github.com/jgphilpott/polyconvert/tree/main/time/README.md)
+### Time
 
 The Time category provides 13 different units for conversion, see the object map below:
 
@@ -558,7 +560,7 @@ polyconvert.time = {
     </em>
 </sub>
 
-### [Volume](https://github.com/jgphilpott/polyconvert/tree/main/volume/README.md)
+### Volume
 
 The Volume category provides 21 different units for conversion, see the object map below:
 
@@ -594,3 +596,7 @@ polyconvert.volume = {
 ```
 
 </details>
+
+---
+
+**Polyconvert** is developed and maintained by [@jgphilpott](https://github.com/jgphilpott).

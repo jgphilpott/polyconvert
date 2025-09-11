@@ -696,34 +696,143 @@ convertEnergy =
     kilojoule: {}
     watt: {}
     kilowatt: {}
+    wattHour: {}
+    kilowattHour: {}
+    electronvolt: {}
+    calorie: {}
+    kilocalorie: {}
+    btu: {}
+    footPound: {}
 
 ### Joule Conversions ###
 
 convertEnergy.joule.joule = j$j = (j) -> j # Joule to Joule
 convertEnergy.joule.kilojoule = j$kj = (j) -> j / 1e+3 # Joule to Kilojoule
-convertEnergy.joule.watt = j$wh = (j) -> j / 36e+2 # Joule to Watt
-convertEnergy.joule.kilowatt = j$kwh = (j) -> j / 36e+5 # Joule to Kilowatt
+convertEnergy.joule.wattHour = j$wh = (j) -> j / 3600 # Joule to Watt-hour
+convertEnergy.joule.kilowattHour = j$kwh = (j) -> j / 3.6e+6 # Joule to Kilowatt-hour
+convertEnergy.joule.electronvolt = j$ev = (j) -> j / 1.602176634e-19 # Joule to Electronvolt
+convertEnergy.joule.calorie = j$cal = (j) -> j / 4.184 # Joule to Calorie (thermodynamic)
+convertEnergy.joule.kilocalorie = j$kcal = (j) -> j / 4184 # Joule to Kilocalorie
+convertEnergy.joule.btu = j$btu = (j) -> j / 1055.05585 # Joule to BTU (IT)
+convertEnergy.joule.footPound = j$ftlb = (j) -> j / 1.3558179483314004 # Joule to Foot-pound
+
+# Power conversions (Joule <-> Watt) require a time input in seconds
+convertEnergy.joule.watt = (j, seconds) -> j / seconds # Joule to Watt (requires seconds)
+convertEnergy.joule.kilowatt = (j, seconds) -> j / (seconds * 1e+3) # Joule to Kilowatt (requires seconds)
 
 ### Kilojoule Conversions ###
 
 convertEnergy.kilojoule.joule = kj$j = (kj) -> kj * 1e+3 # Kilojoule to Joule
 convertEnergy.kilojoule.kilojoule = kj$kj = (kj) -> kj # Kilojoule to Kilojoule
-convertEnergy.kilojoule.watt = kj$wh = (kj) -> kj / 3.6 # Kilojoule to Watt
-convertEnergy.kilojoule.kilowatt = kj$kwh = (kj) -> kj / 36e+2 # Kilojoule to Kilowatt
+convertEnergy.kilojoule.wattHour = kj$wh = (kj) -> kj * 1e+3 / 3600 # Kilojoule to Watt-hour
+convertEnergy.kilojoule.kilowattHour = kj$kwh = (kj) -> kj / 3.6 # Kilojoule to Kilowatt-hour
+convertEnergy.kilojoule.electronvolt = kj$ev = (kj) -> kj * 1e+3 / 1.602176634e-19 # Kilojoule to Electronvolt
+convertEnergy.kilojoule.calorie = kj$cal = (kj) -> kj * 1e+3 / 4.184 # Kilojoule to Calorie
+convertEnergy.kilojoule.kilocalorie = kj$kcal = (kj) -> kj * 1e+3 / 4184 # Kilojoule to Kilocalorie
+convertEnergy.kilojoule.btu = kj$btu = (kj) -> kj * 1e+3 / 1055.05585 # Kilojoule to BTU
+convertEnergy.kilojoule.footPound = kj$ftlb = (kj) -> kj * 1e+3 / 1.3558179483314004 # Kilojoule to Foot-pound
 
-### Watt Conversions ###
+# Power conversions (Kilojoule <-> kW) require a time input in seconds
+convertEnergy.kilojoule.watt = (kj, seconds) -> kj * 1e+3 / seconds # Kilojoule to Watt (requires seconds)
+convertEnergy.kilojoule.kilowatt = (kj, seconds) -> kj / seconds # Kilojoule to Kilowatt (requires seconds)
 
-convertEnergy.watt.joule = wh$j = (wh) -> wh * 36e+2 # Watt to Joule
-convertEnergy.watt.kilojoule = wh$kj = (wh) -> wh * 3.6 # Watt to Kilojoule
-convertEnergy.watt.watt = wh$wh = (wh) -> wh # Watt to Watt
-convertEnergy.watt.kilowatt = wh$kwh = (wh) -> wh / 1e+3 # Watt to Kilowatt
+### Watt Conversions (Power) ###
 
-### Kilowatt Conversions ###
+convertEnergy.watt.watt = w$w = (w) -> w # Watt to Watt
+convertEnergy.watt.kilowatt = w$kw = (w) -> w / 1e+3 # Watt to Kilowatt
+convertEnergy.watt.joule = (w, seconds) -> w * seconds # Watt to Joule (requires seconds)
+convertEnergy.watt.kilojoule = (w, seconds) -> w * seconds / 1e+3 # Watt to Kilojoule (requires seconds)
 
-convertEnergy.kilowatt.joule = kwh$j = (kwh) -> kwh * 36e+5 # Kilowatt to Joule
-convertEnergy.kilowatt.kilojoule = kwh$kj = (kwh) -> kwh * 36e+2 # Kilowatt to Kilojoule
-convertEnergy.kilowatt.watt = kwh$wh = (kwh) -> kwh * 1e+3 # Kilowatt to Watt
-convertEnergy.kilowatt.kilowatt = kwh$kwh = (kwh) -> kwh # Kilowatt to Kilowatt
+### Kilowatt Conversions (Power) ###
+
+convertEnergy.kilowatt.kilowatt = kw$kw = (kw) -> kw # Kilowatt to Kilowatt
+convertEnergy.kilowatt.watt = kw$w = (kw) -> kw * 1e+3 # Kilowatt to Watt
+convertEnergy.kilowatt.joule = (kw, seconds) -> kw * 1e+3 * seconds # Kilowatt to Joule (requires seconds)
+convertEnergy.kilowatt.kilojoule = (kw, seconds) -> kw * seconds # Kilowatt to Kilojoule (requires seconds)
+
+### Watt-hour Conversions ###
+
+convertEnergy.wattHour.joule = wh$j = (wh) -> wh * 3600 # Watt-hour to Joule
+convertEnergy.wattHour.kilojoule = wh$kj = (wh) -> wh * 3.6 # Watt-hour to Kilojoule
+convertEnergy.wattHour.wattHour = wh$wh = (wh) -> wh # Watt-hour to Watt-hour
+convertEnergy.wattHour.kilowattHour = wh$kwh = (wh) -> wh / 1e+3 # Watt-hour to Kilowatt-hour
+convertEnergy.wattHour.electronvolt = wh$ev = (wh) -> wh * 3600 / 1.602176634e-19 # Watt-hour to Electronvolt
+convertEnergy.wattHour.calorie = wh$cal = (wh) -> wh * 3600 / 4.184 # Watt-hour to Calorie
+convertEnergy.wattHour.kilocalorie = wh$kcal = (wh) -> wh * 3600 / 4184 # Watt-hour to Kilocalorie
+convertEnergy.wattHour.btu = wh$btu = (wh) -> wh * 3600 / 1055.05585 # Watt-hour to BTU
+convertEnergy.wattHour.footPound = wh$ftlb = (wh) -> wh * 3600 / 1.3558179483314004 # Watt-hour to Foot-pound
+
+### Kilowatt-hour Conversions ###
+
+convertEnergy.kilowattHour.joule = kwh$j = (kwh) -> kwh * 3.6e+6 # Kilowatt-hour to Joule
+convertEnergy.kilowattHour.kilojoule = kwh$kj = (kwh) -> kwh * 3600 # Kilowatt-hour to Kilojoule
+convertEnergy.kilowattHour.wattHour = kwh$wh = (kwh) -> kwh * 1e+3 # Kilowatt-hour to Watt-hour
+convertEnergy.kilowattHour.kilowattHour = kwh$kwh = (kwh) -> kwh # Kilowatt-hour to Kilowatt-hour
+convertEnergy.kilowattHour.electronvolt = kwh$ev = (kwh) -> kwh * 3.6e+6 / 1.602176634e-19 # Kilowatt-hour to Electronvolt
+convertEnergy.kilowattHour.calorie = kwh$cal = (kwh) -> kwh * 3.6e+6 / 4.184 # Kilowatt-hour to Calorie
+convertEnergy.kilowattHour.kilocalorie = kwh$kcal = (kwh) -> kwh * 3.6e+6 / 4184 # Kilowatt-hour to Kilocalorie
+convertEnergy.kilowattHour.btu = kwh$btu = (kwh) -> kwh * 3.6e+6 / 1055.05585 # Kilowatt-hour to BTU
+convertEnergy.kilowattHour.footPound = kwh$ftlb = (kwh) -> kwh * 3.6e+6 / 1.3558179483314004 # Kilowatt-hour to Foot-pound
+
+### Electronvolt Conversions ###
+
+convertEnergy.electronvolt.joule = ev$j = (ev) -> ev * 1.602176634e-19 # Electronvolt to Joule
+convertEnergy.electronvolt.kilojoule = ev$kj = (ev) -> ev * 1.602176634e-19 / 1e+3 # Electronvolt to Kilojoule
+convertEnergy.electronvolt.wattHour = ev$wh = (ev) -> ev * 1.602176634e-19 / 3600 # Electronvolt to Watt-hour
+convertEnergy.electronvolt.kilowattHour = ev$kwh = (ev) -> ev * 1.602176634e-19 / 3.6e+6 # Electronvolt to Kilowatt-hour
+convertEnergy.electronvolt.electronvolt = ev$ev = (ev) -> ev # Electronvolt to Electronvolt
+convertEnergy.electronvolt.calorie = ev$cal = (ev) -> ev * 1.602176634e-19 / 4.184 # Electronvolt to Calorie
+convertEnergy.electronvolt.kilocalorie = ev$kcal = (ev) -> ev * 1.602176634e-19 / 4184 # Electronvolt to Kilocalorie
+convertEnergy.electronvolt.btu = ev$btu = (ev) -> ev * 1.602176634e-19 / 1055.05585 # Electronvolt to BTU
+convertEnergy.electronvolt.footPound = ev$ftlb = (ev) -> ev * 1.602176634e-19 / 1.3558179483314004 # Electronvolt to Foot-pound
+
+### Calorie Conversions ###
+
+convertEnergy.calorie.joule = cal$j = (cal) -> cal * 4.184 # Calorie to Joule
+convertEnergy.calorie.kilojoule = cal$kj = (cal) -> cal * 4.184 / 1e+3 # Calorie to Kilojoule
+convertEnergy.calorie.wattHour = cal$wh = (cal) -> cal * 4.184 / 3600 # Calorie to Watt-hour
+convertEnergy.calorie.kilowattHour = cal$kwh = (cal) -> cal * 4.184 / 3.6e+6 # Calorie to Kilowatt-hour
+convertEnergy.calorie.electronvolt = cal$ev = (cal) -> cal * 4.184 / 1.602176634e-19 # Calorie to Electronvolt
+convertEnergy.calorie.calorie = cal$cal = (cal) -> cal # Calorie to Calorie
+convertEnergy.calorie.kilocalorie = cal$kcal = (cal) -> cal / 1e+3 # Calorie to Kilocalorie
+convertEnergy.calorie.btu = cal$btu = (cal) -> cal * 4.184 / 1055.05585 # Calorie to BTU
+convertEnergy.calorie.footPound = cal$ftlb = (cal) -> cal * 4.184 / 1.3558179483314004 # Calorie to Foot-pound
+
+### Kilocalorie Conversions ###
+
+convertEnergy.kilocalorie.joule = kcal$j = (kcal) -> kcal * 4184 # Kilocalorie to Joule
+convertEnergy.kilocalorie.kilojoule = kcal$kj = (kcal) -> kcal * 4.184 # Kilocalorie to Kilojoule
+convertEnergy.kilocalorie.wattHour = kcal$wh = (kcal) -> kcal * 4184 / 3600 # Kilocalorie to Watt-hour
+convertEnergy.kilocalorie.kilowattHour = kcal$kwh = (kcal) -> kcal * 4184 / 3.6e+6 # Kilocalorie to Kilowatt-hour
+convertEnergy.kilocalorie.electronvolt = kcal$ev = (kcal) -> kcal * 4184 / 1.602176634e-19 # Kilocalorie to Electronvolt
+convertEnergy.kilocalorie.calorie = kcal$cal = (kcal) -> kcal * 1e+3 # Kilocalorie to Calorie
+convertEnergy.kilocalorie.kilocalorie = kcal$kcal = (kcal) -> kcal # Kilocalorie to Kilocalorie
+convertEnergy.kilocalorie.btu = kcal$btu = (kcal) -> kcal * 4184 / 1055.05585 # Kilocalorie to BTU
+convertEnergy.kilocalorie.footPound = kcal$ftlb = (kcal) -> kcal * 4184 / 1.3558179483314004 # Kilocalorie to Foot-pound
+
+### BTU Conversions ###
+
+convertEnergy.btu.joule = btu$j = (btu) -> btu * 1055.05585 # BTU to Joule
+convertEnergy.btu.kilojoule = btu$kj = (btu) -> btu * 1.05505585 # BTU to Kilojoule
+convertEnergy.btu.wattHour = btu$wh = (btu) -> btu * 1055.05585 / 3600 # BTU to Watt-hour
+convertEnergy.btu.kilowattHour = btu$kwh = (btu) -> btu * 1055.05585 / 3.6e+6 # BTU to Kilowatt-hour
+convertEnergy.btu.electronvolt = btu$ev = (btu) -> btu * 1055.05585 / 1.602176634e-19 # BTU to Electronvolt
+convertEnergy.btu.calorie = btu$cal = (btu) -> btu * 1055.05585 / 4.184 # BTU to Calorie
+convertEnergy.btu.kilocalorie = btu$kcal = (btu) -> btu * 1055.05585 / 4184 # BTU to Kilocalorie
+convertEnergy.btu.btu = btu$btu = (btu) -> btu # BTU to BTU
+convertEnergy.btu.footPound = btu$ftlb = (btu) -> btu * 1055.05585 / 1.3558179483314004 # BTU to Foot-pound
+
+### Foot-pound Conversions ###
+
+convertEnergy.footPound.joule = ftlb$j = (ftlb) -> ftlb * 1.3558179483314004 # Foot-pound to Joule
+convertEnergy.footPound.kilojoule = ftlb$kj = (ftlb) -> ftlb * 1.3558179483314004 / 1e+3 # Foot-pound to Kilojoule
+convertEnergy.footPound.wattHour = ftlb$wh = (ftlb) -> ftlb * 1.3558179483314004 / 3600 # Foot-pound to Watt-hour
+convertEnergy.footPound.kilowattHour = ftlb$kwh = (ftlb) -> ftlb * 1.3558179483314004 / 3.6e+6 # Foot-pound to Kilowatt-hour
+convertEnergy.footPound.electronvolt = ftlb$ev = (ftlb) -> ftlb * 1.3558179483314004 / 1.602176634e-19 # Foot-pound to Electronvolt
+convertEnergy.footPound.calorie = ftlb$cal = (ftlb) -> ftlb * 1.3558179483314004 / 4.184 # Foot-pound to Calorie
+convertEnergy.footPound.kilocalorie = ftlb$kcal = (ftlb) -> ftlb * 1.3558179483314004 / 4184 # Foot-pound to Kilocalorie
+convertEnergy.footPound.btu = ftlb$btu = (ftlb) -> ftlb * 1.3558179483314004 / 1055.05585 # Foot-pound to BTU
+convertEnergy.footPound.footPound = ftlb$ftlb = (ftlb) -> ftlb # Foot-pound to Foot-pound
 
 ### Frequency Conversions ###
 

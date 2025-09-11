@@ -298,13 +298,22 @@ polyconvert.dimension = {
 
 ### [Energy](https://github.com/jgphilpott/polyconvert/tree/main/energy/README.md)
 
-The Energy category provides 4 different units for conversion, see the object map below:
+The Energy category provides 11 different units for conversion, see the object map below:
 
 ```js
 polyconvert.energy = {
 
     joule: {...},
     kilojoule: {...},
+    wattHour: {...},
+    kilowattHour: {...},
+    electronvolt: {...},
+    calorie: {...},
+    kilocalorie: {...},
+    btu: {...},
+    footPound: {...},
+
+    // Power (time-dependent) units:
     watt: {...},
     kilowatt: {...}
 

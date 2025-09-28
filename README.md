@@ -2,6 +2,12 @@
     <img width="225" height="225" src="https://raw.githubusercontent.com/jgphilpott/polyconvert/main/icon.png">
 </p>
 
+<p align="center">
+  <a href="https://github.com/jgphilpott/polyconvert/actions"><img src="https://github.com/jgphilpott/polyconvert/actions/workflows/nodejs.yml/badge.svg" alt="Polyconvert Tests"></a>
+  <a href="https://badge.fury.io/js/@jgphilpott%2Fpolyconvert"><img src="https://badge.fury.io/js/@jgphilpott%2Fpolyconvert.svg" alt="npm version"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+</p>
+
 # Intro
 
 Polyconvert is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project currently supports JavaScript only but it would be nice to add more languages in the future!

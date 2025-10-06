@@ -26,6 +26,7 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
      - [Node](https://github.com/jgphilpott/polyconvert#node)
      - [Link](https://github.com/jgphilpott/polyconvert#link)
  - [Usage](https://github.com/jgphilpott/polyconvert#usage)
+ - [Testing](https://github.com/jgphilpott/polyconvert#testing)
  - [Contribute](https://github.com/jgphilpott/polyconvert#contribute)
      - [Adding Features](https://github.com/jgphilpott/polyconvert#adding-features)
      - [Reporting Errors](https://github.com/jgphilpott/polyconvert#reporting-errors)
@@ -168,6 +169,51 @@ polyconvert.data.byte.bit(12.5) // Returns 100 meaning that 12.5 bytes equals 10
 
 </details>
 
+# Testing
+
+<details>
+
+<summary>Information about the testing approach:</summary><br>
+
+The Polyconvert library includes comprehensive testing to ensure accuracy and reliability. The test suite validates conversions using two complementary approaches:
+
+### Internal Consistency Tests
+
+These tests verify that forward and reverse conversions return to the original value. For example:
+- Convert 1 meter → feet → back to meters should equal 1 meter
+- Convert 1 kilogram → pounds → back to kilograms should equal 1 kilogram
+
+This ensures that conversion formulas are mathematically consistent and properly inverted.
+
+### External Validation Tests
+
+These tests validate conversions against well-known values from reputable sources including:
+- **NIST** (National Institute of Standards and Technology)
+- **International standards bodies** (SI units, ISO standards)
+- **Widely accepted scientific references**
+
+Example validations:
+- 1 meter = 3.28084 feet
+- 0°C = 32°F (freezing point of water)
+- 100°C = 212°F (boiling point of water)
+- 1 kilogram = 2.20462 pounds
+- 1 inch = 2.54 centimeters (exact)
+- 1 atmosphere = 101325 pascals (exact)
+
+The external validation tests cover all major categories including length, mass, temperature, volume, pressure, energy, data, time, speed, angle, area, and frequency conversions.
+
+### Running Tests
+
+All tests can be run with the command:
+
+```
+npm test
+```
+
+This will execute both the internal consistency tests and external validation tests, providing comprehensive verification of all conversion formulas.
+
+</details>
+
 # Contribute
 
 <details>
@@ -191,7 +237,13 @@ If you would like to contribute in this way please start by opening a [feature r
 
 I have done my best to ensure the accuracy of all the formulas but I am only human and I can easily make mistakes! If you find an inaccurate formula or typo please don't hesitate to open a [bug report](https://github.com/jgphilpott/polyconvert/issues/new?assignees=jgphilpott&labels=bug&template=BUG_REPORT.md&title=).
 
-I have also written some simple tests that can be run against the `polyconvert` object with the command `npm test`. If you want you could also contribute by helping to write a more detailed and comprehensive test suite.
+The library includes comprehensive testing to ensure accuracy:
+
+1. **Internal Consistency Tests**: Validate that forward and reverse conversions return to the original value (e.g., meter → foot → meter should equal the original meter value).
+
+2. **External Validation Tests**: Validate conversions against well-known values from reputable sources like NIST (National Institute of Standards and Technology) and international standards bodies. These tests verify that conversions match widely accepted reference values (e.g., 1 meter = 3.28084 feet, 0°C = 32°F, 1 kg = 2.20462 pounds).
+
+All tests can be run with the command `npm test`.
 
 If you have any other issues with the Polyconvert library then please open a [general issue](https://github.com/jgphilpott/polyconvert/issues/new/choose). Your efforts will improve the functionality and usability of this tool for everyone, thanks in advance!
 

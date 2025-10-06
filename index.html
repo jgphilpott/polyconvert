@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyconvert - Unit Converter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a56 0%, #ff6a33 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .category-selector {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .category-selector label {
+            display: block;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        select {
+            padding: 15px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            background: white;
+            color: #ff6a33;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            min-width: 250px;
+            font-weight: 600;
+        }
+
+        select:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        select:focus {
+            outline: none;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .converter-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .input-section {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-section h2 {
+            color: #ff6a33;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 24px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            transition: border-color 0.2s;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #ff6a33;
+        }
+
+        .unit-select {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            background: white;
+            color: #333;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .unit-select:focus {
+            outline: none;
+            border-color: #ff6a33;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .converter-container {
+                flex-direction: column;
+            }
+
+            .input-section {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icon.png" alt="Polyconvert Icon">
+            <h1>Polyconvert</h1>
+            <p class="subtitle">A clean and simple unit converter</p>
+        </header>
+
+        <div class="category-selector">
+            <label for="category">Select Category</label>
+            <select id="category">
+                <option value="">Choose a category...</option>
+                <option value="angle">Angle</option>
+                <option value="area">Area</option>
+                <option value="data">Data</option>
+                <option value="density">Density</option>
+                <option value="energy">Energy</option>
+                <option value="frequency">Frequency</option>
+                <option value="illumination">Illumination</option>
+                <option value="length">Length</option>
+                <option value="magnetomotive">Magnetomotive</option>
+                <option value="mass">Mass</option>
+                <option value="pressure">Pressure</option>
+                <option value="radiation">Radiation</option>
+                <option value="speed">Speed</option>
+                <option value="temperature">Temperature</option>
+                <option value="time">Time</option>
+                <option value="volume">Volume</option>
+            </select>
+        </div>
+
+        <div class="converter-container">
+            <div class="input-section">
+                <h2>From</h2>
+                <div class="input-group">
+                    <label for="fromValue">Value</label>
+                    <input type="number" id="fromValue" placeholder="Enter value" step="any">
+                </div>
+                <div class="input-group">
+                    <label for="fromUnit">Unit</label>
+                    <select id="fromUnit" class="unit-select">
+                        <option value="">Select category first</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <h2>To</h2>
+                <div class="input-group">
+                    <label for="toValue">Value</label>
+                    <input type="number" id="toValue" placeholder="Result" step="any" readonly>
+                </div>
+                <div class="input-group">
+                    <label for="toUnit">Unit</label>
+                    <select id="toUnit" class="unit-select">
+                        <option value="">Select category first</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by <a href="https://github.com/jgphilpott" target="_blank">@jgphilpott</a></p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/jgphilpott/polyconvert" target="_blank">View on GitHub</a> | 
+                <a href="https://www.npmjs.com/package/@jgphilpott/polyconvert" target="_blank">npm Package</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="polyconvert.min.js"></script>
+    <script>
+        // Unit name mappings for better display
+        const unitNames = {
+            // Angle
+            degree: 'Degree', gradian: 'Gradian', milliradian: 'Milliradian',
+            radian: 'Radian', arcSecond: 'Arc Second', arcMinute: 'Arc Minute',
+            
+            // Area
+            nanometerSq: 'Square Nanometer', micrometerSq: 'Square Micrometer',
+            millimeterSq: 'Square Millimeter', centimeterSq: 'Square Centimeter',
+            decimeterSq: 'Square Decimeter', meterSq: 'Square Meter',
+            decameterSq: 'Square Decameter', hectometerSq: 'Square Hectometer',
+            kilometerSq: 'Square Kilometer', inchSq: 'Square Inch',
+            footSq: 'Square Foot', yardSq: 'Square Yard', mileSq: 'Square Mile',
+            acre: 'Acre', hectare: 'Hectare',
+            
+            // Data
+            bit: 'Bit', byte: 'Byte', kilobyte: 'Kilobyte', megabyte: 'Megabyte',
+            gigabyte: 'Gigabyte', terabyte: 'Terabyte', petabyte: 'Petabyte',
+            exabyte: 'Exabyte', zettabyte: 'Zettabyte', yottabyte: 'Yottabyte',
+            
+            // Density
+            gramCentimeterCu: 'Gram/Cubic Centimeter', gramMeterCu: 'Gram/Cubic Meter',
+            kilogramCentimeterCu: 'Kilogram/Cubic Centimeter', kilogramMeterCu: 'Kilogram/Cubic Meter',
+            ounceInchCu: 'Ounce/Cubic Inch', ounceFootCu: 'Ounce/Cubic Foot',
+            poundInchCu: 'Pound/Cubic Inch', poundFootCu: 'Pound/Cubic Foot',
+            
+            // Energy
+            joule: 'Joule', kilojoule: 'Kilojoule', watt: 'Watt', kilowatt: 'Kilowatt',
+            wattHour: 'Watt Hour', kilowattHour: 'Kilowatt Hour', electronvolt: 'Electronvolt',
+            calorie: 'Calorie', kilocalorie: 'Kilocalorie', btu: 'BTU', footPound: 'Foot-Pound',
+            
+            // Frequency
+            hertz: 'Hertz', kilohertz: 'Kilohertz', megahertz: 'Megahertz', gigahertz: 'Gigahertz',
+            
+            // Illumination
+            phot: 'Phot', lux: 'Lux', nox: 'Nox', flame: 'Flame',
+            
+            // Length
+            nanometer: 'Nanometer', micrometer: 'Micrometer', millimeter: 'Millimeter',
+            centimeter: 'Centimeter', decimeter: 'Decimeter', meter: 'Meter',
+            decameter: 'Decameter', hectometer: 'Hectometer', kilometer: 'Kilometer',
+            inch: 'Inch', foot: 'Foot', yard: 'Yard', mile: 'Mile',
+            
+            // Magnetomotive
+            milliampere: 'Milliampere', ampere: 'Ampere', abampere: 'Abampere',
+            kiloampere: 'Kiloampere', gilbert: 'Gilbert',
+            
+            // Mass
+            nanogram: 'Nanogram', microgram: 'Microgram', milligram: 'Milligram',
+            centigram: 'Centigram', decigram: 'Decigram', gram: 'Gram',
+            decagram: 'Decagram', hectogram: 'Hectogram', kilogram: 'Kilogram',
+            ounce: 'Ounce', pound: 'Pound', stone: 'Stone', ton: 'Ton',
+            
+            // Pressure
+            bar: 'Bar', pascal: 'Pascal', atmospheric: 'Atmosphere', psi: 'PSI', torr: 'Torr',
+            
+            // Radiation
+            nanogray: 'Nanogray', microgray: 'Microgray', milligray: 'Milligray',
+            centigray: 'Centigray', decigray: 'Decigray', gray: 'Gray',
+            decagray: 'Decagray', hectogray: 'Hectogray', kilogray: 'Kilogray',
+            megagray: 'Megagray', gigagray: 'Gigagray', teragray: 'Teragray',
+            petagray: 'Petagray', exagray: 'Exagray',
+            
+            // Speed
+            millimeterSecond: 'Millimeter/Second', millimeterMinute: 'Millimeter/Minute',
+            millimeterHour: 'Millimeter/Hour', centimeterSecond: 'Centimeter/Second',
+            centimeterMinute: 'Centimeter/Minute', centimeterHour: 'Centimeter/Hour',
+            meterSecond: 'Meter/Second', meterMinute: 'Meter/Minute', meterHour: 'Meter/Hour',
+            kilometerSecond: 'Kilometer/Second', kilometerMinute: 'Kilometer/Minute',
+            kilometerHour: 'Kilometer/Hour', inchSecond: 'Inch/Second',
+            inchMinute: 'Inch/Minute', inchHour: 'Inch/Hour', footSecond: 'Foot/Second',
+            footMinute: 'Foot/Minute', footHour: 'Foot/Hour', yardSecond: 'Yard/Second',
+            yardMinute: 'Yard/Minute', yardHour: 'Yard/Hour', mileSecond: 'Mile/Second',
+            mileMinute: 'Mile/Minute', mileHour: 'Mile/Hour', knots: 'Knots',
+            
+            // Temperature
+            celsius: 'Celsius', fahrenheit: 'Fahrenheit', kelvin: 'Kelvin',
+            
+            // Time
+            nanosecond: 'Nanosecond', microsecond: 'Microsecond', millisecond: 'Millisecond',
+            second: 'Second', minute: 'Minute', hour: 'Hour', day: 'Day', week: 'Week',
+            month: 'Month', year: 'Year', decade: 'Decade', century: 'Century', millennium: 'Millennium',
+            
+            // Volume
+            nanometerCu: 'Cubic Nanometer', micrometerCu: 'Cubic Micrometer',
+            millimeterCu: 'Cubic Millimeter', centimeterCu: 'Cubic Centimeter',
+            decimeterCu: 'Cubic Decimeter', meterCu: 'Cubic Meter',
+            decameterCu: 'Cubic Decameter', hectometerCu: 'Cubic Hectometer',
+            kilometerCu: 'Cubic Kilometer', inchCu: 'Cubic Inch',
+            footCu: 'Cubic Foot', yardCu: 'Cubic Yard', mileCu: 'Cubic Mile',
+            milliliter: 'Milliliter', liter: 'Liter', teaspoon: 'Teaspoon',
+            tablespoon: 'Tablespoon', cup: 'Cup', pint: 'Pint', quart: 'Quart', gallon: 'Gallon'
+        };
+
+        const categorySelect = document.getElementById('category');
+        const fromUnitSelect = document.getElementById('fromUnit');
+        const toUnitSelect = document.getElementById('toUnit');
+        const fromValueInput = document.getElementById('fromValue');
+        const toValueInput = document.getElementById('toValue');
+
+        // Update unit dropdowns when category changes
+        categorySelect.addEventListener('change', function() {
+            const category = this.value;
+            
+            // Clear previous selections
+            fromUnitSelect.innerHTML = '<option value="">Select a unit</option>';
+            toUnitSelect.innerHTML = '<option value="">Select a unit</option>';
+            fromValueInput.value = '';
+            toValueInput.value = '';
+            
+            if (category && polyconvert[category]) {
+                const units = Object.keys(polyconvert[category]);
+                
+                units.forEach(unit => {
+                    const displayName = unitNames[unit] || unit;
+                    
+                    const fromOption = new Option(displayName, unit);
+                    const toOption = new Option(displayName, unit);
+                    
+                    fromUnitSelect.add(fromOption);
+                    toUnitSelect.add(toOption);
+                });
+            }
+        });
+
+        // Perform conversion
+        function convert() {
+            const category = categorySelect.value;
+            const fromUnit = fromUnitSelect.value;
+            const toUnit = toUnitSelect.value;
+            const fromValue = parseFloat(fromValueInput.value);
+            
+            if (category && fromUnit && toUnit && !isNaN(fromValue)) {
+                try {
+                    const result = polyconvert[category][fromUnit][toUnit](fromValue);
+                    toValueInput.value = result.toFixed(8).replace(/\.?0+$/, '');
+                } catch (error) {
+                    console.error('Conversion error:', error);
+                    toValueInput.value = 'Error';
+                }
+            } else {
+                toValueInput.value = '';
+            }
+        }
+
+        // Add event listeners for real-time conversion
+        fromValueInput.addEventListener('input', convert);
+        fromUnitSelect.addEventListener('change', convert);
+        toUnitSelect.addEventListener('change', convert);
+    </script>
+</body>
+</html>

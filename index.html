@@ -36,7 +36,7 @@
             width: 120px;
             height: 120px;
             margin-bottom: 20px;
-            border-radius: 20px;
+            border-radius: 50%;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
@@ -199,13 +199,13 @@
         <header>
             <img src="icon.png" alt="Polyconvert Icon">
             <h1>Polyconvert</h1>
-            <p class="subtitle">A clean and simple unit converter</p>
+            <p class="subtitle">A clean and simple unit converter.</p>
         </header>
 
         <div class="category-selector">
             <label for="category">Select Category</label>
             <select id="category">
-                <option value="">Choose a category...</option>
+                <option value="">Choose a category ...</option>
                 <option value="angle">Angle</option>
                 <option value="area">Area</option>
                 <option value="data">Data</option>
@@ -258,7 +258,7 @@
         <footer>
             <p>Created by <a href="https://github.com/jgphilpott" target="_blank">@jgphilpott</a></p>
             <p style="margin-top: 10px;">
-                <a href="https://github.com/jgphilpott/polyconvert" target="_blank">View on GitHub</a> | 
+                <a href="https://github.com/jgphilpott/polyconvert" target="_blank">View on GitHub</a> |
                 <a href="https://www.npmjs.com/package/@jgphilpott/polyconvert" target="_blank">npm Package</a>
             </p>
         </footer>
@@ -271,7 +271,7 @@
             // Angle
             degree: 'Degree', gradian: 'Gradian', milliradian: 'Milliradian',
             radian: 'Radian', arcSecond: 'Arc Second', arcMinute: 'Arc Minute',
-            
+
             // Area
             nanometerSq: 'Square Nanometer', micrometerSq: 'Square Micrometer',
             millimeterSq: 'Square Millimeter', centimeterSq: 'Square Centimeter',
@@ -280,55 +280,55 @@
             kilometerSq: 'Square Kilometer', inchSq: 'Square Inch',
             footSq: 'Square Foot', yardSq: 'Square Yard', mileSq: 'Square Mile',
             acre: 'Acre', hectare: 'Hectare',
-            
+
             // Data
             bit: 'Bit', byte: 'Byte', kilobyte: 'Kilobyte', megabyte: 'Megabyte',
             gigabyte: 'Gigabyte', terabyte: 'Terabyte', petabyte: 'Petabyte',
             exabyte: 'Exabyte', zettabyte: 'Zettabyte', yottabyte: 'Yottabyte',
-            
+
             // Density
             gramCentimeterCu: 'Gram/Cubic Centimeter', gramMeterCu: 'Gram/Cubic Meter',
             kilogramCentimeterCu: 'Kilogram/Cubic Centimeter', kilogramMeterCu: 'Kilogram/Cubic Meter',
             ounceInchCu: 'Ounce/Cubic Inch', ounceFootCu: 'Ounce/Cubic Foot',
             poundInchCu: 'Pound/Cubic Inch', poundFootCu: 'Pound/Cubic Foot',
-            
+
             // Energy
             joule: 'Joule', kilojoule: 'Kilojoule', watt: 'Watt', kilowatt: 'Kilowatt',
             wattHour: 'Watt Hour', kilowattHour: 'Kilowatt Hour', electronvolt: 'Electronvolt',
             calorie: 'Calorie', kilocalorie: 'Kilocalorie', btu: 'BTU', footPound: 'Foot-Pound',
-            
+
             // Frequency
             hertz: 'Hertz', kilohertz: 'Kilohertz', megahertz: 'Megahertz', gigahertz: 'Gigahertz',
-            
+
             // Illumination
             phot: 'Phot', lux: 'Lux', nox: 'Nox', flame: 'Flame',
-            
+
             // Length
             nanometer: 'Nanometer', micrometer: 'Micrometer', millimeter: 'Millimeter',
             centimeter: 'Centimeter', decimeter: 'Decimeter', meter: 'Meter',
             decameter: 'Decameter', hectometer: 'Hectometer', kilometer: 'Kilometer',
             inch: 'Inch', foot: 'Foot', yard: 'Yard', mile: 'Mile',
-            
+
             // Magnetomotive
             milliampere: 'Milliampere', ampere: 'Ampere', abampere: 'Abampere',
             kiloampere: 'Kiloampere', gilbert: 'Gilbert',
-            
+
             // Mass
             nanogram: 'Nanogram', microgram: 'Microgram', milligram: 'Milligram',
             centigram: 'Centigram', decigram: 'Decigram', gram: 'Gram',
             decagram: 'Decagram', hectogram: 'Hectogram', kilogram: 'Kilogram',
             ounce: 'Ounce', pound: 'Pound', stone: 'Stone', ton: 'Ton',
-            
+
             // Pressure
             bar: 'Bar', pascal: 'Pascal', atmospheric: 'Atmosphere', psi: 'PSI', torr: 'Torr',
-            
+
             // Radiation
             nanogray: 'Nanogray', microgray: 'Microgray', milligray: 'Milligray',
             centigray: 'Centigray', decigray: 'Decigray', gray: 'Gray',
             decagray: 'Decagray', hectogray: 'Hectogray', kilogray: 'Kilogray',
             megagray: 'Megagray', gigagray: 'Gigagray', teragray: 'Teragray',
             petagray: 'Petagray', exagray: 'Exagray',
-            
+
             // Speed
             millimeterSecond: 'Millimeter/Second', millimeterMinute: 'Millimeter/Minute',
             millimeterHour: 'Millimeter/Hour', centimeterSecond: 'Centimeter/Second',
@@ -340,15 +340,15 @@
             footMinute: 'Foot/Minute', footHour: 'Foot/Hour', yardSecond: 'Yard/Second',
             yardMinute: 'Yard/Minute', yardHour: 'Yard/Hour', mileSecond: 'Mile/Second',
             mileMinute: 'Mile/Minute', mileHour: 'Mile/Hour', knots: 'Knots',
-            
+
             // Temperature
             celsius: 'Celsius', fahrenheit: 'Fahrenheit', kelvin: 'Kelvin',
-            
+
             // Time
             nanosecond: 'Nanosecond', microsecond: 'Microsecond', millisecond: 'Millisecond',
             second: 'Second', minute: 'Minute', hour: 'Hour', day: 'Day', week: 'Week',
             month: 'Month', year: 'Year', decade: 'Decade', century: 'Century', millennium: 'Millennium',
-            
+
             // Volume
             nanometerCu: 'Cubic Nanometer', micrometerCu: 'Cubic Micrometer',
             millimeterCu: 'Cubic Millimeter', centimeterCu: 'Cubic Centimeter',
@@ -369,22 +369,22 @@
         // Update unit dropdowns when category changes
         categorySelect.addEventListener('change', function() {
             const category = this.value;
-            
+
             // Clear previous selections
             fromUnitSelect.innerHTML = '<option value="">Select a unit</option>';
             toUnitSelect.innerHTML = '<option value="">Select a unit</option>';
             fromValueInput.value = '';
             toValueInput.value = '';
-            
+
             if (category && polyconvert[category]) {
                 const units = Object.keys(polyconvert[category]);
-                
+
                 units.forEach(unit => {
                     const displayName = unitNames[unit] || unit;
-                    
+
                     const fromOption = new Option(displayName, unit);
                     const toOption = new Option(displayName, unit);
-                    
+
                     fromUnitSelect.add(fromOption);
                     toUnitSelect.add(toOption);
                 });
@@ -397,7 +397,7 @@
             const fromUnit = fromUnitSelect.value;
             const toUnit = toUnitSelect.value;
             const fromValue = parseFloat(fromValueInput.value);
-            
+
             if (category && fromUnit && toUnit && !isNaN(fromValue)) {
                 try {
                     const result = polyconvert[category][fromUnit][toUnit](fromValue);

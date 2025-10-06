@@ -17,20 +17,25 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 20px;
             position: relative;
         }
 
         .container {
             width: 100%;
             max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-top: 40px;
+            margin-bottom: 20px;
             color: white;
+            flex-shrink: 0;
         }
 
         h1 {
@@ -47,7 +52,7 @@
 
         .category-selector {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         .category-selector label {
@@ -61,7 +66,7 @@
         }
 
         select {
-            padding: 15px 25px;
+            padding: 15px 40px 15px 25px;
             font-size: 16px;
             border: none;
             border-radius: 25px;
@@ -69,14 +74,16 @@
             color: #ff6a33;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: box-shadow 0.2s;
             min-width: 250px;
             font-weight: 600;
-        }
-
-        select:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6a33' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 16px;
         }
 
         select:focus {
@@ -86,18 +93,20 @@
 
         .converter-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             gap: 40px;
             flex-wrap: wrap;
+            flex: 1;
         }
 
         .input-section {
             flex: 1;
             min-width: 280px;
-            background: white;
+            max-width: 450px;
+            background: transparent;
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .input-section h2 {
@@ -113,7 +122,7 @@
 
         .input-group label {
             display: block;
-            color: #555;
+            color: white;
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 8px;
@@ -125,33 +134,48 @@
             width: 100%;
             padding: 15px;
             font-size: 24px;
-            border: 2px solid #eee;
+            border: 3px solid white;
             border-radius: 25px;
-            transition: border-color 0.2s;
+            transition: border-color 0.2s, background 0.2s;
             font-weight: 600;
-            color: #333;
+            color: #ff6a33;
+            background: rgba(255, 255, 255, 0.95);
         }
 
         input[type="number"]:focus {
             outline: none;
-            border-color: #ff6a33;
+            background: white;
+            border-color: white;
+        }
+
+        input[type="number"]::placeholder {
+            color: rgba(255, 106, 51, 0.5);
         }
 
         .unit-select {
             width: 100%;
-            padding: 12px 15px;
+            padding: 12px 40px 12px 15px;
             font-size: 16px;
-            border: 2px solid #eee;
+            border: 3px solid white;
             border-radius: 25px;
-            background: white;
-            color: #333;
+            background: rgba(255, 255, 255, 0.95);
+            color: #ff6a33;
             cursor: pointer;
-            transition: border-color 0.2s;
+            transition: border-color 0.2s, background 0.2s;
+            font-weight: 600;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6a33' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 16px;
         }
 
         .unit-select:focus {
             outline: none;
-            border-color: #ff6a33;
+            background: white;
+            border-color: white;
         }
 
         .github-corner {
@@ -164,8 +188,8 @@
         .github-corner svg {
             fill: white;
             color: #ff6a33;
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
         }
 
         .github-corner:hover .octo-arm {
@@ -194,11 +218,13 @@
         }
 
         footer {
-            margin-top: 50px;
+            margin-top: auto;
+            padding: 20px;
             text-align: center;
             color: white;
             font-size: 14px;
             opacity: 0.9;
+            flex-shrink: 0;
         }
 
         footer a {
@@ -222,6 +248,7 @@
 
             .input-section {
                 min-width: 100%;
+                max-width: 100%;
             }
 
             .logo-divider {
@@ -229,8 +256,12 @@
             }
 
             .github-corner svg {
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
+            }
+
+            header {
+                margin-top: 20px;
             }
         }
     </style>

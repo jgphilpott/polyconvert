@@ -187,8 +187,8 @@
         }
 
         .logo-divider img {
-            width: 100px;
-            height: 100px;
+            width: 142px;
+            height: 142px;
             border-radius: 50%;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
@@ -245,43 +245,38 @@
     </a>
 
     <div class="container">
-        <header>
-            <h1>Polyconvert</h1>
-            <p class="subtitle">A clean and simple unit converter.</p>
-        </header>
 
-        <div class="category-selector">
-            <label for="category">Select Category</label>
-            <select id="category">
-                <option value="">Choose a category ...</option>
-                <option value="angle">Angle</option>
-                <option value="area">Area</option>
-                <option value="data">Data</option>
-                <option value="density">Density</option>
-                <option value="energy">Energy</option>
-                <option value="frequency">Frequency</option>
-                <option value="illumination">Illumination</option>
-                <option value="length">Length</option>
-                <option value="magnetomotive">Magnetomotive</option>
-                <option value="mass">Mass</option>
-                <option value="pressure">Pressure</option>
-                <option value="radiation">Radiation</option>
-                <option value="speed">Speed</option>
-                <option value="temperature">Temperature</option>
-                <option value="time">Time</option>
-                <option value="volume">Volume</option>
-            </select>
-        </div>
+        <header>
+            <div class="category-selector">
+                <label for="category">Select Category</label>
+                <select id="category">
+                    <option value="">Choose a category ...</option>
+                    <option value="angle">Angle</option>
+                    <option value="area">Area</option>
+                    <option value="data">Data</option>
+                    <option value="density">Density</option>
+                    <option value="energy">Energy</option>
+                    <option value="frequency">Frequency</option>
+                    <option value="illumination">Illumination</option>
+                    <option value="length">Length</option>
+                    <option value="magnetomotive">Magnetomotive</option>
+                    <option value="mass">Mass</option>
+                    <option value="pressure">Pressure</option>
+                    <option value="radiation">Radiation</option>
+                    <option value="speed">Speed</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="time">Time</option>
+                    <option value="volume">Volume</option>
+                </select>
+            </div>
+        </header>
 
         <div class="converter-container">
             <div class="input-section">
-                <h2>From</h2>
                 <div class="input-group">
-                    <label for="fromValue">Value</label>
                     <input type="number" id="fromValue" placeholder="Enter value" step="any">
                 </div>
                 <div class="input-group">
-                    <label for="fromUnit">Unit</label>
                     <select id="fromUnit" class="unit-select">
                         <option value="">Select category first</option>
                     </select>
@@ -293,13 +288,10 @@
             </div>
 
             <div class="input-section">
-                <h2>To</h2>
                 <div class="input-group">
-                    <label for="toValue">Value</label>
                     <input type="number" id="toValue" placeholder="Enter value" step="any">
                 </div>
                 <div class="input-group">
-                    <label for="toUnit">Unit</label>
                     <select id="toUnit" class="unit-select">
                         <option value="">Select category first</option>
                     </select>
@@ -314,6 +306,7 @@
                 <a href="https://www.npmjs.com/package/@jgphilpott/polyconvert" target="_blank">npm Package</a>
             </p>
         </footer>
+
     </div>
 
     <script src="polyconvert.min.js"></script>

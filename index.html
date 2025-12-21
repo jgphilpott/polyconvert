@@ -446,18 +446,33 @@
         // Helper function to filter out units that don't have sufficient conversions
         // This excludes units like watt/kilowatt that require time parameter
         function getValidUnits(category, allUnits) {
+            // Configuration constants
+            const MIN_CONVERSIONS = 3;
+            const CONVERSION_THRESHOLD = 0.7; // 70% of max conversions
+            
+            // Handle edge case of empty array
+            if (allUnits.length === 0) {
+                return [];
+            }
+            
             // Calculate how many conversions each unit has
-            const conversionCounts = allUnits.map(unit => ({
-                unit: unit,
-                count: Object.keys(polyconvert[category][unit]).length
-            }));
+            const conversionCounts = allUnits.map(unit => {
+                // Safety check: ensure conversion object exists
+                if (!polyconvert[category] || !polyconvert[category][unit]) {
+                    return { unit: unit, count: 0 };
+                }
+                return {
+                    unit: unit,
+                    count: Object.keys(polyconvert[category][unit]).length
+                };
+            });
             
             // Find the maximum number of conversions
-            const maxConversions = Math.max(...conversionCounts.map(u => u.count));
+            const maxConversions = Math.max(...conversionCounts.map(u => u.count), 0);
             
             // Only include units that have at least 70% of the maximum conversions
             // This filters out units like watt/kilowatt that can only convert to a few units
-            const threshold = Math.max(3, Math.floor(maxConversions * 0.7));
+            const threshold = Math.max(MIN_CONVERSIONS, Math.floor(maxConversions * CONVERSION_THRESHOLD));
             
             return conversionCounts
                 .filter(u => u.count >= threshold)

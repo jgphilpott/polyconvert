@@ -144,13 +144,13 @@ polyconvert.data.bit = {
     bit: f(x) = x,
     byte: f(x) = x/8,
     kilobyte: f(x) = x/(8*1024),
-    megabyte: f(x) = x/(8*1024^2),
-    gigabyte: f(x) = x/(8*1024^3),
-    terabyte: f(x) = x/(8*1024^4),
-    petabyte: f(x) = x/(8*1024^5),
-    exabyte: f(x) = x/(8*1024^6),
-    zettabyte: f(x) = x/(8*1024^7),
-    yottabyte: f(x) = x/(8*1024^8)
+    megabyte: f(x) = x/(8*1024*1024),
+    gigabyte: f(x) = x/(8*1024*1024*1024),
+    terabyte: f(x) = x/(8*1024*1024*1024*1024),
+    petabyte: f(x) = x/(8*1024*1024*1024*1024*1024),
+    exabyte: f(x) = x/(8*1024*1024*1024*1024*1024*1024),
+    zettabyte: f(x) = x/(8*1024*1024*1024*1024*1024*1024*1024),
+    yottabyte: f(x) = x/(8*1024*1024*1024*1024*1024*1024*1024*1024)
 
 }
 ```

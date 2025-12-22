@@ -404,131 +404,131 @@ convertData =
 
 convertData.bit.bit = bit$bit = (bit) -> bit # Bit to Bit
 convertData.bit.byte = bit$byte = (bit) -> bit / 8 # Bit to Byte
-convertData.bit.kilobyte = bit$kb = (bit) -> bit / 8e+3 # Bit to Kilobyte
-convertData.bit.megabyte = bit$mb = (bit) -> bit / 8e+6 # Bit to Megabyte
-convertData.bit.gigabyte = bit$gb = (bit) -> bit / 8e+9 # Bit to Gigabyte
-convertData.bit.terabyte = bit$tb = (bit) -> bit / 8e+12 # Bit to Terabyte
-convertData.bit.petabyte = bit$pb = (bit) -> bit / 8e+15 # Bit to Petabyte
-convertData.bit.exabyte = bit$eb = (bit) -> bit / 8e+18 # Bit to Exabyte
-convertData.bit.zettabyte = bit$zb = (bit) -> bit / 8e+21 # Bit to Zettabyte
-convertData.bit.yottabyte = bit$yb = (bit) -> bit / 8e+24 # Bit to Yottabyte
+convertData.bit.kilobyte = bit$kb = (bit) -> bit / (8 * 1024) # Bit to Kibibyte
+convertData.bit.megabyte = bit$mb = (bit) -> bit / (8 * Math.pow(1024, 2)) # Bit to Mebibyte
+convertData.bit.gigabyte = bit$gb = (bit) -> bit / (8 * Math.pow(1024, 3)) # Bit to Gibibyte
+convertData.bit.terabyte = bit$tb = (bit) -> bit / (8 * Math.pow(1024, 4)) # Bit to Tebibyte
+convertData.bit.petabyte = bit$pb = (bit) -> bit / (8 * Math.pow(1024, 5)) # Bit to Pebibyte
+convertData.bit.exabyte = bit$eb = (bit) -> bit / (8 * Math.pow(1024, 6)) # Bit to Exbibyte
+convertData.bit.zettabyte = bit$zb = (bit) -> bit / (8 * Math.pow(1024, 7)) # Bit to Zebibyte
+convertData.bit.yottabyte = bit$yb = (bit) -> bit / (8 * Math.pow(1024, 8)) # Bit to Yobibyte
 
 ### Byte Conversions ###
 
 convertData.byte.bit = byte$bit = (byte) -> byte * 8 # Byte to Bit
 convertData.byte.byte = byte$byte = (byte) -> byte # Byte to Byte
-convertData.byte.kilobyte = byte$kb = (byte) -> byte / 1e+3 # Byte to Kilobyte
-convertData.byte.megabyte = byte$mb = (byte) -> byte / 1e+6 # Byte to Megabyte
-convertData.byte.gigabyte = byte$gb = (byte) -> byte / 1e+9 # Byte to Gigabyte
-convertData.byte.terabyte = byte$tb = (byte) -> byte / 1e+12 # Byte to Terabyte
-convertData.byte.petabyte = byte$pb = (byte) -> byte / 1e+15 # Byte to Petabyte
-convertData.byte.exabyte = byte$eb = (byte) -> byte / 1e+18 # Byte to Exabyte
-convertData.byte.zettabyte = byte$zb = (byte) -> byte / 1e+21 # Byte to Zettabyte
-convertData.byte.yottabyte = byte$yb = (byte) -> byte / 1e+24 # Byte to Yottabyte
+convertData.byte.kilobyte = byte$kb = (byte) -> byte / 1024 # Byte to Kibibyte
+convertData.byte.megabyte = byte$mb = (byte) -> byte / Math.pow(1024, 2) # Byte to Mebibyte
+convertData.byte.gigabyte = byte$gb = (byte) -> byte / Math.pow(1024, 3) # Byte to Gibibyte
+convertData.byte.terabyte = byte$tb = (byte) -> byte / Math.pow(1024, 4) # Byte to Tebibyte
+convertData.byte.petabyte = byte$pb = (byte) -> byte / Math.pow(1024, 5) # Byte to Pebibyte
+convertData.byte.exabyte = byte$eb = (byte) -> byte / Math.pow(1024, 6) # Byte to Exbibyte
+convertData.byte.zettabyte = byte$zb = (byte) -> byte / Math.pow(1024, 7) # Byte to Zebibyte
+convertData.byte.yottabyte = byte$yb = (byte) -> byte / Math.pow(1024, 8) # Byte to Yobibyte
 
-### Kilobyte Conversions ###
+### Kibibyte Conversions ###
 
-convertData.kilobyte.bit = kb$bit = (kb) -> kb * 8e+3 # Kilobyte to Bit
-convertData.kilobyte.byte = kb$byte = (kb) -> kb * 1e+3 # Kilobyte to Byte
-convertData.kilobyte.kilobyte = kb$kb = (kb) -> kb # Kilobyte to Kilobyte
-convertData.kilobyte.megabyte = kb$mb = (kb) -> kb / 1e+3 # Kilobyte to Megabyte
-convertData.kilobyte.gigabyte = kb$gb = (kb) -> kb / 1e+6 # Kilobyte to Gigabyte
-convertData.kilobyte.terabyte = kb$tb = (kb) -> kb / 1e+9 # Kilobyte to Terabyte
-convertData.kilobyte.petabyte = kb$pb = (kb) -> kb / 1e+12 # Kilobyte to Petabyte
-convertData.kilobyte.exabyte = kb$eb = (kb) -> kb / 1e+15 # Kilobyte to Exabyte
-convertData.kilobyte.zettabyte = kb$zb = (kb) -> kb / 1e+18 # Kilobyte to Zettabyte
-convertData.kilobyte.yottabyte = kb$yb = (kb) -> kb / 1e+21 # Kilobyte to Yottabyte
+convertData.kilobyte.bit = kb$bit = (kb) -> kb * 8 * 1024 # Kibibyte to Bit
+convertData.kilobyte.byte = kb$byte = (kb) -> kb * 1024 # Kibibyte to Byte
+convertData.kilobyte.kilobyte = kb$kb = (kb) -> kb # Kibibyte to Kibibyte
+convertData.kilobyte.megabyte = kb$mb = (kb) -> kb / 1024 # Kibibyte to Mebibyte
+convertData.kilobyte.gigabyte = kb$gb = (kb) -> kb / Math.pow(1024, 2) # Kibibyte to Gibibyte
+convertData.kilobyte.terabyte = kb$tb = (kb) -> kb / Math.pow(1024, 3) # Kibibyte to Tebibyte
+convertData.kilobyte.petabyte = kb$pb = (kb) -> kb / Math.pow(1024, 4) # Kibibyte to Pebibyte
+convertData.kilobyte.exabyte = kb$eb = (kb) -> kb / Math.pow(1024, 5) # Kibibyte to Exbibyte
+convertData.kilobyte.zettabyte = kb$zb = (kb) -> kb / Math.pow(1024, 6) # Kibibyte to Zebibyte
+convertData.kilobyte.yottabyte = kb$yb = (kb) -> kb / Math.pow(1024, 7) # Kibibyte to Yobibyte
 
-### Megabyte Conversions ###
+### Mebibyte Conversions ###
 
-convertData.megabyte.bit = mb$bit = (mb) -> mb * 8e+6 # Megabyte to Bit
-convertData.megabyte.byte = mb$byte = (mb) -> mb * 1e+6 # Megabyte to Byte
-convertData.megabyte.kilobyte = mb$kb = (mb) -> mb * 1e+3 # Megabyte to Kilobyte
-convertData.megabyte.megabyte = mb$mb = (mb) -> mb # Megabyte to Megabyte
-convertData.megabyte.gigabyte = mb$gb = (mb) -> mb / 1e+3 # Megabyte to Gigabyte
-convertData.megabyte.terabyte = mb$tb = (mb) -> mb / 1e+6 # Megabyte to Terabyte
-convertData.megabyte.petabyte = mb$pb = (mb) -> mb / 1e+9 # Megabyte to Petabyte
-convertData.megabyte.exabyte = mb$eb = (mb) -> mb / 1e+12 # Megabyte to Exabyte
-convertData.megabyte.zettabyte = mb$zb = (mb) -> mb / 1e+15 # Megabyte to Zettabyte
-convertData.megabyte.yottabyte = mb$yb = (mb) -> mb / 1e+18 # Megabyte to Yottabyte
+convertData.megabyte.bit = mb$bit = (mb) -> mb * 8 * Math.pow(1024, 2) # Mebibyte to Bit
+convertData.megabyte.byte = mb$byte = (mb) -> mb * Math.pow(1024, 2) # Mebibyte to Byte
+convertData.megabyte.kilobyte = mb$kb = (mb) -> mb * 1024 # Mebibyte to Kibibyte
+convertData.megabyte.megabyte = mb$mb = (mb) -> mb # Mebibyte to Mebibyte
+convertData.megabyte.gigabyte = mb$gb = (mb) -> mb / 1024 # Mebibyte to Gibibyte
+convertData.megabyte.terabyte = mb$tb = (mb) -> mb / Math.pow(1024, 2) # Mebibyte to Tebibyte
+convertData.megabyte.petabyte = mb$pb = (mb) -> mb / Math.pow(1024, 3) # Mebibyte to Pebibyte
+convertData.megabyte.exabyte = mb$eb = (mb) -> mb / Math.pow(1024, 4) # Mebibyte to Exbibyte
+convertData.megabyte.zettabyte = mb$zb = (mb) -> mb / Math.pow(1024, 5) # Mebibyte to Zebibyte
+convertData.megabyte.yottabyte = mb$yb = (mb) -> mb / Math.pow(1024, 6) # Mebibyte to Yobibyte
 
-### Gigabyte Conversions ###
+### Gibibyte Conversions ###
 
-convertData.gigabyte.bit = gb$bit = (gb) -> gb * 8e+9 # Gigabyte to Bit
-convertData.gigabyte.byte = gb$byte = (gb) -> gb * 1e+9 # Gigabyte to Byte
-convertData.gigabyte.kilobyte = gb$kb = (gb) -> gb * 1e+6 # Gigabyte to Kilobyte
-convertData.gigabyte.megabyte = gb$mb = (gb) -> gb * 1e+3 # Gigabyte to Megabyte
-convertData.gigabyte.gigabyte = gb$gb = (gb) -> gb # Gigabyte to Gigabyte
-convertData.gigabyte.terabyte = gb$tb = (gb) -> gb / 1e+3 # Gigabyte to Terabyte
-convertData.gigabyte.petabyte = gb$pb = (gb) -> gb / 1e+6 # Gigabyte to Petabyte
-convertData.gigabyte.exabyte = gb$eb = (gb) -> gb / 1e+9 # Gigabyte to Exabyte
-convertData.gigabyte.zettabyte = gb$zb = (gb) -> gb / 1e+12 # Gigabyte to Zettabyte
-convertData.gigabyte.yottabyte = gb$yb = (gb) -> gb / 1e+15 # Gigabyte to Yottabyte
+convertData.gigabyte.bit = gb$bit = (gb) -> gb * 8 * Math.pow(1024, 3) # Gibibyte to Bit
+convertData.gigabyte.byte = gb$byte = (gb) -> gb * Math.pow(1024, 3) # Gibibyte to Byte
+convertData.gigabyte.kilobyte = gb$kb = (gb) -> gb * Math.pow(1024, 2) # Gibibyte to Kibibyte
+convertData.gigabyte.megabyte = gb$mb = (gb) -> gb * 1024 # Gibibyte to Mebibyte
+convertData.gigabyte.gigabyte = gb$gb = (gb) -> gb # Gibibyte to Gibibyte
+convertData.gigabyte.terabyte = gb$tb = (gb) -> gb / 1024 # Gibibyte to Tebibyte
+convertData.gigabyte.petabyte = gb$pb = (gb) -> gb / Math.pow(1024, 2) # Gibibyte to Pebibyte
+convertData.gigabyte.exabyte = gb$eb = (gb) -> gb / Math.pow(1024, 3) # Gibibyte to Exbibyte
+convertData.gigabyte.zettabyte = gb$zb = (gb) -> gb / Math.pow(1024, 4) # Gibibyte to Zebibyte
+convertData.gigabyte.yottabyte = gb$yb = (gb) -> gb / Math.pow(1024, 5) # Gibibyte to Yobibyte
 
-### Terabyte Conversions ###
+### Tebibyte Conversions ###
 
-convertData.terabyte.bit = tb$bit = (tb) -> tb * 8e+12 # Terabyte to Bit
-convertData.terabyte.byte = tb$byte = (tb) -> tb * 1e+12 # Terabyte to Byte
-convertData.terabyte.kilobyte = tb$kb = (tb) -> tb * 1e+9 # Terabyte to Kilobyte
-convertData.terabyte.megabyte = tb$mb = (tb) -> tb * 1e+6 # Terabyte to Megabyte
-convertData.terabyte.gigabyte = tb$gb = (tb) -> tb * 1e+3 # Terabyte to Gigabyte
-convertData.terabyte.terabyte = tb$tb = (tb) -> tb # Terabyte to Terabyte
-convertData.terabyte.petabyte = tb$pb = (tb) -> tb / 1e+3 # Terabyte to Petabyte
-convertData.terabyte.exabyte = tb$eb = (tb) -> tb / 1e+6 # Terabyte to Exabyte
-convertData.terabyte.zettabyte = tb$zb = (tb) -> tb / 1e+9 # Terabyte to Zettabyte
-convertData.terabyte.yottabyte = tb$yb = (tb) -> tb / 1e+12 # Terabyte to Yottabyte
+convertData.terabyte.bit = tb$bit = (tb) -> tb * 8 * Math.pow(1024, 4) # Tebibyte to Bit
+convertData.terabyte.byte = tb$byte = (tb) -> tb * Math.pow(1024, 4) # Tebibyte to Byte
+convertData.terabyte.kilobyte = tb$kb = (tb) -> tb * Math.pow(1024, 3) # Tebibyte to Kibibyte
+convertData.terabyte.megabyte = tb$mb = (tb) -> tb * Math.pow(1024, 2) # Tebibyte to Mebibyte
+convertData.terabyte.gigabyte = tb$gb = (tb) -> tb * 1024 # Tebibyte to Gibibyte
+convertData.terabyte.terabyte = tb$tb = (tb) -> tb # Tebibyte to Tebibyte
+convertData.terabyte.petabyte = tb$pb = (tb) -> tb / 1024 # Tebibyte to Pebibyte
+convertData.terabyte.exabyte = tb$eb = (tb) -> tb / Math.pow(1024, 2) # Tebibyte to Exbibyte
+convertData.terabyte.zettabyte = tb$zb = (tb) -> tb / Math.pow(1024, 3) # Tebibyte to Zebibyte
+convertData.terabyte.yottabyte = tb$yb = (tb) -> tb / Math.pow(1024, 4) # Tebibyte to Yobibyte
 
-### Petabyte Conversions ###
+### Pebibyte Conversions ###
 
-convertData.petabyte.bit = pb$bit = (pb) -> pb * 8e+15 # Petabyte to Bit
-convertData.petabyte.byte = pb$byte = (pb) -> pb * 1e+15 # Petabyte to Byte
-convertData.petabyte.kilobyte = pb$kb = (pb) -> pb * 1e+12 # Petabyte to Kilobyte
-convertData.petabyte.megabyte = pb$mb = (pb) -> pb * 1e+9 # Petabyte to Megabyte
-convertData.petabyte.gigabyte = pb$gb = (pb) -> pb * 1e+6 # Petabyte to Gigabyte
-convertData.petabyte.terabyte = pb$tb = (pb) -> pb * 1e+3 # Petabyte to Terabyte
-convertData.petabyte.petabyte = pb$pb = (pb) -> pb # Petabyte to Petabyte
-convertData.petabyte.exabyte = pb$eb = (pb) -> pb / 1e+3 # Petabyte to Exabyte
-convertData.petabyte.zettabyte = pb$zb = (pb) -> pb / 1e+6 # Petabyte to Zettabyte
-convertData.petabyte.yottabyte = pb$yb = (pb) -> pb / 1e+9 # Petabyte to Yottabyte
+convertData.petabyte.bit = pb$bit = (pb) -> pb * 8 * Math.pow(1024, 5) # Pebibyte to Bit
+convertData.petabyte.byte = pb$byte = (pb) -> pb * Math.pow(1024, 5) # Pebibyte to Byte
+convertData.petabyte.kilobyte = pb$kb = (pb) -> pb * Math.pow(1024, 4) # Pebibyte to Kibibyte
+convertData.petabyte.megabyte = pb$mb = (pb) -> pb * Math.pow(1024, 3) # Pebibyte to Mebibyte
+convertData.petabyte.gigabyte = pb$gb = (pb) -> pb * Math.pow(1024, 2) # Pebibyte to Gibibyte
+convertData.petabyte.terabyte = pb$tb = (pb) -> pb * 1024 # Pebibyte to Tebibyte
+convertData.petabyte.petabyte = pb$pb = (pb) -> pb # Pebibyte to Pebibyte
+convertData.petabyte.exabyte = pb$eb = (pb) -> pb / 1024 # Pebibyte to Exbibyte
+convertData.petabyte.zettabyte = pb$zb = (pb) -> pb / Math.pow(1024, 2) # Pebibyte to Zebibyte
+convertData.petabyte.yottabyte = pb$yb = (pb) -> pb / Math.pow(1024, 3) # Pebibyte to Yobibyte
 
-### Exabyte Conversions ###
+### Exbibyte Conversions ###
 
-convertData.exabyte.bit = eb$bit = (eb) -> eb * 8e+18 # Exabyte to Bit
-convertData.exabyte.byte = eb$byte = (eb) -> eb * 1e+18 # Exabyte to Byte
-convertData.exabyte.kilobyte = eb$kb = (eb) -> eb * 1e+15 # Exabyte to Kilobyte
-convertData.exabyte.megabyte = eb$mb = (eb) -> eb * 1e+12 # Exabyte to Megabyte
-convertData.exabyte.gigabyte = eb$gb = (eb) -> eb * 1e+9 # Exabyte to Gigabyte
-convertData.exabyte.terabyte = eb$tb = (eb) -> eb * 1e+6 # Exabyte to Terabyte
-convertData.exabyte.petabyte = eb$pb = (eb) -> eb * 1e+3 # Exabyte to Petabyte
-convertData.exabyte.exabyte = eb$eb = (eb) -> eb # Exabyte to Exabyte
-convertData.exabyte.zettabyte = eb$zb = (eb) -> eb / 1e+3 # Exabyte to Zettabyte
-convertData.exabyte.yottabyte = eb$yb = (eb) -> eb / 1e+6 # Exabyte to Yottabyte
+convertData.exabyte.bit = eb$bit = (eb) -> eb * 8 * Math.pow(1024, 6) # Exbibyte to Bit
+convertData.exabyte.byte = eb$byte = (eb) -> eb * Math.pow(1024, 6) # Exbibyte to Byte
+convertData.exabyte.kilobyte = eb$kb = (eb) -> eb * Math.pow(1024, 5) # Exbibyte to Kibibyte
+convertData.exabyte.megabyte = eb$mb = (eb) -> eb * Math.pow(1024, 4) # Exbibyte to Mebibyte
+convertData.exabyte.gigabyte = eb$gb = (eb) -> eb * Math.pow(1024, 3) # Exbibyte to Gibibyte
+convertData.exabyte.terabyte = eb$tb = (eb) -> eb * Math.pow(1024, 2) # Exbibyte to Tebibyte
+convertData.exabyte.petabyte = eb$pb = (eb) -> eb * 1024 # Exbibyte to Pebibyte
+convertData.exabyte.exabyte = eb$eb = (eb) -> eb # Exbibyte to Exbibyte
+convertData.exabyte.zettabyte = eb$zb = (eb) -> eb / 1024 # Exbibyte to Zebibyte
+convertData.exabyte.yottabyte = eb$yb = (eb) -> eb / Math.pow(1024, 2) # Exbibyte to Yobibyte
 
-### Zettabyte Conversions ###
+### Zebibyte Conversions ###
 
-convertData.zettabyte.bit = zb$bit = (zb) -> zb * 8e+21 # Zettabyte to Bit
-convertData.zettabyte.byte = zb$byte = (zb) -> zb * 1e+21 # Zettabyte to Byte
-convertData.zettabyte.kilobyte = zb$kb = (zb) -> zb * 1e+18 # Zettabyte to Kilobyte
-convertData.zettabyte.megabyte = zb$mb = (zb) -> zb * 1e+15 # Zettabyte to Megabyte
-convertData.zettabyte.gigabyte = zb$gb = (zb) -> zb * 1e+12 # Zettabyte to Gigabyte
-convertData.zettabyte.terabyte = zb$tb = (zb) -> zb * 1e+9 # Zettabyte to Terabyte
-convertData.zettabyte.petabyte = zb$pb = (zb) -> zb * 1e+6 # Zettabyte to Petabyte
-convertData.zettabyte.exabyte = zb$eb = (zb) -> zb * 1e+3 # Zettabyte to Exabyte
-convertData.zettabyte.zettabyte = zb$zb = (zb) -> zb # Zettabyte to Zettabyte
-convertData.zettabyte.yottabyte = zb$yb = (zb) -> zb / 1e+3 # Zettabyte to Yottabyte
+convertData.zettabyte.bit = zb$bit = (zb) -> zb * 8 * Math.pow(1024, 7) # Zebibyte to Bit
+convertData.zettabyte.byte = zb$byte = (zb) -> zb * Math.pow(1024, 7) # Zebibyte to Byte
+convertData.zettabyte.kilobyte = zb$kb = (zb) -> zb * Math.pow(1024, 6) # Zebibyte to Kibibyte
+convertData.zettabyte.megabyte = zb$mb = (zb) -> zb * Math.pow(1024, 5) # Zebibyte to Mebibyte
+convertData.zettabyte.gigabyte = zb$gb = (zb) -> zb * Math.pow(1024, 4) # Zebibyte to Gibibyte
+convertData.zettabyte.terabyte = zb$tb = (zb) -> zb * Math.pow(1024, 3) # Zebibyte to Tebibyte
+convertData.zettabyte.petabyte = zb$pb = (zb) -> zb * Math.pow(1024, 2) # Zebibyte to Pebibyte
+convertData.zettabyte.exabyte = zb$eb = (zb) -> zb * 1024 # Zebibyte to Exbibyte
+convertData.zettabyte.zettabyte = zb$zb = (zb) -> zb # Zebibyte to Zebibyte
+convertData.zettabyte.yottabyte = zb$yb = (zb) -> zb / 1024 # Zebibyte to Yobibyte
 
-### Yottabyte Conversions ###
+### Yobibyte Conversions ###
 
-convertData.yottabyte.bit = yb$bit = (yb) -> yb * 8e+24 # Yottabyte to Bit
-convertData.yottabyte.byte = yb$byte = (yb) -> yb * 1e+24 # Yottabyte to Byte
-convertData.yottabyte.kilobyte = yb$kb = (yb) -> yb * 1e+21 # Yottabyte to Kilobyte
-convertData.yottabyte.megabyte = yb$mb = (yb) -> yb * 1e+18 # Yottabyte to Megabyte
-convertData.yottabyte.gigabyte = yb$gb = (yb) -> yb * 1e+15 # Yottabyte to Gigabyte
-convertData.yottabyte.terabyte = yb$tb = (yb) -> yb * 1e+12 # Yottabyte to Terabyte
-convertData.yottabyte.petabyte = yb$pb = (yb) -> yb * 1e+9 # Yottabyte to Petabyte
-convertData.yottabyte.exabyte = yb$eb = (yb) -> yb * 1e+6 # Yottabyte to Exabyte
-convertData.yottabyte.zettabyte = yb$zb = (yb) -> yb * 1e+3 # Yottabyte to Zettabyte
-convertData.yottabyte.yottabyte = yb$yb = (yb) -> yb # Yottabyte to Yottabyte
+convertData.yottabyte.bit = yb$bit = (yb) -> yb * 8 * Math.pow(1024, 8) # Yobibyte to Bit
+convertData.yottabyte.byte = yb$byte = (yb) -> yb * Math.pow(1024, 8) # Yobibyte to Byte
+convertData.yottabyte.kilobyte = yb$kb = (yb) -> yb * Math.pow(1024, 7) # Yobibyte to Kibibyte
+convertData.yottabyte.megabyte = yb$mb = (yb) -> yb * Math.pow(1024, 6) # Yobibyte to Mebibyte
+convertData.yottabyte.gigabyte = yb$gb = (yb) -> yb * Math.pow(1024, 5) # Yobibyte to Gibibyte
+convertData.yottabyte.terabyte = yb$tb = (yb) -> yb * Math.pow(1024, 4) # Yobibyte to Tebibyte
+convertData.yottabyte.petabyte = yb$pb = (yb) -> yb * Math.pow(1024, 3) # Yobibyte to Pebibyte
+convertData.yottabyte.exabyte = yb$eb = (yb) -> yb * Math.pow(1024, 2) # Yobibyte to Exbibyte
+convertData.yottabyte.zettabyte = yb$zb = (yb) -> yb * 1024 # Yobibyte to Zebibyte
+convertData.yottabyte.yottabyte = yb$yb = (yb) -> yb # Yobibyte to Yobibyte
 
 ### Density Conversions ###
 

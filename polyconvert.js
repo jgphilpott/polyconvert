@@ -1132,35 +1132,35 @@ convertData.bit.byte = bit$byte = function(bit) {
 };
 
 convertData.bit.kilobyte = bit$kb = function(bit) {
-  return bit / 8e+3; // Bit to Kilobyte
+  return bit / (8 * 1024); // Bit to Kibibyte
 };
 
 convertData.bit.megabyte = bit$mb = function(bit) {
-  return bit / 8e+6; // Bit to Megabyte
+  return bit / (8 * Math.pow(1024, 2)); // Bit to Mebibyte
 };
 
 convertData.bit.gigabyte = bit$gb = function(bit) {
-  return bit / 8e+9; // Bit to Gigabyte
+  return bit / (8 * Math.pow(1024, 3)); // Bit to Gibibyte
 };
 
 convertData.bit.terabyte = bit$tb = function(bit) {
-  return bit / 8e+12; // Bit to Terabyte
+  return bit / (8 * Math.pow(1024, 4)); // Bit to Tebibyte
 };
 
 convertData.bit.petabyte = bit$pb = function(bit) {
-  return bit / 8e+15; // Bit to Petabyte
+  return bit / (8 * Math.pow(1024, 5)); // Bit to Pebibyte
 };
 
 convertData.bit.exabyte = bit$eb = function(bit) {
-  return bit / 8e+18; // Bit to Exabyte
+  return bit / (8 * Math.pow(1024, 6)); // Bit to Exbibyte
 };
 
 convertData.bit.zettabyte = bit$zb = function(bit) {
-  return bit / 8e+21; // Bit to Zettabyte
+  return bit / (8 * Math.pow(1024, 7)); // Bit to Zebibyte
 };
 
 convertData.bit.yottabyte = bit$yb = function(bit) {
-  return bit / 8e+24; // Bit to Yottabyte
+  return bit / (8 * Math.pow(1024, 8)); // Bit to Yobibyte
 };
 
 /* Byte Conversions */
@@ -1173,363 +1173,363 @@ convertData.byte.byte = byte$byte = function(byte) {
 };
 
 convertData.byte.kilobyte = byte$kb = function(byte) {
-  return byte / 1e+3; // Byte to Kilobyte
+  return byte / 1024; // Byte to Kibibyte
 };
 
 convertData.byte.megabyte = byte$mb = function(byte) {
-  return byte / 1e+6; // Byte to Megabyte
+  return byte / Math.pow(1024, 2); // Byte to Mebibyte
 };
 
 convertData.byte.gigabyte = byte$gb = function(byte) {
-  return byte / 1e+9; // Byte to Gigabyte
+  return byte / Math.pow(1024, 3); // Byte to Gibibyte
 };
 
 convertData.byte.terabyte = byte$tb = function(byte) {
-  return byte / 1e+12; // Byte to Terabyte
+  return byte / Math.pow(1024, 4); // Byte to Tebibyte
 };
 
 convertData.byte.petabyte = byte$pb = function(byte) {
-  return byte / 1e+15; // Byte to Petabyte
+  return byte / Math.pow(1024, 5); // Byte to Pebibyte
 };
 
 convertData.byte.exabyte = byte$eb = function(byte) {
-  return byte / 1e+18; // Byte to Exabyte
+  return byte / Math.pow(1024, 6); // Byte to Exbibyte
 };
 
 convertData.byte.zettabyte = byte$zb = function(byte) {
-  return byte / 1e+21; // Byte to Zettabyte
+  return byte / Math.pow(1024, 7); // Byte to Zebibyte
 };
 
 convertData.byte.yottabyte = byte$yb = function(byte) {
-  return byte / 1e+24; // Byte to Yottabyte
+  return byte / Math.pow(1024, 8); // Byte to Yobibyte
 };
 
-/* Kilobyte Conversions */
+/* Kibibyte Conversions */
 convertData.kilobyte.bit = kb$bit = function(kb) {
-  return kb * 8e+3; // Kilobyte to Bit
+  return kb * 8 * 1024; // Kibibyte to Bit
 };
 
 convertData.kilobyte.byte = kb$byte = function(kb) {
-  return kb * 1e+3; // Kilobyte to Byte
+  return kb * 1024; // Kibibyte to Byte
 };
 
 convertData.kilobyte.kilobyte = kb$kb = function(kb) {
-  return kb; // Kilobyte to Kilobyte
+  return kb; // Kibibyte to Kibibyte
 };
 
 convertData.kilobyte.megabyte = kb$mb = function(kb) {
-  return kb / 1e+3; // Kilobyte to Megabyte
+  return kb / 1024; // Kibibyte to Mebibyte
 };
 
 convertData.kilobyte.gigabyte = kb$gb = function(kb) {
-  return kb / 1e+6; // Kilobyte to Gigabyte
+  return kb / Math.pow(1024, 2); // Kibibyte to Gibibyte
 };
 
 convertData.kilobyte.terabyte = kb$tb = function(kb) {
-  return kb / 1e+9; // Kilobyte to Terabyte
+  return kb / Math.pow(1024, 3); // Kibibyte to Tebibyte
 };
 
 convertData.kilobyte.petabyte = kb$pb = function(kb) {
-  return kb / 1e+12; // Kilobyte to Petabyte
+  return kb / Math.pow(1024, 4); // Kibibyte to Pebibyte
 };
 
 convertData.kilobyte.exabyte = kb$eb = function(kb) {
-  return kb / 1e+15; // Kilobyte to Exabyte
+  return kb / Math.pow(1024, 5); // Kibibyte to Exbibyte
 };
 
 convertData.kilobyte.zettabyte = kb$zb = function(kb) {
-  return kb / 1e+18; // Kilobyte to Zettabyte
+  return kb / Math.pow(1024, 6); // Kibibyte to Zebibyte
 };
 
 convertData.kilobyte.yottabyte = kb$yb = function(kb) {
-  return kb / 1e+21; // Kilobyte to Yottabyte
+  return kb / Math.pow(1024, 7); // Kibibyte to Yobibyte
 };
 
-/* Megabyte Conversions */
+/* Mebibyte Conversions */
 convertData.megabyte.bit = mb$bit = function(mb) {
-  return mb * 8e+6; // Megabyte to Bit
+  return mb * 8 * Math.pow(1024, 2); // Mebibyte to Bit
 };
 
 convertData.megabyte.byte = mb$byte = function(mb) {
-  return mb * 1e+6; // Megabyte to Byte
+  return mb * Math.pow(1024, 2); // Mebibyte to Byte
 };
 
 convertData.megabyte.kilobyte = mb$kb = function(mb) {
-  return mb * 1e+3; // Megabyte to Kilobyte
+  return mb * 1024; // Mebibyte to Kibibyte
 };
 
 convertData.megabyte.megabyte = mb$mb = function(mb) {
-  return mb; // Megabyte to Megabyte
+  return mb; // Mebibyte to Mebibyte
 };
 
 convertData.megabyte.gigabyte = mb$gb = function(mb) {
-  return mb / 1e+3; // Megabyte to Gigabyte
+  return mb / 1024; // Mebibyte to Gibibyte
 };
 
 convertData.megabyte.terabyte = mb$tb = function(mb) {
-  return mb / 1e+6; // Megabyte to Terabyte
+  return mb / Math.pow(1024, 2); // Mebibyte to Tebibyte
 };
 
 convertData.megabyte.petabyte = mb$pb = function(mb) {
-  return mb / 1e+9; // Megabyte to Petabyte
+  return mb / Math.pow(1024, 3); // Mebibyte to Pebibyte
 };
 
 convertData.megabyte.exabyte = mb$eb = function(mb) {
-  return mb / 1e+12; // Megabyte to Exabyte
+  return mb / Math.pow(1024, 4); // Mebibyte to Exbibyte
 };
 
 convertData.megabyte.zettabyte = mb$zb = function(mb) {
-  return mb / 1e+15; // Megabyte to Zettabyte
+  return mb / Math.pow(1024, 5); // Mebibyte to Zebibyte
 };
 
 convertData.megabyte.yottabyte = mb$yb = function(mb) {
-  return mb / 1e+18; // Megabyte to Yottabyte
+  return mb / Math.pow(1024, 6); // Mebibyte to Yobibyte
 };
 
-/* Gigabyte Conversions */
+/* Gibibyte Conversions */
 convertData.gigabyte.bit = gb$bit = function(gb) {
-  return gb * 8e+9; // Gigabyte to Bit
+  return gb * 8 * Math.pow(1024, 3); // Gibibyte to Bit
 };
 
 convertData.gigabyte.byte = gb$byte = function(gb) {
-  return gb * 1e+9; // Gigabyte to Byte
+  return gb * Math.pow(1024, 3); // Gibibyte to Byte
 };
 
 convertData.gigabyte.kilobyte = gb$kb = function(gb) {
-  return gb * 1e+6; // Gigabyte to Kilobyte
+  return gb * Math.pow(1024, 2); // Gibibyte to Kibibyte
 };
 
 convertData.gigabyte.megabyte = gb$mb = function(gb) {
-  return gb * 1e+3; // Gigabyte to Megabyte
+  return gb * 1024; // Gibibyte to Mebibyte
 };
 
 convertData.gigabyte.gigabyte = gb$gb = function(gb) {
-  return gb; // Gigabyte to Gigabyte
+  return gb; // Gibibyte to Gibibyte
 };
 
 convertData.gigabyte.terabyte = gb$tb = function(gb) {
-  return gb / 1e+3; // Gigabyte to Terabyte
+  return gb / 1024; // Gibibyte to Tebibyte
 };
 
 convertData.gigabyte.petabyte = gb$pb = function(gb) {
-  return gb / 1e+6; // Gigabyte to Petabyte
+  return gb / Math.pow(1024, 2); // Gibibyte to Pebibyte
 };
 
 convertData.gigabyte.exabyte = gb$eb = function(gb) {
-  return gb / 1e+9; // Gigabyte to Exabyte
+  return gb / Math.pow(1024, 3); // Gibibyte to Exbibyte
 };
 
 convertData.gigabyte.zettabyte = gb$zb = function(gb) {
-  return gb / 1e+12; // Gigabyte to Zettabyte
+  return gb / Math.pow(1024, 4); // Gibibyte to Zebibyte
 };
 
 convertData.gigabyte.yottabyte = gb$yb = function(gb) {
-  return gb / 1e+15; // Gigabyte to Yottabyte
+  return gb / Math.pow(1024, 5); // Gibibyte to Yobibyte
 };
 
-/* Terabyte Conversions */
+/* Tebibyte Conversions */
 convertData.terabyte.bit = tb$bit = function(tb) {
-  return tb * 8e+12; // Terabyte to Bit
+  return tb * 8 * Math.pow(1024, 4); // Tebibyte to Bit
 };
 
 convertData.terabyte.byte = tb$byte = function(tb) {
-  return tb * 1e+12; // Terabyte to Byte
+  return tb * Math.pow(1024, 4); // Tebibyte to Byte
 };
 
 convertData.terabyte.kilobyte = tb$kb = function(tb) {
-  return tb * 1e+9; // Terabyte to Kilobyte
+  return tb * Math.pow(1024, 3); // Tebibyte to Kibibyte
 };
 
 convertData.terabyte.megabyte = tb$mb = function(tb) {
-  return tb * 1e+6; // Terabyte to Megabyte
+  return tb * Math.pow(1024, 2); // Tebibyte to Mebibyte
 };
 
 convertData.terabyte.gigabyte = tb$gb = function(tb) {
-  return tb * 1e+3; // Terabyte to Gigabyte
+  return tb * 1024; // Tebibyte to Gibibyte
 };
 
 convertData.terabyte.terabyte = tb$tb = function(tb) {
-  return tb; // Terabyte to Terabyte
+  return tb; // Tebibyte to Tebibyte
 };
 
 convertData.terabyte.petabyte = tb$pb = function(tb) {
-  return tb / 1e+3; // Terabyte to Petabyte
+  return tb / 1024; // Tebibyte to Pebibyte
 };
 
 convertData.terabyte.exabyte = tb$eb = function(tb) {
-  return tb / 1e+6; // Terabyte to Exabyte
+  return tb / Math.pow(1024, 2); // Tebibyte to Exbibyte
 };
 
 convertData.terabyte.zettabyte = tb$zb = function(tb) {
-  return tb / 1e+9; // Terabyte to Zettabyte
+  return tb / Math.pow(1024, 3); // Tebibyte to Zebibyte
 };
 
 convertData.terabyte.yottabyte = tb$yb = function(tb) {
-  return tb / 1e+12; // Terabyte to Yottabyte
+  return tb / Math.pow(1024, 4); // Tebibyte to Yobibyte
 };
 
-/* Petabyte Conversions */
+/* Pebibyte Conversions */
 convertData.petabyte.bit = pb$bit = function(pb) {
-  return pb * 8e+15; // Petabyte to Bit
+  return pb * 8 * Math.pow(1024, 5); // Pebibyte to Bit
 };
 
 convertData.petabyte.byte = pb$byte = function(pb) {
-  return pb * 1e+15; // Petabyte to Byte
+  return pb * Math.pow(1024, 5); // Pebibyte to Byte
 };
 
 convertData.petabyte.kilobyte = pb$kb = function(pb) {
-  return pb * 1e+12; // Petabyte to Kilobyte
+  return pb * Math.pow(1024, 4); // Pebibyte to Kibibyte
 };
 
 convertData.petabyte.megabyte = pb$mb = function(pb) {
-  return pb * 1e+9; // Petabyte to Megabyte
+  return pb * Math.pow(1024, 3); // Pebibyte to Mebibyte
 };
 
 convertData.petabyte.gigabyte = pb$gb = function(pb) {
-  return pb * 1e+6; // Petabyte to Gigabyte
+  return pb * Math.pow(1024, 2); // Pebibyte to Gibibyte
 };
 
 convertData.petabyte.terabyte = pb$tb = function(pb) {
-  return pb * 1e+3; // Petabyte to Terabyte
+  return pb * 1024; // Pebibyte to Tebibyte
 };
 
 convertData.petabyte.petabyte = pb$pb = function(pb) {
-  return pb; // Petabyte to Petabyte
+  return pb; // Pebibyte to Pebibyte
 };
 
 convertData.petabyte.exabyte = pb$eb = function(pb) {
-  return pb / 1e+3; // Petabyte to Exabyte
+  return pb / 1024; // Pebibyte to Exbibyte
 };
 
 convertData.petabyte.zettabyte = pb$zb = function(pb) {
-  return pb / 1e+6; // Petabyte to Zettabyte
+  return pb / Math.pow(1024, 2); // Pebibyte to Zebibyte
 };
 
 convertData.petabyte.yottabyte = pb$yb = function(pb) {
-  return pb / 1e+9; // Petabyte to Yottabyte
+  return pb / Math.pow(1024, 3); // Pebibyte to Yobibyte
 };
 
-/* Exabyte Conversions */
+/* Exbibyte Conversions */
 convertData.exabyte.bit = eb$bit = function(eb) {
-  return eb * 8e+18; // Exabyte to Bit
+  return eb * 8 * Math.pow(1024, 6); // Exbibyte to Bit
 };
 
 convertData.exabyte.byte = eb$byte = function(eb) {
-  return eb * 1e+18; // Exabyte to Byte
+  return eb * Math.pow(1024, 6); // Exbibyte to Byte
 };
 
 convertData.exabyte.kilobyte = eb$kb = function(eb) {
-  return eb * 1e+15; // Exabyte to Kilobyte
+  return eb * Math.pow(1024, 5); // Exbibyte to Kibibyte
 };
 
 convertData.exabyte.megabyte = eb$mb = function(eb) {
-  return eb * 1e+12; // Exabyte to Megabyte
+  return eb * Math.pow(1024, 4); // Exbibyte to Mebibyte
 };
 
 convertData.exabyte.gigabyte = eb$gb = function(eb) {
-  return eb * 1e+9; // Exabyte to Gigabyte
+  return eb * Math.pow(1024, 3); // Exbibyte to Gibibyte
 };
 
 convertData.exabyte.terabyte = eb$tb = function(eb) {
-  return eb * 1e+6; // Exabyte to Terabyte
+  return eb * Math.pow(1024, 2); // Exbibyte to Tebibyte
 };
 
 convertData.exabyte.petabyte = eb$pb = function(eb) {
-  return eb * 1e+3; // Exabyte to Petabyte
+  return eb * 1024; // Exbibyte to Pebibyte
 };
 
 convertData.exabyte.exabyte = eb$eb = function(eb) {
-  return eb; // Exabyte to Exabyte
+  return eb; // Exbibyte to Exbibyte
 };
 
 convertData.exabyte.zettabyte = eb$zb = function(eb) {
-  return eb / 1e+3; // Exabyte to Zettabyte
+  return eb / 1024; // Exbibyte to Zebibyte
 };
 
 convertData.exabyte.yottabyte = eb$yb = function(eb) {
-  return eb / 1e+6; // Exabyte to Yottabyte
+  return eb / Math.pow(1024, 2); // Exbibyte to Yobibyte
 };
 
-/* Zettabyte Conversions */
+/* Zebibyte Conversions */
 convertData.zettabyte.bit = zb$bit = function(zb) {
-  return zb * 8e+21; // Zettabyte to Bit
+  return zb * 8 * Math.pow(1024, 7); // Zebibyte to Bit
 };
 
 convertData.zettabyte.byte = zb$byte = function(zb) {
-  return zb * 1e+21; // Zettabyte to Byte
+  return zb * Math.pow(1024, 7); // Zebibyte to Byte
 };
 
 convertData.zettabyte.kilobyte = zb$kb = function(zb) {
-  return zb * 1e+18; // Zettabyte to Kilobyte
+  return zb * Math.pow(1024, 6); // Zebibyte to Kibibyte
 };
 
 convertData.zettabyte.megabyte = zb$mb = function(zb) {
-  return zb * 1e+15; // Zettabyte to Megabyte
+  return zb * Math.pow(1024, 5); // Zebibyte to Mebibyte
 };
 
 convertData.zettabyte.gigabyte = zb$gb = function(zb) {
-  return zb * 1e+12; // Zettabyte to Gigabyte
+  return zb * Math.pow(1024, 4); // Zebibyte to Gibibyte
 };
 
 convertData.zettabyte.terabyte = zb$tb = function(zb) {
-  return zb * 1e+9; // Zettabyte to Terabyte
+  return zb * Math.pow(1024, 3); // Zebibyte to Tebibyte
 };
 
 convertData.zettabyte.petabyte = zb$pb = function(zb) {
-  return zb * 1e+6; // Zettabyte to Petabyte
+  return zb * Math.pow(1024, 2); // Zebibyte to Pebibyte
 };
 
 convertData.zettabyte.exabyte = zb$eb = function(zb) {
-  return zb * 1e+3; // Zettabyte to Exabyte
+  return zb * 1024; // Zebibyte to Exbibyte
 };
 
 convertData.zettabyte.zettabyte = zb$zb = function(zb) {
-  return zb; // Zettabyte to Zettabyte
+  return zb; // Zebibyte to Zebibyte
 };
 
 convertData.zettabyte.yottabyte = zb$yb = function(zb) {
-  return zb / 1e+3; // Zettabyte to Yottabyte
+  return zb / 1024; // Zebibyte to Yobibyte
 };
 
-/* Yottabyte Conversions */
+/* Yobibyte Conversions */
 convertData.yottabyte.bit = yb$bit = function(yb) {
-  return yb * 8e+24; // Yottabyte to Bit
+  return yb * 8 * Math.pow(1024, 8); // Yobibyte to Bit
 };
 
 convertData.yottabyte.byte = yb$byte = function(yb) {
-  return yb * 1e+24; // Yottabyte to Byte
+  return yb * Math.pow(1024, 8); // Yobibyte to Byte
 };
 
 convertData.yottabyte.kilobyte = yb$kb = function(yb) {
-  return yb * 1e+21; // Yottabyte to Kilobyte
+  return yb * Math.pow(1024, 7); // Yobibyte to Kibibyte
 };
 
 convertData.yottabyte.megabyte = yb$mb = function(yb) {
-  return yb * 1e+18; // Yottabyte to Megabyte
+  return yb * Math.pow(1024, 6); // Yobibyte to Mebibyte
 };
 
 convertData.yottabyte.gigabyte = yb$gb = function(yb) {
-  return yb * 1e+15; // Yottabyte to Gigabyte
+  return yb * Math.pow(1024, 5); // Yobibyte to Gibibyte
 };
 
 convertData.yottabyte.terabyte = yb$tb = function(yb) {
-  return yb * 1e+12; // Yottabyte to Terabyte
+  return yb * Math.pow(1024, 4); // Yobibyte to Tebibyte
 };
 
 convertData.yottabyte.petabyte = yb$pb = function(yb) {
-  return yb * 1e+9; // Yottabyte to Petabyte
+  return yb * Math.pow(1024, 3); // Yobibyte to Pebibyte
 };
 
 convertData.yottabyte.exabyte = yb$eb = function(yb) {
-  return yb * 1e+6; // Yottabyte to Exabyte
+  return yb * Math.pow(1024, 2); // Yobibyte to Exbibyte
 };
 
 convertData.yottabyte.zettabyte = yb$zb = function(yb) {
-  return yb * 1e+3; // Yottabyte to Zettabyte
+  return yb * 1024; // Yobibyte to Zebibyte
 };
 
 convertData.yottabyte.yottabyte = yb$yb = function(yb) {
-  return yb; // Yottabyte to Yottabyte
+  return yb; // Yobibyte to Yobibyte
 };
 
 convertDensity = {

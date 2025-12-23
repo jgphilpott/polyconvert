@@ -158,13 +158,13 @@ polyconvert.data.bit = {
 So, to use these functions, reference them through the `polyconvert` object and pass in the value you want to convert, like this:
 
 ```js
-polyconvert.data.bit.byte(100) // Returns 12.5 meaning that 100 bits equals 12.5 bytes
+polyconvert.data.kilobyte.byte(1) // Returns 1024 meaning that 1 kibibyte equals 1024 bytes
 ```
 
 To reverse the conversion simply switch the order of the unit keys, like this:
 
 ```js
-polyconvert.data.byte.bit(12.5) // Returns 100 meaning that 12.5 bytes equals 100 bits
+polyconvert.data.byte.kilobyte(1024) // Returns 1 meaning that 1024 bytes equals 1 kibibyte
 ```
 
 </details>

@@ -1,6 +1,6 @@
 {
   "name": "@jgphilpott/polyconvert",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library of functions for converting between different units of measurement.",
   "funding": "https://github.com/sponsors/jgphilpott",
   "main": "polyconvert.js",
@@ -57,6 +57,7 @@
   },
   "homepage": "https://github.com/jgphilpott/polyconvert#readme",
   "devDependencies": {
+    "baseline-browser-mapping": "^2.9.11",
     "coffeescript": "^2.7.0",
     "jest": "^30.2.0",
     "uglify-js": "^3.19.3"

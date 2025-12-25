@@ -142,15 +142,15 @@ The third level keys represent all the different units of measurement that you c
 polyconvert.data.bit = {
 
     bit: f(x) = x,
-    byte: f(x) = x/8,
-    kilobyte: f(x) = x/8e+3,
-    megabyte: f(x) = x/8e+6,
-    gigabyte: f(x) = x/8e+9,
-    terabyte: f(x) = x/8e+12,
-    petabyte: f(x) = x/8e+15,
-    exabyte: f(x) = x/8e+18,
-    zettabyte: f(x) = x/8e+21,
-    yottabyte: f(x) = x/8e+24
+    byte: f(x) = x / 8,
+    kilobyte: f(x) = x / (8 * 1024),
+    megabyte: f(x) = x / (8 * 1024 ** 2),
+    gigabyte: f(x) = x / (8 * 1024 ** 3),
+    terabyte: f(x) = x / (8 * 1024 ** 4),
+    petabyte: f(x) = x / (8 * 1024 ** 5),
+    exabyte: f(x) = x / (8 * 1024 ** 6),
+    zettabyte: f(x) = x / (8 * 1024 ** 7),
+    yottabyte: f(x) = x / (8 * 1024 ** 8)
 
 }
 ```
@@ -158,13 +158,13 @@ polyconvert.data.bit = {
 So, to use these functions, reference them through the `polyconvert` object and pass in the value you want to convert, like this:
 
 ```js
-polyconvert.data.bit.byte(100) // Returns 12.5 meaning that 100 bits equals 12.5 bytes
+polyconvert.data.kilobyte.byte(1) // Returns 1024 meaning that 1 kibibyte equals 1024 bytes
 ```
 
 To reverse the conversion simply switch the order of the unit keys, like this:
 
 ```js
-polyconvert.data.byte.bit(12.5) // Returns 100 meaning that 12.5 bytes equals 100 bits
+polyconvert.data.byte.kilobyte(1024) // Returns 1 meaning that 1024 bytes equals 1 kibibyte
 ```
 
 </details>
@@ -325,7 +325,7 @@ polyconvert.data = {
 
 <sub>
     <em>
-        Note: These data units use decimal (SI) prefixes (k=10^3, M=10^6, etc.). Binary IEC units (kibibyte KiB = 1024 bytes, mebibyte MiB, etc.) are not included. If you need binary units open a feature request.
+        Note: These data units use binary (IEC) prefixes (KiB=1024 bytes, MiB=1024 KiB, etc.). The unit names use traditional naming (kilobyte, megabyte, etc.) but follow IEC 60027-2 binary standards where each step is 1024 (2^10) rather than 1000.
     </em>
 </sub>
 

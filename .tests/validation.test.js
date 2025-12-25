@@ -176,30 +176,30 @@ describe("External Validation Tests", () => {
 
     describe("Data Conversions", () => {
         
-        // Reference: SI decimal prefixes (not binary)
+        // Reference: IEC binary prefixes (not SI decimal)
         test("1 byte = 8 bits (exact)", () => {
             const result = polyconvert.data.byte.bit(1)
             expect(result).toBe(8)
         })
 
-        test("1 kilobyte = 1000 bytes (SI decimal)", () => {
+        test("1 kibibyte = 1024 bytes (IEC binary)", () => {
             const result = polyconvert.data.kilobyte.byte(1)
-            expect(result).toBe(1000)
+            expect(result).toBe(1024)
         })
 
-        test("1 megabyte = 1000000 bytes (SI decimal)", () => {
+        test("1 mebibyte = 1048576 bytes (IEC binary)", () => {
             const result = polyconvert.data.megabyte.byte(1)
-            expect(result).toBe(1000000)
+            expect(result).toBe(1048576)
         })
 
-        test("1 gigabyte = 1000000000 bytes (SI decimal)", () => {
+        test("1 gibibyte = 1073741824 bytes (IEC binary)", () => {
             const result = polyconvert.data.gigabyte.byte(1)
-            expect(result).toBe(1000000000)
+            expect(result).toBe(1073741824)
         })
 
-        test("1 terabyte = 1000 gigabytes (SI decimal)", () => {
+        test("1 tebibyte = 1024 gibibytes (IEC binary)", () => {
             const result = polyconvert.data.terabyte.gigabyte(1)
-            expect(result).toBe(1000)
+            expect(result).toBe(1024)
         })
     })
 

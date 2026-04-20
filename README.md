@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="183" height="183" src="https://raw.githubusercontent.com/jgphilpott/polyconvert/main/icon.png">
+    <img width="183" height="183" src="./icon.png">
 </p>
 
 <p align="center">

@@ -151,16 +151,16 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Bit => from_fraction(1, 1),
-        Unit::Byte => from_fraction(8, 1),
-        Unit::Exabyte => from_fraction(9223372036854775800, 1),
-        Unit::Gigabyte => from_fraction(8589934592, 1),
-        Unit::Kilobyte => from_fraction(8192, 1),
-        Unit::Megabyte => from_fraction(8388608, 1),
-        Unit::Petabyte => from_fraction(9007199254740992, 1),
-        Unit::Terabyte => from_fraction(8796093022208, 1),
-        Unit::Yottabyte => from_fraction(9671406556917033400000000, 1),
-        Unit::Zettabyte => from_fraction(9444732965739290400000, 1),
+        Unit::Bit => from_fraction(1, 8),
+        Unit::Byte => from_fraction(1, 1),
+        Unit::Exabyte => from_fraction(1152921504606847000, 1),
+        Unit::Gigabyte => from_fraction(1073741824, 1),
+        Unit::Kilobyte => from_fraction(1024, 1),
+        Unit::Megabyte => from_fraction(1048576, 1),
+        Unit::Petabyte => from_fraction(1125899906842624, 1),
+        Unit::Terabyte => from_fraction(1099511627776, 1),
+        Unit::Yottabyte => from_fraction(1208925819614629200000000, 1),
+        Unit::Zettabyte => from_fraction(1180591620717411300000, 1),
     }
 }
 

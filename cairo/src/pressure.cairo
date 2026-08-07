@@ -56,11 +56,11 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Atmospheric => from_fraction(1, 1),
-        Unit::Bar => from_fraction(98692326671601283, 100000000000000000),
-        Unit::Pascal => from_fraction(19738465334320257, 2000000000000000000000),
-        Unit::Psi => from_fraction(34022981956127567, 500000000000000000),
-        Unit::Torr => from_fraction(2631578947368421, 2000000000000000000),
+        Unit::Atmospheric => from_fraction(101325, 1),
+        Unit::Bar => from_fraction(100000, 1),
+        Unit::Pascal => from_fraction(1, 1),
+        Unit::Psi => from_fraction(68947572932000003, 10000000000000),
+        Unit::Torr => from_fraction(6666118421, 50000000),
     }
 }
 

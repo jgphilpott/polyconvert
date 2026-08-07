@@ -71,12 +71,12 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::ArcMinute => from_fraction(1, 1),
-        Unit::ArcSecond => from_fraction(8333333333333333, 500000000000000000),
-        Unit::Degree => from_fraction(60, 1),
-        Unit::Gradian => from_fraction(54, 1),
-        Unit::Milliradian => from_fraction(8594366926962349, 2500000000000000),
-        Unit::Radian => from_fraction(8594366926962349, 2500000000000),
+        Unit::ArcMinute => from_fraction(8333333333333333, 500000000000000000),
+        Unit::ArcSecond => from_fraction(13888888888888889, 50000000000000000000),
+        Unit::Degree => from_fraction(1, 1),
+        Unit::Gradian => from_fraction(45000000000000001, 50000000000000000),
+        Unit::Milliradian => from_fraction(2291831180523293, 40000000000000000),
+        Unit::Radian => from_fraction(57295779513082323, 1000000000000000),
     }
 }
 

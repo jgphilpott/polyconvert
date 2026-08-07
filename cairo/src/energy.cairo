@@ -148,17 +148,17 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Btu => from_fraction(1, 1),
-        Unit::Calorie => from_fraction(15490886098589, 3906250000000000),
-        Unit::Electronvolt => from_fraction(3037140894484401, 20000000000000000000000000000000000000),
-        Unit::FootPound => from_fraction(3212668666619403, 2500000000000000000),
-        Unit::Joule => from_fraction(94781712266701337, 100000000000000000000),
-        Unit::Kilocalorie => from_fraction(39656668412387837, 10000000000000000),
-        Unit::Kilojoule => from_fraction(18956342453340267, 20000000000000000),
-        Unit::Kilowatt => from_fraction(94781712266701337, 100000000000000000),
-        Unit::KilowattHour => from_fraction(106629426300039, 31250000000),
-        Unit::Watt => from_fraction(94781712266701337, 100000000000000000000),
-        Unit::WattHour => from_fraction(17060708208006241, 5000000000000000),
+        Unit::Btu => from_fraction(21101117, 20000),
+        Unit::Calorie => from_fraction(20920000000000001, 5000000000000000),
+        Unit::Electronvolt => from_fraction(16021766339999999, 100000000000000000000000000000000000),
+        Unit::FootPound => from_fraction(13558179483314003, 10000000000000000),
+        Unit::Joule => from_fraction(1, 1),
+        Unit::Kilocalorie => from_fraction(4184, 1),
+        Unit::Kilojoule => from_fraction(1000, 1),
+        Unit::Kilowatt => from_fraction(1000, 1),
+        Unit::KilowattHour => from_fraction(3600000, 1),
+        Unit::Watt => from_fraction(1, 1),
+        Unit::WattHour => from_fraction(3600, 1),
     }
 }
 

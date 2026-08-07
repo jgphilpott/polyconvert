@@ -347,19 +347,19 @@ fn first_group(unit: Unit) -> bool {
 
 fn first_factor(unit: Unit) -> Rational {
     match unit {
-        Unit::CentimeterCu => from_fraction(1, 1),
-        Unit::DecameterCu => from_fraction(1000000000, 1),
-        Unit::DecimeterCu => from_fraction(1000, 1),
-        Unit::FootCu => from_fraction(14158423296000001, 500000000000),
-        Unit::HectometerCu => from_fraction(1000000000000, 1),
-        Unit::InchCu => from_fraction(16387063999999999, 1000000000000000),
-        Unit::KilometerCu => from_fraction(1000000000000000, 1),
-        Unit::MeterCu => from_fraction(1000000, 1),
-        Unit::MicrometerCu => from_fraction(49999999999999999, 50000000000000000000000000000),
-        Unit::MileCu => from_fraction(4168181825400000, 1),
-        Unit::MillimeterCu => from_fraction(1, 1000),
-        Unit::NanometerCu => from_fraction(99999999999999991, 100000000000000000000000000000000000000),
-        Unit::YardCu => from_fraction(76455485797999997, 100000000000),
+        Unit::CentimeterCu => from_fraction(19999999999999999, 20000000000000000000000),
+        Unit::DecameterCu => from_fraction(1000, 1),
+        Unit::DecimeterCu => from_fraction(1, 1000),
+        Unit::FootCu => from_fraction(28316846592391771, 1000000000000000000),
+        Unit::HectometerCu => from_fraction(1000000, 1),
+        Unit::InchCu => from_fraction(16387064000000077, 1000000000000000000000),
+        Unit::KilometerCu => from_fraction(1000000000, 1),
+        Unit::MeterCu => from_fraction(1, 1),
+        Unit::MicrometerCu => from_fraction(10000000000000001, 10000000000000000000000000000000000),
+        Unit::MileCu => from_fraction(41681818254000001, 10000000),
+        Unit::MillimeterCu => from_fraction(10000000000000001, 10000000000000000000000000),
+        Unit::NanometerCu => from_fraction(1, 1000000000000000000000000000),
+        Unit::YardCu => from_fraction(4778467862452581, 6250000000000000),
         _ => {
             assert(false, 'bad_unit');
             from_fraction(0, 1)
@@ -383,14 +383,14 @@ fn second_group(unit: Unit) -> bool {
 
 fn second_factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Cup => from_fraction(1, 1),
-        Unit::Gallon => from_fraction(16, 1),
-        Unit::Liter => from_fraction(42267528377000003, 10000000000000000),
-        Unit::Milliliter => from_fraction(42267528377303749, 10000000000000000000),
-        Unit::Pint => from_fraction(2, 1),
-        Unit::Quart => from_fraction(4, 1),
-        Unit::Tablespoon => from_fraction(1, 16),
-        Unit::Teaspoon => from_fraction(5208333333333333, 250000000000000000),
+        Unit::Cup => from_fraction(23658823649999999, 100000000000000),
+        Unit::Gallon => from_fraction(37854117839999999, 10000000000000),
+        Unit::Liter => from_fraction(1000, 1),
+        Unit::Milliliter => from_fraction(1, 1),
+        Unit::Pint => from_fraction(47317647299999999, 100000000000000),
+        Unit::Quart => from_fraction(94635294599999997, 100000000000000),
+        Unit::Tablespoon => from_fraction(14786764781, 1000000000),
+        Unit::Teaspoon => from_fraction(24644607968500001, 5000000000000000),
         _ => {
             assert(false, 'bad_unit');
             from_fraction(0, 1)

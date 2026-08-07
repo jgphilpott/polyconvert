@@ -43,10 +43,10 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Flame => from_fraction(1, 1),
-        Unit::Lux => from_fraction(181451249999321, 7812500000000000),
-        Unit::Nox => from_fraction(23225759999913089, 1000000000000000000000),
-        Unit::Phot => from_fraction(145161, 625),
+        Unit::Flame => from_fraction(43055641667000003, 1000000000000000),
+        Unit::Lux => from_fraction(1, 1),
+        Unit::Nox => from_fraction(1, 10000),
+        Unit::Phot => from_fraction(10000, 1),
     }
 }
 

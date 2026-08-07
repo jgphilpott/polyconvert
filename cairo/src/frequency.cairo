@@ -43,10 +43,10 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Gigahertz => from_fraction(1, 1),
-        Unit::Hertz => from_fraction(10000000000000001, 10000000000000000000000000),
-        Unit::Kilohertz => from_fraction(19999999999999999, 20000000000000000000000),
-        Unit::Megahertz => from_fraction(1, 1000),
+        Unit::Gigahertz => from_fraction(1000000000, 1),
+        Unit::Hertz => from_fraction(1, 1),
+        Unit::Kilohertz => from_fraction(1000, 1),
+        Unit::Megahertz => from_fraction(1000000, 1),
     }
 }
 

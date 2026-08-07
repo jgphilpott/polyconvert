@@ -232,19 +232,19 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Century => from_fraction(1, 1),
-        Unit::Day => from_fraction(1095162802795403, 40000000000000000000),
-        Unit::Decade => from_fraction(10000000000000001, 100000000000000000),
-        Unit::Hour => from_fraction(2851986465613029, 2500000000000000000000),
-        Unit::Microsecond => from_fraction(31688738506811433, 100000000000000000000000000000000),
-        Unit::Millennium => from_fraction(10, 1),
-        Unit::Millisecond => from_fraction(31688738506811433, 100000000000000000000000000000),
-        Unit::Minute => from_fraction(19013243104086857, 1000000000000000000000000),
-        Unit::Month => from_fraction(83333333333333339, 100000000000000000000),
-        Unit::Nanosecond => from_fraction(3961092313351429, 12500000000000000000000000000000000),
-        Unit::Second => from_fraction(3168873850681143, 10000000000000000000000000),
-        Unit::Week => from_fraction(19165349048919553, 100000000000000000000),
-        Unit::Year => from_fraction(1, 100),
+        Unit::Century => from_fraction(3155695200, 1),
+        Unit::Day => from_fraction(86400, 1),
+        Unit::Decade => from_fraction(315569520, 1),
+        Unit::Hour => from_fraction(3600, 1),
+        Unit::Microsecond => from_fraction(19999999999999999, 20000000000000000000000),
+        Unit::Millennium => from_fraction(31556952000, 1),
+        Unit::Millisecond => from_fraction(1, 1000),
+        Unit::Minute => from_fraction(60, 1),
+        Unit::Month => from_fraction(2629746, 1),
+        Unit::Nanosecond => from_fraction(10000000000000001, 10000000000000000000000000),
+        Unit::Second => from_fraction(1, 1),
+        Unit::Week => from_fraction(604800, 1),
+        Unit::Year => from_fraction(31556952, 1),
     }
 }
 

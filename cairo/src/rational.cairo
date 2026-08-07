@@ -55,20 +55,42 @@ pub fn from_integer(value: i128) -> Rational {
 }
 
 pub fn add(left: Rational, right: Rational) -> Rational {
-    from_fraction(left.num * right.den + right.num * left.den, left.den * right.den)
+    let divisor = gcd(left.den, right.den);
+    let left_scale = right.den / divisor;
+    let right_scale = left.den / divisor;
+    from_fraction(left.num * left_scale + right.num * right_scale, left.den * left_scale)
 }
 
 pub fn subtract(left: Rational, right: Rational) -> Rational {
-    from_fraction(left.num * right.den - right.num * left.den, left.den * right.den)
+    let divisor = gcd(left.den, right.den);
+    let left_scale = right.den / divisor;
+    let right_scale = left.den / divisor;
+    from_fraction(left.num * left_scale - right.num * right_scale, left.den * left_scale)
 }
 
 pub fn multiply(left: Rational, right: Rational) -> Rational {
-    from_fraction(left.num * right.num, left.den * right.den)
+    let left_divisor = gcd(left.num, right.den);
+    let right_divisor = gcd(right.num, left.den);
+    from_fraction(
+        (left.num / left_divisor) * (right.num / right_divisor),
+        (left.den / right_divisor) * (right.den / left_divisor),
+    )
 }
 
 pub fn divide(left: Rational, right: Rational) -> Rational {
     assert(right.num != 0, 'div_zero');
-    from_fraction(left.num * right.den, left.den * right.num)
+    let left_divisor = gcd(left.num, right.num);
+    let right_divisor = gcd(right.den, left.den);
+    let mut denominator_num = right.num / left_divisor;
+    let mut denominator_den = right.den / right_divisor;
+    if denominator_num < 0 {
+        denominator_num = -denominator_num;
+        denominator_den = -denominator_den;
+    }
+    from_fraction(
+        (left.num / left_divisor) * denominator_den,
+        (left.den / right_divisor) * denominator_num,
+    )
 }
 
 pub fn is_equal(left: Rational, right: Rational) -> bool {
@@ -76,7 +98,9 @@ pub fn is_equal(left: Rational, right: Rational) -> bool {
 }
 
 pub fn less_than_or_equal(left: Rational, right: Rational) -> bool {
-    left.num * right.den <= right.num * left.den
+    let left_divisor = gcd(left.num, right.num);
+    let right_divisor = gcd(left.den, right.den);
+    (left.num / left_divisor) * (right.den / right_divisor) <= (right.num / left_divisor) * (left.den / right_divisor)
 }
 
 pub fn abs(value: Rational) -> Rational {

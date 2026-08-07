@@ -56,11 +56,11 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Abampere => from_fraction(1, 1),
-        Unit::Ampere => from_fraction(10000000000000001, 100000000000000000),
-        Unit::Gilbert => from_fraction(15915494302045341, 200000000000000000),
-        Unit::Kiloampere => from_fraction(100, 1),
-        Unit::Milliampere => from_fraction(1, 10000),
+        Unit::Abampere => from_fraction(10, 1),
+        Unit::Ampere => from_fraction(1, 1),
+        Unit::Gilbert => from_fraction(19894367877556679, 25000000000000000),
+        Unit::Kiloampere => from_fraction(1000, 1),
+        Unit::Milliampere => from_fraction(1, 1000),
     }
 }
 

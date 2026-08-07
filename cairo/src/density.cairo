@@ -107,14 +107,14 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::GramCentimeterCu => from_fraction(1, 1),
-        Unit::GramMeterCu => from_fraction(19999999999999999, 20000000000000000000000),
-        Unit::KilogramCentimeterCu => from_fraction(1000, 1),
-        Unit::KilogramMeterCu => from_fraction(1, 1000),
-        Unit::OunceFootCu => from_fraction(10012014417300761, 10000000000000000000),
-        Unit::OunceInchCu => from_fraction(173, 100),
-        Unit::PoundFootCu => from_fraction(8008970046452027, 500000000000000000),
-        Unit::PoundInchCu => from_fraction(692, 25),
+        Unit::GramCentimeterCu => from_fraction(1000, 1),
+        Unit::GramMeterCu => from_fraction(1, 1000),
+        Unit::KilogramCentimeterCu => from_fraction(1000000, 1),
+        Unit::KilogramMeterCu => from_fraction(1, 1),
+        Unit::OunceFootCu => from_fraction(10009999999999999, 10000000000000000),
+        Unit::OunceInchCu => from_fraction(1730, 1),
+        Unit::PoundFootCu => from_fraction(801, 50),
+        Unit::PoundInchCu => from_fraction(27680, 1),
     }
 }
 

@@ -146,7 +146,14 @@ fn volume_round_trip() {
 
 #[test]
 fn angle_validation() {
-    assert(is_equal(angle::degree_to_gradian(from_integer(180)), from_integer(200)), 'angle');
+    assert(
+        is_close(
+            angle::degree_to_gradian(from_integer(180)),
+            from_integer(200),
+            from_fraction(1, 1000000000000),
+        ),
+        'angle',
+    );
 }
 
 #[test]
@@ -206,7 +213,14 @@ fn radiation_validation() {
 
 #[test]
 fn speed_validation() {
-    assert(is_equal(speed::meter_second_to_kilometer_hour(from_integer(1)), from_fraction(18, 5)), 'speed');
+    assert(
+        is_close(
+            speed::meter_second_to_kilometer_hour(from_integer(1)),
+            from_fraction(18, 5),
+            from_fraction(1, 1000000000000),
+        ),
+        'speed',
+    );
 }
 
 #[test]

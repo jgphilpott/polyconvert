@@ -296,21 +296,21 @@ fn supports(from: Unit, to: Unit) -> bool {
 
 fn factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Acre => from_fraction(1, 1),
-        Unit::CentimeterSq => from_fraction(3088817268339567, 125000000000000000000000),
-        Unit::DecameterSq => from_fraction(4942107629343307, 200000000000000000),
-        Unit::DecimeterSq => from_fraction(12355269073358267, 5000000000000000000000),
-        Unit::FootSq => from_fraction(573921028466483, 25000000000000000000),
-        Unit::Hectare => from_fraction(24710538146999999, 10000000000000000),
-        Unit::HectometerSq => from_fraction(24710538146999999, 10000000000000000),
-        Unit::InchSq => from_fraction(7971125395367819, 50000000000000000000000),
-        Unit::KilometerSq => from_fraction(24710538147, 100000000),
-        Unit::MeterSq => from_fraction(6177634536679133, 25000000000000000000),
-        Unit::MicrometerSq => from_fraction(4942107629343307, 20000000000000000000000000000000),
-        Unit::MileSq => from_fraction(640, 1),
-        Unit::MillimeterSq => from_fraction(6177634536679133, 25000000000000000000000000),
-        Unit::NanometerSq => from_fraction(3088817268339567, 12500000000000000000000000000000000000),
-        Unit::YardSq => from_fraction(5165289256198347, 25000000000000000000),
+        Unit::Acre => from_fraction(20234282112000001, 5000000000000),
+        Unit::CentimeterSq => from_fraction(1, 10000),
+        Unit::DecameterSq => from_fraction(100, 1),
+        Unit::DecimeterSq => from_fraction(1, 100),
+        Unit::FootSq => from_fraction(92903039997494621, 1000000000000000000),
+        Unit::Hectare => from_fraction(10000, 1),
+        Unit::HectometerSq => from_fraction(10000, 1),
+        Unit::InchSq => from_fraction(64516000000258071, 100000000000000000000),
+        Unit::KilometerSq => from_fraction(1000000, 1),
+        Unit::MeterSq => from_fraction(1, 1),
+        Unit::MicrometerSq => from_fraction(49999999999999999, 50000000000000000000000000000),
+        Unit::MileSq => from_fraction(12949940551499999, 5000000000),
+        Unit::MillimeterSq => from_fraction(19999999999999999, 20000000000000000000000),
+        Unit::NanometerSq => from_fraction(10000000000000001, 10000000000000000000000000000000000),
+        Unit::YardSq => from_fraction(83612736000075527, 100000000000000000),
     }
 }
 

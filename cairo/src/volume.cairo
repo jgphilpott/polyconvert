@@ -350,16 +350,16 @@ fn first_factor(unit: Unit) -> Rational {
         Unit::CentimeterCu => from_fraction(1, 1000000),
         Unit::DecameterCu => from_fraction(1000, 1),
         Unit::DecimeterCu => from_fraction(1, 1000),
-        Unit::FootCu => from_fraction(28316846592391771, 1000000000000000000),
+        Unit::FootCu => from_fraction(55306341, 1953125000),
         Unit::HectometerCu => from_fraction(1000000, 1),
-        Unit::InchCu => from_fraction(16387064000000077, 1000000000000000000000),
+        Unit::InchCu => from_fraction(2048383, 125000000000),
         Unit::KilometerCu => from_fraction(1000000000, 1),
         Unit::MeterCu => from_fraction(1, 1),
         Unit::MicrometerCu => from_fraction(1, 1000000000000000000),
-        Unit::MileCu => from_fraction(41681818254000001, 10000000),
+        Unit::MileCu => from_fraction(8140980127813632, 1953125),
         Unit::MillimeterCu => from_fraction(1, 1000000000),
         Unit::NanometerCu => from_fraction(1, 1000000000000000000000000000),
-        Unit::YardCu => from_fraction(4778467862452581, 6250000000000000),
+        Unit::YardCu => from_fraction(1493271207, 1953125000),
         _ => {
             assert(false, 'bad_unit');
             from_fraction(0, 1)
@@ -383,14 +383,14 @@ fn second_group(unit: Unit) -> bool {
 
 fn second_factor(unit: Unit) -> Rational {
     match unit {
-        Unit::Cup => from_fraction(23658823649999999, 100000000000000),
-        Unit::Gallon => from_fraction(37854117839999999, 10000000000000),
+        Unit::Cup => from_fraction(473176473, 2000),
+        Unit::Gallon => from_fraction(473176473, 125000),
         Unit::Liter => from_fraction(1000, 1),
         Unit::Milliliter => from_fraction(1, 1),
-        Unit::Pint => from_fraction(47317647299999999, 100000000000000),
-        Unit::Quart => from_fraction(94635294599999997, 100000000000000),
-        Unit::Tablespoon => from_fraction(14786764781, 1000000000),
-        Unit::Teaspoon => from_fraction(24644607968500001, 5000000000000000),
+        Unit::Pint => from_fraction(473176473, 1000000),
+        Unit::Quart => from_fraction(473176473, 500000),
+        Unit::Tablespoon => from_fraction(473176473, 32000000),
+        Unit::Teaspoon => from_fraction(473176473, 96000000),
         _ => {
             assert(false, 'bad_unit');
             from_fraction(0, 1)

@@ -1,6 +1,6 @@
 # Polyconvert for Cairo
 
-This directory contains a Scarb package that ports Polyconvert's non-dimension conversion categories to Cairo.
+A library of functions for converting between different units of measurement.
 
 ## Scope
 
@@ -22,8 +22,6 @@ The Cairo package includes the following categories:
 - temperature
 - time
 - volume
-
-The JavaScript-only `dimension` category is intentionally excluded because it depends on camera and vector objects rather than pure unit arithmetic.
 
 ## API shape
 

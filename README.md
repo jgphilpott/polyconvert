@@ -10,7 +10,7 @@
 
 # Intro
 
-[Polyconvert](https://jgphilpott.github.io/polyconvert) is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project supports JavaScript and now also includes a Cairo/Scarb package in [`/cairo`](./cairo) for all categories except `dimension`.
+[Polyconvert](https://jgphilpott.github.io/polyconvert) is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project supports JavaScript and now also includes a Cairo/Scarb package in [`/cairo`](./cairo).
 
 If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formatting gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
 
@@ -95,7 +95,7 @@ cd cairo
 scarb test
 ```
 
-The Cairo package mirrors the existing non-dimension conversion categories and uses rational values so proof programs can preserve exact arithmetic across conversions.
+The Cairo package mirrors the existing conversion categories and uses rational values so proof programs can preserve exact arithmetic across conversions.
 
 </details>
 

@@ -306,10 +306,10 @@ fn factor(unit: Unit) -> Rational {
         Unit::InchSq => from_fraction(64516000000258071, 100000000000000000000),
         Unit::KilometerSq => from_fraction(1000000, 1),
         Unit::MeterSq => from_fraction(1, 1),
-        Unit::MicrometerSq => from_fraction(49999999999999999, 50000000000000000000000000000),
+        Unit::MicrometerSq => from_fraction(1, 1000000000000),
         Unit::MileSq => from_fraction(12949940551499999, 5000000000),
-        Unit::MillimeterSq => from_fraction(19999999999999999, 20000000000000000000000),
-        Unit::NanometerSq => from_fraction(10000000000000001, 10000000000000000000000000000000000),
+        Unit::MillimeterSq => from_fraction(1, 1000000),
+        Unit::NanometerSq => from_fraction(1, 1000000000000000000),
         Unit::YardSq => from_fraction(83612736000075527, 100000000000000000),
     }
 }

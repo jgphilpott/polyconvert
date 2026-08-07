@@ -347,7 +347,7 @@ fn first_group(unit: Unit) -> bool {
 
 fn first_factor(unit: Unit) -> Rational {
     match unit {
-        Unit::CentimeterCu => from_fraction(19999999999999999, 20000000000000000000000),
+        Unit::CentimeterCu => from_fraction(1, 1000000),
         Unit::DecameterCu => from_fraction(1000, 1),
         Unit::DecimeterCu => from_fraction(1, 1000),
         Unit::FootCu => from_fraction(28316846592391771, 1000000000000000000),
@@ -355,9 +355,9 @@ fn first_factor(unit: Unit) -> Rational {
         Unit::InchCu => from_fraction(16387064000000077, 1000000000000000000000),
         Unit::KilometerCu => from_fraction(1000000000, 1),
         Unit::MeterCu => from_fraction(1, 1),
-        Unit::MicrometerCu => from_fraction(10000000000000001, 10000000000000000000000000000000000),
+        Unit::MicrometerCu => from_fraction(1, 1000000000000000000),
         Unit::MileCu => from_fraction(41681818254000001, 10000000),
-        Unit::MillimeterCu => from_fraction(10000000000000001, 10000000000000000000000000),
+        Unit::MillimeterCu => from_fraction(1, 1000000000),
         Unit::NanometerCu => from_fraction(1, 1000000000000000000000000000),
         Unit::YardCu => from_fraction(4778467862452581, 6250000000000000),
         _ => {

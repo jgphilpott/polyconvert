@@ -242,8 +242,8 @@ fn factor(unit: Unit) -> Rational {
         Unit::Meter => from_fraction(100, 1),
         Unit::Micrometer => from_fraction(1, 10000),
         Unit::Mile => from_fraction(16093439999999999, 100000000000),
-        Unit::Millimeter => from_fraction(10000000000000001, 100000000000000000),
-        Unit::Nanometer => from_fraction(19999999999999999, 200000000000000000000000),
+        Unit::Millimeter => from_fraction(1, 10),
+        Unit::Nanometer => from_fraction(1, 10000000),
         Unit::Yard => from_fraction(45719999999999999, 500000000000000),
     }
 }

@@ -10,7 +10,7 @@
 
 # Intro
 
-[Polyconvert](https://jgphilpott.github.io/polyconvert) is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project currently supports JavaScript only but it would be nice to add more languages in the future!
+[Polyconvert](https://jgphilpott.github.io/polyconvert) is a library of functions for converting between different units of measurement. It currently consists of **17 top level categories**, each with several different units of measurement. The project supports JavaScript and now also includes a Cairo/Scarb package in [`/cairo`](./cairo) for all categories except `dimension`.
 
 If you find this tool useful you may also like this [abbreviations gist](https://gist.github.com/jgphilpott/12783015d68e056e54252355d75b41a9) and this [formatting gist](https://gist.github.com/jgphilpott/787659ac4ea57a9971da58a76191079b) to help you turn your converted values into legible strings.
 
@@ -25,6 +25,7 @@ If you find this tool useful you may also like this [abbreviations gist](https:/
  - [Install](https://github.com/jgphilpott/polyconvert#install)
      - [Node](https://github.com/jgphilpott/polyconvert#node)
      - [Link](https://github.com/jgphilpott/polyconvert#link)
+     - [Cairo](https://github.com/jgphilpott/polyconvert#cairo)
  - [Usage](https://github.com/jgphilpott/polyconvert#usage)
  - [Testing](https://github.com/jgphilpott/polyconvert#testing)
  - [Contribute](https://github.com/jgphilpott/polyconvert#contribute)
@@ -82,6 +83,19 @@ The other option you have is to link to the `polyconvert.min.js` file from an HT
 ```
 
 You can either link to the [polyconvert.min.js](https://raw.githubusercontent.com/jgphilpott/polyconvert/main/polyconvert.min.js) file in this repo or download it and use your own copy.
+
+### Cairo
+
+An experimental Cairo package is available in [`/cairo`](./cairo).
+
+Install its dependencies with [Scarb](https://docs.swmansion.com/scarb/) and run:
+
+```
+cd cairo
+scarb test
+```
+
+The Cairo package mirrors the existing non-dimension conversion categories and uses rational values so proof programs can preserve exact arithmetic across conversions.
 
 </details>
 

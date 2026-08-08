@@ -6,7 +6,39 @@ description = "A library of functions for converting between different units of 
 repository = "https://github.com/jgphilpott/polyconvert"
 license = "MIT"
 readme = "README.md"
-keywords = ["convert", "units", "measurement"]
+keywords = [
+    "poly",
+    "polyconvert",
+    "polyconverter",
+    "polyconversion",
+    "convert",
+    "converter",
+    "conversion",
+    "unit",
+    "units",
+    "invert",
+    "inverter",
+    "inversion",
+    "measure",
+    "measurement",
+    "ruler",
+    "angle",
+    "area",
+    "data",
+    "density",
+    "energy",
+    "frequency",
+    "illumination",
+    "length",
+    "magnetomotive",
+    "mass",
+    "pressure",
+    "radiation",
+    "speed",
+    "temperature",
+    "time",
+    "volume"
+]
 
 [dependencies]
 

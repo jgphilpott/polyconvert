@@ -86,7 +86,7 @@ You can either link to the [polyconvert.min.js](https://raw.githubusercontent.co
 
 ### Cairo
 
-An experimental Cairo package is available in [`/cairo`](./cairo).
+Package on Scarbs: https://scarbs.xyz/packages/polyconvert
 
 Install its dependencies with [Scarb](https://docs.swmansion.com/scarb/) and run:
 

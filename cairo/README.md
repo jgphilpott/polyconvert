@@ -1,15 +1,6 @@
-<a href="https://jgphilpott.github.io/polyconvert">
-    <p align="center">
-        <img width="188" height="188" src="https://raw.githubusercontent.com/jgphilpott/polyconvert/refs/heads/main/icon.png">
-    </p>
-</a>
-
-# Polyconvert for Cairo
+# [Polyconvert](https://jgphilpott.github.io/polyconvert)
 
 A library of functions for converting between different units of measurement.
-
-**Repo**: github.com/jgphilpott/polyconvert
-**Demo**: jgphilpott.github.io/polyconvert
 
 ## Scope
 

@@ -26,3 +26,19 @@ jobs:
 
     - name: Run Tests
       run: npm test
+
+  cairo-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Scarb
+      uses: software-mansion/setup-scarb@v1
+      with:
+        scarb-version: '2.0.1'
+
+    - name: Run Cairo Tests
+      working-directory: cairo
+      run: scarb test

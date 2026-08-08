@@ -1,7 +1,23 @@
 [package]
 name = "polyconvert"
-version = "2.0.0"
+version = "2.0.2"
 edition = "2024_07"
+description = "A library of functions for converting between different units of measurement."
+repository = "https://github.com/jgphilpott/polyconvert"
+license = "MIT"
+readme = "README.md"
+keywords = [
+    "convert",
+    "converter",
+    "conversion",
+    "unit",
+    "units",
+    "invert",
+    "inverter",
+    "inversion",
+    "measure",
+    "measurement",
+]
 
 [dependencies]
 

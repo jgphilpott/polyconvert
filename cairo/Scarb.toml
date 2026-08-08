@@ -7,10 +7,6 @@ repository = "https://github.com/jgphilpott/polyconvert"
 license = "MIT"
 readme = "README.md"
 keywords = [
-    "poly",
-    "polyconvert",
-    "polyconverter",
-    "polyconversion",
     "convert",
     "converter",
     "conversion",
@@ -21,23 +17,6 @@ keywords = [
     "inversion",
     "measure",
     "measurement",
-    "ruler",
-    "angle",
-    "area",
-    "data",
-    "density",
-    "energy",
-    "frequency",
-    "illumination",
-    "length",
-    "magnetomotive",
-    "mass",
-    "pressure",
-    "radiation",
-    "speed",
-    "temperature",
-    "time",
-    "volume"
 ]
 
 [dependencies]
